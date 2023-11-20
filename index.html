@@ -104,6 +104,7 @@
             <p class="header__truck_items_p">
               <img src="./images/truck.svg" alt="svg">
               <span class="header__truck_items_span">Delivery in 2-4 days</span>
+              <span id="openModal">Find Your Fit Assistent Size</span>
             </p>
             <p class="header__truck_items_p">
               <img src="./images/cart.svg" alt="svg">
@@ -412,11 +413,37 @@
       </div>
     </div>
 
-    <div>
-      <div>
-        
+    <!-- The Modal -->
+    <div id="myModal" class="c-modal">
+      <!-- Modal content -->
+      <div class="c-modal-content">
+        <span id="openClose" class="c-modal-close">&times;</span>
+        <img class="c-modal-content-img" src="./images/modal.png" alt="png">
       </div>
     </div>
+
+    <script>
+      var modal = document.getElementById("myModal");
+      
+      var openModal = document.getElementById("openModal");
+      
+      var openClose = document.getElementById("openClose");
+      
+      openModal.onclick = function() {
+        modal.style.display = "block";
+      }
+      
+      openClose.onclick = function() {
+        modal.style.display = "none";
+      }
+      
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+      
 
     <script src="./js/jquery.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
