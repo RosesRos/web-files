@@ -465,9 +465,12 @@ a {
 
 .stringWithTime {
   position: relative;
-  background-color: #272727;
+  /* background-color: #272727; */
   padding: 14px 0;
   margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -500,15 +503,14 @@ a {
 
 .timer,
 .timer2 {
-  color: #ffffff;
-  font-size: 24px;
-  font-weight: 600;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  background-color: #272727;
   padding: 0 5px;
+
+  color: #FF0140;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 /* --------------------------------------------------------- */
@@ -961,10 +963,27 @@ a {
 
 
 
+
+
 /* ### ## ##### ## OWN STYLES ### ##### #### */
 
 .accordion__body_description-img {
   width: 100%;
+}
+
+.c-box-gray {
+  border-radius: 25px;
+  background: #F4F0F0;
+  mix-blend-mode: darken;
+  padding: 20px 20px;
+}
+.timer-p {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
 }
 
 @media (max-width: 480px) {
