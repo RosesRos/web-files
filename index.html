@@ -114,11 +114,11 @@
 
         <div class="header__chooseItem header__size">
           <div class="header__chooseItem_btns">
-            <button class="header__chooseItem_btns_men">
-              <span>MEN</span>
+            <button class="header__chooseItem_btns_men" id="btn1">
+              MEN
             </button>
-            <button class="header__chooseItem_btns_women">
-              <span>WOMEN</span>
+            <button class="header__chooseItem_btns_women" id="btn2">
+              WOMEN
             </button>
           </div>
           <div class="header__chooseItem_items header__size_items">
@@ -411,6 +411,13 @@
         </a>
       </div>
     </div>
+
+    <div>
+      <div>
+        
+      </div>
+    </div>
+
     <script src="./js/jquery.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script>
@@ -427,5 +434,17 @@
       });
     </script>
     <script src="./js/index.js"></script>
+
+    <script>
+      const btn1 = document.getElementById("btn1");
+      const btn2 = document.getElementById("btn2");
+
+      btn1.addEventListener("click", function() {
+        btn1.classList.add("activeBtn")
+      })
+      btn2.addEventListener("click", function() {
+        btn2.classList.add("activeBtn")
+      })
+    </script>
   </body>
 </html>

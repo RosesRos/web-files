@@ -1,26 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-  // function mainSlider(e) {
-  //   const arrowLeft = document.querySelector('.custom-slide__arrow--prev');
-  //   const arrowRight = document.querySelector('.custom-slide__arrow--next');
-  //   var splide = new Splide('.main-slider', {
-  //     type: 'loop',
-  //     perPage: 1,
-  //     pagination: false,
-  //     autoplay: true,
-  //     arrows: false,
-  //   });
-  //   const goToSlide = target => e => {
-  //     splide.go(target);
-  //   }
-  //   const goBackSlide = target => e => {
-  //     splide.go(target);
-  //   }
-  //   arrowRight.addEventListener('click', goToSlide('>'));
-  //   arrowLeft.addEventListener('click', goBackSlide('<'));
-  //   splide.mount();
-  // }
-  // mainSlider();
 
   function timer1() {
     var timerElement = document.querySelector(".timer");
@@ -69,21 +48,6 @@ document.addEventListener('DOMContentLoaded', function () {
   };
   accordion();
 
-  function openFooter() {
-    const text = document.querySelector('.footer__info_text');
-    const btn = document.querySelector('.footer__info_btn');
 
-    btn.addEventListener('click', function () {
-      if (text.classList.contains('show')) {
-        btn.innerHTML = "Read more";
-        text.classList.remove('show');
-      } else {
-        btn.innerHTML = "Read less";
-        text.classList.add('show');
-      }
-    });
-
-  };
-  openFooter();
 
 });
