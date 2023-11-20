@@ -1644,6 +1644,9 @@ body {
 	text-decoration-line: underline;
 	margin-left: 40%;
 }
+#openModal:hover {
+	cursor: pointer;
+}
 
 @media (max-width: 480px) {
 	.c-header-title {
