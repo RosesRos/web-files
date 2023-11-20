@@ -1589,6 +1589,12 @@ body {
     line-height: normal;
 }
 
+.header__size_items .activeSize {
+	border: 1px solid #000;
+    background: #000;
+	color: #fff;
+}
+
 /* The Modal (background) */
 .c-modal {
 	display: none; /* Hidden by default */
