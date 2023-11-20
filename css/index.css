@@ -1686,6 +1686,12 @@ body {
 	}
 }
 
+@media (max-width: 380px) {
+	.header__size_items {
+		justify-content: space-between;
+	}
+}
+
 @media (max-width: 330px) {
 	.UI-timer__title {
 		font-size: 10px;
