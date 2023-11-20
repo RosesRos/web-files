@@ -123,7 +123,7 @@
             </button>
           </div>
           <div class="header__chooseItem_items header__size_items">
-            <div class="size" onclick="activeSize(this)">5</div>
+            <div class="size" id="defaultBtn-1" onclick="activeSize(this)">5</div>
             <div class="size" onclick="activeSize(this)">5.5</div>
             <div class="size" onclick="activeSize(this)">6</div>
             <div class="size" onclick="activeSize(this)">6.5</div>
@@ -135,7 +135,7 @@
             <div class="size" onclick="activeSize(this)">8.5</div>
             <div class="size" onclick="activeSize(this)">10</div>
             <div class="size" onclick="activeSize(this)">10.5</div>
-            <div class="size activeSize" onclick="activeSize(this)">11</div>
+            <div class="size" id="defaultBtn" onclick="activeSize(this)">11</div>
             <div class="size" onclick="activeSize(this)">11.5</div>
             <div class="size" onclick="activeSize(this)">12</div>
             <div class="size" onclick="activeSize(this)">12.5</div>
@@ -333,7 +333,7 @@
               </div>
               <p class="reviews__item_desc">
                 <b>SOO BEAUTIFUL</b>
-                <br> Amazing shoes, super comfy and I just love this golden colour that makes these shoes stand out
+                <br> Amazing shoes, super comfy and I just love this colour that makes these shoes stand out
               </p>
             </div>
             <div class="reviews__item">
@@ -466,12 +466,23 @@
       const btn1 = document.getElementById("btn1");
       const btn2 = document.getElementById("btn2");
 
+      const defaultBtn = document.getElementById("defaultBtn");
+      const defaultBtn1 = document.getElementById("defaultBtn-1");
+
       btn1.addEventListener("click", function() {
-        btn1.classList.add("activeBtn")
+        btn1.classList.add("activeBtn");
+        defaultBtn.classList.add("activeSize");
+        defaultBtn1.classList.remove("activeSize");
       })
       btn2.addEventListener("click", function() {
-        btn2.classList.add("activeBtn")
+        btn2.classList.add("activeBtn");
+        defaultBtn.classList.remove("activeSize");
+        defaultBtn1.classList.add("activeSize");
       })
+
+      document.addEventListener("DOMContentLoaded", function() {
+        defaultBtn.classList.add("activeSize");
+      });
 
       function activeSize(btn) {
         btn.classList.toggle("activeSize");
