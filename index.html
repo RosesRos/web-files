@@ -123,24 +123,24 @@
             </button>
           </div>
           <div class="header__chooseItem_items header__size_items">
-            <div class="size" id="defaultBtn-1" onclick="activeSize(this)">5</div>
-            <div class="size" onclick="activeSize(this)">5.5</div>
-            <div class="size" onclick="activeSize(this)">6</div>
-            <div class="size" onclick="activeSize(this)">6.5</div>
-            <div class="size" onclick="activeSize(this)">7</div>
-            <div class="size" onclick="activeSize(this)">7.5</div>
-            <div class="size" onclick="activeSize(this)">8</div>
-            <div class="size" onclick="activeSize(this)">8.5</div>
-            <div class="size" onclick="activeSize(this)">9</div>
-            <div class="size" onclick="activeSize(this)">8.5</div>
-            <div class="size" onclick="activeSize(this)">10</div>
-            <div class="size" onclick="activeSize(this)">10.5</div>
-            <div class="size" id="defaultBtn" onclick="activeSize(this)">11</div>
-            <div class="size" onclick="activeSize(this)">11.5</div>
-            <div class="size" onclick="activeSize(this)">12</div>
-            <div class="size" onclick="activeSize(this)">12.5</div>
-            <div class="size" onclick="activeSize(this)">14</div>
-            <div class="size" onclick="activeSize(this)">15</div>
+            <div class="size" id="defaultBtn-1" >5</div>
+            <div class="size" >5.5</div>
+            <div class="size" >6</div>
+            <div class="size" >6.5</div>
+            <div class="size" >7</div>
+            <div class="size" >7.5</div>
+            <div class="size" >8</div>
+            <div class="size" >8.5</div>
+            <div class="size" >9</div>
+            <div class="size" >8.5</div>
+            <div class="size" >10</div>
+            <div class="size" >10.5</div>
+            <div class="size" id="defaultBtn" >11</div>
+            <div class="size" >11.5</div>
+            <div class="size" >12</div>
+            <div class="size" >12.5</div>
+            <div class="size" >14</div>
+            <div class="size" >15</div>
           </div>
         </div>
         <div class="header__price">
@@ -472,9 +472,22 @@
         defaultBtn.classList.add("activeSize");
       });
 
-      function activeSize(btn) {
-        btn.classList.toggle("activeSize");
-      }
+      // function activeSize(btn) {
+      //   btn.classList.toggle("activeSize");
+      //   console.log(btn.index);
+      // }
+
+      const sizes = document.querySelectorAll('div[class="size"]');
+      sizes.forEach((size, index) => {
+        size.addEventListener("click", () => {
+          if (index) {
+            size.classList.add("activeSize");
+            console.log(index);
+          } else {
+            size.classList.remove("activeSize");
+          }
+        });
+      });
     </script>
   </body>
 </html>

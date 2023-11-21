@@ -99,8 +99,6 @@ body {
 	padding: 8px !important;
 	min-height: 64px;
 	z-index: 2;
-	/* margin: 0 auto !important; */
-	border-radius: 15px !important;
 	max-width: 560px;
 	width: 100% !important;
 }
@@ -299,9 +297,10 @@ body {
 }
 
 .UI-btn {
+	max-width: 50%;
 	width: 100%;
-	border-radius: 16px;
-	/* height: 50px; */
+	height: 50px;
+	margin: 0 auto;
 	text-align: center;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -318,15 +317,17 @@ body {
 	transition: all 0.3s ease;
 	cursor: pointer;
 
-	color: #575551;
 	font-family: Roboto;
-	font-size: 32px;
-	font-style: normal;
 	font-weight: 700;
-	line-height: normal;
+	font-size: 14px;
+    letter-spacing: .8px;
+    line-height: 20px;
 
-	border-radius: 12px;
-	background: linear-gradient(90deg, #61F089 0%, #61EDCB 100%);
+
+	background-color: #018849;
+    color: #fff;
+    border: none;
+	padding: 4px 0;
 	
 }
 .UI-btn--bordered {
@@ -340,9 +341,9 @@ body {
 	font-size: 16px;
 }
 .UI-btn:hover {
-	background-color: #000;
+	background-color: #15643e;
 	color: #fff;
-	border-color: #000;
+	
 }
 
 .UI-timer {
@@ -1668,6 +1669,9 @@ body {
 	}
 	#openModal {
 		margin-left: 20%;
+	}
+	.UI-btn {
+		max-width: 100%;
 	}
 }
 

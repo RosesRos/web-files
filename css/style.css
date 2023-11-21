@@ -532,7 +532,7 @@ a {
 }
 
 .accordion__item {
-  background: #F4F0F0;
+  background: rgb(244 240 240 / 40%);
   padding: 11px 20px 7px 32px;
   margin-bottom: 25px;
   border-radius: 16px;
@@ -853,10 +853,7 @@ a {
 
 
 .fixed {
-  color: #575551;
   margin-top: 30px;
-  border-radius: 12px;
-  background: linear-gradient(90deg, #61F089 0%, #61EDCB 100%);
   text-align: center;
   padding: 15px 30px;
   display: inline-block;
@@ -873,6 +870,10 @@ a {
   z-index: 10000;
   left: 50%;
   transform: translateX(-50%);
+
+  background-color: #018849;
+  color: #fff;
+  border: none;
 }
 
 .fixed {
@@ -887,9 +888,10 @@ a {
 
 .fixed-btn__text {
   text-transform: uppercase;
-  /* font-size: 25px; */
   font-family: Roboto;
-  font-size: 32px;
+	font-size: 20px;
+  letter-spacing: .8px;
+  line-height: 20px;
   font-weight: 700;
 }
 
@@ -973,7 +975,7 @@ a {
 
 .c-box-gray {
   border-radius: 25px;
-  background: #F4F0F0;
+  background: rgb(244 240 240 / 40%);
   mix-blend-mode: darken;
   padding: 20px 20px;
 }
