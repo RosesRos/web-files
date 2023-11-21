@@ -478,14 +478,12 @@
       // }
 
       const sizes = document.querySelectorAll('div[class="size"]');
-      sizes.forEach((size, index) => {
+      sizes.forEach((size) => {
         size.addEventListener("click", () => {
-          if (index) {
-            size.classList.add("activeSize");
-            console.log(index);
-          } else {
-            size.classList.remove("activeSize");
-          }
+          sizes.forEach((btn) => {
+            btn.classList.remove("activeSize");
+          });
+          size.classList.add('activeSize');
         });
       });
     </script>
