@@ -461,22 +461,24 @@
       btn1.addEventListener("click", function() {
         btn1.classList.add("activeBtn");
         btn2.classList.remove("activeBtn");
-        defaultBtn.classList.add("activeSize");
-        defaultBtn1.classList.remove("activeSize");
 
         sizes.forEach((btn) => {
           btn.classList.remove("activeSize");
         });
+        
+        defaultBtn.classList.add("activeSize");
+        defaultBtn1.classList.remove("activeSize");
 
       })
       btn2.addEventListener("click", function() {
         btn2.classList.add("activeBtn");
-        defaultBtn.classList.remove("activeSize");
-        defaultBtn1.classList.add("activeSize");
 
         sizes.forEach((btn) => {
           btn.classList.remove("activeSize");
         });
+
+        defaultBtn.classList.remove("activeSize");
+        defaultBtn1.classList.add("activeSize");
 
       })
 
