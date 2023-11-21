@@ -115,7 +115,7 @@
 
         <div class="header__chooseItem header__size">
           <div class="header__chooseItem_btns">
-            <button class="header__chooseItem_btns_men" id="btn1">
+            <button class="header__chooseItem_btns_women" id="btn1">
               HOMBRES
             </button>
             <button class="header__chooseItem_btns_women" id="btn2">
@@ -358,7 +358,7 @@
                 <img src="./images/stars.svg" alt="">
               </div>
               <p class="reviews__item_desc">
-                <b>¡PRODUCTO MUY BUENO Y BARATO, MUY BUENA CALIDAD!¡</b>
+                <b>¡PRODUCTO MUY BUENO Y BARATO, MUY BUENA CALIDAD!</b>
                 <br> ¡Estoy muy satisfecho con mi pedido, me encantaron los zapatos!
               </p>
             </div>
@@ -471,6 +471,7 @@
 
       })
       btn2.addEventListener("click", function() {
+        btn1.classList.remove("activeBtn");
         btn2.classList.add("activeBtn");
 
         sizes.forEach((btn) => {
@@ -484,6 +485,7 @@
 
       document.addEventListener("DOMContentLoaded", function() {
         defaultBtn.classList.add("activeSize");
+        btn1.classList.add("activeBtn");
       });
 
       sizes.forEach((size) => {

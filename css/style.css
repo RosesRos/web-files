@@ -596,7 +596,7 @@ a {
   content: '';
   right: 0;
   top: 50%;
-  transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) rotate(0deg);
   background-image: url(../images/arrow--rounded--bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -606,7 +606,7 @@ a {
 }
 
 .accordion__header.active::after {
-  transform: translateY(-50%) rotate(0deg);
+  transform: translateY(-50%) rotate(180deg);
 }
 
 .accordion__body {
