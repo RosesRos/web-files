@@ -16,11 +16,10 @@ html {
 }
 
 body {
-  background-color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   line-height: normal;
-  color: #272727;
+  /* color: #272727; */
 }
 
 .wrapper {
@@ -101,7 +100,7 @@ a {
 .header__inner {
   padding: 10px 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -465,12 +464,10 @@ a {
 
 .stringWithTime {
   position: relative;
-  /* background-color: #272727; */
+  background-color: #272727;
   padding: 14px 0;
+  margin: 15px 0;
   margin-bottom: 22px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 
@@ -505,12 +502,16 @@ a {
 .timer2 {
   padding: 0 5px;
 
-  color: #FF0140;
-  font-family: Inter;
+  color: #ffffff;
   font-size: 24px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: #272727;
+  padding: 0 5px;
+  
 }
 
 /* --------------------------------------------------------- */
@@ -532,7 +533,7 @@ a {
 }
 
 .accordion__item {
-  background: rgb(244 240 240 / 40%);
+  background: #232120;
   padding: 11px 20px 7px 32px;
   margin-bottom: 25px;
   border-radius: 16px;
@@ -544,7 +545,7 @@ a {
 
 .accordion__header {
   cursor: pointer;
-  color: #272727;
+  color: #FF8A1E;
   font-family: Montserrat;
   font-size: 20px;
   font-weight: 700;
@@ -568,6 +569,7 @@ a {
   transform: translateY(-50%);
   width: 24px;
   height: 24px;
+  background-repeat: no-repeat;
 }
 
 #accordion__header-1::before {
@@ -596,7 +598,7 @@ a {
   content: '';
   right: 0;
   top: 50%;
-  transform: translateY(-50%) rotate(0deg);
+  transform: translateY(-50%) rotate(180deg);
   background-image: url(../images/arrow--rounded--bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -606,7 +608,7 @@ a {
 }
 
 .accordion__header.active::after {
-  transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) rotate(0deg);
 }
 
 .accordion__body {
@@ -615,9 +617,14 @@ a {
   max-height: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out 0s;
-  color: #575551;
   font-size: 14px;
   font-weight: 400;
+
+  color: #FFF;
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: normal;
+
 }
 
 .accordion__body_description-img {
@@ -637,6 +644,13 @@ a {
   margin-top: 15px;
   font-size: 14px;
   font-weight: 400;
+
+  color: #FFF;
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: normal;
+
+
 }
 
 @media (max-width:521px) {
@@ -974,9 +988,10 @@ a {
 }
 
 .c-box-gray {
-  border-radius: 25px;
-  background: rgb(244 240 240 / 40%);
-  mix-blend-mode: darken;
+
+  border-radius: 20px;
+  background: #232120;
+
   padding: 20px 20px;
 }
 .timer-p {
