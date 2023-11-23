@@ -335,9 +335,18 @@ a {
 }
 
 .price__new {
-  color: #000;
+  color: #FFF;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Inter;
   font-size: 24px;
-  font-weight: 600;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 5px 10px;
+  margin-left: 19px;
+  background: url(../images/flag.svg) no-repeat 100%/100%;
+  padding-right: 2rem;
 }
 
 .price__sale {
