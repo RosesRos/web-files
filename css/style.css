@@ -941,18 +941,7 @@ a {
   line-height: normal;
 }
 
-/* @media (max-width: 327px) {
-  .btnBlcok__flex {
-    width: 90%;
-  }
-} */
 
-
-/* @media (max-width: 327px) {
-  .btnBlcok__flex {
-    width: 90%;
-  }
-} */
 
 .fixedBtn-price.price__new {
   font-size: 26px;
@@ -1042,6 +1031,11 @@ a {
 
 .footer__logo-box img {
   width: 100%;
+}
+
+.btnBlcok__flex {
+  display: flex;
+  align-items: center;
 }
 @media (max-width: 480px) {
   .container {
