@@ -130,7 +130,7 @@ a {
 
 .top-video {
   overflow: hidden;
-  /* border-radius: 16px; */
+  border-radius: 19px;
 }
 
 .top-video video {
