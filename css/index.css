@@ -1366,64 +1366,10 @@ body {
 	color: #fff;
 }
 
-/* The Modal (background) */
-.c-modal {
-	display: none; /* Hidden by default */
-	position: fixed; /* Stay in place */
-	z-index: 20; /* Sit on top */
-	padding-top: 20px; /* Location of the box */
-	left: 0;
-	top: 0;
-	width: 100%; /* Full width */
-	height: 100%; /* Full height */
-	overflow: auto; /* Enable scroll if needed */
-	background-color: rgb(0,0,0); /* Fallback color */
-	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
   
-  /* Modal Content */
-  .c-modal-content {
-	background-color: #fefefe;
-	margin: auto;
-	padding: 20px;
-	border: 1px solid #888;
-	max-width: 560px;
-	width: 100%;
-  }
   
-  /* The Close Button */
-  .c-modal-close {
-	color: #aaaaaa;
-	float: right;
-	font-size: 28px;
-	font-weight: bold;
-  }
   
-  .c-modal-close:hover,
-  .c-modal-close:focus {
-	color: #000;
-	text-decoration: none;
-	cursor: pointer;
-  }
 
-  .c-modal-content-img {
-	width: 100%;
-  }
-
-#openModal {
-	color: #000;
-	text-align: center;
-	font-family: Montserrat;
-	font-size: 10px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: normal;
-	text-decoration-line: underline;
-	margin-left: 40%;
-}
-#openModal:hover {
-	cursor: pointer;
-}
 
 .c-top-box {
 	background-image: url("../images/top.gif");
@@ -1885,9 +1831,7 @@ body {
 		font-size: 14px;
 	}
 	
-	.c-modal-content {
-		width: 100%;
-	}
+	
 	#openModal {
 		margin-left: 20%;
 	}
