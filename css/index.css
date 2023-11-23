@@ -1784,6 +1784,9 @@ body {
 	[src="./images/start-4.svg"] {
 		right: 10%;
 	}
+	.c-header__price_old {
+		margin-right: 0;
+	}
 }
 
 @media (max-width: 390px) {
@@ -1812,6 +1815,10 @@ body {
 	[src="./images/start-4.svg"] {
 		right: 1%;
 	}
+	.header__salePercent {
+		font-size: 15px;
+		margin-left: 10px;
+	}
 }
 
 @media (max-width: 380px) {
@@ -1826,5 +1833,9 @@ body {
 	}
 	.header__salePercent {
 		font-size: 14px;
+	}
+	.c-header__price {
+		flex-direction: column;
+		margin-bottom: 0;
 	}
 }

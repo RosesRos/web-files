@@ -949,7 +949,7 @@ a {
 
 .footer {
   margin-top: 25px;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .footer__info_btnBlock {
@@ -1041,6 +1041,9 @@ a {
   .container {
     max-width: 100%;
     padding: 0;
+  }
+  .fixed {
+    gap: 10px;
   }
 }
 @media (max-width: 330px) {
