@@ -788,7 +788,7 @@ a {
 
 .footer {
   border-radius: 16px;
-  background: #F4F0F0;
+  background: #232020;
   padding: 20px 30px;
 }
 
@@ -803,21 +803,27 @@ a {
 }
 
 .footer__nav_nav a {
+  color: #FF8A1E;
+  font-family: Montserrat;
   font-size: 10px;
+  font-style: normal;
   font-weight: 400;
+  line-height: normal;
 }
 
 .footer__form_ttl {
-  color: #575551;
+  color: #FFF;
+  font-family: Montserrat;
   font-size: 20px;
+  font-style: normal;
   font-weight: 700;
+  line-height: normal;
+
   text-transform: uppercase;
   margin-bottom: 24px;
 }
 
 .footer__form_input {
-  border-radius: 16px;
-  background: #FFF;
   width: 100%;
   outline: none;
   border: none;
@@ -825,19 +831,28 @@ a {
   font-weight: 400;
   margin-bottom: 24px;
   padding: 15px;
+
+  border-radius: 16px;
+  background: #FF8A1E;
+}
+.footer__form_input::placeholder {
+  color: #fff;
 }
 
 .footer__form_btn {
   width: 100%;
-  color: #575551;
+  color: #FFF;
   font-family: Roboto;
   font-size: 24px;
+  font-style: normal;
   font-weight: 400;
+  line-height: normal;
+
+
   margin-bottom: 21px;
   padding: 12px;
-  background-color: transparent;
   border-radius: 12px;
-  border: 1px solid #575551;
+  border: 1px solid #FF8A1E;
 }
 
 .footer__form_btn:hover {
@@ -855,7 +870,12 @@ a {
 }
 
 .footer__info_nav span {
+  color: #FF8A1E;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 14px;
   font-style: normal;
+  font-weight: 400;
   line-height: normal;
 }
 
@@ -885,9 +905,10 @@ a {
   left: 50%;
   transform: translateX(-50%);
 
-  background-color: #018849;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #61F089 0%, #61EDCB 100%);
+
   color: #fff;
-  border: none;
 }
 
 .fixed {
@@ -902,11 +923,13 @@ a {
 
 .fixed-btn__text {
   text-transform: uppercase;
+
+  color: #575551;
   font-family: Roboto;
-	font-size: 20px;
-  letter-spacing: .8px;
-  line-height: 20px;
+  font-size: 32px;
+  font-style: normal;
   font-weight: 700;
+  line-height: normal;
 }
 
 /* @media (max-width: 327px) {
@@ -1003,6 +1026,14 @@ a {
   line-height: normal;
 }
 
+.footer__logo-box {
+  max-width: 15%;
+  width: 100%;
+}
+
+.footer__logo-box img {
+  width: 100%;
+}
 @media (max-width: 480px) {
   .container {
     max-width: 100%;
