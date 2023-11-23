@@ -1839,6 +1839,9 @@ body {
 		font-size: 14px;
 		margin-left: 10px;
 	}
+	.header__price_old {
+		margin-right: 5px;
+	}
 }
 
 @media (max-width: 330px) {
