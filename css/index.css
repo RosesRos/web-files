@@ -1529,7 +1529,7 @@ body {
 
 .c-display-flex-space {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-between;
     align-items: center;
 }
 .reviews__item_title_span {
@@ -1540,6 +1540,10 @@ body {
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
+
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .c-comment-span {
@@ -1719,9 +1723,9 @@ body {
 }
 
 
-.c-marg-left-30 {
+/* .c-marg-left-30 {
 	margin-left: 40%;
-}
+} */
 
 
 @media (max-width: 480px) {
@@ -1742,6 +1746,9 @@ body {
 	.UI-btn {
 		max-width: 100%;
 	}
+	.c-box-img-pay > img {
+		width: 12%;
+	}
 }
 
 @media (max-width: 390px) {
@@ -1757,6 +1764,13 @@ body {
 	#openModal {
 		margin-left: 1%;
 	}
+	.reviews__item_title_span {
+		flex-direction: column-reverse;
+    	align-items: flex-start;
+	}
+	.header__slider_image {
+		width: 100%;
+	}
 }
 
 @media (max-width: 380px) {
@@ -1768,5 +1782,8 @@ body {
 @media (max-width: 330px) {
 	.UI-timer__title {
 		font-size: 10px;
+	}
+	.header__salePercent {
+		font-size: 14px;
 	}
 }
