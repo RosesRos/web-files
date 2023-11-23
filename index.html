@@ -344,41 +344,8 @@
     <script src="./js/index.js"></script>
 
     <script>
-      const btn1 = document.getElementById("btn1");
-      const btn2 = document.getElementById("btn2");
-
-      const defaultBtn = document.getElementById("defaultBtn");
-      const defaultBtn1 = document.getElementById("defaultBtn-1");
 
       const sizes = document.querySelectorAll('div[class="size"]');
-
-      btn1.addEventListener("click", function() {
-        btn1.classList.add("activeBtn");
-        btn2.classList.remove("activeBtn");
-
-        sizes.forEach((btn) => {
-          btn.classList.remove("activeSize");
-        });
-
-        defaultBtn.classList.add("activeSize");
-        defaultBtn1.classList.remove("activeSize");
-      })
-      btn2.addEventListener("click", function() {
-        btn1.classList.remove("activeBtn");
-        btn2.classList.add("activeBtn");
-
-        sizes.forEach((btn) => {
-          btn.classList.remove("activeSize");
-        });
-
-        defaultBtn.classList.remove("activeSize");
-        defaultBtn1.classList.add("activeSize");
-      })
-
-      document.addEventListener("DOMContentLoaded", function() {
-        defaultBtn.classList.add("activeSize");
-        btn1.classList.add("activeBtn");
-      });
 
       sizes.forEach((size) => {
         size.addEventListener("click", () => {
