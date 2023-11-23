@@ -1756,6 +1756,10 @@ body {
     top: 10%;
 }
 
+.c-header__price {
+	margin-bottom: 0;
+}
+
 
 @media (max-width: 480px) {
 	.c-header-title {
