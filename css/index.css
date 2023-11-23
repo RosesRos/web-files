@@ -1827,6 +1827,13 @@ body {
 	}
 }
 
+@media (max-width: 373px) {
+	.header__salePercent {
+		font-size: 14px;
+		margin-left: 10px;
+	}
+}
+
 @media (max-width: 330px) {
 	.UI-timer__title {
 		font-size: 10px;
