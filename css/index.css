@@ -2022,6 +2022,18 @@ body {
 	}
 }
 
+@media (max-width: 370px) {
+	.c-box-gif-1-flex-items {
+		padding: 30px 10px;
+	}
+	.c-box-gif-1-flex {
+		left: 1rem;
+	}
+	.timer-p-span {
+		display: none;
+	}
+}
+
 @media (max-width: 330px) {
 	.UI-timer__title {
 		font-size: 10px;
