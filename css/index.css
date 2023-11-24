@@ -1474,18 +1474,18 @@ body {
 }
 .c-top-box-green {
 	border-radius: 25px;
-	background: linear-gradient(90deg, #82E28C 18.71%, #8DF282 99.99%, #65AF4B 100%);
+	background: linear-gradient(90deg, #a1ffe1 18.71%, #e0fcdd 99.99%, #93e377 100%);
 	width: 55%;
 }
 
 .c-top-box-pink {
 	border-radius: 25px;
-	background: linear-gradient(90deg, #CFBABA 12.94%, #FFF5F5 101.76%);
+	background: linear-gradient(90deg, #CFBABA 12.94%, #f5f3f3 101.76%);
 	width: 60%;
 }
 .c-top-box-red {
 	border-radius: 25px;
-	background: linear-gradient(90deg, #F13535 8.12%, #33B6FF 100.46%);
+	background: linear-gradient(90deg, #F13535 8.12%, #fcbca1 100.46%);
 	width: 65%;
 }
 
