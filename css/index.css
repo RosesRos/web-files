@@ -1447,6 +1447,7 @@ body {
     gap: 1rem;
 	padding: 0.5rem 0;
 	margin: 8px 0;
+	margin-left: -5%;
 }
 .c-top-box-images-item {
 	width: 56px;
@@ -1470,26 +1471,22 @@ body {
 	border-radius: 25px;
 	background: linear-gradient(90deg, #80B6E8 22.73%, #84C4FE 99.93%);
 	width: 50%;
-    margin-left: -5%;
 }
 .c-top-box-green {
 	border-radius: 25px;
 	background: linear-gradient(90deg, #82E28C 18.71%, #8DF282 99.99%, #65AF4B 100%);
 	width: 55%;
-    margin-left: -5%;
 }
 
 .c-top-box-pink {
 	border-radius: 25px;
 	background: linear-gradient(90deg, #CFBABA 12.94%, #FFF5F5 101.76%);
 	width: 60%;
-    margin-left: -5%;
 }
 .c-top-box-red {
 	border-radius: 25px;
 	background: linear-gradient(90deg, #F13535 8.12%, #33B6FF 100.46%);
 	width: 65%;
-    margin-left: -5%;
 }
 
 .c-box-sizes-h2 {
@@ -1826,33 +1823,162 @@ body {
 }
 
 
+@media (max-width: 650px) {
+	.c-top-box-images {
+		margin-left: -7%;
+	}
+	.c-box-gif-1-flex {
+		left: 1rem;
+	}
+	.c-box-gif-1-flex-items {
+		padding: 40px 30px;
+	}
+	.header__slider {
+		height: 85vh;
+	}
+}
+
 
 @media (max-width: 480px) {
-	.c-header-title {
-		font-size: 14px;
-	}
 	
-	
-	#openModal {
-		margin-left: 20%;
-	}
 	.UI-btn {
 		max-width: 100%;
+	}
+
+	.c-top-box {
+		background-position: center;
+	}
+	.c-top-box-item {
+		margin-left: 0;
+	}
+	.c-top-box-price {
+		margin-left: 0;
+	}
+	.c-top-box-images {
+		margin-left: -10%;
+	}
+	.c-top-box-blue {
+		width: 65%;
+	}
+	.c-top-box-green {
+		width: 70%;
+	}
+	.c-top-box-pink {
+		width: 80%;
+	}
+	.c-top-box-red {
+		width: 85%;
+	}
+	.timer-p {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	.c-box-img-pay > img {
+		width: 11%;
+	}
+	.header__chooseItem_items {
+		flex-wrap: nowrap;
+		gap: 0.5rem;
+	}
+	.header__size_items .size {
+		font-size: 18px;
+	}
+	.UI-btn-ico {
+		padding: 1.2rem 1.5rem;
+	}
+	.c-box-gif-1-flex {
+		bottom: -10%;
+	}
+	.c-box-gif-1-flex-items {
+		padding: 40px 20px;
+	}
+	.c-box-gif-1-flex-items-p {
+		font-size: 12px;
+	}
+	.c-box-gif-1-flex-items-span {
+		font-size: 25px;
+	}
+	.c-box-reviews-1-img {
+		max-width: 100%;
+	}
+	.c-box-reviews-3-items {
+		margin-right: 4rem;
+	}
+	.header__slider {
+		height: 70vh;
+	}
+	.swiper-button-next::after, .swiper-button-prev::after {
+		width: 50px;
+    	height: 40px;
 	}
 }
 
 @media (max-width: 390px) {
-	.nav__logo {
-		width: 40%;
-	}
+	
 	.UI-timer__title {
 		font-size: 14px;
 	}
 	.c-display-flex-items {
 		max-width: 60%;
 	}
-	#openModal {
-		margin-left: 1%;
+
+	.c-top-box-images-item {
+		width: 40px;
+		height: 40px;
+	}
+	.c-top-box-images-p {
+		font-size: 16px;
+	}
+
+	.header__size_items .size {
+		font-size: 16px;
+		width: 60px;
+		height: 50px;
+	}
+	.c-box-gif-1 {
+		margin-bottom: 6rem;
+	}
+	.c-box-gif-1-flex {
+		left: 0.5rem;
+	}
+	.c-box-gif-1-flex-items {
+		padding: 30px 15px;
+	}
+
+	.c-box-reviews-1-item {
+		max-width: 60%;
+		width: 100%;
+	}
+	.c-box-reviews-3-item-h2 {
+		font-size: 35px;
+	}
+	.c-box-reviews-3-item-p {
+		font-size: 20px;
+	}
+
+	.header__slider {
+		height: 60vh;
+	}
+	.swiper-button-next::after, .swiper-button-prev::after {
+		width: 50px;
+		height: 35px;
+	}
+
+	.c-box-gif-1 {
+		height: 450px;
+	}
+	.c-box-reviews-3 {
+		height: 300px;
+	}
+
+	.UI-btn-ico {
+		padding: 1.2rem 1rem;
+	}
+
+	.reviews__write {
+		font-size: 25px;
 	}
 }
 
@@ -1866,4 +1992,53 @@ body {
 	.UI-timer__title {
 		font-size: 10px;
 	}
+
+	.wrapper {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.c-top-box-blue {
+		width: 70%;
+	}
+	.c-top-box-green {
+		width: 75%;
+	}
+	.c-top-box-pink {
+		width: 90%;
+	}
+	.c-top-box-red {
+		width: 92%;
+	}
+
+	.timer-p-span {
+		display: none;
+	}
+
+	.c-box-img-pay {
+		gap: 1rem;
+	}
+	.header__size_items .size {
+		font-size: 14px;
+	}
+	.UI-btn-ico {
+		padding: 1.2rem 0.5rem;
+	}
+
+	.c-box-gif-1-flex-items {
+		padding: 20px 10px;
+	}
+	.c-box-gif-1-flex-items-span { 
+		font-size: 20px;
+	}
+
+	.c-box-reviews-3-item-h2 {
+		font-size: 30px;
+	}
+
+	.swiper-button-next::after, .swiper-button-prev::after {
+		width: 50px;
+    	height: 30px;
+	}
+
 }

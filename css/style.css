@@ -841,3 +841,9 @@ a {
     padding: 0;
   }
 }
+
+@media (max-width: 330px) {
+  .stringWithTime {
+		padding: 14px 10px;
+	}
+}
