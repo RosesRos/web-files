@@ -1553,7 +1553,7 @@ body {
 	gap: 0.5rem;
 	position: absolute;
     bottom: -15%;
-    left: 0.5rem;
+    left: 0.7rem;
 }
 .c-box-gif-1-flex-items {
 	text-align: center;
@@ -1583,6 +1583,7 @@ body {
 }
 .c-white {
 	background: linear-gradient(180deg, #FFF 0%, #DDD 100%);
+	padding: 60px 30px;
 }
 .c-red {
 	background: linear-gradient(180deg, #DD6060 0%, #F29F9F 100%);
@@ -1657,7 +1658,7 @@ body {
 	height: 2px;
 	background: #DD6060;
 	position: absolute;
-	bottom: 15%;
+	bottom: 12%;
 	right: 2%;
 }
 
@@ -1831,9 +1832,7 @@ body {
 	.c-top-box-images {
 		margin-left: -7%;
 	}
-	.c-box-gif-1-flex {
-		left: 1rem;
-	}
+	
 	.c-box-gif-1-flex-items {
 		padding: 40px 30px;
 	}
@@ -1958,7 +1957,7 @@ body {
 		margin-bottom: 6rem;
 	}
 	.c-box-gif-1-flex {
-		left: 0.5rem;
+		left: 0.2rem;
 	}
 	.c-box-gif-1-flex-items {
 		padding: 30px 15px;
@@ -2005,7 +2004,7 @@ body {
 		top: 43%;
 	}
 	.c-box-reviews-items-2 {
-		bottom: 12%;
+		bottom: 10%;
 	}
 	.c-box-reviews-items-h2 {
 		font-size: 25px;
@@ -2101,4 +2100,7 @@ body {
 		font-size: 20px;
 	}
 
+	.c-box-gif-1-flex {
+		left: 0.3rem;
+	}
 }
