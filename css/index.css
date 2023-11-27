@@ -326,6 +326,8 @@ body {
 	line-height: 97.52%; /* 31.206px */
 	text-transform: capitalize;
 
+	padding-left: 3.5rem;
+
 
 	border-radius: 30px;
 	background: #00CE3A;
@@ -1870,16 +1872,16 @@ body {
 		margin-left: -10%;
 	}
 	.c-top-box-blue {
-		width: 65%;
-	}
-	.c-top-box-green {
 		width: 70%;
 	}
+	.c-top-box-green {
+		width: 75%;
+	}
 	.c-top-box-pink {
-		width: 80%;
+		width: 90%;
 	}
 	.c-top-box-red {
-		width: 85%;
+		width: 95%;
 	}
 	.timer-p {
 		display: flex;
