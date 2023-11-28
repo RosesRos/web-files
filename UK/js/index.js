@@ -2,32 +2,36 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   function timer1() {
-    const timerEls = document.querySelectorAll('.stringWithTime');
-    const timerTextEls = [];
-    timerEls.forEach(element => {
-      timerTextEls.push(element.querySelector('span[class="timer"]'));
-    });
-    const hours = 0;
-    const minutes = 46;
-    const seconds = 50;
-    let countdownDate = new Date();
-    countdownDate.setHours(countdownDate.getHours() + hours);
-    countdownDate.setMinutes(countdownDate.getMinutes() + minutes);
-    countdownDate.setSeconds(countdownDate.getSeconds() + seconds);
-    timerTextEls.forEach(element => {
-      const x = setInterval(function() {
-        const now = new Date().getTime();
-        const distance = countdownDate - now;
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        element.textContent = `${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
-        if (distance < 0) {
-          clearInterval(x);
-          timerTextEl.textContent = '00:00:00';
+    var timerElement = document.querySelector(".timer");
+    var timer = timerElement.textContent.split(":");
+    var hours = parseInt(timer[0], 10);
+    var minutes = parseInt(timer[1], 10);
+    var seconds = parseInt(timer[2], 10);
+
+    var interval = setInterval(function () {
+      if (seconds > 0) {
+        seconds--;
+      } else {
+        if (minutes > 0) {
+          minutes--;
+          seconds = 59;
+        } else {
+          if (hours > 0) {
+            hours--;
+            minutes = 59;
+            seconds = 59;
+          } else {
+            clearInterval(interval);
+          }
         }
-      }, 1000);
-    });
+      }
+      timerElement.innerHTML = `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
+
+    }, 1000);
+
+    function pad(value) {
+      return value < 10 ? "0" + value : value;
+    }
   };
   timer1();
 
@@ -43,5 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   };
   accordion();
+
+
 
 });
