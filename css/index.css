@@ -1555,7 +1555,7 @@ body {
 	gap: 0.5rem;
 	position: absolute;
     bottom: -15%;
-    left: 0.7rem;
+    left: 1.5rem;
 }
 .c-box-gif-1-flex-items {
 	text-align: center;
@@ -1959,7 +1959,7 @@ body {
 		margin-bottom: 6rem;
 	}
 	.c-box-gif-1-flex {
-		left: 0.2rem;
+		left: 0.8rem;
 	}
 	.c-box-gif-1-flex-items {
 		padding: 30px 15px;
@@ -2028,7 +2028,7 @@ body {
 		padding: 30px 10px;
 	}
 	.c-box-gif-1-flex {
-		left: 1rem;
+		left: 1.5rem;
 	}
 	.timer-p-span {
 		display: none;
