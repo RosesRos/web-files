@@ -848,6 +848,12 @@ a {
 	}
 }
 
+@media (max-width: 390px) {
+  .stringWithTime {
+		padding: 14px 10px;
+	}
+}
+
 @media (max-width: 330px) {
   .stringWithTime {
 		padding: 14px 10px;
