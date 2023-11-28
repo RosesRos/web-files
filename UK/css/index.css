@@ -1234,6 +1234,9 @@ body {
 
 
 /* ### ##### ### ## OWN STYLES ### #### #######*/
+/* ### ##### ### ## OWN STYLES ### #### #######*/
+/* ### ##### ### ## OWN STYLES ### #### #######*/
+/* ### ##### ### ## OWN STYLES ### #### #######*/
 
 body {
 	max-width: 560px;
@@ -1404,8 +1407,6 @@ body {
     align-items: center;
     gap: 1rem;
 }
-
-
 .c-display-flex {
 	display: flex;
 	padding: 8px 9px 9px 10px;
@@ -1421,29 +1422,13 @@ body {
 	font-weight: 400;
 	line-height: normal;
 }
-
-.c-div-model-img {
-	width: 100%;
-}
-
-
-
-
 .swiper-button-next, .swiper-button-prev {
 	color: rgba(0, 0, 0, 1);
 }
-
-
-
-
-
-
 .header__chooseItem_btns {
     gap: 20px;
     display: flex;
 }
-
-
 .header__chooseItem_btns_women {
 	border: 1px solid #000;
 	background-color: transparent;
@@ -1456,7 +1441,6 @@ body {
 	font-weight: 700;
 	line-height: normal;
 }
-
 .header__chooseItem_btns_women:hover {
 	border: 1px solid #000;
 	background: #000;
@@ -1465,14 +1449,12 @@ body {
 	cursor: pointer;
 	color: #FFF;
 }
-
 .c-box-img-pay {
 	display: flex;
     justify-content: space-evenly;
     align-items: center;
 	margin: 1rem 0;
 }
-
 .c-box-img-pay > img {
 	width: 12%;
 }
@@ -1484,31 +1466,6 @@ body {
 	aspect-ratio: 3/2;
     object-fit: contain;
 }
-
-.UI-hiddenText__title_span {
-	color: #272727;
-	font-family: Montserrat;
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: normal;
-}
-.UI-hiddenText__text_icons {
-	display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 10px 0;
-}
-.UI-hiddenText__text_p {
-	color: #272727;
-	font-family: Montserrat;
-	font-size: 14px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
-	margin: 10px 0;
-}
-
 .c-display-flex-space {
 	display: flex;
 	justify-content: space-between;
@@ -1524,7 +1481,6 @@ body {
 	font-weight: 600;
 	line-height: normal;
 }
-
 .c-comment-span {
 	color: var(--base-black, #272727);
 	font-family: Roboto;
@@ -1533,18 +1489,6 @@ body {
 	font-weight: 400;
 	line-height: 13px; /* 108.333% */
 }
-
-.footer__mailTitle_p {
-	color: #575551;
-	text-align: right;
-	font-family: Montserrat;
-	font-size: 14px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
-}
-
-
 .c-preViews-h1 {
 	color: #000;
 	text-align: center;
@@ -1572,7 +1516,6 @@ body {
 .c-preViews-vid-video {
 	width: 100%;
 }
-
 .activeBtn {
     border: 1px solid #000;
     background: #000;
@@ -1585,7 +1528,6 @@ body {
     font-weight: 700;
     line-height: normal;
 }
-
 .header__size_items .activeSize {
 	border: 1px solid #000;
     background: #000;
