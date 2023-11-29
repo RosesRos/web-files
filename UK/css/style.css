@@ -28,8 +28,7 @@ body {
   flex-direction: column;
   min-height: 100%;
   overflow: hidden;
-  /* max-width: 570px; */
-  max-width: 80%;
+  max-width: 570px;
   width: 100%;
   margin: 0 auto;
 }
@@ -55,6 +54,7 @@ a {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+  background: #006272;
 }
 
 .container-s {
@@ -111,23 +111,36 @@ a {
   width: 30px;
 }
 
+/* .header__title {
+  font-size: 22px;
+  font-weight: 700;
+  padding: 0 10px;
+} */
 
 .header__links {
   display: flex;
   align-items: center;
-  gap: 33px;
+  gap: 7px;
 }
 
 .header__link-img {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
 }
 
 /* ------------------------------------------------------------- */
 
+.top-video {
+  overflow: hidden;
+  /* border-radius: 16px; */
+  margin: 1rem 0;
+}
 
-
-
+.top-video video {
+  width: 100%;
+  margin-top: -36%;
+  margin-bottom: -9%;
+}
 
 /* ------------------------------------------------------------- */
 
@@ -322,16 +335,16 @@ a {
   font-size: 14px;
   font-weight: 300;
   text-decoration: line-through;
+  color: gray;
 }
 
 .price__new {
-  color: #fff;
-  text-transform: uppercase;
+  color: #575551;
   font-family: Roboto;
-  font-size: 25px;
-  letter-spacing: .8px;
-  line-height: 20px;
+  font-size: 22px;
+  font-style: normal;
   font-weight: 700;
+  line-height: normal;
 }
 
 .price__sale {
@@ -458,12 +471,10 @@ a {
 
 .stringWithTime {
   position: relative;
-  /* background-color: #272727; */
+  background-color: #3F3F41;
   padding: 14px 0;
+  margin: 15px 0;
   margin-bottom: 22px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 
@@ -498,12 +509,16 @@ a {
 .timer2 {
   padding: 0 5px;
 
-  color: #FF0140;
-  font-family: Inter;
+  color: #ffffff;
   font-size: 24px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: #3F3F41;
+  padding: 0 5px;
+  
 }
 
 /* --------------------------------------------------------- */
@@ -525,7 +540,8 @@ a {
 }
 
 .accordion__item {
-  background: rgb(244 240 240 / 80%);
+  border-radius: 16px;
+  background-color: #F4F0F0;
   padding: 11px 20px 7px 32px;
   margin-bottom: 25px;
 }
@@ -536,16 +552,12 @@ a {
 
 .accordion__header {
   cursor: pointer;
-  position: relative;
-  padding-left: 43px;
-
   color: #272727;
   font-family: Montserrat;
   font-size: 20px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
-
+  position: relative;
+  padding-left: 43px;
 }
 
 .accordion__header p {
@@ -567,7 +579,7 @@ a {
 }
 
 #accordion__header-1::before {
-  background-image: url(../images/truck.svg);
+  background-image: url(../images/truck-1.svg);
 }
 
 #accordion__header-2::before {
@@ -592,7 +604,7 @@ a {
   content: '';
   right: 0;
   top: 50%;
-  transform: translateY(-50%) rotate(0deg);
+  transform: translateY(-50%) rotate(180deg);
   background-image: url(../images/arrow--rounded--bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -602,7 +614,7 @@ a {
 }
 
 .accordion__header.active::after {
-  transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) rotate(0deg);
 }
 
 .accordion__body {
@@ -867,8 +879,8 @@ a {
   left: 50%;
   transform: translateX(-50%);
 
-  background-color: #333;
-  color: #fff;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #61F089 0%, #61EDCB 100%);
   border: none;
 }
 
@@ -883,26 +895,15 @@ a {
 }
 
 .fixed-btn__text {
-  text-transform: uppercase;
+  color: #575551;
   font-family: Roboto;
-	font-size: 20px;
-  letter-spacing: .8px;
-  line-height: 20px;
+  font-size: 22px;
+  font-style: normal;
   font-weight: 700;
+  line-height: normal;
 }
 
-/* @media (max-width: 327px) {
-  .btnBlcok__flex {
-    width: 90%;
-  }
-} */
 
-
-/* @media (max-width: 327px) {
-  .btnBlcok__flex {
-    width: 90%;
-  }
-} */
 
 .fixedBtn-price.price__new {
   font-size: 26px;
@@ -963,14 +964,15 @@ a {
 
 
 
-
-
-/* ### ## ##### ## OWN STYLES ### ##### #### */
-/* ### ## ##### ## OWN STYLES ### ##### #### */
 /* ### ## ##### ## OWN STYLES ### ##### #### */
 
 .accordion__body_description-img {
   width: 100%;
+}
+
+.c-box-gray {
+  mix-blend-mode: darken;
+  padding: 20px 20px;
 }
 .timer-p {
   color: #000;
@@ -981,18 +983,9 @@ a {
   line-height: normal;
 }
 
-@media (max-width: 650px) {
-  .wrapper {
-    max-width: 100%;
-  }
-}
-
 @media (max-width: 480px) {
   .container {
     max-width: 100%;
     padding: 0;
   }
-  .header__links {
-		gap: 10px;
-	}
 }
