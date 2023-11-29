@@ -1567,18 +1567,33 @@ body {
 	height: 24px;
 	cursor: pointer;
 }
+.c-display-flex-space-h {
+	display: flex;
+	align-items: center;
+}
 
 @media (max-width: 480px) {
 	.c-header-title {
 		font-size: 14px;
 	}
 	.c-div-text-center {
-		margin: 3rem 0;
+		margin: 0;
 		max-width: 100%;
 		width: 100%;
 	}
 	.UI-btn {
 		max-width: 100%;
+	}
+	.header__slider_image {
+		width: 100%;
+	}
+	.swiper-button-next {
+		width: 20%;
+		right: 30%;
+	}
+	.swiper-button-prev {
+		left: 30%;
+		width: 20%
 	}
 }
 
@@ -1589,12 +1604,31 @@ body {
 	.UI-timer__title {
 		font-size: 14px;
 	}
-	
+	.c-display-flex-space {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.c-sots-item-h2 {
+		font-size: 25px;
+	}
+	.c-sots-item-p {
+		font-size: 14px;
+	}
 	
 }
 
 @media (max-width: 330px) {
 	.UI-timer__title {
 		font-size: 10px;
+	}
+	.c-timer-p-span {
+		display: none;
+	}
+	.header__slider {
+		height: 75vh;
+	}
+	.reviews__write {
+		font-size: 20px;
 	}
 }

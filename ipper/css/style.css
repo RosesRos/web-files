@@ -972,4 +972,13 @@ a {
     max-width: 100%;
     padding: 0;
   }
+  .c-wrapper {
+    max-width: 100%;
+  }
+  .stringWithTime {
+		padding: 14px 10px;
+	}
+	.timer, .timer2 {
+		margin-left: 1.5rem;
+	}
 }
