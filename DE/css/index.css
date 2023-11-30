@@ -1567,4 +1567,11 @@ body {
 	.footer__logo-box {
 		display: none;
 	}
+	.wrapper {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.reviews__write {
+		font-size: 20px;
+	}
 }
