@@ -68,6 +68,7 @@ a {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+  position: relative;
 }
 
 .section-title {
@@ -626,7 +627,7 @@ a {
 
 .footer {
   padding: 20px 30px;
-  background: #DD6060;
+  background: #CF0;
   border-radius: 0;
 }
 
@@ -635,13 +636,11 @@ a {
 
 
 .footer__form_ttl {
-  color: #575551;
-
-  color: #FFF;
+  color: #000;
   font-family: Montserrat;
   font-size: 23px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   line-height: normal; /* 33.809px */
   text-transform: uppercase;
 
@@ -660,6 +659,9 @@ a {
   margin-bottom: 10px;
   padding: 15px;
 }
+.footer__form_input::placeholder {
+  color: #E4E4E4;
+}
 
 .footer__form_btn {
   width: 100%;
@@ -667,7 +669,7 @@ a {
   padding: 20px 12px;
   border: 1px solid #575551;
 
-  color: #FFF;
+  color: #CF0;
   font-family: Montserrat;
   font-size: 23px;
   font-style: normal;
@@ -676,12 +678,14 @@ a {
   text-transform: uppercase;
 
   border-radius: 20px;
-  background: #2F2F2F;
+  background: #434343;
 
 }
 
 .footer__form_btn:hover {
   background-color: transparent;
+  border: none;
+  color: #575551;
 }
 
 .footer__info {
@@ -721,7 +725,7 @@ a {
   border: none;
 
   border-radius: 30px;
-  background: #00CE3A;
+  background: #CF0;
 }
 
 .fixed {
@@ -735,7 +739,7 @@ a {
 }
 
 .fixed-btn__text {
-  color: #FFF;
+  color: #000;
   font-family: Montserrat;
   font-size: 32px;
   font-style: normal;
@@ -820,7 +824,7 @@ a {
 
 
 .timer-p {
-  color: #FFF;
+  color: #000;
   font-family: Montserrat;
   font-size: 22px;
   font-style: normal;
