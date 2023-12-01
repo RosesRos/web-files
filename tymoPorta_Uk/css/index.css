@@ -1329,9 +1329,6 @@ body {
     align-items: center;
     gap: 1rem;
 }
-
-
-
 .header__starts_items {
 	display: flex;
     align-items: center;
@@ -1361,16 +1358,12 @@ body {
     align-items: center;
     gap: 0.5rem;
 }
-
-
-
 .c-box-img-pay {
 	display: flex;
     justify-content: space-evenly;
     align-items: center;
 	margin: 1rem 0;
 }
-
 .c-box-img-pay > img {
 	width: 12%;
 }
@@ -1382,31 +1375,6 @@ body {
 	aspect-ratio: 3/2;
     object-fit: contain;
 }
-
-.UI-hiddenText__title_span {
-	color: #272727;
-	font-family: Montserrat;
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: normal;
-}
-.UI-hiddenText__text_icons {
-	display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 10px 0;
-}
-.UI-hiddenText__text_p {
-	color: #272727;
-	font-family: Montserrat;
-	font-size: 14px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
-	margin: 10px 0;
-}
-
 .c-display-flex-space {
 	display: flex;
 	justify-content: flex-start;
@@ -1422,26 +1390,6 @@ body {
 	font-weight: 600;
 	line-height: normal;
 }
-
-.c-comment-span {
-	color: var(--base-black, #272727);
-	font-family: Roboto;
-	font-size: 12px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 13px; /* 108.333% */
-}
-
-.footer__mailTitle_p {
-	color: #575551;
-	text-align: right;
-	font-family: Montserrat;
-	font-size: 14px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
-}
-
 .c-display-flex-items {
 	max-width: 13%;
     width: 100%;
@@ -1450,8 +1398,6 @@ body {
 .c-display-flex-items-img {
 	width: 100%;
 }
-
-
 .c-box-imgs {
 	max-width: 100%;
 	width: 100%;
@@ -1496,8 +1442,6 @@ body {
 		max-width: 100%;
 		width: 100%;
 	}
-
-	
 	.UI-btn {
 		max-width: 100%;
 	}
@@ -1510,9 +1454,6 @@ body {
 @media (max-width: 390px) {
 	.nav__logo {
 		width: 40%;
-	}
-	.UI-timer__title {
-		font-size: 14px;
 	}
 	.c-display-flex-items {
 		max-width: 20%;
