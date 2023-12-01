@@ -1236,7 +1236,6 @@ body {
 	width: 100%;
 	margin: 0 auto;
 }
-
 .c-header-div {
 	background: linear-gradient(91deg, #EBFF00 5.36%, #CF0 96.11%);
 	padding: 1rem 0;
@@ -1250,80 +1249,15 @@ body {
 	font-weight: 700;
 	line-height: normal;
 }
-.c-display-flex {
-	display: flex;
-	padding: 8px 9px 9px 10px;
-	justify-content: center;
-    align-items: center;
-	flex-shrink: 0;
-}
-.c-display-p {
-	color: #272727;
-	font-family: Montserrat;
-	font-size: 14px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
-}
 .stringWithTime-2 {
 	text-align: center;
 }
 .c-div-model-img {
 	width: 100%;
 }
-
-
 .swiper-button-next, .swiper-button-prev {
 	color: rgba(0, 0, 0, 1);
 }
-
-
-.UI-hiddenText__title_span {
-	color: #272727;
-	font-family: Montserrat;
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: normal;
-}
-.UI-hiddenText__text_icons {
-	display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 10px 0;
-}
-.UI-hiddenText__text_p {
-	color: #272727;
-	font-family: Montserrat;
-	font-size: 14px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
-	margin: 10px 0;
-}
-
-.c-display-flex-space {
-	display: flex;
-	justify-content: space-between;
-    align-items: center;
-}
-
-
-
-.footer__mailTitle_p {
-	color: #575551;
-	text-align: right;
-	font-family: Montserrat;
-	font-size: 14px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
-}
-
-
-
-
-
 
 .activeBtn {
 	border-radius: 6px;
@@ -1338,14 +1272,11 @@ body {
     font-weight: 700;
     line-height: normal;
 }
-
 .header__size_items .activeSize {
 	border: 1px solid #000;
     background: #000;
 	color: #fff;
 }
-
-
 .c-top-box {
 	background-image: url("../images/top.png");
 	background-size: cover;
@@ -1370,7 +1301,6 @@ body {
 	line-height: 97.52%; /* 58.512px */
 	text-transform: capitalize;
 }
-
 .c-top-box-price {
 	margin: 2rem 0;
 }
@@ -1393,7 +1323,6 @@ body {
 	font-weight: 400;
 	line-height: 100%;
 }
- 
 .c-top-box-price-p-old {
 	color: #858585;
 	text-align: center;
@@ -1428,9 +1357,6 @@ body {
 	padding: 1rem;
 	max-width: max-content;
 }
-
-
-
 .c-box-sizes-h2 {
 	color: #000;
 	font-family: Montserrat;
@@ -1440,7 +1366,6 @@ body {
 	line-height: 97.52%; /* 31.206px */
 	text-transform: capitalize;
 }
-
 .UI-btn-ico {
 	border-radius: 30px;
 	background: #CF0;
@@ -1452,7 +1377,6 @@ body {
 .UI-btn-ico-img {
 	width: 60%;
 }
-
 .c-box-gif-1 {
     width: 100%;
     height: 600px;
@@ -1507,10 +1431,6 @@ body {
 .c-div-p {
 	font-family: Montserrat;
 }
-
-
-
-
 .c-box-reviews {
 	background-image: url("../images/top-1.png");
     background-size: contain;
@@ -1528,8 +1448,6 @@ body {
     gap: 2rem;
     flex-direction: column;
 }
-
-
 .c-box-reviews-items {
 	position: absolute;
     z-index: 10;
@@ -1546,8 +1464,6 @@ body {
 	text-transform: capitalize;
 	margin: 1rem 0;
 }
-
-
 .c-box-reviews-1 {
 	display: flex;
     align-items: center;
@@ -1578,10 +1494,6 @@ body {
 	font-weight: 400;
 	line-height: 100%; /* 26px */
 }
-
-
-
-
 .timer-p-span {
 	color: #858585;
 	font-family: Montserrat;
@@ -1592,7 +1504,6 @@ body {
 	text-transform: capitalize;
 	text-decoration: line-through;
 }
-
 .header__slider {
 	margin-bottom: 2rem;
 	height: 83vh;
@@ -1603,14 +1514,12 @@ body {
     width: 10%;
     margin: 0 auto;
 }
-
 .swiper-button-prev {
 	top: 90%;
     left: 38%;
     width: 10%;
     margin: 0 auto;
 }
-
 .swiper-button-next::after, .swiper-button-prev::after {
 	content: "";
 	background-position: center;
@@ -1639,8 +1548,6 @@ body {
 }
 
 @media (max-width: 650px) {
-	
-	
 	.header__slider {
 		height: 85vh;
 	}
