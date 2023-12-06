@@ -1698,6 +1698,29 @@ body {
 	.c-logo-center {
 		max-width: 60%;
 	}
+	.c-1 {
+		top: 11%;
+    	left: 31%;
+	}
+	.c-2 {
+		left: 1%;
+    	top: 17%;
+	}
+	.c-3 {
+		left: 22%;
+		top: 31%;
+	}
+	.c-4 {
+		top: 45%;
+	}
+	.c-5 {
+		right: 45%;
+		top: 47%;
+	}
+	.c-7 {
+		right: 45%;
+    	bottom: 13%;
+	}
 }
 
 @media (max-width: 390px) {
@@ -1727,6 +1750,21 @@ body {
 	.top-img-absolute {
 		bottom: 2%;
 	}
+	.c-1 {
+		top: 9%;
+	}
+	.c-3 {
+		left: 25%;
+		top: 34%;
+	}
+	.c-5 {
+		right: 40%;
+		top: 48%;
+	}
+	.c-7 {
+		right: 35%;
+		bottom: 24%;
+	}
 }
 
 @media (max-width: 330px) {
@@ -1741,5 +1779,17 @@ body {
 	}
 	.reviews__write {
 		font-size: 20px;
+	}
+	.c-2 {
+		left: -3%;
+		top: 16%;
+	}
+	.c-3 {
+		left: 25%;
+		top: 31%;
+	}
+	.c-5 {
+		right: 35%;
+		top: 47%;
 	}
 }
