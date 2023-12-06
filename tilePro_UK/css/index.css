@@ -1472,24 +1472,14 @@ body {
 .c-box-sots {
 	position: relative;
 }
-.c-box-sots::after {
-	content: "";
-	background-image: url("../images/sot-box-1.png");
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-    height: 100%;
-}
+
 .c-sots-items {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	z-index: 10;
     position: relative;
+	margin: 3rem 0;
 }
 .c-sots-item-imgs {
 	max-width: 100%;
@@ -1623,6 +1613,52 @@ body {
 }
 .c-slide-img {
 	width: 60%;
+}
+.c-sots-items-img-absolute {
+	width: 80px;
+    height: 80px;
+}
+.c-sots-items-img-absolute-dot {
+	width: 300px;
+    height: 100px;
+}
+.c-sots-items-img-absolute-images {
+	width: 100%;
+}
+.c-1 {
+	position: absolute;
+    top: 11%;
+    left: 31%;
+}
+.c-2 {
+	position: absolute;
+    left: 10%;
+    top: 17%;
+}
+.c-3 {
+	position: absolute;
+	left: 31%;
+    top: 30%;
+}
+.c-4 {
+	position: absolute;
+    right: 1%;
+    top: 42%;
+}
+.c-5 {
+	position: absolute;
+	right: 47%;
+    top: 48%;
+}
+.c-6 {
+	position: absolute;
+    right: 1%;
+    bottom: 25%;
+}
+.c-7 {
+	position: absolute;
+    right: 47%;
+    bottom: 16%;
 }
 @media (max-width: 480px) {
 	.c-header-title {
