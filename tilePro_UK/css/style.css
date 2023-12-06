@@ -503,7 +503,7 @@ a {
 }
 
 .accordion__item {
-  background: #FFF;;
+  background: #D7F3FF;
   padding: 11px 20px 7px 32px;
   margin-bottom: 25px;
 }
@@ -744,7 +744,7 @@ a {
 
 .footer {
   border-radius: 16px;
-  background: #2C6482;
+  background: #72C7EC;
   padding: 20px 30px;
 }
 
@@ -764,7 +764,7 @@ a {
 }
 
 .footer__form_ttl {
-  color: #FFF;
+  color: #000;
   font-family: Montserrat;
   font-size: 25px;
   font-style: normal;
@@ -776,7 +776,7 @@ a {
 
 .footer__form_input {
   border-radius: 16px;
-  background: #FFF;
+  background: #000;
   width: 100%;
   outline: none;
   border: none;
@@ -785,14 +785,17 @@ a {
   margin-bottom: 24px;
   padding: 15px;
 }
+.footer__form_input::placeholder {
+  color: #72C7EC;
+}
 
 .footer__form_btn {
   width: 100%;
   margin-bottom: 21px;
   padding: 12px;
-  border: 1px solid #575551;
+  /* border: 1px solid #575551; */
 
-  color: #FFF;
+  color: #000;
   font-family: Montserrat;
   font-size: 25px;
   font-style: normal;
@@ -801,8 +804,8 @@ a {
   text-transform: uppercase;
 
 
-  border-radius: 20px;
-  background-color: #2F2F2F;
+  /* border-radius: 20px; */
+  /* background-color: #2F2F2F; */
 
 }
 
@@ -965,7 +968,9 @@ a {
   text-transform: capitalize;
 }
 .c-wrapper {
-	max-width: 80%;
+  max-width: 100%;
+  padding: 1rem 2rem;
+  background-color: #D7F3FF;
 }
 
 @media (max-width: 480px) {

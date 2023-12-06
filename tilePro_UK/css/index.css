@@ -546,13 +546,15 @@ body {
 	font-weight: 400;
 	line-height: normal;
 	text-decoration: line-through;
+	margin-left: 1rem;
 }
 .header__price_current {
-	color: #272727;
-	font-size: 30px;
-	font-weight: 700;
-	text-transform: uppercase;
-	margin-right: 24px;
+	color: #000;
+	font-family: Montserrat;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
 }
 .header__chooseItem {
 	margin-bottom: 10px;
@@ -599,7 +601,7 @@ body {
 	margin-bottom: 12px;
 }
 .header__salePercent {
-	font-family: 'Jost*', sans-serif;
+	font-family: Inter;
 	font-size: 14px;
 	font-weight: 600;
 	color: #fff;
@@ -857,8 +859,8 @@ body {
 	padding-bottom: 17px;
 	margin-bottom: 19px;
 	
-	border-radius: 16px;
-	background: #F4F0F0;
+	/* border-radius: 16px;
+	background: #F4F0F0; */
 
 }
 .reviews__item_media {
@@ -1407,7 +1409,7 @@ body {
 .c-header__starts_items-p > p {
 	color: #000;
 	font-family: Montserrat;
-	font-size: 10px;
+	font-size: 14px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
@@ -1504,12 +1506,12 @@ body {
 	flex-basis: 90%;
 }
 .c-sots-item-h2 {
-	color: #2C6482;
+	color: #72C7EC;
 	font-family: Montserrat;
 	font-size: 33px;
 	font-style: normal;
-	font-weight: 800;
-	line-height: 78.626%; /* 33.809px */
+	font-weight: 700;
+	line-height: normal;
 	text-align: center;
 }
 .c-sots-item-p {
@@ -1522,7 +1524,7 @@ body {
 }
 .header__slider {
     margin-bottom: 2rem;
-    height: 80vh;
+    height: 75vh;
 }
 .swiper-button-next::after, .swiper-button-prev::after {
 	content: "";
@@ -1577,12 +1579,13 @@ body {
 	margin: 1rem 0;
 }
 .c-boc-checks-h2 {
-	color: #272727;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+	color: #000;
+	text-align: center;
+	font-family: Inter;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
 }
 .c-boc-checks-items {
 	margin-left: 1rem;
@@ -1612,7 +1615,15 @@ body {
 	display: flex;
 	align-items: center;
 }
-
+.c-top-video-absolute {
+	top: 60%;
+    left: 5%;
+}
+.c-top-video-absolute-price-old {
+	color: #636363;
+	stroke-width: 2px;
+	stroke: #F00;
+}
 @media (max-width: 480px) {
 	.c-header-title {
 		font-size: 14px;
