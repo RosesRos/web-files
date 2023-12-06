@@ -1284,7 +1284,6 @@ body {
     left: 5%;
 	z-index: 10
 }
-
 .top-video-absolute-items-prices {
 	display: flex;
 	align-items: center;
@@ -1501,8 +1500,6 @@ body {
 }
 .c-sots-item {
 	padding: 0 1rem;
-	/* max-width: 90%; */
-	/* width: 100%; */
 	flex-basis: 90%;
 }
 .c-sots-item-h2 {
