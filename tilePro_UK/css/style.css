@@ -984,7 +984,18 @@ a {
   .stringWithTime {
 		padding: 14px 10px;
 	}
-	.timer, .timer2 {
-		margin-left: 1.5rem;
+}
+
+@media (max-width: 390px) {
+  .c-wrapper {
+		padding: 1rem 1rem;
 	}
+}
+@media (max-width: 330px) {
+  .c-wrapper {
+		padding: 1rem;
+	}
+  .top-video {
+    padding: 0;
+  }
 }
