@@ -34,14 +34,14 @@
               <span class="top-video-absolute-items-prices-old">€40</span>
               <span class="top-video-absolute-items-prices-descount">90% weniger</span>
             </p>
-            <p class="top-video-absolute-items-prices-new">€3.0</p>
+            <p class="top-video-absolute-items-prices-new">€{offer_group_name}</p>
           </div>
         </div>
       </div>
 
 
       <div class="stringWithTime">
-        <p class="timer-p">Zeitlich begrenztes Angebot <span class="c-timer-p-span">€40</span> €3</p>
+        <p class="timer-p">Zeitlich begrenztes Angebot <span class="c-timer-p-span">€40</span> €{offer_group_name}</p>
         <span class="timer">00:47:49</span>
       </div>
 
@@ -62,7 +62,7 @@
         </div>
 
         <div class="header__price">
-          <span class="header__price_current">€3</span>
+          <span class="header__price_current">€{offer_group_name}</span>
           <span class="header__price_old">€40</span>
           <span class="header__salePercent">90% Weniger</span>
         </div>
@@ -312,7 +312,7 @@
         </section>
 
         <div class="stringWithTime">
-          <p class="timer-p">Zeitlich begrenztes Angebot <span class="c-timer-p-span">€40</span> €3</p>
+          <p class="timer-p">Zeitlich begrenztes Angebot <span class="c-timer-p-span">€40</span> €{offer_group_name}</p>
           <span class="timer">00:47:32</span>
         </div>
 
@@ -337,7 +337,7 @@
         <a href="{offer_link}" class="fixed">
           <div class="btnBlcok__flex">
             <p class="price__old">€40</p>
-            <p class="price__new">€3</p>
+            <p class="price__new">€{offer_group_name}</p>
           </div>
           <div class="fixed-btn__text">JETZT KAUFEN</div>
         </a>
@@ -385,6 +385,7 @@
       });
 
     </script>
+    <script src="./behaviour.js"></script>
 
   </body>
 </html>
