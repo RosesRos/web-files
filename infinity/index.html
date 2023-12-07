@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video frames with
-      the simplest possible user experience</title>
+    <title>Video frames with the simplest possible user experience</title>
     <link rel="shortcut icon" href="./images/cart.svg" type="image/svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -383,20 +382,6 @@
           swiper: swiper,
         },
       });
-
-      document.addEventListener("DOMContentLoaded", function() {
-        const cSlideBox = document.querySelectorAll(".c-slide-box");
-
-        cSlideBox[0].classList.add("c-slide-box-active");
-        cSlideBox.forEach((el) => {
-          el.addEventListener("click", () => {
-            cSlideBox.forEach((ele) => {
-              ele.classList.remove("c-slide-box-active");
-            });
-            el.classList.add('c-slide-box-active');
-          });
-        });
-      })
     </script>
 
     <script src="./js/index.js"></script>
