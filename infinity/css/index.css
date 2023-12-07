@@ -314,6 +314,7 @@ body {
 	-webkit-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 	cursor: pointer;
+	text-transform: uppercase;
 
 	color: #FFF;
 	font-family: Montserrat;
@@ -321,14 +322,12 @@ body {
 	font-style: normal;
 	font-weight: 600;
 	line-height: 97.52%; /* 23.405px */
-	text-transform: capitalize;
     line-height: 20px;
 
 
 	background-color: #00CE3A;
     color: #fff;
     border: none;
-	/* padding: 4px 0; */
 	padding-left: 3rem;
 	position: relative;
 	

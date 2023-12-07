@@ -904,7 +904,7 @@ a {
   font-style: normal;
   font-weight: 600;
   line-height: 97.52%; /* 23.405px */
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 /* @media (max-width: 327px) {
