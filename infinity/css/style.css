@@ -53,7 +53,7 @@ a {
   max-width: 580px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  /* padding: 0 15px; */
 }
 
 .container-s {
@@ -67,7 +67,7 @@ a {
   max-width: 560px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  /* padding: 0 15px; */
 }
 
 .section-title {
@@ -332,15 +332,23 @@ a {
 }
 
 .price__old {
-  font-size: 14px;
+  color: #B6B1B1;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
   font-weight: 300;
+  line-height: normal;
   text-decoration: line-through;
 }
 
-.price__new {
-  color: #000;
-  font-size: 24px;
+.price__new {  
+  color: #FFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
   font-weight: 600;
+  line-height: normal;
 }
 
 .price__sale {
@@ -776,8 +784,7 @@ a {
 /* --------------------------------------------------------- */
 
 .footer {
-  border-radius: 16px;
-  background: #F4F0F0;
+  background: #fff;
   padding: 20px 30px;
 }
 
@@ -874,7 +881,7 @@ a {
   left: 50%;
   transform: translateX(-50%);
 
-  background-color: #018849;
+  background-color: #00CE3A;
   color: #fff;
   border: none;
 }
@@ -891,11 +898,13 @@ a {
 
 .fixed-btn__text {
   text-transform: uppercase;
-  font-family: Roboto;
-	font-size: 20px;
-  letter-spacing: .8px;
-  line-height: 20px;
-  font-weight: 700;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 97.52%; /* 23.405px */
+  text-transform: capitalize;
 }
 
 /* @media (max-width: 327px) {
@@ -995,4 +1004,7 @@ a {
     max-width: 100%;
     padding: 0;
   }
+  .c-box-gray {
+		padding: 20px 0;
+	}
 }
