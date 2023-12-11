@@ -36,12 +36,12 @@ body {
 	width: 100%;
 	margin: 0 auto;
 }
-@media screen and (max-width: 592px) {
+/* @media screen and (max-width: 592px) {
 	.wrapper {
 		padding-left: 16px;
 		padding-right: 16px;
 	}
-}
+} */
 
 .swiper {
 	max-width: 560px;
@@ -102,12 +102,7 @@ body {
 	max-width: 560px;
 	width: 100% !important;
 }
-@media screen and (max-width: 584px) {
-	.fixed {
-		max-width: 536px;
-		width: calc(100% - 24px) !important;
-	}
-}
+
 .fixed__top {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -1590,13 +1585,17 @@ body {
 		font-size: 14px;
 	}
 	.c-box-gray {
-		padding: 20px 0;
+		padding: 20px 10px;
 	}
 	.c-box-display-flex {
 		max-width: 80%;
 	}
 	.c-box-time {
 		max-width: 100%;
+	}
+
+	.c-padding-mob {
+		padding: 0 10px;
 	}
 }
 
