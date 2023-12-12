@@ -1011,12 +1011,18 @@ a {
   line-height: normal;
 }
 
+@media (max-width: 650px) {
+  .accordion-box {
+    padding: 1rem;
+  }
+  .c-box-gray {
+		max-width: 95%;
+	}
+}
+
 @media (max-width: 480px) {
   .container {
     max-width: 100%;
     padding: 0;
   }
-  .c-box-gray {
-		padding: 20px 10px;
-	}
 }

@@ -1538,6 +1538,7 @@ body {
 .gallery {
 	background-color: #fff;
     padding-bottom: 2rem;
+	margin-top: 1rem;
 }
 /* .mySwiper .swiper-slide-thumb-active {
     border: 1px solid #000;
@@ -1659,8 +1660,8 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 .swiper-button-next::after {
     background-image: url("../images/next.png");
@@ -1711,6 +1712,16 @@ body {
     width: 100%;
     margin: 1rem auto;
 }
+.c-object-fit {
+	height: 350px;
+    object-fit: contain;
+}
+@media (max-width: 650px) {
+	.reviews__item {
+		width: 95%;
+		margin: 0.5rem auto;
+	}
+}
 @media (max-width: 480px) {
 	.c-header-title {
 		font-size: 14px;
@@ -1722,12 +1733,21 @@ body {
 	.UI-btn {
 		max-width: 100%;
 	}
-	.c-box-gray {
-		padding: 20px 10px;
+	.header__price {
+		max-width: 80%;
 	}
 
 	.c-padding-mob {
 		padding: 0 10px;
+	}
+	.c-top-box-prices {
+		top: 0;
+	}
+	.mySwiper {
+		margin-left: 6%;
+	}
+	.c-object-fit {
+		height: 250px;
 	}
 }
 
@@ -1742,8 +1762,9 @@ body {
 	.UI-btn {
 		height: 80px;
 	}
-	.c-div-logo {
-		max-width: 60%;
+	
+	.mySwiper {
+		margin-left: 0;
 	}
 }
 
@@ -1766,5 +1787,12 @@ body {
 @media (max-width: 330px) {
 	.UI-timer__title {
 		font-size: 10px;
+	}
+	.swiper-button-next::after, .swiper-button-prev::after {
+		width: 30px;
+		height: 30px;
+	}
+	.c-slide-box {
+		margin: 0 3rem;
 	}
 }
