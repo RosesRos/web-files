@@ -923,12 +923,7 @@ body {
 	display: flex;
 	padding: 0 11px;
 }
-/* .reviews__item_stars img {
-	width: 20px;
-} */
-/* .reviews__item_stars img + img {
-	margin-left: 5px;
-} */
+
 .reviews__item_desc {
 	margin-top: 12px;
 	padding: 0 17px;
