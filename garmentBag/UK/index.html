@@ -16,28 +16,34 @@
     <div class="wrapper">
       <header class="header">
         <div class="container_l">
-          <div class="header__inner">
-            <button class="header__burger-btn">
-              <img class="header__burger-img" src="./images/menu.svg" alt="burger">
-            </button>
+          <div class="header__inner c-header__inner">
             <span class="header__title">Special offer for UK + free 2-day shipping!!!</span>
-            <div class="header__links">
-              <a href="{offer_link}" class="header__link">
-                <img class="header__link-img" src="./images/instagram.svg" alt="instagram">
-              </a>
-              <a href="{offer_link}" class="header__link">
-                <img class="header__link-img" src="./images/shopping-bag.svg" alt="bag">
-              </a>
-            </div>
           </div>
         </div>
       </header>
-      <div class="c-bg-white">
-        <div class="c-div-logo">
-          <img class="c-div-logo-img" src="./images/logo.png" alt="png">
+
+      <div class="header__inner">
+        <button class="header__burger-btn">
+          <img class="header__burger-img" src="./images/menu.svg" alt="burger">
+        </button>
+
+        <div >
+          <div class="c-div-logo">
+            <img class="c-div-logo-img" src="./images/logo.png" alt="png">
+          </div>
+          <h2 class="c-div-logo-h2">Your Smart bag </h2>
         </div>
-        <h2 class="c-div-logo-h2">Your Smart bag </h2>
+
+        <div class="header__links">
+          <a href="{offer_link}" class="header__link">
+            <img class="header__link-img" src="./images/instagram.svg" alt="instagram">
+          </a>
+          <a href="{offer_link}" class="header__link">
+            <img class="header__link-img" src="./images/shopping-bag.svg" alt="bag">
+          </a>
+        </div>
       </div>
+
       <div class="c-display-flex c-bg-white">
         <div class="c-display-flex-items">
           <a class="c-display-flex-items-a" href="{offer_link}">Track Your Order</a>
@@ -72,12 +78,15 @@
         </div>
       </div>
 
-      <div class="stringWithTime">
-        <p class="timer-p">Sale ends:</p>
-        <span class="timer">00:45:51</span>
+      <div class="header__starts">
+        <div class="header__starts_items">
+          <img src="./images/stars.svg" alt="svg">
+          <span class="header__starts_items_span">367 Happy Customers</span>
+        </div>
       </div>
+
       <div class="c-div-titles">
-        <h2 class="c-div-titles-colors">Available in 4 colors! </h2>
+        <h2 class="c-div-titles-colors">4 AMAZING COLORS </h2>
       </div>
 
       <div class="gallery">
@@ -101,23 +110,6 @@
             <div class="swiper-button-prev"></div>
             <!-- <div class="swiper-pagination"></div> -->
           </div>
-
-          <div thumbsSlider="" class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide c-slide-box">
-                <img src="./images/redBlack.svg" alt="svg">
-              </div>
-              <div class="swiper-slide c-slide-box">
-                <img src="./images/black.svg" alt="svg">
-              </div>
-              <div class="swiper-slide c-slide-box">
-                <img src="./images/red.svg" alt="svg">
-              </div>
-              <div class="swiper-slide c-slide-box">
-                <img src="./images/pink.svg" alt="svg">
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -126,17 +118,10 @@
           <h1 class="c-header__title">Garment Duffle Bag </h1>
           <div class="header__price">
             <div>
-              <span class="header__price_current">£5</span>
-              <br>
               <span class="header__price_old">£50</span>
+              <span class="header__price_current">£5</span>
             </div>
             <span class="header__salePercent">90% OFF</span>
-          </div>
-          <div class="header__starts">
-            <div class="header__starts_items">
-              <img src="./images/stars.svg" alt="svg">
-              <span class="header__starts_items_span">153 Happy Customers</span>
-            </div>
           </div>
         </div>
 
@@ -149,14 +134,22 @@
         </div>
 
         <div class="c-div-btn">
-          <div class="c-div-btns">
-            <h3 class="c-div-btns-h3">COLOR:</h3>
-            <img class="c-div-btns-img" src="./images/redBlack.svg" alt="">
-            <img class="c-div-btns-img" src="./images/black.svg" alt="">
-            <img class="c-div-btns-img" src="./images/red.svg" alt="">
-            <img class="c-div-btns-img" src="./images/pink.svg" alt="">
+          <div class="c-div-btns c-div-btns-mobil">
+            <h3 class="c-div-btns-h3">CHOOSE YOUR BAG COLOR:</h3>
+            <div class="c-div-btns ">
+              <img class="c-div-btns-img" src="./images/redBlack.svg" alt="">
+              <img class="c-div-btns-img" src="./images/black.svg" alt="">
+              <img class="c-div-btns-img" src="./images/red.svg" alt="">
+              <img class="c-div-btns-img" src="./images/pink.svg" alt="">
+            </div>
           </div>
           <a href="{offer_link}" class="UI-btn">BUY NOW</a>
+
+          <div class="stringWithTime">
+            <p class="timer-p">Sale ends:</p>
+            <span class="timer">00:46:28</span>
+          </div>
+
         </div>
 
       </div>
@@ -227,13 +220,7 @@
 
         <div class="c-preViews">
           <div class="c-preViews-vid">
-            <!-- <video class="c-preViews-vid-video" autoplay="" muted="" loop="">
-              <source src="./video/mod.mp4">
-            </video> -->
             <img class="c-preViews-vid-video" src="./images/mod.jpg" alt="">
-            <!-- <video class="c-preViews-vid-video" autoplay="" muted="" loop="">
-              <source src="./video/mod1.mp4">
-            </video> -->
           </div>
         </div>
 
@@ -241,9 +228,6 @@
           <h1 class="c-preViews-h1">A Must-have item for your travels</h1>
           <p class="c-preViews-p">The wet and dry separation compartment is specially designed to store wet items or post-workout clothing such as underwear, swimwear, towels, etc. </p>
           <div class="c-preViews-vid">
-            <!-- <video class="c-preViews-vid-video" autoplay="" muted="" loop="">
-              <source src="./video/mod2.mp4">
-            </video> -->
             <img class="c-preViews-vid-video" src="./images/mod1.gif" alt="">
           </div>
         </div>
@@ -252,9 +236,6 @@
           <h1 class="c-preViews-h1">or business trips!</h1>
           <p class="c-preViews-p">It features multiple zippered pockets for maximum storage of suits, dresses, shoes, ties and more. </p>
           <div class="c-preViews-vid">
-            <!-- <video class="c-preViews-vid-video" autoplay="" muted="" loop="">
-              <source src="./video/mod2.mp4">
-            </video> -->
             <img class="c-preViews-vid-video" src="./images/mod2.gif" alt="">
           </div>
         </div>
@@ -409,13 +390,7 @@
 
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".mySwiper", {
-        loop: true,
-        spaceBetween: 10,
-        slidesPerView: 4,
-        freeMode: true,
-        watchSlidesProgress: true,
-      });
+
       var swiper2 = new Swiper(".mySwiper2", {
         loop: true,
         spaceBetween: 5,
@@ -426,9 +401,6 @@
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
-        },
-        thumbs: {
-          swiper: swiper,
         },
       });
     </script>

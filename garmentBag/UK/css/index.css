@@ -312,10 +312,10 @@ body {
 	text-transform: uppercase;
 
 	color: #FFF;
-	font-family: Montserrat;
+	font-family: Roboto;
 	font-size: 20px;
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: 97.52%; /* 23.405px */
     line-height: 20px;
 
@@ -553,8 +553,9 @@ body {
 
 	max-width: 50%;
     width: 100%;
-    margin: 0 auto;
+    margin: 1rem auto;
 
+	padding: 12px 8px;
 }
 .header__price_old {
 	text-decoration: line-through;
@@ -1308,12 +1309,12 @@ body {
 	gap: 1.5rem;
 }
 .c-display-flex-items-a {
-	color: #000;
+	color: #747474;
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	font-family: Montserrat;
 	font-size: 16px;
 	font-style: normal;
-	font-weight: 500;
+	font-weight: 300;
 	line-height: 97.52%; /* 19.504px */
 	text-transform: capitalize;
 }
@@ -1332,32 +1333,18 @@ body {
 	color: #5E3419;
 	text-align: center;
 	font-family: Montserrat;
-	font-size: 32px;
+	font-size: 25px;
 	font-style: normal;
-	font-weight: 800;
+	font-weight: 400;
 	line-height: normal;
 	font-variant: all-small-caps;
-	margin-top: -6%;
+	margin-top: -10%;
 }
 .swiper-button-next, .swiper-button-prev {
 	color: rgba(0, 0, 0, 1);
 }
 .swiper-slide {
 	position: relative;
-}
-.mySwiper {
-	margin-top: 2rem;
-	margin-left: 15%;
-}
-.c-slide-box {
-	cursor: pointer;
-	text-align: center;
-	max-width: 4%;
-    width: 100%;
-    margin: 0 3.5rem;
-}
-.c-slide-box > img {
-	width: 100%;
 }
 .c-header__title {
 	color: #272727;
@@ -1373,6 +1360,11 @@ body {
     align-items: center;
     gap: 1rem;
 	justify-content: center;
+
+	background: rgba(217, 217, 217, 0.01);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.11);
+    padding: 0.5rem 0;
+
 }
 .header__starts_items_span {
 	color: #272727;
@@ -1533,17 +1525,14 @@ body {
     gap: 1rem;
 }
 .c-bg-white {
-	background-color: #fff;
+	background: rgba(217, 217, 217, 0.01);
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05) inset;
 }
 .gallery {
 	background-color: #fff;
     padding-bottom: 2rem;
 	margin-top: 1rem;
 }
-/* .mySwiper .swiper-slide-thumb-active {
-    border: 1px solid #000;
-    background: #D9D9D9;
-} */
 .c-top-box {
 	background-image: url("../images/top-video.gif");
     background-size: cover;
@@ -1562,6 +1551,7 @@ body {
 .c-top-box-images {
 	display: inline-flex;
     align-items: center;
+	justify-content: center;
     width: max-content;
     gap: 1rem;
     padding: 0.5rem 1rem;
@@ -1569,8 +1559,8 @@ body {
 	
 }
 .c-top-box-images-item {
-	width: 56px;
-    height: 56px;
+	width: 36px;
+    height: 36px;
 }
 .c-top-box-images-item-img {
     width: 100%;
@@ -1590,16 +1580,19 @@ body {
 	border-radius: 25px;
 	background: #FFC29A;
 	width: 210px;
+	margin-left: -4%;
 }
 .c-top-box-cream {
 	border-radius: 25px;
 	background: #F2D69E;
 	width: 250px;
+	margin-left: -4%;
 }
 .c-top-box-gray {
 	border-radius: 25px;
 	background: linear-gradient(90deg, #CFBABA 12.94%, #FFF5F5 101.76%);
 	width: 300px;
+	margin-left: -7%;
 }
 .c-top-box-prices {
 	position: absolute;
@@ -1670,7 +1663,9 @@ body {
     background-image: url("../images/prev.png");
 }
 .c-div-list {
-	margin: 1rem 0;
+	max-width: 80%;
+    width: 100%;
+	margin: 1rem auto;
 }
 .c-div-list-li {
 	list-style: disc;
@@ -1697,7 +1692,7 @@ body {
 	font-family: Montserrat;
 	font-size: 16px;
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 600;
 	line-height: normal;
 }
 .c-div-btns-img {
@@ -1716,10 +1711,16 @@ body {
 	height: 350px;
     object-fit: contain;
 }
+.c-div-titles {
+	margin: 2rem 0;
+}
 @media (max-width: 650px) {
 	.reviews__item {
 		width: 95%;
 		margin: 0.5rem auto;
+	}
+	.header__price {
+		max-width: 80%;
 	}
 }
 @media (max-width: 480px) {
@@ -1743,11 +1744,12 @@ body {
 	.c-top-box-prices {
 		top: 0;
 	}
-	.mySwiper {
-		margin-left: 6%;
-	}
 	.c-object-fit {
 		height: 250px;
+	}
+	.c-div-btns-mobil {
+		flex-direction: column;
+		gap: 1rem;
 	}
 }
 
@@ -1762,9 +1764,11 @@ body {
 	.UI-btn {
 		height: 80px;
 	}
-	
-	.mySwiper {
-		margin-left: 0;
+	.header__price {
+		max-width: 100%;
+	}
+	.c-div-btn {
+		max-width: 100%;
 	}
 }
 
@@ -1791,8 +1795,5 @@ body {
 	.swiper-button-next::after, .swiper-button-prev::after {
 		width: 30px;
 		height: 30px;
-	}
-	.c-slide-box {
-		margin: 0 3rem;
 	}
 }
