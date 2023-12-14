@@ -1341,7 +1341,7 @@ body {
 }
 .mySwiper {
 	margin-top: 2rem;
-	margin-left: 15%;
+	margin-left: -3%;
 }
 .c-slide-box {
 	cursor: pointer;
@@ -1778,6 +1778,9 @@ body {
 	line-height: 78.626%; /* 16.511px */
 	text-transform: uppercase;
 }
+.c-swiper-wrapper {
+	justify-content: center;
+}
 @media (max-width: 650px) {
 	.reviews__item {
 		width: 95%;
@@ -1799,11 +1802,8 @@ body {
 	.c-padding-mob {
 		padding: 0 10px;
 	}
-	.c-top-box-prices {
-		top: 0;
-	}
-	.mySwiper {
-		margin-left: 6%;
+	.c-loader-div {
+		max-width: 50%;
 	}
 }
 
@@ -1818,9 +1818,9 @@ body {
 	.UI-btn {
 		height: 80px;
 	}
-	
-	.mySwiper {
-		margin-left: 0;
+	.swiper-button-next::after, .swiper-button-prev::after {
+		width: 30px;
+		height: 30px;
 	}
 }
 

@@ -31,7 +31,7 @@ body {
   max-width: 600px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 0.5rem;
+  /* padding: 0 0.5rem; */
 }
 
 button {
@@ -986,6 +986,7 @@ a {
   background: #F9F9FD;
   box-shadow: 3px 4px 25px 0px rgba(0, 0, 0, 0.25);
   position: relative;
+  /* overflow: visible; */
 }
 .c-box-gray::before {
   content: "";
@@ -1049,11 +1050,28 @@ a {
   .c-box-gray {
 		max-width: 95%;
 	}
+
+  .c-box-gray-mobil {
+		max-width: 95%;
+    margin: 1.5rem auto;
+	}
+  .c-box-gray::before {
+    top: -1rem;
+    right: -0.5rem;
+    width: 83px;
+    height: 98px;
+  }
 }
 
 @media (max-width: 480px) {
   .container {
     max-width: 100%;
     padding: 0;
+  }
+}
+@media (max-width: 390px) {
+  .c-box-gray::before {
+    width: 73px;
+    height: 86px;
   }
 }
