@@ -1326,9 +1326,6 @@ body {
 .c-div-logo-img {
 	width: 100%;
 }
-.c-div-model-img {
-	width: 100%;
-}
 .c-div-logo-h2 {
 	color: #5E3419;
 	text-align: center;
@@ -1393,32 +1390,6 @@ body {
 	aspect-ratio: 3/2;
     object-fit: contain;
 }
-
-.UI-hiddenText__title_span {
-	color: #272727;
-	font-family: Montserrat;
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: normal;
-}
-.UI-hiddenText__text_icons {
-	display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 10px 0;
-}
-.UI-hiddenText__text_p {
-	color: #272727;
-	font-family: Montserrat;
-	font-size: 14px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
-	margin: 10px 0;
-}
-
-
 .c-display-flex-space {
 	display: flex;
 	justify-content: space-between;
@@ -1445,25 +1416,6 @@ body {
     align-items: center;
     gap: 0.5rem;
 	margin-left: 1rem;
-}
-
-.c-comment-span {
-	color: var(--base-black, #272727);
-	font-family: Roboto;
-	font-size: 12px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 13px; /* 108.333% */
-}
-
-.footer__mailTitle_p {
-	color: #575551;
-	text-align: right;
-	font-family: Montserrat;
-	font-size: 14px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
 }
 .c-preViews {
 	background: #FFF;
@@ -1498,26 +1450,6 @@ body {
 .c-preViews-vid-video {
 	width: 100%;
 	margin: -5px 0;
-}
-
-.activeBtn {
-	border-radius: 6px;
-    border: 1px solid #000;
-    background: #000;
-    padding: 10px;
-    width: 106px;
-    color: #FFF;
-    font-family: Montserrat;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.header__size_items .activeSize {
-	border: 1px solid #000;
-    background: #000;
-	color: #fff;
 }
 .btnBlcok__flex {
 	display: flex;
