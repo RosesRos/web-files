@@ -97,7 +97,7 @@ body {
 	-ms-flex-pack: center;
 	justify-content: center;
 	padding: 8px !important;
-	min-height: 64px;
+	min-height: 50px;
 	z-index: 2;
 	max-width: 560px;
 	width: 100% !important;
@@ -1743,7 +1743,7 @@ body {
 		font-size: 12px;
 	}
 	.c-top-box {
-		height: 300px;
+		height: 250px;
 	}
 	.c-div-btn {
 		max-width: 100%;
@@ -1763,7 +1763,7 @@ body {
 		height: 30px;
 	}
 	.c-top-box {
-		height: 250px;
+		height: 230px;
 	}
 }
 
