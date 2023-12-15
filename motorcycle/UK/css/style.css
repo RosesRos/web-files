@@ -1054,6 +1054,7 @@ a {
   .c-box-gray-mobil {
 		max-width: 95%;
     margin: 1.5rem auto;
+    margin-top: 2rem;
 	}
   .c-box-gray::before {
     top: -1rem;
