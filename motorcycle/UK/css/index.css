@@ -567,7 +567,7 @@ body {
 	color: #202020;
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	font-family: Montserrat;
-	font-size: 40px;
+	font-size: 50px;
 	font-style: normal;
 	font-weight: 600;
 	line-height: normal;
@@ -1427,7 +1427,7 @@ body {
 
 .c-preViews {
 	background: #FFF;
-	padding: 1rem 0;
+	padding: 0.5rem 0;
 }
 .c-preViews-h1 {
 	color: #5B596C;
@@ -1439,7 +1439,8 @@ body {
 	font-weight: 400;
 	line-height: normal;
 	text-transform: uppercase;
-	margin: 1.5rem 0;
+	/* margin: 1.5rem 0; */
+	margin-bottom: 0.5rem;
 }
 .c-preViews-p {
 	color: #000;
@@ -1527,7 +1528,7 @@ body {
 	color: #5B596C;
 	text-shadow: 2px 4px 11px rgba(0, 0, 0, 0.25);
 	font-family: Russo One;
-	font-size: 30px;
+	font-size: 25px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 100%; /* 40px */
@@ -1538,7 +1539,7 @@ body {
 	color: #CE161C;
 	text-shadow: 2px 4px 20px rgba(58, 56, 79, 0.25);
 	font-family: Montserrat;
-	font-size: 16px;
+	font-size: 12px;
 	font-style: normal;
 	font-weight: 600;
 	line-height: 100%; /* 20px */
@@ -1591,6 +1592,7 @@ body {
 .c-div-btns-img {
 	margin: 0 1rem;
 	cursor: pointer;
+	width: 60%;
 }
 .c-reviews__item_media {
 	max-width: 100%;
@@ -1607,7 +1609,7 @@ body {
 .c-trus-box-p {
 	color: #000;
 	font-family: Montserrat;
-	font-size: 14px;
+	font-size: 12px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 100%; /* 20px */
@@ -1712,9 +1714,9 @@ body {
 	line-height: 78.626%; /* 16.511px */
 	text-transform: uppercase;
 }
-.c-swiper-wrapper {
+/* .c-swiper-wrapper {
 	justify-content: center;
-}
+} */
 
 .progress {
     display: none;
@@ -1784,7 +1786,7 @@ body {
 		font-size: 22px;
 	}
 	.c-div-btns-img {
-		width: 60%;
+		width: 55%;
 	}
 }
 
@@ -1826,7 +1828,7 @@ body {
 		font-size: 25px;
 	}
 	.mySwiper3 {
-		max-width: 90%;
+		max-width: 80%;
 	}
 }
 
