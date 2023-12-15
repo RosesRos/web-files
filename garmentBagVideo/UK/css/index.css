@@ -1489,8 +1489,8 @@ body {
 	
 }
 .c-top-box-images-item {
-	width: 36px;
-    height: 36px;
+	width: 56px;
+    height: 56px;
 }
 .c-top-box-images-item-img {
     width: 100%;
@@ -1509,20 +1509,14 @@ body {
 .c-top-box-pink {
 	border-radius: 25px;
 	background: #FFC29A;
-	width: 210px;
-	margin-left: -4%;
 }
 .c-top-box-cream {
 	border-radius: 25px;
 	background: #F2D69E;
-	width: 250px;
-	margin-left: -4%;
 }
 .c-top-box-gray {
 	border-radius: 25px;
 	background: linear-gradient(90deg, #CFBABA 12.94%, #FFF5F5 101.76%);
-	width: 300px;
-	margin-left: -7%;
 }
 .c-top-box-prices {
 	position: absolute;
