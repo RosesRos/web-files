@@ -1346,7 +1346,10 @@ body {
 .swiper-slide {
 	position: relative;
 }
-
+.mySwiper3 {
+	text-align: center;
+	max-width: 50%;
+}
 .c-header__title {
 	color: #373737;
 	text-align: center;
@@ -1472,6 +1475,11 @@ body {
 	background-color: #fff;
     padding-bottom: 2rem;
 	margin-top: 1rem;
+}
+.mySwiper .swiper-slide-thumb-active {
+    border-radius: 16px;
+    border: 1px solid #5B596C;
+    background: #CE161C;
 }
 .c-top-box {
 	background-image: url("../images/top-video.jpg");
@@ -1712,6 +1720,9 @@ body {
 		width: 95%;
 		margin: 0.5rem auto;
 	}
+	.mySwiper3 {
+		max-width: 70%;
+	}
 }
 @media (max-width: 480px) {
 	.c-header-title {
@@ -1769,6 +1780,9 @@ body {
 	}
 	.reviews__write {
 		font-size: 25px;
+	}
+	.mySwiper3 {
+		max-width: 90%;
 	}
 }
 
