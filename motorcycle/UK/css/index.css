@@ -505,7 +505,7 @@ body {
 	color: #fff;
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	font-family: Montserrat;
-	font-size: 14px;
+	font-size: 12px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 97.52%; /* 19.504px */
@@ -1322,7 +1322,7 @@ body {
 	/* gap: 1.5rem; */
 }
 .c-display-flex-items-a {
-	color: #FFF;
+	color: #E2E2E2;
 	font-family: Montserrat;
 	font-size: 14px;
 	font-style: normal;
@@ -1466,7 +1466,7 @@ body {
     gap: 1rem;
 }
 .c-bg-white {
-	background-color: #fff;
+	background-color: #F0F1F6;
 }
 .c-bg-gray {
 	background-color: #A9A6C1;
@@ -1510,7 +1510,7 @@ body {
 	margin: 0 0.5rem;
 }
 .c-top-box-prices-discount {
-	color: #20FF36;
+	color: #FFF;
 	text-align: right;
 	font-family: Montserrat;
 	font-size: 48px;
@@ -1706,7 +1706,7 @@ body {
 	color: #FFF;
 	text-align: center;
 	font-family: Montserrat;
-	font-size: 14px;
+	font-size: 12px;
 	font-style: normal;
 	font-weight: 600;
 	line-height: 78.626%; /* 16.511px */
@@ -1715,6 +1715,38 @@ body {
 .c-swiper-wrapper {
 	justify-content: center;
 }
+
+.progress {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    z-index: 1;
+}
+.img-1, .img-2, .img-3 {
+    position: relative;
+    border-radius: 50%;
+    background-color: gray;
+    width: 18px;
+    height: 18px;
+    animation: 2s ease-in-out infinite load;
+}
+
+.img-2,
+.img-3 {
+  animation: 2s ease-in-out 0.4s infinite load;
+}
+.img-3 {
+  animation: 2s ease-in-out 0.8s infinite load;
+}
+@keyframes load {
+	50% {
+	  opacity: 0;
+	  transform: scale(0.7);
+	}
+}
+
 @media (max-width: 650px) {
 	.reviews__item {
 		width: 95%;
@@ -1737,7 +1769,7 @@ body {
 		padding: 0 10px;
 	}
 	.c-loader-div {
-		max-width: 50%;
+		max-width: 40%;
 	}
 	.c-display-flex-items-a {
 		font-size: 12px;
@@ -1747,6 +1779,12 @@ body {
 	}
 	.c-div-btn {
 		max-width: 100%;
+	}
+	.c-header__title {
+		font-size: 22px;
+	}
+	.c-div-btns-img {
+		width: 60%;
 	}
 }
 
@@ -1764,6 +1802,12 @@ body {
 	}
 	.c-top-box {
 		height: 230px;
+	}
+	.c-div-titles-colors {
+		font-size: 20px;
+	}
+	.c-div-titles-p {
+		font-size: 10px;
 	}
 }
 
@@ -1797,4 +1841,7 @@ body {
 	.c-top-box {
 		height: 200px;
 	}	
+	.c-header__title {
+		font-size: 18px;
+	}
 }

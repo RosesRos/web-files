@@ -45,5 +45,16 @@ document.addEventListener('DOMContentLoaded', function () {
   accordion();
 
 
+  var loadMoreContent = document.getElementById("load-more");
+  if (loadMoreContent) {
+    loadMoreContent.addEventListener("click", function (e) {
+      var loadMoreEl = document.querySelector("#load-more");
+      var progressEl = document.querySelector("#progress");
+  
+      loadMoreEl.style.display = "none";
+      progressEl.style.display = "flex";
+    });
+  }
 
 });
+

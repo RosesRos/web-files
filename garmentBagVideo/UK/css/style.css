@@ -892,7 +892,6 @@ a {
   background: linear-gradient(90deg, #61F089 0%, #61EDCB 100%);
   color: #fff;
   border: none;
-  max-width: 95%;
 }
 
 .fixed {
@@ -1029,4 +1028,8 @@ a {
     max-width: 100%;
     padding: 0;
   }
+  .fixed {
+    max-width: 95%;
+  }
+  
 }
