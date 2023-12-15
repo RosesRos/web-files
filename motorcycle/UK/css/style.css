@@ -886,7 +886,6 @@ a {
   background: #00EF18;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
   border: none;
-  max-width: 95%;
 }
 
 .fixed {
@@ -896,7 +895,7 @@ a {
   left: 50%;
   transform: translateX(-50%);
   /* height: 50px; */
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
 }
 
 .fixed-btn__text {
@@ -1069,6 +1068,9 @@ a {
   .container {
     max-width: 100%;
     padding: 0;
+  }
+  .fixed {
+    max-width: 95%;
   }
 }
 @media (max-width: 390px) {
