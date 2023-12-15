@@ -1,0 +1,129 @@
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.text-203 {
+  position: relative;
+  line-height: 18px;
+}
+.head-offer {
+  align-self: stretch;
+  background-color: var(--color-salmon);
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-5xs) 0;
+  box-sizing: border-box;
+}
+.icons,
+.logo-icon1 {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+.icons {
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.icons-wrapper {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  border-radius: var(--br-981xl);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.header,
+.headline {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+.header {
+  height: 56px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--padding-xs) var(--padding-xl);
+  box-sizing: border-box;
+}
+.headline {
+  background-color: var(--buttonday-button-primary-white);
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.go-to-product {
+  position: relative;
+  line-height: 24px;
+}
+.go-to-product-page-parent {
+  text-decoration: none;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: inherit;
+}
+.track-your-order {
+  position: relative;
+  line-height: 24px;
+  font-weight: 500;
+}
+.frame-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-5xl);
+  box-sizing: border-box;
+  gap: var(--gap-5xl);
+  width: 100%;
+  max-width: 600px;
+  font-size: var(--font-size-base);
+  color: var(--black);
+  font-family: var(--font-vela-sans);
+}
+.menu-losi-moto-radio-contr-child {
+  align-self: stretch;
+  position: relative;
+  background-color: var(--color-silver-100);
+  height: 1px;
+}
+.menu-losi-moto-radio-contr {
+  position: relative;
+  background-color: var(--buttonday-button-primary-white);
+  width: 390px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+  opacity: 0;
+  max-width: 90%;
+  overflow: auto;
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--buttonday-button-primary-white);
+  font-family: var(--font-inter);
+}
+.menu-losi-moto-radio-contr.animate {
+  animation: 0.25s ease 0s 1 normal forwards slide-in-right;
+}
