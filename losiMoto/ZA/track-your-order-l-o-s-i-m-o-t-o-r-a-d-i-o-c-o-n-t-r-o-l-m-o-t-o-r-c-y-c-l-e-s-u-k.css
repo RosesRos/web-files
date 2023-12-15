@@ -1,0 +1,486 @@
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.text-208 {
+  position: relative;
+  line-height: 18px;
+}
+.head-offer3 {
+  align-self: stretch;
+  background-color: var(--color-salmon);
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-5xs) 0;
+  box-sizing: border-box;
+}
+.logo-icon6,
+.logo2 {
+  width: 24px;
+  height: 24px;
+}
+.logo-icon6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  object-fit: cover;
+}
+.logo2 {
+  text-decoration: none;
+  position: relative;
+}
+.sale-ending-timer2 {
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 24px;
+}
+.sale-ends-in2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.icons7 {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.frame-button,
+.header3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.frame-button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  border-radius: var(--br-981xl);
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+}
+.header3 {
+  align-self: stretch;
+  height: 56px;
+  justify-content: space-between;
+  padding: var(--padding-5xs) var(--padding-xl);
+  box-sizing: border-box;
+  color: var(--black);
+  font-family: var(--font-vela-sans);
+}
+.headline-inner {
+  align-self: stretch;
+  position: relative;
+  background-color: var(--warmgray8);
+  height: 1px;
+}
+.headline3 {
+  align-self: stretch;
+  background-color: var(--buttonday-button-primary-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  max-width: 600px;
+}
+.text-246 {
+  align-self: stretch;
+  position: relative;
+  line-height: 32px;
+  font-weight: 800;
+}
+.input6,
+.text-fill15 {
+  font-size: var(--font-size-base);
+  font-family: var(--font-vela-sans);
+  color: var(--black);
+}
+.input6 {
+  border: 1px solid var(--color-silver-100);
+  outline: 0;
+  background-color: transparent;
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  box-sizing: border-box;
+  height: 52px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs) var(--padding-xl);
+}
+.text-fill15 {
+  position: relative;
+  line-height: 24px;
+  font-weight: 600;
+  text-align: left;
+}
+.buttons5 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-2xs) var(--padding-2xl);
+  background-color: var(--color-linen);
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  height: 46px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.input-parent1 {
+  align-self: stretch;
+  gap: var(--gap-xs);
+}
+.input-parent1,
+.text-24-group,
+.title-section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.text-24-group {
+  align-self: stretch;
+  gap: var(--gap-xl);
+}
+.title-section1 {
+  flex: 1;
+  gap: var(--gap-21xl);
+}
+.headline-container,
+.title-section-container {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.title-section-container {
+  flex-direction: row;
+  padding: var(--padding-81xl) var(--padding-5xl) 0;
+  font-size: var(--font-size-5xl);
+  color: var(--color-gray-200);
+  font-family: var(--font-vela-sans);
+}
+.headline-container {
+  flex-direction: column;
+  gap: var(--gap-5xs);
+}
+.text-248,
+.text-fill17 {
+  align-self: stretch;
+  position: relative;
+  line-height: 28px;
+}
+.text-fill17 {
+  line-height: 20px;
+  font-weight: 500;
+}
+.text-fill-container {
+  font-size: var(--font-size-sm);
+  color: var(--color-cornflowerblue);
+}
+.need-help2,
+.text-fill-container {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-5xs);
+}
+.text-fill20 {
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 24px;
+  font-weight: 600;
+  font-family: var(--font-vela-sans);
+  color: var(--buttonday-button-primary-white);
+  text-align: left;
+}
+.buttons7,
+.subscribe2 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttons7 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-smi) var(--padding-mid) var(--padding-mini)
+    var(--padding-base);
+  background-color: var(--blue500);
+  border-radius: var(--br-xs);
+  flex-direction: row;
+}
+.subscribe2 {
+  flex-direction: column;
+  gap: var(--gap-xs);
+}
+.information-is-not2 {
+  margin: 0;
+}
+.mini-text4 {
+  flex: 1;
+  position: relative;
+}
+.top-text2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.hidden-text,
+.text-content2,
+.top-text2 {
+  align-self: stretch;
+  align-items: center;
+}
+.hidden-text {
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+}
+.text-content2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.read-button-text {
+  position: relative;
+  font-size: var(--font-size-5xs);
+  font-family: var(--font-vela-sans);
+  color: var(--buttonday-button-primary-white);
+  text-align: left;
+}
+.read-button {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-7xs) var(--padding-lg);
+  background-color: var(--color-silver-200);
+  border-radius: var(--br-81xl);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.small-info-text2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  opacity: 0.5;
+}
+.small-info-text-frame,
+.subscribe-container {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.small-info-text-frame {
+  text-align: center;
+  font-size: var(--font-size-5xs);
+  color: var(--gray54);
+}
+.subscribe-container {
+  gap: var(--gap-5xl);
+}
+.logo-icon7 {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.text-209 {
+  flex: 1;
+  position: relative;
+  line-height: 18px;
+}
+.footer2,
+.logo-container {
+  align-self: stretch;
+  display: flex;
+}
+.logo-container {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: right;
+  font-size: var(--font-size-xs);
+}
+.footer2 {
+  background-color: var(--color-whitesmoke-100);
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-base) var(--padding-5xl) var(--padding-5xl);
+  gap: var(--gap-base);
+  font-size: var(--font-size-xl);
+  color: var(--black);
+  font-family: var(--font-vela-sans);
+}
+.track-your-order-losi-moto {
+  position: relative;
+  background-color: var(--buttonday-button-primary-white);
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--buttonday-button-primary-white);
+  font-family: var(--font-inter);
+}
+.text-203 {
+  position: relative;
+  line-height: 18px;
+}
+.head-offer {
+  align-self: stretch;
+  background-color: var(--color-salmon);
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-5xs) 0;
+  box-sizing: border-box;
+}
+.icons,
+.logo-icon1 {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+.icons {
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.icons-wrapper {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  border-radius: var(--br-981xl);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.header,
+.headline {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+.header {
+  height: 56px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--padding-xs) var(--padding-xl);
+  box-sizing: border-box;
+}
+.headline {
+  background-color: var(--buttonday-button-primary-white);
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.go-to-product {
+  position: relative;
+  line-height: 24px;
+}
+.go-to-product-page-parent {
+  text-decoration: none;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: inherit;
+}
+.track-your-order {
+  position: relative;
+  line-height: 24px;
+  font-weight: 500;
+}
+.frame-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-5xl);
+  box-sizing: border-box;
+  gap: var(--gap-5xl);
+  width: 100%;
+  max-width: 600px;
+  font-size: var(--font-size-base);
+  color: var(--black);
+  font-family: var(--font-vela-sans);
+}
+.menu-losi-moto-radio-contr-child {
+  align-self: stretch;
+  position: relative;
+  background-color: var(--color-silver-100);
+  height: 1px;
+}
+.menu-losi-moto-radio-contr {
+  position: relative;
+  background-color: var(--buttonday-button-primary-white);
+  width: 390px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+  opacity: 0;
+  max-width: 90%;
+  overflow: auto;
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--buttonday-button-primary-white);
+  font-family: var(--font-inter);
+}
+.menu-losi-moto-radio-contr.animate {
+  animation: 0.25s ease 0s 1 normal forwards slide-in-right;
+}
