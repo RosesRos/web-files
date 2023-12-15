@@ -1419,7 +1419,7 @@ body {
 }
 .c-preViews {
 	background: #FFF;
-	padding: 1rem 0;
+	padding: 0.5rem 0;
 }
 .c-preViews-h1 {
 	color: #4F4B4B;
@@ -1430,7 +1430,6 @@ body {
 	font-weight: 600;
 	line-height: 97.52%; /* 39.008px */
 	font-variant: all-small-caps;
-	margin: 1.5rem 0;
 }
 .c-preViews-p {
 	color: #4F4B4B;
@@ -1702,6 +1701,9 @@ body {
 	.c-div-btn {
 		max-width: 100%;
 	}
+	.c-display-flex-items-a {
+		font-size: 12px;
+	}
 }
 
 @media (max-width: 370px) {
@@ -1717,6 +1719,9 @@ body {
 	}
 	.reviews__write {
 		font-size: 25px;
+	}
+	.c-display-flex-items-a {
+		font-size: 11px;
 	}
 }
 
