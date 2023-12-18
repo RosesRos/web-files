@@ -888,6 +888,7 @@ a {
   left: 50%;
   transform: translateX(-50%);
 
+  border-radius: 12px;
   background: linear-gradient(90deg, #61F089 0%, #61EDCB 100%);
   color: #fff;
   border: none;
@@ -900,7 +901,7 @@ a {
   left: 50%;
   transform: translateX(-50%);
   /* height: 50px; */
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
 }
 
 .fixed-btn__text {
@@ -1026,5 +1027,8 @@ a {
   .container {
     max-width: 100%;
     padding: 0;
+  }
+  .fixed {
+    max-width: 95%;
   }
 }
