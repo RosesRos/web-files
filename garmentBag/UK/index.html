@@ -136,11 +136,24 @@
         <div class="c-div-btn">
           <div class="c-div-btns c-div-btns-mobil">
             <h3 class="c-div-btns-h3">CHOOSE YOUR BAG COLOR:</h3>
-            <div class="c-div-btns ">
-              <img class="c-div-btns-img" src="./images/redBlack.svg" alt="">
-              <img class="c-div-btns-img" src="./images/black.svg" alt="">
-              <img class="c-div-btns-img" src="./images/red.svg" alt="">
-              <img class="c-div-btns-img" src="./images/pink.svg" alt="">
+            <div class="c-div-btns c-width-small">
+              <div thumbsSlider="" class="swiper mySwiper3">
+                <div class="swiper-wrapper c-swiper-wrapper">
+                  <div class="swiper-slide ">
+                    <img class="c-div-btns-img" src="./images/redBlack.svg" alt="">
+                  </div>
+                  <div class="swiper-slide ">
+                    <img class="c-div-btns-img" src="./images/black.svg" alt="">
+                  </div>
+                  <div class="swiper-slide ">
+                    <img class="c-div-btns-img" src="./images/red.svg" alt="">
+                  </div>
+                  <div class="swiper-slide ">
+                    <img class="c-div-btns-img" src="./images/pink.svg" alt="">
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
           <a href="{offer_link}" class="UI-btn">BUY NOW</a>
@@ -391,16 +404,27 @@
     <!-- Initialize Swiper -->
     <script>
 
+      var swiper3 = new Swiper(".mySwiper3", {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
       var swiper2 = new Swiper(".mySwiper2", {
         loop: true,
         spaceBetween: 5,
         pagination: {
           el: ".swiper-pagination",
-          dynamicBullets: true,
+          clickable: true,
+          // dynamicBullets: true,
         },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper3,
         },
       });
     </script>
