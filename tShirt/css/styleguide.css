@@ -1,0 +1,111 @@
+:root { 
+  --baseblack: #272727;
+  --basedark-grey: #000000;
+  --basegreen-veryfied: #000000;
+  --basewhite: #ffffff;
+  --baseyellow-star: #000000;
+  --eucalyptus: #1c8552;
+  --guardsman-red: #c40607;
+  --mid-gray: #5b596c;
+  --shuttle-gray: #5f6473;
+  --tamarillo: #9e0e1d;
+  --topaz: #7b738b;
+ 
+  --font-size-l: 16px;
+  --font-size-m: 14px;
+  --font-size-s: 12px;
+  --font-size-xl: 20px;
+  --font-size-xs: 10px;
+  --font-size-xxl: 24px;
+  --font-size-xxxl: 36px;
+ 
+  --font-family-montserrat: "Montserrat", Helvetica;
+  --font-family-mountains_of_christmas: "Mountains of Christmas", Helvetica;
+}
+.basemont20 {
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.basemont14 {
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.basemont10 {
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.mountainsofchristmas-normal-white-24px {
+  color: var(--basewhite);
+  font-family: var(--font-family-mountains_of_christmas);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.montserrat-bold-black-20px {
+  color: var(--basedark-grey);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.montserrat-medium-shuttle-gray-20px {
+  color: var(--shuttle-gray);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.montserrat-normal-white-36px {
+  color: var(--basewhite);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.montserrat-normal-white-16px {
+  color: var(--basewhite);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.montserrat-light-white-10px {
+  color: var(--basewhite);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: 300;
+}
+
+.montserrat-normal-black-12px {
+  color: var(--basedark-grey);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.montserrat-normal-topaz-12px {
+  color: var(--topaz);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
