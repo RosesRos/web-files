@@ -318,15 +318,14 @@ body {
 	font-weight: 700;
 	line-height: 97.52%; /* 23.405px */
     line-height: 20px;
-
-
 	
 	border-radius: 12px;
 	background: linear-gradient(90deg, #61F089 0%, #61EDCB 100%);
     color: #fff;
     border: none;
 	position: relative;
-	
+
+	margin-top: 1rem;
 }
 
 .UI-btn--bordered {
@@ -1611,8 +1610,8 @@ body {
 }
 .c-div-btns {
 	display: flex;
-	/* align-items: center; */
-	margin-bottom: 1rem;
+	align-items: center;
+	/* margin-bottom: 1rem; */
 	/* justify-content: center; */
 }
 .c-div-btns-h3 {
