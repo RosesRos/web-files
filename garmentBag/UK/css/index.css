@@ -935,12 +935,6 @@ body {
 	display: flex;
 	padding: 0 11px;
 }
-/* .reviews__item_stars img {
-	width: 20px;
-} */
-/* .reviews__item_stars img + img {
-	margin-left: 5px;
-} */
 .reviews__item_desc {
 	margin-top: 12px;
 	padding: 0 17px;
@@ -1659,7 +1653,7 @@ body {
 @media (max-width: 650px) {
 	.reviews__item {
 		width: 95%;
-		margin: 0.5rem auto;
+		margin: 0.3rem auto;
 	}
 	.header__price {
 		max-width: 80%;

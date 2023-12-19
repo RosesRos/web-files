@@ -318,15 +318,14 @@ body {
 	font-weight: 700;
 	line-height: 97.52%; /* 23.405px */
     line-height: 20px;
-
-
 	
 	border-radius: 12px;
 	background: linear-gradient(90deg, #61F089 0%, #61EDCB 100%);
     color: #fff;
     border: none;
 	position: relative;
-	
+
+	margin-top: 1rem;
 }
 
 .UI-btn--bordered {
@@ -815,9 +814,13 @@ body {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	margin-bottom: 10px;
+	/* margin-bottom: 10px; */
 	padding-top: 10px;
 	flex-direction: column;
+
+	border-radius: 16px;
+	background: #FAF9F9;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.03) inset;
 }
 .reviews__title {
 	color: #272727;
@@ -837,7 +840,7 @@ body {
 	color:  #2C6482;
 	text-align: center;
 	font-family: Montserrat;
-	font-size: 30px;
+	font-size: 24px;
 	font-style: normal;
 	line-height: normal;
 }
@@ -932,12 +935,6 @@ body {
 	display: flex;
 	padding: 0 11px;
 }
-/* .reviews__item_stars img {
-	width: 20px;
-} */
-/* .reviews__item_stars img + img {
-	margin-left: 5px;
-} */
 .reviews__item_desc {
 	margin-top: 12px;
 	padding: 0 17px;
@@ -1346,7 +1343,7 @@ body {
 .c-header__title {
 	color: #272727;
 	font-family: Montserrat;
-	font-size:30px;
+	font-size:24px;
 	font-style: normal;
 	font-weight: 500;
 	line-height: normal;
@@ -1608,23 +1605,28 @@ body {
 .c-div-btns {
 	display: flex;
 	align-items: center;
-	margin-bottom: 1rem;
+	/* margin-bottom: 1rem; */
 	justify-content: center;
 }
 .c-div-btns-h3 {
 	color: #000;
 	font-family: Montserrat;
-	font-size: 16px;
+	font-size: 14px;
 	font-style: normal;
 	font-weight: 600;
 	line-height: normal;
 }
 .c-div-btns-img {
 	margin: 0 1rem;
+	cursor: pointer;
 }
 .c-review-icon {
 	text-align: center;
-    margin-top: 1rem;
+    max-width: 30%;
+	width: 100%;
+}
+.c-review-icon img {
+	width: 100%;
 }
 .c-reviews__item_media {
 	max-width: 90%;
@@ -1638,10 +1640,13 @@ body {
 .c-div-titles {
 	margin: 2rem 0;
 }
+.c-width-small {
+	max-width: 45%;
+}
 @media (max-width: 650px) {
 	.reviews__item {
 		width: 95%;
-		margin: 0.5rem auto;
+		margin: 0.3rem auto;
 	}
 	.header__price {
 		max-width: 80%;
@@ -1673,7 +1678,14 @@ body {
 	}
 	.c-div-btns-mobil {
 		flex-direction: column;
-		gap: 1rem;
+		align-items: center;
+		gap: 0.5rem;
+	}
+	.c-width-small {
+		max-width: 70%;
+	}
+	.c-review-icon {
+		max-width: 40%;
 	}
 }
 
@@ -1697,6 +1709,7 @@ body {
 	.c-display-flex-items-a {
 		font-size: 12px;
 	}
+	
 }
 
 @media (max-width: 370px) {
@@ -1711,7 +1724,7 @@ body {
 		align-items: flex-start
 	}
 	.reviews__write {
-		font-size: 25px;
+		font-size: 20px;
 	}
 	.c-display-flex-items-a {
 		font-size: 11px;
