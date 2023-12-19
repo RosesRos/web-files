@@ -1670,9 +1670,9 @@ body {
 	.c-padding-mob {
 		padding: 0 10px;
 	}
-	.c-top-box-prices {
+	/* .c-top-box-prices {
 		top: 0;
-	}
+	} */
 	.c-object-fit {
 		height: 250px;
 	}
@@ -1686,6 +1686,22 @@ body {
 	}
 	.c-review-icon {
 		max-width: 40%;
+	}
+	.c-top-box-images-item {
+		width: 36px;
+		height: 36px;
+	}
+	.c-top-box-images-p {
+		font-size: 16px;
+	}
+	.c-top-box-prices-old {
+		font-size: 16px;
+	}
+	.c-top-box-prices-discount {
+		font-size: 16px;
+	}
+	.c-top-box-prices-new {
+		font-size: 40px;
 	}
 }
 
@@ -1743,5 +1759,8 @@ body {
 	.swiper-button-next::after, .swiper-button-prev::after {
 		width: 30px;
 		height: 30px;
+	}
+	.c-top-box-prices-new {
+		text-align: right;
 	}
 }
