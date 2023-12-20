@@ -85,10 +85,9 @@
             </div>
             <div id="drawingArea" class="drawing-area">					
               <div class="canvas-container">
-                  <canvas id="canvas" width="90" height="85"></canvas>
+                  <canvas id="canvas" width="150" height="150"></canvas>
               </div>
-          </div>
-
+            </div>
           </div>
 
             <div class="c-rasmer-imgs-shirt">
@@ -126,7 +125,7 @@
               <div class="c-rasmer-imgs-shirt-box c-rasmer-margin-l">
                 <h2 class="c-rasmer-imgs-shirt-h2">Upload Your Photo</h2>
                 <div class="input__wrapper">
-                  <input name="file" type="file" id="tshirt-custompicture" class="input input__file" multiple>
+                  <input name="file" type="file" id="tshirt-custompicture" class="input input__file" multiple accept="image/*">
                   <label for="tshirt-custompicture" class="input__file-button">
                       <span class="input__file-button-text">choose your file</span>
                   </label>
@@ -612,120 +611,109 @@
 
     <script>
 
-      const canv = document.getElementById("canvas");
-      window.addEventListener("resize", () => {
-        if (window.screen.width < 330) {
-          canv.style.width = "70";
-          canv.style.height = "65";
-        } else {
-          canv.style.width = "90";
-          canv.style.height = "85";
-        }
-      })
+      document.addEventListener("DOMContentLoaded", function(){
 
-      let canvas = new fabric.Canvas('canvas');
+        const canv = document.getElementById("canvas");
+        window.addEventListener("resize", () => {
+          if (window.screen.width < 330) {
+            canv.style.width = "70";
+            canv.style.height = "65";
+          } else {
+            canv.style.width = "90";
+            canv.style.height = "85";
+          }
+        })
 
-      /**
-       * Method that adds an image to the T-Shirt canvas from a web URL.
-       * 
-       * @param {String} imageUrl      The server URL of the image that you want to load on the T-Shirt.
-       *
-       * @return {void} Return value description.
-       */           
-      // Создаем объект-сердце
-      const heartPath = 'M 84.646 11.504 C 75.554 1.233 58.335 -0.041 45 13.074 C 31.665 -0.041 14.446 1.233 5.354 11.504 c -9.671 10.926 -5.609 31.318 7.123 47.615 C 18.931 67.38 34.874 80.832 45 86.481 c 10.126 -5.649 26.069 -19.101 32.523 -27.362 C 90.255 42.822 94.318 22.43 84.646 11.504 z';
+        let canvas = new fabric.Canvas('canvas');
+
+        /**
+         * Method that adds an image to the T-Shirt canvas from a web URL.
+         * 
+         * @param {String} imageUrl      The server URL of the image that you want to load on the T-Shirt.
+         *
+         * @return {void} Return value description.
+         */           
+        // Создаем объект-сердце
+        const heartPath = 'M 84.646 11.504 C 75.554 1.233 58.335 -0.041 45 13.074 C 31.665 -0.041 14.446 1.233 5.354 11.504 c -9.671 10.926 -5.609 31.318 7.123 47.615 C 18.931 67.38 34.874 80.832 45 86.481 c 10.126 -5.649 26.069 -19.101 32.523 -27.362 C 90.255 42.822 94.318 22.43 84.646 11.504 z';
         const heart = new fabric.Path(heartPath, {
-        left: 0,
-        top: 0,
-        width: 100,
-        height: 100,
-        fill: 'yellow',
-        borderColor: 'black',
-        cornerColor: 'black',
-        cornerSize: 4,
-        transparentCorners: true
-      } );
-      // Добавляем сердце на канвас
-      canvas.add(heart);
+          left: 0,
+          top: 0,
+          width: 90,
+          height: 85,
+          fill: 'yellow',
+          borderColor: 'black',
+          cornerColor: 'black',
+          cornerSize: 4,
+          transparentCorners: true
+        } );
+        // Добавляем сердце на канвас
+        canvas.add(heart);
 
+        document.getElementById("white").addEventListener("click", function(){
+            document.getElementById("tshirt-div").style.backgroundColor = "white";
+        }, false); 
+        document.getElementById("black").addEventListener("click", function(){
+            document.getElementById("tshirt-div").style.backgroundColor = "#000000";
+        }, false); 
+        document.getElementById("gray").addEventListener("click", function(){
+            document.getElementById("tshirt-div").style.backgroundColor = "#CACACA";
+        }, false); 
+        document.getElementById("blue").addEventListener("click", function(){
+            document.getElementById("tshirt-div").style.backgroundColor = "#8DC5FB";
+        }, false); 
 
-      document.getElementById("white").addEventListener("click", function(){
-          document.getElementById("tshirt-div").style.backgroundColor = "white";
-      }, false); 
-      document.getElementById("black").addEventListener("click", function(){
-          document.getElementById("tshirt-div").style.backgroundColor = "#000000";
-      }, false); 
-      document.getElementById("gray").addEventListener("click", function(){
-          document.getElementById("tshirt-div").style.backgroundColor = "#CACACA";
-      }, false); 
+        // When the user clicks on upload a custom picture
+        document.getElementById('tshirt-custompicture').addEventListener("change", function(e){
+            var reader = new FileReader();
+            reader.onload = function (event){
+                var imgObj = new Image();
+                imgObj.src = event.target.result;
+                imgObj.onload = function () {
+                    var img = new fabric.Image(imgObj);
+                    img.scaleToHeight(150);
+                    img.scaleToWidth(150); 
+                    canvas.centerObject(img);
+                    canvas.add(img);
+                    canvas.renderAll();
+                };
+            };
+            // If the user selected a picture, load it
+            if(e.target.files[0]){
+                reader.readAsDataURL(e.target.files[0]);
+            }
+        }, false);
 
-      document.getElementById("blue").addEventListener("click", function(){
-          document.getElementById("tshirt-div").style.backgroundColor = "#8DC5FB";
-      }, false); 
+        // The object will be removed !
+        document.addEventListener("keydown", function(e) {
+            var keyCode = e.keyCode;
+            if(keyCode == 46){
+                console.log("Removing selected element on Fabric.js on DELETE key !");
+                canvas.remove(canvas.getActiveObject());
+            }
+        }, false);
 
-      // document.getElementById("tshirt-design").addEventListener("change", function(){
-
-      // updateTshirtImage(this.value);
-      // }, false);
-
-      // When the user clicks on upload a custom picture
-      document.getElementById('tshirt-custompicture').addEventListener("change", function(e){
-          var reader = new FileReader();
-          
-          reader.onload = function (event){
-              var imgObj = new Image();
-              imgObj.src = event.target.result;
-
-              imgObj.onload = function () {
-                  var img = new fabric.Image(imgObj);
-
-                  img.scaleToHeight(100);
-                  img.scaleToWidth(100); 
-                  canvas.centerObject(img);
-                  canvas.add(img);
-                  canvas.renderAll();
-              };
-          };
-
-          // If the user selected a picture, load it
-          if(e.target.files[0]){
-              reader.readAsDataURL(e.target.files[0]);
-          }
-      }, false);
-
-      // When the user selects a picture that has been added and press the DEL key
-      // The object will be removed !
-      document.addEventListener("keydown", function(e) {
-          var keyCode = e.keyCode;
-
-          if(keyCode == 46){
-              console.log("Removing selected element on Fabric.js on DELETE key !");
-              canvas.remove(canvas.getActiveObject());
-          }
-      }, false);
-
-      document.getElementById("E71D2D").addEventListener("click", function(){
-        heart.set({ fill: "#E71D2D" });
-        canvas.renderAll();
-        canvas.remove(canvas.getActiveObject());
-      }, false);
-      document.getElementById("141213").addEventListener("click", function(){
-        heart.set({ fill: "#141213" });
-        canvas.renderAll();
-        canvas.remove(canvas.getActiveObject());
-      }, false);
-      document.getElementById("9DA1A2").addEventListener("click", function(){
-        heart.set({ fill: "#9DA1A2" });
-        canvas.renderAll();
-        canvas.remove(canvas.getActiveObject());
-      }, false);
-      document.getElementById("linearBg").addEventListener("click", function(){
-        heart.set({ fill: "#FCD866" });
-        canvas.renderAll();
-        canvas.remove(canvas.getActiveObject());
-      }, false);
-
-  </script>
+        document.getElementById("E71D2D").addEventListener("click", function(){
+          heart.set({ fill: "#E71D2D" });
+          canvas.renderAll();
+          canvas.remove(canvas.getActiveObject());
+        }, false);
+        document.getElementById("141213").addEventListener("click", function(){
+          heart.set({ fill: "#141213" });
+          canvas.renderAll();
+          canvas.remove(canvas.getActiveObject());
+        }, false);
+        document.getElementById("9DA1A2").addEventListener("click", function(){
+          heart.set({ fill: "#9DA1A2" });
+          canvas.renderAll();
+          canvas.remove(canvas.getActiveObject());
+        }, false);
+        document.getElementById("linearBg").addEventListener("click", function(){
+          heart.set({ fill: "#FCD866" });
+          canvas.renderAll();
+          canvas.remove(canvas.getActiveObject());
+        }, false);
+      });
+    </script>
 
   </body>
 </html>
