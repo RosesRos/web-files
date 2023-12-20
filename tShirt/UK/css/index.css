@@ -95,33 +95,13 @@ body {
 
     position: absolute;
     left: 26%;
-    bottom: 19%;
+    bottom: 30%;
 }
 .UI-btn:hover {
 	background-color: #C70807;
 	color: #fff;
 }
-.header__colors_items2 {
-	display: none;
-}
-.header__colors {
-	padding: 0 20px;
-}
 
-.header__paymentMethods {
-	width: 100%;
-	margin-top: 12px;
-	margin-bottom: 12px;
-}
-.header__salePercent {
-	font-family: 'Jost*', sans-serif;
-	font-size: 14px;
-	font-weight: 600;
-	color: #fff;
-	padding: 5px 10px;
-	margin-left: 19px;
-	background: url('../images/flag.svg') no-repeat 100%/100%;
-}
 .header__slider {
 	width: 100%;
 	position: relative;
