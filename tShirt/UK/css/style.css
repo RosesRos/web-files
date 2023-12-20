@@ -300,6 +300,7 @@ body {
 .footer {
   background: #1C8552;
   padding: 20px 30px;
+  position: relative;
 }
 .footer__form_ttl {
   color: #FFF;
@@ -408,6 +409,7 @@ body {
 .footer {
   margin-top: 25px;
   margin-bottom: 3rem;
+  position: relative;
 }
 .footer__info_btnBlock {
   text-align: center;
@@ -775,6 +777,10 @@ body {
   top: 45%;
   left: 15%;
 }
+.c-top-p-3 {
+  top: 45%;
+  left: 15%;
+}
 .c-top-p-5 {
   top: 45%;
   left: 25%;
@@ -871,7 +877,7 @@ body {
   border-radius: 16px;
   background: #1C8552;
   padding: 4px;
-  max-width: 20%;
+  max-width: 25%;
   width: 100%;
   margin: 0 auto;
   cursor: pointer;
@@ -886,6 +892,134 @@ body {
   line-height: 100%; /* 10px */
   text-transform: uppercase;
 }
+
+.c-rasmer-box-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.c-rasmer-box-shirt {
+  flex-basis: 50%;
+  width: 50%;
+}
+.c-rasmer-box-shirt-item1 {
+  max-width: 100%;
+}
+.c-rasmer-box-shirt-item1-img {
+  width: 100%;
+}
+.c-rasmer-box-shirt-item2 {
+  padding: 2px;
+  border: 1px solid #827171;
+}
+.c-rasmer-box-shirt-item2-p {
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 100%; /* 12px */
+  text-transform: capitalize;
+}
+.c-rasmer-box-shirt-item2-p b {
+  cursor: pointer;
+}
+
+.c-rasmer-imgs-shirt-h2 {
+  color: #9E0E1D;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%; /* 14px */
+  text-transform: capitalize;
+  margin: 10px 0;
+}
+.c-rasmer-imgs-shirt {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+.c-rasmer-imgs-shirt-div {
+  display: grid;
+  /* grid-template-rows: repeat(4, 1fr); */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+}
+.c-rasmer-imgs-shirt-div-img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.c-rasmer-imgs-shirt-div-rasme {
+  display: flex;
+  aling-items: center;
+  gap: 1rem;
+}
+.c-rasmer-imgs-shirt-ras {
+  background: #FFF;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 3px;
+  color: #606474;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 20px */
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+
+.input__wrapper {
+  width: 100%;
+  position: relative;
+  /* margin: 15px 0; */
+  text-align: center;
+}
+.input__file {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+.input__file-button-text {
+  line-height: 1;
+  margin-top: 1px;
+}
+.input__file-button {
+  
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 2px;
+
+  color: #606474;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  text-transform: uppercase;
+
+  background: #FFF;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.60);
+}
+
+.c-rasmer-margin-l {
+  margin-top: 15px;
+}
+
+.c-footer-img {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
 
 /* ##### LOADER LOADER LOADER LOADER*/
 /* ##### LOADER LOADER LOADER LOADER*/
@@ -969,4 +1103,30 @@ body {
 	.UI-timer__title {
 		font-size: 10px;
 	}
+  .c-top-p-6 {
+    left: 25%;
+  }
+  .c-top-p-5 {
+    left: 20%;
+  }
+  .c-top-p-2 {
+    left: 5%;
+  }
+  .c-top-p-3 {
+    left: 10%;
+  }
+  .c-top-p-1 {
+    left: 5%;
+  }
+  .stringWithTime {
+    left: 5%;
+    top: 15%;
+  }
+  .c-top-p-0 {
+    left: 20%;
+  }
+  .header__title strong {
+    font-size: 30px;
+  }
+
 }
