@@ -791,6 +791,61 @@ body {
   gap: 1rem;
 }
 
+
+/* ##### LOADER LOADER LOADER LOADER*/
+/* ##### LOADER LOADER LOADER LOADER*/
+.progress {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  z-index: 1;
+  
+}
+.img-1, .img-2, .img-3 {
+  position: relative;
+  border-radius: 50%;
+  background-color: #1C8552;
+  width: 18px;
+  height: 18px;
+  animation: 2s ease-in-out infinite load;
+}
+
+.img-2,
+.img-3 {
+  animation: 2s ease-in-out 0.4s infinite load;
+}
+.img-3 {
+  animation: 2s ease-in-out 0.8s infinite load;
+}
+@keyframes load {
+	50% {
+	  opacity: 0;
+	  transform: scale(0.7);
+	}
+}
+
+
+
+.hidden-text {
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  color: var(--color-gray-500);
+}
+.text-1419 {
+  flex: 1;
+  position: relative;
+}
+.hidden-text.show {
+  display: block;
+}
+
+
+/* ##### LOADER LOADER LOADER LOADER*/
+/* ##### LOADER LOADER LOADER LOADER*/
+
 @media (max-width: 480px) {
 	.c-header-title {
 		font-size: 14px;

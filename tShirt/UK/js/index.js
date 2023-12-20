@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
     timerEls.forEach(element => {
       timerTextEls.push(element.querySelector('span[class="timer"]'));
     });
-    const hours = 0;
-    const minutes = 46;
+    const hours = 1;
+    const minutes = 23;
     const seconds = 50;
     let countdownDate = new Date();
     countdownDate.setHours(countdownDate.getHours() + hours);
@@ -21,10 +21,10 @@ document.addEventListener('DOMContentLoaded', function () {
         const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        element.textContent = `${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
+        element.innerHTML = `<span>00</span> <span>${hours < 10 ? '0' + hours : hours}</span> <span>${minutes < 10 ? '0' + minutes : minutes}</span> <span>${seconds < 10 ? '0' + seconds : seconds}</span>`;
         if (distance < 0) {
           clearInterval(x);
-          timerTextEl.textContent = '00:00:00';
+          timerTextEl.textContent = '00 00 00';
         }
       }, 1000);
     });
