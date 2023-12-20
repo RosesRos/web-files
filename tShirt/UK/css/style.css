@@ -1122,6 +1122,7 @@ body {
 	}
   .drawing-area {
     left: 25%;
+    top: 14%;
   }
 	.c-rasmer-imgs-shirt-div-img {
     width: 40px;
@@ -1138,6 +1139,24 @@ body {
   }
   .c-first-shirt-h2 {
     margin-top: 0;
+  }
+  .header__title strong {
+    font-size: 30px;
+  }
+  .stringWithTime {
+    left: 10%;
+  }
+  .c-top-p-1 {
+    left: 10%;
+  }
+  .c-top-p-2 {
+    left: 10%;
+  }
+}
+
+@media (max-width: 370px) {
+  .stringWithTime {
+    left: 10%;
   }
 }
 
