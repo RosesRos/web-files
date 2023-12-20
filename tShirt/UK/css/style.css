@@ -1158,6 +1158,9 @@ body {
   .stringWithTime {
     left: 10%;
   }
+  .c-rasmer-margin-l {
+    margin-top: 0;
+  }
 }
 
 
