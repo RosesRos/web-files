@@ -625,7 +625,7 @@ body {
   
   /* Modal Content */
   .c-modal-content {
-	background-color: #fefefe;
+	background-color: #C70807;
 	margin: auto;
 	padding: 20px;
 	border: 1px solid #888;
@@ -652,20 +652,6 @@ body {
 	width: 100%;
   }
 
-#openModal {
-	color: #000;
-	text-align: center;
-	font-family: Montserrat;
-	font-size: 10px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: normal;
-	text-decoration-line: underline;
-	margin-left: 40%;
-}
-#openModal:hover {
-	cursor: pointer;
-}
 
 .btnBlcok__flex {
   display: flex;
@@ -901,9 +887,11 @@ body {
 .c-rasmer-box-shirt {
   flex-basis: 50%;
   width: 50%;
+  position: relative;
 }
 .c-rasmer-box-shirt-item1 {
   max-width: 100%;
+  /* height: 35vh; */
 }
 .c-rasmer-box-shirt-item1-img {
   width: 100%;
@@ -911,6 +899,7 @@ body {
 .c-rasmer-box-shirt-item2 {
   padding: 2px;
   border: 1px solid #827171;
+  /* margin-top: 0.5rem; */
 }
 .c-rasmer-box-shirt-item2-p {
   color: #000;
@@ -1076,6 +1065,42 @@ body {
 /* ##### LOADER LOADER LOADER LOADER*/
 
 
+
+.drawing-area{
+  position: absolute;
+  top: 20%;
+  left: 28%;
+  z-index: 10;
+  width: 90px;
+  height: 85px;
+}
+
+.canvas-container{
+  width: 90px; 
+  height: 85px; 
+  position: relative; 
+  user-select: none;
+}
+
+#canvas{
+  position: absolute;
+  width: 90px;
+  height: 85px; 
+  left: 0px; 
+  top: 0px; 
+  user-select: none; 
+  cursor: default;
+}
+
+.c-first-shirt-h2 {
+  margin-top: 0;
+}
+
+.activeSize {
+  background: #000;
+  color: #fff;
+}
+
 @media (max-width: 480px) {
 	.c-header-title {
 		font-size: 14px;
@@ -1095,7 +1120,25 @@ body {
 	.UI-timer__title {
 		font-size: 14px;
 	}
-	
+  .drawing-area {
+    left: 25%;
+  }
+	.c-rasmer-imgs-shirt-div-img {
+    width: 40px;
+    height: 40px;
+  }
+  .c-rasmer-imgs-shirt-ras {
+    font-size: 14px;
+  }
+  .c-rasmer-imgs-shirt-h2 {
+    margin: 9px 0;
+  }
+  .c-rasmer-box-shirt {
+    padding: 0 0.2rem;
+  }
+  .c-first-shirt-h2 {
+    margin-top: 0;
+  }
 }
 
 
@@ -1129,4 +1172,17 @@ body {
     font-size: 30px;
   }
 
+  .c-rasmer-imgs-shirt-h2 {
+    font-size: 12px;
+  }
+  .c-rasmer-imgs-shirt-ras {
+    font-size: 12px;
+  }
+  .c-rasmer-margin-l {
+    margin-top: 0;
+  }
+  .drawing-area {
+    left: 20%;
+    top: 10%;
+  }
 }

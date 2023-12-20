@@ -77,32 +77,39 @@
       <div class="c-rasmer-box">
         <div class="c-rasmer-box-items">
           <div class="c-rasmer-box-shirt">
-            <div class="c-rasmer-box-shirt-item1">
-              <img class="c-rasmer-box-shirt-item1-img" src="./images/tshirt.png" alt="png">
+            <div class="c-rasmer-box-shirt-item1" id="tshirt-div">
+              <img id="tshirt-backgroundpicture" class="c-rasmer-box-shirt-item1-img" src="./images/tshirt.png" alt="png">
             </div>
             <div class="c-rasmer-box-shirt-item2">
-              <p class="c-rasmer-box-shirt-item2-p">Need more help? View the <br> <b>Size Chart</b></p>
+              <p class="c-rasmer-box-shirt-item2-p">Need more help? View the <br> <b id="openModal">Size Chart</b></p>
             </div>
+
+            <div id="drawingArea" class="drawing-area">					
+              <div class="canvas-container">
+                  <canvas id="canvas" width="90" height="85"></canvas>
+              </div>
+          </div>
+
           </div>
 
             <div class="c-rasmer-imgs-shirt">
               <div class="c-rasmer-imgs-shirt-box">
-                <h2 class="c-rasmer-imgs-shirt-h2">Select T-Shirt Color</h2>
+                <h2 class="c-rasmer-imgs-shirt-h2 c-first-shirt-h2">Select T-Shirt Color</h2>
                 <div class="c-rasmer-imgs-shirt-div">
-                  <img class="c-rasmer-imgs-shirt-div-img" src="./images/whiteShirt.png" alt="png">
-                  <img class="c-rasmer-imgs-shirt-div-img" src="./images/blackShirt.png" alt="png">
-                  <img class="c-rasmer-imgs-shirt-div-img" src="./images/grayShirt.png" alt="png">
-                  <img class="c-rasmer-imgs-shirt-div-img" src="./images/blueShirt.png" alt="png">
+                  <img class="c-rasmer-imgs-shirt-div-img" src="./images/whiteShirt.png" id="white" alt="png">
+                  <img class="c-rasmer-imgs-shirt-div-img" src="./images/blackShirt.png" id="black" alt="png">
+                  <img class="c-rasmer-imgs-shirt-div-img" src="./images/grayShirt.png" id="gray" alt="png">
+                  <img class="c-rasmer-imgs-shirt-div-img" src="./images/blueShirt.png" id="blue" alt="png">
                 </div>
               </div>
 
               <div class="c-rasmer-imgs-shirt-box">
                 <h2 class="c-rasmer-imgs-shirt-h2">Select Heart Color</h2>
                 <div class="c-rasmer-imgs-shirt-div">
-                  <img class="c-rasmer-imgs-shirt-div-img" src="./images/heart-1.png" alt="png">
-                  <img class="c-rasmer-imgs-shirt-div-img" src="./images/heart-2.png" alt="png">
-                  <img class="c-rasmer-imgs-shirt-div-img" src="./images/heart-3.png" alt="png">
-                  <img class="c-rasmer-imgs-shirt-div-img" src="./images/heart-4.png" alt="png">
+                  <img class="c-rasmer-imgs-shirt-div-img" src="./images/heart-1.png" id="E71D2D" alt="png">
+                  <img class="c-rasmer-imgs-shirt-div-img" src="./images/heart-2.png" id="141213" alt="png">
+                  <img class="c-rasmer-imgs-shirt-div-img" src="./images/heart-3.png" id="9DA1A2" alt="png">
+                  <img class="c-rasmer-imgs-shirt-div-img" src="./images/heart-4.png" id="linearBg" alt="png">
                 </div>
               </div>
 
@@ -372,10 +379,6 @@
           </div>
         </div>
 
-
-
-
-
         <section class="reviews">
           <div class="wrapper c-reviews">
             <div class="reviews--row">
@@ -616,6 +619,137 @@
       });
     </script>
     <script src="./js/index.js"></script>
+    <script src="./js/fabric.min.js"></script>
+
+    <script>
+      const sizes = document.querySelectorAll('div[class="c-rasmer-imgs-shirt-ras"]');
+
+      sizes.forEach((size) => {
+        size.addEventListener("click", () => {
+          sizes.forEach((btn) => {
+            btn.classList.remove("activeSize");
+          });
+          size.classList.add('activeSize');
+        });
+      });
+    </script>
+
+    <script>
+
+      const canv = document.getElementById("canvas");
+      window.addEventListener("resize", () => {
+        if (window.screen.width < 330) {
+          canv.style.width = "70";
+          canv.style.height = "65";
+        } else {
+          canv.style.width = "90";
+          canv.style.height = "85";
+        }
+      })
+
+      let canvas = new fabric.Canvas('canvas');
+
+      /**
+       * Method that adds an image to the T-Shirt canvas from a web URL.
+       * 
+       * @param {String} imageUrl      The server URL of the image that you want to load on the T-Shirt.
+       *
+       * @return {void} Return value description.
+       */           
+      // Создаем объект-сердце
+      const heartPath = 'M 84.646 11.504 C 75.554 1.233 58.335 -0.041 45 13.074 C 31.665 -0.041 14.446 1.233 5.354 11.504 c -9.671 10.926 -5.609 31.318 7.123 47.615 C 18.931 67.38 34.874 80.832 45 86.481 c 10.126 -5.649 26.069 -19.101 32.523 -27.362 C 90.255 42.822 94.318 22.43 84.646 11.504 z';
+        const heart = new fabric.Path(heartPath, {
+        left: 0,
+        top: 0,
+        width: 100,
+        height: 100,
+        fill: 'yellow',
+        borderColor: 'black',
+        cornerColor: 'black',
+        cornerSize: 4,
+        transparentCorners: true
+      } );
+      // Добавляем сердце на канвас
+      canvas.add(heart);
+
+
+      document.getElementById("white").addEventListener("click", function(){
+          document.getElementById("tshirt-div").style.backgroundColor = "white";
+      }, false); 
+      document.getElementById("black").addEventListener("click", function(){
+          document.getElementById("tshirt-div").style.backgroundColor = "#000000";
+      }, false); 
+      document.getElementById("gray").addEventListener("click", function(){
+          document.getElementById("tshirt-div").style.backgroundColor = "#CACACA";
+      }, false); 
+
+      document.getElementById("blue").addEventListener("click", function(){
+          document.getElementById("tshirt-div").style.backgroundColor = "#8DC5FB";
+      }, false); 
+
+      // document.getElementById("tshirt-design").addEventListener("change", function(){
+
+      // updateTshirtImage(this.value);
+      // }, false);
+
+      // When the user clicks on upload a custom picture
+      document.getElementById('tshirt-custompicture').addEventListener("change", function(e){
+          var reader = new FileReader();
+          
+          reader.onload = function (event){
+              var imgObj = new Image();
+              imgObj.src = event.target.result;
+
+              imgObj.onload = function () {
+                  var img = new fabric.Image(imgObj);
+
+                  img.scaleToHeight(100);
+                  img.scaleToWidth(100); 
+                  canvas.centerObject(img);
+                  canvas.add(img);
+                  canvas.renderAll();
+              };
+          };
+
+          // If the user selected a picture, load it
+          if(e.target.files[0]){
+              reader.readAsDataURL(e.target.files[0]);
+          }
+      }, false);
+
+      // When the user selects a picture that has been added and press the DEL key
+      // The object will be removed !
+      document.addEventListener("keydown", function(e) {
+          var keyCode = e.keyCode;
+
+          if(keyCode == 46){
+              console.log("Removing selected element on Fabric.js on DELETE key !");
+              canvas.remove(canvas.getActiveObject());
+          }
+      }, false);
+
+      document.getElementById("E71D2D").addEventListener("click", function(){
+        heart.set({ fill: "#E71D2D" });
+        canvas.renderAll();
+        canvas.remove(canvas.getActiveObject());
+      }, false);
+      document.getElementById("141213").addEventListener("click", function(){
+        heart.set({ fill: "#141213" });
+        canvas.renderAll();
+        canvas.remove(canvas.getActiveObject());
+      }, false);
+      document.getElementById("9DA1A2").addEventListener("click", function(){
+        heart.set({ fill: "#9DA1A2" });
+        canvas.renderAll();
+        canvas.remove(canvas.getActiveObject());
+      }, false);
+      document.getElementById("linearBg").addEventListener("click", function(){
+        heart.set({ fill: "#FCD866" });
+        canvas.renderAll();
+        canvas.remove(canvas.getActiveObject());
+      }, false);
+
+  </script>
 
   </body>
 </html>
