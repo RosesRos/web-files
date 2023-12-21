@@ -1001,7 +1001,7 @@ body {
   text-transform: uppercase;
 
   background: #FFF;
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.60);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.60);
 
   animation: pulse 1.5s linear infinite normal forwards;
 }
@@ -1009,17 +1009,15 @@ body {
 @keyframes pulse {
   0% {
     animation-timing-function: linear;
-    transform: scale(1.5);
-    opacity: 0;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.60);
   }
   50% {
     animation-timing-function: linear;
-    opacity: 1;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.60);
   }
   100% {
     animation-timing-function: linear;
-    transform: scale(1.2);
-    opacity: 0;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.60);
   }
 }
 
