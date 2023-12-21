@@ -98,8 +98,8 @@ body {
 .stringWithTime {
   position: absolute;
   top: 20%;
-  left: 0;
-  width: 100%;
+  left: 10%;
+  width: 80%;
 }
 .run-string {
   display: flex;
@@ -136,10 +136,10 @@ body {
   font-weight: 400;
   line-height: 100%; /* 36px */
   text-transform: capitalize;
-  display: flex;
-  gap: 40px;
-  align-items: center;
-  justify-content: center;
+
+  display: grid;
+  grid-template-rows: repeat(4, 0.5fr);
+  grid-template-columns: repeat(4, 0.5fr);
 }
 
 /* --------------------------------------------------------- */
@@ -1293,7 +1293,6 @@ body {
     left: 5%;
   }
   .stringWithTime {
-    left: 0;
     top: 15%;
   }
   .c-top-p-0 {

@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        element.innerHTML = `<span>00</span> <span>${hours < 10 ? '0' + hours : hours}</span> <span>${minutes < 10 ? '0' + minutes : minutes}</span> <span>${seconds < 10 ? '0' + seconds : seconds}</span>`;
+        element.innerHTML = `<span>00</span> <span>${hours < 10 ? '0' + hours : hours}</span> <span>${minutes < 10 ? '0' + minutes : minutes}</span> <span>${seconds < 10 ? '0' + seconds : seconds}</span> <span class="timer-text">Days</span> <span class="timer-text">Hours</span> <span class="timer-text">Mins</span> <span class="timer-text">Secs</span>`;
         if (distance < 0) {
           clearInterval(x);
           timerTextEl.textContent = '00 00 00';
