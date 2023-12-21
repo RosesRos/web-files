@@ -51,6 +51,7 @@ body {
 
 .top-video {
   overflow: hidden;
+  height: 350px;
 }
 .top-video video {
   width: 100%;
@@ -97,7 +98,8 @@ body {
 .stringWithTime {
   position: absolute;
   top: 20%;
-  left: 15%;
+  left: 0;
+  width: 100%;
 }
 .run-string {
   display: flex;
@@ -412,6 +414,7 @@ body {
   margin-top: 25px;
   margin-bottom: 3rem;
   position: relative;
+  padding-bottom: 40px;
 }
 .footer__info_btnBlock {
   text-align: center;
@@ -585,9 +588,15 @@ body {
 .c-preViews-vid {
 	max-width: 100%;
 	width: 100%;
+  overflow: hidden;
 }
 .c-preViews-vid-video {
 	width: 100%;
+}
+
+.c-hidden-video {
+  margin-top: -14rem;
+  margin-bottom: -6rem;
 }
 
 .activeBtn {
@@ -750,7 +759,7 @@ body {
   line-height: 100%; /* 36px */
   text-transform: capitalize;
   display: flex;
-  gap: 40px;
+  gap: 44px;
   align-items: center;
   justify-content: center;
 }
@@ -1046,12 +1055,52 @@ body {
 }
 
 .c-footer-img {
-  width: 100%;
+  width: 105%;
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: -0.5rem;
 }
 
+.c-box-prices-item {
+  position: absolute;
+  left: 31%;
+  bottom: 38%;
+}
+.c-box-prices-item-p {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1px;
+}
+.c-box-prices-items {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 3px;
+}
+.c-box-prices-items-old {
+  color: #FFF;
+  font-family: Open Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: line-through;
+}
+.c-box-prices-items-new {
+  color: #EBFD01;
+  font-family: Open Sans;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+[src="./images/top-6-1.svg"] {
+  margin-bottom: -1rem;
+}
 
 
 /* ##### LOADER LOADER LOADER LOADER*/
@@ -1191,21 +1240,33 @@ body {
   .header__title strong {
     font-size: 30px;
   }
-  .stringWithTime {
-    left: 10%;
-  }
   .c-top-p-1 {
     left: 10%;
   }
   .c-top-p-2 {
     left: 10%;
   }
+  .c-box-prices-item {
+    left: 34%;
+    bottom: 39%;
+  }
+  .c-box-prices-items-new {
+    font-size: 26px;
+  }
+  .c-box-prices-items-old {
+    font-size: 16px;
+  }
+  .c-box-prices-item-p {
+    font-size: 16px;
+  }
+  .top-video {
+    height: 300px;
+  }
+
 }
 
 @media (max-width: 370px) {
-  .stringWithTime {
-    left: 10%;
-  }
+  
   .c-rasmer-margin-l {
     margin-top: 0;
   }
@@ -1232,7 +1293,7 @@ body {
     left: 5%;
   }
   .stringWithTime {
-    left: 5%;
+    left: 0;
     top: 15%;
   }
   .c-top-p-0 {
@@ -1257,5 +1318,9 @@ body {
   }
   .UI-btn {
     bottom: 28.5%;
+  }
+  .c-box-prices-item {
+    left: 30%;
+    bottom: 38%;
   }
 }
