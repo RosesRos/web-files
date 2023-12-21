@@ -41,13 +41,13 @@
       </header>
       <div class="c-display-flex c-header-links-flex">
         <div>
-          <a class="c-header-links-flex-a" href="">Track Your Order</a>
+          <a class="c-header-links-flex-a scroll-item" >Track Your Order</a>
         </div>
         <div>
-          <a class="c-header-links-flex-a" href="">Contact Us</a>
+          <a class="c-header-links-flex-a scroll-item" >Contact Us</a>
         </div>
         <div>
-          <a class="c-header-links-flex-a" href="">FAQ</a>
+          <a class="c-header-links-flex-a scroll-item" >FAQ</a>
         </div>
       </div>
       <div class="container">
@@ -73,6 +73,8 @@
         <p class="c-top-p c-top-p-0">Just Four simple Steps</p>
         <img class="c-top-img" src="./images/top.svg" alt="svg">
       </div>
+
+      <div id="form-wrap"></div>
 
       <div class="c-rasmer-box">
         <div class="c-rasmer-box-items">
@@ -490,7 +492,7 @@
             <form>
               <input class="footer__form_input" type="email" placeholder="E-mail">
               <br>
-              <a style="display: block; text-align: center;" href="{offer_link}" class="footer__form_btn">SUBSCRIBE</a>
+              <a style="display: block; text-align: center;" class="footer__form_btn scroll-item">SUBSCRIBE</a>
             </form>
           </div>
           <div class="footer__info">
@@ -514,7 +516,7 @@
           <img class="c-footer-img" src="./images/footersnow.png" alt="png">
 
         </footer>
-        <a href="{offer_link}" class="fixed">
+        <a class="fixed scroll-item">
           <div class="btnBlcok__flex">
             <p class="price__old">£50</p>
             <p class="price__new">£2</p>
@@ -606,6 +608,23 @@
           });
           size.classList.add('activeSize');
         });
+      });
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.scroll-item').forEach( function (item) {
+          item.addEventListener('click', function (event) {
+            event.preventDefault()
+            var nodeObj = document.querySelector('#form-wrap')
+                                                       
+            nodeObj.scrollIntoView({
+              behavior: 'smooth',
+              block   : 'start'
+            })
+            return
+          })
+        })
       });
     </script>
 
