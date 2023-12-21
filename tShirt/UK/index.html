@@ -76,7 +76,7 @@
 
       <div id="form-wrap"></div>
 
-      <div class="c-rasmer-box">
+      <div class="c-rasmer-box ">
         <div class="c-rasmer-box-items">
           <div class="c-rasmer-box-shirt">
             <div class="c-rasmer-box-shirt-item1" id="tshirt-div">
@@ -94,7 +94,7 @@
 
             <div class="c-rasmer-imgs-shirt">
               <div class="c-rasmer-imgs-shirt-box">
-                <h2 class="c-rasmer-imgs-shirt-h2 c-first-shirt-h2">Select T-Shirt Color</h2>
+                <h2 class="c-rasmer-imgs-shirt-h2 c-first-shirt-h2">1. Select T-Shirt Color</h2>
                 <div class="c-rasmer-imgs-shirt-div">
                   <img class="c-rasmer-imgs-shirt-div-img" src="./images/whiteShirt.png" id="white" alt="png">
                   <img class="c-rasmer-imgs-shirt-div-img" src="./images/blackShirt.png" id="black" alt="png">
@@ -104,7 +104,7 @@
               </div>
 
               <div class="c-rasmer-imgs-shirt-box">
-                <h2 class="c-rasmer-imgs-shirt-h2">Select Heart Color</h2>
+                <h2 class="c-rasmer-imgs-shirt-h2">2. Select Heart Color</h2>
                 <div class="c-rasmer-imgs-shirt-div">
                   <img class="c-rasmer-imgs-shirt-div-img" src="./images/heart-1.png" id="E71D2D" alt="png">
                   <img class="c-rasmer-imgs-shirt-div-img" src="./images/heart-2.png" id="141213" alt="png">
@@ -114,7 +114,7 @@
               </div>
 
               <div class="c-rasmer-imgs-shirt-box">
-                <h2 class="c-rasmer-imgs-shirt-h2">Choose your size</h2>
+                <h2 class="c-rasmer-imgs-shirt-h2">3. Choose Your Size</h2>
                 <div class="c-rasmer-imgs-shirt-div-rasme">
                   <div class="c-rasmer-imgs-shirt-ras">S</div>
                   <div class="c-rasmer-imgs-shirt-ras">M</div>
@@ -125,7 +125,7 @@
               </div>
 
               <div class="c-rasmer-imgs-shirt-box c-rasmer-margin-l">
-                <h2 class="c-rasmer-imgs-shirt-h2">Upload Your Photo</h2>
+                <h2 class="c-rasmer-imgs-shirt-h2">4. Upload Your Photo</h2>
                 <div class="input__wrapper">
                   <input name="file" type="file" id="tshirt-custompicture" class="input input__file" multiple accept="image/*">
                   <label for="tshirt-custompicture" class="input__file-button">
@@ -612,16 +612,27 @@
     </script>
 
     <script>
+      let cRasmerBox = document.querySelector(".c-rasmer-box");
+
+      function rmActiveRasmer() {
+        let timeout = 3000;
+        setTimeout(() => {
+          cRasmerBox.classList.remove("c-rasmer-box-active");
+        }, timeout);
+      };
+
       document.addEventListener('DOMContentLoaded', function () {
         document.querySelectorAll('.scroll-item').forEach( function (item) {
           item.addEventListener('click', function (event) {
-            event.preventDefault()
-            var nodeObj = document.querySelector('#form-wrap')
+            event.preventDefault();
+            var nodeObj = document.querySelector('#form-wrap');
                                                        
             nodeObj.scrollIntoView({
               behavior: 'smooth',
               block   : 'start'
-            })
+            });
+            cRasmerBox.classList.add("c-rasmer-box-active");
+            rmActiveRasmer();
             return
           })
         })

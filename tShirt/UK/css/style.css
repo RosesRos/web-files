@@ -969,6 +969,26 @@ body {
 }
 
 
+.c-rasmer-box-active {
+  box-shadow: 0px 0px 15px 0px red;
+  animation: pulse-rasmer 1.5s linear infinite normal forwards;
+}
+
+@keyframes pulse-rasmer {
+  0% {
+    animation-timing-function: linear;
+    box-shadow: 0px 0px 15px 0px red;
+  }
+  50% {
+    animation-timing-function: linear;
+    box-shadow: 0px 0px 4px 0px red;
+  }
+  100% {
+    animation-timing-function: linear;
+    box-shadow: 0px 0px 15px 0px red;
+  }
+}
+
 .input__wrapper {
   width: 100%;
   position: relative;
