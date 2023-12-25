@@ -1,0 +1,2065 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><link rel="shortcut icon" type="image/png" href="images/favicon.png"><meta name="og:type" content="website"><meta name="twitter:card" content="photo"><script id="anima-hotspots-script" src="js/hotspots.js"></script><script id="anima-overrides-script" src="js/overrides.js"></script><script src="js/timeline.js"></script><style>
+@import url("css/reset.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,400,600|Inter:500,400,700");
+
+/* The following line is used to measure usage of this code. You can remove it if you want. */
+@import url("https://px.animaapp.com/65800c930585649490cfb442.65800c940585649490cfb445.YgR6P5e.hch.png");
+
+
+.screen textarea:focus,
+.screen input:focus {
+  outline: none;
+}
+
+.screen * {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+.screen div {
+  -webkit-text-size-adjust: none;
+}
+
+.component-wrapper a {
+  display: contents;
+  pointer-events: auto;
+  text-decoration: none;
+}
+
+.component-wrapper * {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.component-wrapper a *,
+.component-wrapper input,
+.component-wrapper video,
+.component-wrapper iframe {
+  pointer-events: auto;
+}
+
+.component-wrapper.not-ready,
+.component-wrapper.not-ready * {
+  visibility: hidden !important;
+}
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.full-width-a {
+  width: 100%;
+}
+
+.full-height-a {
+  height: 100%;
+}
+
+.container-center-vertical {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  pointer-events: none;
+}
+
+.container-center-vertical > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.auto-animated div {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto-animated input {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto-animated .container-center-vertical,
+.auto-animated .container-center-horizontal {
+  opacity: 1;
+}
+
+.overlay-base {
+  display: none;
+  height: 100%;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.overlay-base.animate-appear {
+  align-items: center;
+  animation: reveal 0.3s ease-in-out 1 normal forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+}
+
+.overlay-base.animate-disappear {
+  animation: reveal 0.3s ease-in-out 1 reverse forwards;
+  display: block;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.overlay-base.animate-disappear * {
+  pointer-events: none;
+}
+
+@keyframes reveal {
+  from { opacity: 0 }
+ to { opacity: 1 }
+}
+
+.animate-nodelay {
+  animation-delay: 0s;
+}
+
+.align-self-flex-start {
+  align-self: flex-start;
+}
+
+.align-self-flex-end {
+  align-self: flex-end;
+}
+
+.align-self-flex-center {
+  align-self: flex-center;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.valign-text-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+input:focus {
+  outline: none;
+}
+
+.listeners-active,
+.listeners-active * {
+  pointer-events: auto;
+}
+
+.hidden,
+.hidden * {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.smart-layers-pointers,
+.smart-layers-pointers * {
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.listeners-active-click,
+.listeners-active-click * {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+:root { 
+  --basedark-grey: #000000;
+  --basegreen-veryfied: #000000;
+  --basewhite: #ffffff;
+  --baseyellow-star: #000000;
+  --smart-rgbbeige: #dcc49d;
+  --smart-rgbblack: #191919;
+  --smart-rgbdark-gray: #575551;
+  --smart-rgbdark-purple: #443e79;
+  --smart-rgbgray: #f7f7f7;
+  --smart-rgbred: #c70807;
+  --smart-rgbstroke: #e6e6e6;
+  --smart-rgbwhite: #ffffff;
+ 
+  --font-size-16px: 16px;
+  --font-size-l: 14px;
+  --font-size-m: 12px;
+  --font-size-s: 10px;
+  --font-size-xl: 15px;
+  --font-size-xxl: 28px;
+  --font-size-xxxl: 32px;
+  --font-size-xxxxl: 40px;
+ 
+  --font-family-inter: "Inter", Helvetica;
+  --font-family-montserrat: "Montserrat", Helvetica;
+}
+.basemont10 {
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+
+.smart-rgbh2 {
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0px;
+}
+
+.smart-rgbh3 {
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0px;
+}
+
+.smart-rgbtextprimary1 {
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.12px;
+}
+
+.smart-rgbtextprimary2 {
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-16px);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+
+.smart-rgbtextprimaryaccent {
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.12px;
+}
+
+.smart-rgbcaption {
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.12px;
+}
+
+.smart-rgbdescriptor {
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0px;
+}
+
+.smart-rgbbutton1 {
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0px;
+}
+
+.price1 {
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0px;
+}
+
+:root {
+}
+
+
+/* screen - twinkly */
+
+.twinkly {
+  background-color: var(--basewhite);
+  height: 10732px;
+  overflow-x: hidden;
+  position: relative;
+  width: 390px;
+}
+
+.twinkly .offer-LxTwsZ {
+  align-items: center;
+  background-color: var(--smart-rgbdark-purple);
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  left: 0px;
+  padding: 10px;
+  position: absolute;
+  top: 0px;
+  width: 390px;
+}
+
+.twinkly .special-offer-for-co-Z7vI3E {
+  background-color: transparent;
+  color: var(--basewhite);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 15.4px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.twinkly .smart-rgb-curtain-lights-LxTwsZ {
+  align-items: center;
+  background-color: transparent;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 20px;
+  left: 0px;
+  position: absolute;
+  top: 55px;
+}
+
+.twinkly .txt-YkFrcw {
+  align-items: center;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.twinkly .logo-png-RRiIx8 {
+  background-color: transparent;
+  height: 43px;
+  object-fit: cover;
+  position: relative;
+  width: 90px;
+}
+
+.twinkly .smart-rgb-curtain-lights-RRiIx8 {
+  background-color: transparent;
+  flex: 0 0 auto;
+  margin-bottom: -0.20px;
+  position: relative;
+  width: 256.6819763183594px;
+}
+
+.twinkly .frame-YkFrcw {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+}
+
+.twinkly .track-your-order-xCeIfQ {
+  align-items: center;
+  border-bottom-style: none;
+  border-color: var(--smart-rgbstroke);
+  border-left-style: none;
+  border-right-style: none;
+  border-top-style: solid;
+  border-top-width: 1px;
+  display: flex;
+  gap: 40px;
+  height: 42px;
+  justify-content: center;
+  margin-left: -1.00px;
+  margin-right: -1.00px;
+  margin-top: -1.00px;
+  overflow: hidden;
+  padding: 12px;
+  width: 392px;
+}
+
+.twinkly .track-your-order-nYLQ0q {
+  color: var(--smart-rgbblack);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15.6px;
+  margin-top: -0.50px;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.twinkly .contact-us-nYLQ0q {
+  background-color: transparent;
+  color: var(--smart-rgbblack);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15.6px;
+  margin-top: -0.50px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.twinkly .faq-nYLQ0q {
+  background-color: transparent;
+  color: var(--smart-rgbblack);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15.6px;
+  margin-top: -0.50px;
+  position: relative;
+  text-align: left;
+  width: 26px;
+}
+
+.twinkly .catben-cat-first-part-better-1-xCeIfQ {
+  background-color: var(--basedark-grey);
+  border-radius: 20px;
+  height: 390px;
+  position: relative;
+  width: 390px;
+}
+
+.twinkly .trustpilot-xCeIfQ {
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid;
+  border-color: var(--smart-rgbstroke);
+  display: flex;
+  gap: 40px;
+  height: 45px;
+  justify-content: center;
+  margin-bottom: -1.00px;
+  margin-left: -1.00px;
+  margin-right: -1.00px;
+  position: relative;
+  width: 392px;
+}
+
+.twinkly .frame-26-DyKphx {
+  align-items: center;
+  background-color: transparent;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+}
+
+.twinkly .star-5-PCStM7 {
+  background-color: transparent;
+  height: 14px;
+  position: relative;
+  width: 14px;
+}
+
+.twinkly .excellent-495-PCStM7 {
+  background-color: transparent;
+  color: var(--smart-rgbblack);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15.6px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.twinkly .trustpilot-logo-1-DyKphx {
+  background-color: transparent;
+  height: 22px;
+  position: relative;
+  width: 80px;
+}
+
+.twinkly .best-selling-DyKphx {
+  background-color: transparent;
+  color: var(--smart-rgbblack);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15.6px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.twinkly .lightning-that-matches-with-your-vibe-LxTwsZ {
+  align-items: flex-start;
+  background-color: transparent;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 20px;
+  left: 10px;
+  position: absolute;
+  top: 711px;
+}
+
+.twinkly .txt-SJXRUP {
+  align-items: flex-start;
+  flex: 0 0 auto;
+  gap: 12px;
+  position: relative;
+}
+
+.twinkly .lightning-that-matches-with-your-vibe-biIU9Q {
+  background-color: transparent;
+  flex: 0 0 auto;
+  position: relative;
+  width: 333.4244384765625px;
+}
+
+.twinkly .x20-ready-presetsdiy-mode-app-controlled-biIU9Q {
+  background-color: transparent;
+  flex: 0 0 auto;
+  margin-bottom: -0.18px;
+  position: relative;
+  width: 337.41351318359375px;
+}
+
+.twinkly .group-SJXRUP {
+  background-color: transparent;
+  height: 293px;
+  position: relative;
+  width: 370px;
+}
+
+.twinkly .img-2ESn9q {
+  height: 293px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 370px;
+}
+
+.twinkly .x520-teardrop-shaped-2ESn9q {
+  -webkit-backdrop-filter: blur(15px) brightness(100%);
+  align-items: center;
+  backdrop-filter: blur(15px) brightness(100%);
+  background-color: #19191980;
+  border-radius: 12px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  left: 170px;
+  padding: 10px;
+  position: absolute;
+  top: 211px;
+  width: 200px;
+}
+
+.twinkly .x520-teardrop-shaped-light-beads-uWfnhT {
+  background-color: transparent;
+  flex: 1;
+  flex-grow: 1;
+  margin-bottom: -0.18px;
+  position: relative;
+}
+
+.twinkly .sale-SJXRUP {
+  background-color: transparent;
+  flex-direction: column;
+}
+
+.twinkly .twinkly-smart-curtain-lights150x180-cm-eJEvPP {
+  align-items: center;
+  background-color: var(--smart-rgbgray);
+  border: 1px solid;
+  border-color: var(--smart-rgbstroke);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: -1.00px;
+  margin-right: -1.00px;
+  margin-top: -1.00px;
+  padding: 20px;
+  width: 372px;
+}
+
+.twinkly .frame-30-5iylI6 {
+  align-items: center;
+  background-color: transparent;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+}
+
+.twinkly .twinkly-smart-curtain-lights150x180-cm-tCxxBR {
+  background-color: transparent;
+  width: 189.78050231933594px;
+}
+
+.twinkly .frame-28-tCxxBR {
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  position: relative;
+  width: 330px;
+}
+
+.twinkly .price-4BGM3u {
+  align-items: center;
+  align-self: stretch;
+  background-color: transparent;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  padding: 0px 4px;
+  position: relative;
+}
+
+.twinkly .x5-ejEleG {
+  background-color: transparent;
+  color: var(--smart-rgbdark-purple);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44.0px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.twinkly .old-price-ejEleG {
+  align-items: center;
+  background-color: transparent;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  position: relative;
+}
+
+.twinkly .x50-FhHgVx {
+  background-color: transparent;
+  color: var(--smart-rgbblack);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.00px;
+  line-height: 35.2px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.twinkly .line-FhHgVx {
+  background-color: transparent;
+  height: 2px;
+  left: 0px;
+  position: absolute;
+  top: 16px;
+  width: 62px;
+}
+
+.twinkly .sale-4BGM3u {
+  background-color: var(--smart-rgbbeige);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.twinkly .x90-off-NL9H6o {
+  background-color: transparent;
+  color: var(--basewhite);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35.2px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.twinkly .x306-reviews-by-trustpilot-iAnPeV {
+  background-color: transparent;
+  color: var(--smart-rgbdark-gray);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.8px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.twinkly .time-eJEvPP {
+  align-items: flex-start;
+  background-color: transparent;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 20px;
+  position: relative;
+}
+
+.twinkly .sale-ends-9PxAMx {
+  background-color: transparent;
+  color: var(--smart-rgbred);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 15.6px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.twinkly .x034641-9PxAMx {
+  background-color: transparent;
+  color: var(--smart-rgbred);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 15.6px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.twinkly .button_1-SJXRUP {
+  background-color: var(--smart-rgbdark-purple);
+  width: 370px;
+}
+
+.twinkly .sample-text-n0sgza {
+  color: var(--basewhite);
+  font-weight: 600;
+  line-height: 16.5px;
+}
+
+.twinkly .frame-31-SJXRUP {
+  align-items: flex-start;
+  background-color: transparent;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0px;
+  position: relative;
+}
+
+.twinkly .pay-services-color-AOvbaa {
+  background-color: transparent;
+  height: 32px;
+  position: relative;
+  width: 370.0000305175781px;
+}
+
+.twinkly .shipping-SJXRUP {
+  background-color: transparent;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 553px;
+}
+
+.twinkly .shipping-1mxw5W {
+  background-color: var(--smart-rgbgray);
+  border: 1px solid;
+  border-color: var(--smart-rgbstroke);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 225px;
+  margin-left: -1.00px;
+  margin-right: -1.00px;
+  margin-top: -1.00px;
+  padding: 15px;
+  width: 372px;
+}
+
+.twinkly .frame-jw1pyN {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.twinkly .arrow-XjYCGk {
+  height: 15.000000655670647px;
+  width: 15.000000655670817px;
+}
+
+.twinkly .group-8-jw1pyN {
+  background-color: transparent;
+  height: 27.428571701049805px;
+  position: relative;
+  width: 311.27276611328125px;
+}
+
+.twinkly .image-4-VBwRIg {
+  background-color: transparent;
+  height: 16px;
+  left: 0px;
+  object-fit: cover;
+  position: absolute;
+  top: 6px;
+  width: 63px;
+}
+
+.twinkly .image-5-VBwRIg {
+  background-color: transparent;
+  height: 15px;
+  left: 89px;
+  object-fit: cover;
+  position: absolute;
+  top: 6px;
+  width: 64px;
+}
+
+.twinkly .image-6-VBwRIg {
+  background-color: transparent;
+  height: 19px;
+  left: 180px;
+  object-fit: cover;
+  position: absolute;
+  top: 4px;
+  width: 77px;
+}
+
+.twinkly .image-7-VBwRIg {
+  background-color: transparent;
+  height: 27px;
+  left: 283px;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  width: 28px;
+}
+
+.twinkly .shipping-kjYVN6 {
+  background-color: var(--smart-rgbgray);
+  border: 1px solid;
+  border-color: var(--smart-rgbstroke);
+  border-radius: 20px;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: -1.00px;
+  margin-right: -1.00px;
+  padding: 15px;
+  width: 372px;
+}
+
+.twinkly .frame-jczarS {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.twinkly .arrow-pRlRt0 {
+  height: 15.000000655670647px;
+  width: 15.000000655670817px;
+}
+
+.twinkly .shipping-0HvWol {
+  background-color: var(--smart-rgbgray);
+  border: 1px solid;
+  border-color: var(--smart-rgbstroke);
+  border-radius: 20px;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: -1.00px;
+  margin-right: -1.00px;
+  padding: 15px;
+  width: 372px;
+}
+
+.twinkly .frame-zcmmJm {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.twinkly .arrow-CsrurB {
+  height: 15.000000655670647px;
+  width: 15.000000655670817px;
+}
+
+.twinkly .shipping-LTUNHo {
+  background-color: var(--smart-rgbgray);
+  border: 1px solid;
+  border-color: var(--smart-rgbstroke);
+  border-radius: 20px;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 24px;
+  justify-content: space-around;
+  margin-bottom: -1.00px;
+  margin-left: -1.00px;
+  margin-right: -1.00px;
+  padding: 15px;
+  width: 372px;
+}
+
+.twinkly .frame-A31ADh {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.twinkly .arrow-p5otAi {
+  height: 15px;
+  width: 15px;
+}
+
+.twinkly .about-product-LxTwsZ {
+  align-items: flex-start;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  left: 0px;
+  position: absolute;
+  top: 2113px;
+  width: 731px;
+}
+
+.twinkly .cozier-house-with-just-one-click-Ne5xv3 {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.twinkly .txt-vpcib8 {
+  align-items: center;
+  flex: 0 0 auto;
+  gap: 12px;
+  position: relative;
+}
+
+.twinkly .cozier-house-with-just-one-click-xiv8Zp {
+  width: 315.5245666503906px;
+}
+
+.twinkly .conveniently-control-xiv8Zp {
+  background-color: transparent;
+  flex: 0 0 auto;
+  margin-bottom: -0.18px;
+  position: relative;
+  width: 326.52288818359375px;
+}
+
+.twinkly .catben-cozy-room-1-vpcib8 {
+  background-color: var(--basedark-grey);
+  border-radius: 20px;
+  height: 600px;
+  position: relative;
+  width: 390px;
+}
+
+.twinkly .draw-it-yourself-Ne5xv3 {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.twinkly .txt-IYcCwV {
+  align-items: center;
+  flex: 0 0 auto;
+  gap: 12px;
+  position: relative;
+}
+
+.twinkly .draw-it-yourself-gwhrar {
+  width: 226.41323852539062px;
+}
+
+.twinkly .draw-face-cut-1-IYcCwV {
+  background-color: var(--basedark-grey);
+  border-radius: 20px;
+  height: 420px;
+  position: relative;
+  width: 390px;
+}
+
+.twinkly .shine-brightly-outdoors-Ne5xv3 {
+  height: 535px;
+  width: 688px;
+}
+
+.twinkly .txt-R7ynm5 {
+  align-items: center;
+  gap: 12px;
+  left: 10px;
+  position: absolute;
+  top: 0px;
+}
+
+.twinkly .shine-brightly-outdoors-YFpnPT {
+  flex: 0 0 auto;
+  width: 333.1383056640625px;
+}
+
+.twinkly .weather-resistant-li-YFpnPT {
+  background-color: transparent;
+  flex: 0 0 auto;
+  margin-bottom: -0.18px;
+  position: relative;
+  width: 328.45037841796875px;
+}
+
+.twinkly .slider-R7ynm5 {
+  align-items: flex-start;
+  background-color: transparent;
+  display: inline-flex;
+  gap: 10px;
+  left: 0px;
+  padding: 0px 10px;
+  position: absolute;
+  top: 119px;
+}
+
+.twinkly .img-1-PtQlNJ {
+  background-color: transparent;
+  height: 416px;
+  object-fit: cover;
+  position: relative;
+  width: 324px;
+}
+
+.twinkly .img-2-PtQlNJ {
+  background-color: transparent;
+  height: 416px;
+  object-fit: cover;
+  position: relative;
+  width: 334px;
+}
+
+.twinkly .perfect-for-holiday-decorations-Ne5xv3 {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.twinkly .txt-GFiZvp {
+  align-items: center;
+  flex: 0 0 auto;
+  gap: 12px;
+  position: relative;
+}
+
+.twinkly .perfect-for-holiday-decorations-GkQa4f {
+  width: 257.794677734375px;
+}
+
+.twinkly .best-full_-pee-ldn1-k-1-GFiZvp {
+  background-color: var(--basedark-grey);
+  border-radius: 20px;
+  height: 450px;
+  position: relative;
+  width: 390px;
+}
+
+.twinkly .easy-to-install-Ne5xv3 {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.twinkly .txt-xeYoFQ {
+  align-items: center;
+  flex: 0 0 auto;
+  gap: 12px;
+  position: relative;
+}
+
+.twinkly .easy-to-install-GYUKja {
+  width: 188.80770874023438px;
+}
+
+.twinkly .the-top-is-equipped-GYUKja {
+  background-color: transparent;
+  flex: 0 0 auto;
+  margin-bottom: -0.10px;
+  position: relative;
+  width: 276.4783935546875px;
+}
+
+.twinkly .x1-xeYoFQ {
+  background-color: var(--basedark-grey);
+  border-radius: 20px;
+  height: 501px;
+  position: relative;
+  width: 390px;
+}
+
+.twinkly .img-Ne5xv3 {
+  height: 270px;
+  position: relative;
+  width: 389px;
+}
+
+.twinkly .faq-LxTwsZ {
+  align-items: flex-start;
+  background-color: transparent;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 20px;
+  left: 10px;
+  position: absolute;
+  top: 5560px;
+}
+
+.twinkly .faq-OSxXuY {
+  background-color: transparent;
+  flex: 0 0 auto;
+  position: relative;
+  width: 57.29345703125px;
+}
+
+.twinkly .content-OSxXuY {
+  align-items: flex-start;
+  display: inline-flex;
+  gap: 10px;
+}
+
+.twinkly .faq-1Rxcci {
+  align-items: flex-start;
+  background-color: var(--smart-rgbdark-purple);
+  border-radius: 20px;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 20px;
+  padding: 15px;
+  position: relative;
+  width: 370px;
+}
+
+.twinkly .frame-S4ngT7 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.twinkly .close-Qb6Jrf {
+  background-color: transparent;
+  height: 28px;
+  position: relative;
+  width: 28px;
+}
+
+.twinkly .line-3-S4ngT7 {
+  align-self: stretch;
+  background-color: transparent;
+  height: 1px;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+}
+
+.twinkly .sure-you-can-fully-c-S4ngT7 {
+  align-self: stretch;
+  background-color: transparent;
+  color: var(--basewhite);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 9.8px;
+  position: relative;
+  text-align: left;
+}
+
+.twinkly .faq-3j5QFo {
+  align-items: center;
+  background-color: var(--smart-rgbdark-purple);
+  border-radius: 20px;
+  display: flex;
+  gap: 24px;
+  height: 68px;
+  justify-content: space-around;
+  padding: 15px;
+  position: relative;
+  width: 370px;
+}
+
+.twinkly .frame-x8TaNu {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.twinkly .faq-14asz2 {
+  align-items: center;
+  background-color: var(--smart-rgbdark-purple);
+  border-radius: 20px;
+  display: flex;
+  gap: 24px;
+  height: 68px;
+  justify-content: space-around;
+  padding: 15px;
+  position: relative;
+  width: 370px;
+}
+
+.twinkly .frame-1WX4Ps {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.twinkly .faq-65wxro {
+  align-items: center;
+  background-color: var(--smart-rgbdark-purple);
+  border-radius: 20px;
+  display: flex;
+  gap: 24px;
+  height: 68px;
+  justify-content: space-around;
+  padding: 15px;
+  position: relative;
+  width: 370px;
+}
+
+.twinkly .frame-1SzsVd {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.twinkly .faq-xZxOSG {
+  align-items: center;
+  background-color: var(--smart-rgbdark-purple);
+  border-radius: 20px;
+  display: flex;
+  gap: 24px;
+  height: 68px;
+  justify-content: space-around;
+  padding: 15px;
+  position: relative;
+  width: 370px;
+}
+
+.twinkly .frame-jTKTc8 {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.twinkly .faq-v06AbB {
+  align-items: center;
+  background-color: var(--smart-rgbdark-purple);
+  border-radius: 20px;
+  display: flex;
+  gap: 24px;
+  height: 68px;
+  justify-content: space-around;
+  padding: 15px;
+  position: relative;
+  width: 370px;
+}
+
+.twinkly .frame-6Ibqpc {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.twinkly .customer-reviews-LxTwsZ {
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  left: 10px;
+  position: absolute;
+  top: 6179px;
+  width: 370px;
+}
+
+.twinkly .txt-sYtF3i {
+  align-items: center;
+  flex: 0 0 auto;
+  gap: 8px;
+  position: relative;
+}
+
+.twinkly .customer-reviews-tegYO1 {
+  background-color: transparent;
+  flex: 0 0 auto;
+  position: relative;
+  width: 261.76654052734375px;
+}
+
+.twinkly .x49-25-reviews-WgqbzJ {
+  background-color: transparent;
+  color: var(--smart-rgbdark-gray);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.8px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.twinkly .content-sYtF3i {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 40px;
+  width: 100%;
+}
+
+.twinkly .living-room-review-1-N9Icdd {
+  align-self: stretch;
+  background-color: var(--basedark-grey);
+  border-radius: 20px;
+  height: 388px;
+  position: relative;
+  width: 100%;
+}
+
+.twinkly .content-yev7II {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.twinkly .frame-ptgerN {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.twinkly .jessica-m-O60SbK {
+  background-color: transparent;
+  flex: 0 0 auto;
+  margin-left: -0.18px;
+  position: relative;
+}
+
+.twinkly .i-bought-two-sets-fo-ptgerN {
+  align-self: stretch;
+  background-color: transparent;
+  color: var(--smart-rgbblack);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15.6px;
+  position: relative;
+  text-align: left;
+}
+
+.twinkly .draw-face-slow-1-IHI2KB {
+  align-self: stretch;
+  background-color: var(--basedark-grey);
+  border-radius: 20px;
+  height: 343px;
+  position: relative;
+  width: 100%;
+}
+
+.twinkly .content-IKmQ9s {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.twinkly .frame-Mdc4F1 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.twinkly .jane-v-pTcyx4 {
+  background-color: transparent;
+  flex: 0 0 auto;
+  margin-left: -0.18px;
+  position: relative;
+}
+
+.twinkly .the-software-is-real-Mdc4F1 {
+  align-self: stretch;
+  background-color: transparent;
+  color: var(--smart-rgbblack);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15.6px;
+  position: relative;
+  text-align: left;
+}
+
+.twinkly .image-14-xDteIL {
+  align-self: stretch;
+  background-color: transparent;
+  height: 370px;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+}
+
+.twinkly .content-Ehw34H {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.twinkly .frame-8pq2Vs {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.twinkly .sarah-smith-qQQGxf {
+  background-color: transparent;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.twinkly .the-order-shipped-so-8pq2Vs {
+  align-self: stretch;
+  background-color: transparent;
+  color: var(--smart-rgbblack);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15.6px;
+  position: relative;
+  text-align: left;
+}
+
+.twinkly .image-20-jD4UyG {
+  align-self: stretch;
+  background-color: transparent;
+  height: 401px;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+}
+
+.twinkly .content-yimaHZ {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.twinkly .frame-dktXog {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.twinkly .maggieee-YtrKMl {
+  background-color: transparent;
+  flex: 0 0 auto;
+  margin-bottom: -0.81px;
+  position: relative;
+}
+
+.twinkly .just-received-the-or-dktXog {
+  align-self: stretch;
+  background-color: transparent;
+  color: var(--smart-rgbblack);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15.6px;
+  position: relative;
+  text-align: left;
+}
+
+.twinkly .image-17-7Agyxh {
+  align-self: stretch;
+  background-color: transparent;
+  height: 399px;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+}
+
+.twinkly .content-MX2gua {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.twinkly .frame-bLrKPQ {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.twinkly .maggie-brown-eJHX01 {
+  background-color: transparent;
+  flex: 0 0 auto;
+  margin-bottom: -0.81px;
+  position: relative;
+}
+
+.twinkly .first-time-purchasin-bLrKPQ {
+  align-self: stretch;
+  background-color: transparent;
+  color: var(--smart-rgbblack);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15.6px;
+  position: relative;
+  text-align: left;
+}
+
+.twinkly .image-18-gxu49r {
+  align-self: stretch;
+  background-color: transparent;
+  height: 335px;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+}
+
+.twinkly .content-52qxTJ {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.twinkly .frame-p4rN55 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.twinkly .excellent-product-an-p4rN55 {
+  align-self: stretch;
+  background-color: transparent;
+  color: var(--smart-rgbblack);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15.6px;
+  position: relative;
+  text-align: left;
+}
+
+.twinkly .image-19-eFN9nc {
+  align-self: stretch;
+  background-color: transparent;
+  height: 295px;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+}
+
+.twinkly .content-C57nfP {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.twinkly .frame-YxBOjW {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.twinkly .bm-rxIWx4 {
+  background-color: transparent;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.twinkly .these-lights-have-sa-YxBOjW {
+  align-self: stretch;
+  background-color: transparent;
+  color: var(--smart-rgbblack);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15.6px;
+  position: relative;
+  text-align: left;
+}
+
+.twinkly .content-JHiTg9 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.twinkly .frame-qc123u {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.twinkly .best-decor-lightning-qc123u {
+  align-self: stretch;
+  background-color: transparent;
+  color: var(--smart-rgbblack);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15.6px;
+  position: relative;
+  text-align: left;
+}
+
+.twinkly .footer-LxTwsZ {
+  align-items: flex-start;
+  background-color: var(--smart-rgbdark-purple);
+  border-radius: 20px 20px 0px 0px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  left: 0px;
+  padding: 40px 10px;
+  position: absolute;
+  top: 10276px;
+}
+
+.twinkly .content-HuVW5F {
+  align-items: center;
+  display: inline-flex;
+  gap: 20px;
+}
+
+.twinkly .subscribe-to-our-e-mail-newsletter-lWD5xx {
+  background-color: transparent;
+  color: var(--basewhite);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30.8px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  width: 370px;
+}
+
+.twinkly .input-button-lWD5xx {
+  align-items: center;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.twinkly .input-DkT8UB {
+  align-items: center;
+  background-color: var(--smart-rgbgray);
+  border: 1px solid;
+  border-color: var(--smart-rgbstroke);
+  border-radius: 20px;
+  display: flex;
+  gap: 10px;
+  height: 60px;
+  padding: 20px 25px;
+  position: relative;
+  width: 370px;
+}
+
+.twinkly .sample-text-XawJh9 {
+  color: var(--smart-rgbdark-gray);
+  font-weight: 400;
+  line-height: 17.6px;
+}
+
+.twinkly .button_1-DkT8UB {
+  align-self: stretch;
+  background-color: var(--smart-rgbbeige);
+  width: 100%;
+}
+
+.twinkly .sample-text-iRvPkg {
+  color: var(--smart-rgbblack);
+  font-weight: 600;
+  line-height: 16.5px;
+}
+
+.twinkly .info-lWD5xx {
+  align-items: center;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.twinkly .flex-container-i3107944531079427-QWqlsN {
+  align-items: flex-start;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.twinkly .text0-i3107944531079427-RZ93On {
+  align-self: stretch;
+  background-color: transparent;
+  color: var(--basewhite);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.8px;
+  position: relative;
+  text-align: center;
+}
+
+.twinkly .span0-qTwabN {
+  font-style: normal;
+}
+
+.twinkly .text1-i3107944531079427-RZ93On {
+  align-self: stretch;
+  background-color: transparent;
+  color: var(--basewhite);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.8px;
+  position: relative;
+  text-align: center;
+}
+
+.twinkly .span1-ypc4nR {
+  font-style: normal;
+}
+
+.twinkly .button_2-QWqlsN {
+  align-items: center;
+  background-color: transparent;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 3px;
+  position: relative;
+}
+
+.twinkly .sample-text-Zo12US {
+  color: var(--basewhite);
+  font-weight: 600;
+  line-height: 15.4px;
+  margin-top: -1.00px;
+}
+
+.twinkly .line-Zo12US {
+  align-self: stretch;
+  background-color: transparent;
+  height: 1px;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+}
+
+.twinkly .adam {
+  background-color: transparent;
+  flex: 0 0 auto;
+  margin-left: -0.07px;
+  position: relative;
+}
+
+.twinkly .all-purchases-are-sh {
+  align-self: stretch;
+  background-color: transparent;
+  color: var(--smart-rgbblack);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15.6px;
+  position: relative;
+  text-align: left;
+}
+
+.twinkly .arrow {
+  background-color: transparent;
+  position: relative;
+}
+
+.twinkly .button_1 {
+  align-items: center;
+  border-radius: 20px;
+  display: flex;
+  gap: 10px;
+  height: 60px;
+  justify-content: center;
+  padding: 20px 25px;
+  position: relative;
+}
+
+.twinkly .can-i-remotely-control-these-lights {
+  background-color: transparent;
+  color: var(--basewhite);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 15.4px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.twinkly .content {
+  background-color: transparent;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+}
+
+.twinkly .cozier-house-with-just-one-click {
+  background-color: transparent;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.twinkly .draw-it-yourself {
+  background-color: transparent;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.twinkly .easy-to-install {
+  background-color: transparent;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.twinkly .frame {
+  background-color: transparent;
+  position: relative;
+}
+
+.twinkly .free-shipping {
+  align-items: center;
+  background-color: transparent;
+  border-radius: 6px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  position: relative;
+}
+
+.twinkly .free-shipping-in-country {
+  background-color: transparent;
+  color: var(--smart-rgbblack);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 15.4px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.twinkly .icons-icon {
+  background-color: transparent;
+  height: 30px;
+  position: relative;
+  width: 30px;
+}
+
+.twinkly .img {
+  background-color: transparent;
+  object-fit: cover;
+}
+
+.twinkly .open {
+  background-color: transparent;
+  height: 28px;
+  position: relative;
+  width: 28px;
+}
+
+.twinkly .perfect-for-holiday-decorations {
+  background-color: transparent;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.twinkly .review {
+  align-items: center;
+  background-color: var(--smart-rgbgray);
+  border: 1px solid;
+  border-color: var(--smart-rgbstroke);
+  border-radius: 30px;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: -1.00px;
+  margin-left: -1.00px;
+  margin-right: -1.00px;
+  padding: 20px;
+  position: relative;
+  width: 372px;
+}
+
+.twinkly .reviews {
+  align-items: center;
+  background-color: transparent;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 16px;
+  position: relative;
+}
+
+.twinkly .reviewvideo {
+  align-items: center;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.twinkly .sale {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  position: relative;
+}
+
+.twinkly .sample-text {
+  background-color: transparent;
+  font-style: normal;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.twinkly .shine-brightly-outdoors {
+  background-color: transparent;
+  position: relative;
+}
+
+.twinkly .shipping {
+  align-items: flex-start;
+  position: relative;
+}
+
+.twinkly .stars {
+  background-color: transparent;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.twinkly .track-your-order {
+  background-color: transparent;
+  position: relative;
+}
+
+.twinkly .twinkly-smart-curtain-lights150x180-cm {
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.twinkly .txt {
+  background-color: transparent;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.twinkly .use-our-app-to-desig {
+  background-color: transparent;
+  flex: 0 0 auto;
+  margin-bottom: -0.18px;
+  position: relative;
+  width: 362.9955139160156px;
+}
+</style></head><body style="margin: 0;background: #ffffff;"><input type="hidden" id="anPageName" name="page" value="twinkly"><div class="container-center-horizontal"><div class="twinkly screen " data-id="3107:2245"><div class="offer-LxTwsZ" data-id="3107:2342"><p class="special-offer-for-co-Z7vI3E smart-rgbh3" data-id="3107:2340">Special offer for "Country" + free 2-day shipping!!!</p></div><div class="smart-rgb-curtain-lights-LxTwsZ" data-id="3107:9480"><div class="txt-YkFrcw txt" data-id="3107:9472"><img class="logo-png-RRiIx8" data-id="3107:8536" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/logo-png.png" alt="Logo png"><img class="smart-rgb-curtain-lights-RRiIx8" data-id="3107:8515" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/smart-rgb-curtain-lights.png" alt="Smart RGB Curtain Lights"></div><div class="frame-YkFrcw frame" data-id="3107:9479"><div class="track-your-order-xCeIfQ track-your-order" data-id="3107:8528"><div class="track-your-order-nYLQ0q track-your-order smart-rgbtextprimary1" data-id="3107:8529">Track Your Order</div><div class="contact-us-nYLQ0q smart-rgbtextprimary1" data-id="3107:8530">Contact Us</div><div class="faq-nYLQ0q smart-rgbtextprimary1" data-id="3107:8531">FAQ</div></div><div class="catben-cat-first-part-better-1-xCeIfQ" data-id="3107:8458"></div><div class="trustpilot-xCeIfQ" data-id="3107:8476"><div class="frame-26-DyKphx" data-id="3107:8482"><img class="star-5-PCStM7" data-id="3107:8480" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/star-5.svg" alt="star 5"><div class="excellent-495-PCStM7 smart-rgbtextprimary1" data-id="3107:8477">Excellent 4.9/5</div></div><img class="trustpilot-logo-1-DyKphx" data-id="3107:8478" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/trustpilot-logo-1@4x.png" alt="Trustpilot-logo 1"><div class="best-selling-DyKphx smart-rgbtextprimary1" data-id="3107:8479">Best Selling</div></div></div></div><div class="lightning-that-matches-with-your-vibe-LxTwsZ" data-id="3107:9483"><div class="txt-SJXRUP txt" data-id="3107:8592"><img class="lightning-that-matches-with-your-vibe-biIU9Q" data-id="3107:8518" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/lightning-that-matches-with-your-vibe.png" alt="Lightning that matches with your vibe"><img class="x20-ready-presetsdiy-mode-app-controlled-biIU9Q" data-id="3107:8537" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/20-ready-presets-diy-mode-app-controlled.png" alt="20 ready presets+diy mode app-controlled"></div><div class="group-SJXRUP" data-id="3107:9482"><img class="img-2ESn9q img" data-id="3107:8538" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/img@2x.png" alt="Img"><div class="x520-teardrop-shaped-2ESn9q" data-id="3107:8542"><img class="x520-teardrop-shaped-light-beads-uWfnhT" data-id="3107:8541" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/520-teardrop-shaped-light-beads-.png" alt="520 teardrop-shaped light beads!"></div></div><div class="sale-SJXRUP sale" data-id="3107:9481"><div class="twinkly-smart-curtain-lights150x180-cm-eJEvPP twinkly-smart-curtain-lights150x180-cm" data-id="3107:8549"><div class="frame-30-5iylI6" data-id="3107:8602"><img class="twinkly-smart-curtain-lights150x180-cm-tCxxBR twinkly-smart-curtain-lights150x180-cm" data-id="3107:8593" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/twinkly-smart-curtain-lights-150x180-cm-.png" alt="TWINKLY SMART CURTAIN LIGHTS(150x180 cm)"><div class="frame-28-tCxxBR" data-id="3107:8575"><div class="price-4BGM3u" data-id="3107:8550"><div class="x5-ejEleG price1" data-id="3107:8554">£5</div><div class="old-price-ejEleG" data-id="3107:8551"><div class="x50-FhHgVx" data-id="3107:8552">£50</div><img class="line-FhHgVx" data-id="3107:8553" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/line--3.svg" alt="Line "></div></div><div class="sale-4BGM3u sale" data-id="3107:8555"><h1 class="x90-off-NL9H6o smart-rgbdescriptor" data-id="3107:8556">90% OFF</h1></div></div><div class="reviews" data-id="3107:8576"><img class="stars" data-id="3107:8577" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/stars.svg" alt="Stars"><div class="x306-reviews-by-trustpilot-iAnPeV smart-rgbcaption" data-id="3107:8588">306 Reviews by Trustpilot</div></div></div></div><div class="time-eJEvPP" data-id="3107:8599"><div class="sale-ends-9PxAMx smart-rgbtextprimaryaccent" data-id="3107:8600">Sale ends:</div><div class="x034641-9PxAMx smart-rgbtextprimaryaccent" data-id="3107:8601">03:46:41</div></div></div><div class="button_1-SJXRUP button_1" data-id="3107:9477"><div class="sample-text-n0sgza sample-text smart-rgbbutton1" data-id="I3107:9477;3107:9476">BUY NOW</div></div><div class="frame-31-SJXRUP" data-id="3107:9607"><img class="pay-services-color-AOvbaa" data-id="3107:9484" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/pay-services-color-1.svg" alt="pay services color"></div><div class="shipping-SJXRUP shipping" data-id="3125:218"><article class="shipping-1mxw5W shipping" data-id="3125:219"><div class="frame-jw1pyN frame" data-id="I3125:219;3107:4949"><div class="free-shipping" data-id="I3125:219;3107:4950"><img class="icons-icon" data-id="I3125:219;3107:8776" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/icons-icon.svg" alt="Icons/Icon"><div class="free-shipping-in-country smart-rgbh3" data-id="I3125:219;3107:4952">Free shipping in “Country”</div></div><img class="arrow-XjYCGk arrow" data-id="I3125:219;3107:8763" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/arrow-2.svg" alt="Arrow"></div><div class="group-8-jw1pyN" data-id="I3125:219;3107:9618"><img class="image-4-VBwRIg" data-id="I3125:219;3107:9619" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65801df6f99edd8088028d36/img/image-4.png" alt="image 4"><img class="image-5-VBwRIg" data-id="I3125:219;3107:9620" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65801df6f99edd8088028d36/img/image-5.png" alt="image 5"><img class="image-6-VBwRIg" data-id="I3125:219;3107:9621" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65801df6f99edd8088028d36/img/image-6.png" alt="image 6"><img class="image-7-VBwRIg" data-id="I3125:219;3107:9622" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65801df6f99edd8088028d36/img/image-7.png" alt="image 7"></div><p class="all-purchases-are-sh smart-rgbtextprimary1" data-id="I3125:219;3107:8656">All purchases are shipped from our warehouse in “Country” and are fully insured with a tracking number. Tracked delivery between 2 - 4 days in “Country” + Free Delivery.<br>Company based in “Country” — No Duty Tax In Stock: Free Shipping from “Country”</p></article><article class="shipping-kjYVN6 shipping" data-id="3125:220"><div class="frame-jczarS frame" data-id="I3125:220;3107:4949"><div class="free-shipping" data-id="I3125:220;3107:4950"><img class="icons-icon" data-id="I3125:220;3107:8776" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/icons-icon-3.svg" alt="Icons/Icon"><div class="free-shipping-in-country smart-rgbh3" data-id="I3125:220;3107:4952">100% money-back guarantee</div></div><img class="arrow-pRlRt0 arrow" data-id="I3125:220;3107:8763" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/arrow-3.svg" alt="Arrow"></div><p class="all-purchases-are-sh smart-rgbtextprimary1" data-id="I3125:220;3107:8656">If you're not satisfied with your Case, we offer a 100% Money Back Guarantee. No Questions Asked.</p></article><article class="shipping-0HvWol shipping" data-id="3125:221"><div class="frame-zcmmJm frame" data-id="I3125:221;3107:4949"><div class="free-shipping" data-id="I3125:221;3107:4950"><img class="icons-icon" data-id="I3125:221;3107:8776" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/icons-icon-4.svg" alt="Icons/Icon"><div class="free-shipping-in-country smart-rgbh3" data-id="I3125:221;3107:4952">5 years warranty</div></div><img class="arrow-CsrurB arrow" data-id="I3125:221;3107:8763" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/arrow-4.svg" alt="Arrow"></div><p class="all-purchases-are-sh smart-rgbtextprimary1" data-id="I3125:221;3107:8656">Our product is guaranteed for 5 years from the date of your purchase.<br>For more information, please contact our team.</p></article><article class="shipping-LTUNHo shipping" data-id="3125:222"><div class="frame-A31ADh frame" data-id="I3125:222;3107:4943"><div class="free-shipping" data-id="I3125:222;3107:4944"><img class="icons-icon" data-id="I3125:222;3107:8778" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/type-detailed-features---specifications.svg" alt="Icons/Icon"><div class="free-shipping-in-country smart-rgbh3" data-id="I3125:222;3107:4946">Detailed features &amp; specifications</div></div><img class="arrow-p5otAi arrow" data-id="I3125:222;3107:8705" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/arrow-5.svg" alt="Arrow"></div></article></div></div><div class="about-product-LxTwsZ" data-id="3107:8891"><div class="cozier-house-with-just-one-click-Ne5xv3 cozier-house-with-just-one-click" data-id="3107:8889"><div class="txt-vpcib8 txt" data-id="3107:8880"><img class="cozier-house-with-just-one-click-xiv8Zp cozier-house-with-just-one-click" data-id="3107:8881" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/cozier-house-with-just-one-click-.png" alt="Cozier House with just one click!"><img class="conveniently-control-xiv8Zp" data-id="3107:8882" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/conveniently-control-and-customize-your-curtain-lights-in-the-ap.png" alt="Conveniently control and customize your curtain lights in the APP"></div><div class="catben-cozy-room-1-vpcib8" data-id="3107:8883"></div></div><div class="draw-it-yourself-Ne5xv3 draw-it-yourself" data-id="3107:8890"><div class="txt-IYcCwV txt" data-id="3107:8884"><img class="draw-it-yourself-gwhrar draw-it-yourself" data-id="3107:8885" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/draw-it-yourself-.png" alt="Draw It Yourself!"><img class="use-our-app-to-desig" data-id="3107:8886" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/use-our-app-to-design-patterns--adjust-the-color--movement-speed.png" alt="Use our app to design patterns, adjust the color, movement speed, and size of the lights."></div><div class="draw-face-cut-1-IYcCwV" data-id="3107:8888"></div></div><div class="shine-brightly-outdoors-Ne5xv3 shine-brightly-outdoors" data-id="3107:8908"><div class="txt-R7ynm5 txt" data-id="3107:8893"><img class="shine-brightly-outdoors-YFpnPT shine-brightly-outdoors" data-id="3107:8894" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/shine-brightly-outdoors.png" alt="Shine brightly outdoors"><img class="weather-resistant-li-YFpnPT" data-id="3107:8895" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/weather-resistant-lights-transform-your-backyard-into-a-magical-.png" alt="Weather-resistant LIGHTS transform your backyard into a magical oasis"></div><div class="slider-R7ynm5" data-id="3107:8901"><img class="img-1-PtQlNJ" data-id="3107:8899" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/img-1-1@2x.png" alt="IMG 1"><img class="img-2-PtQlNJ" data-id="3107:8900" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/img-2@2x.png" alt="IMG 2"></div></div><div class="perfect-for-holiday-decorations-Ne5xv3 perfect-for-holiday-decorations" data-id="3107:8902"><div class="txt-GFiZvp txt" data-id="3107:8903"><img class="perfect-for-holiday-decorations-GkQa4f perfect-for-holiday-decorations" data-id="3107:8904" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/perfect-for-holiday-decorations.png" alt="Perfect for holiday decorations"><img class="use-our-app-to-desig" data-id="3107:8905" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/use-our-app-to-design-patterns--adjust-the-color--movement-speed.png" alt="Use our app to design patterns, adjust the color, movement speed, and size of the lights."></div><div class="best-full_-pee-ldn1-k-1-GFiZvp" data-id="3107:8909"></div></div><div class="easy-to-install-Ne5xv3 easy-to-install" data-id="3107:8910"><div class="txt-xeYoFQ txt" data-id="3107:8911"><img class="easy-to-install-GYUKja easy-to-install" data-id="3107:8912" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/easy-to-install.png" alt="Easy to Install"><img class="the-top-is-equipped-GYUKja" data-id="3107:8913" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/the-top-is-equipped-with-hooks-for-quick-install.png" alt="The top is equipped with hooks for quick Install"></div><div class="x1-xeYoFQ" data-id="3107:8917"></div></div><img class="img-Ne5xv3 img" data-id="3107:9524" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/img-1.png" alt="Img"></div><div class="faq-LxTwsZ" data-id="3107:9144"><img class="faq-OSxXuY" data-id="3107:8919" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/faq.png" alt="FAQ"><div class="content-OSxXuY content" data-id="3107:9020"><article class="faq-1Rxcci" data-id="3107:9010"><div class="frame-S4ngT7 frame" data-id="I3107:9010;3107:8999"><p class="can-i-remotely-control-these-lights smart-rgbh3" data-id="I3107:9010;3107:9000">Can I remotely control these lights?</p><img class="close-Qb6Jrf" data-id="I3107:9010;3107:9001" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/close-1.svg" alt="Close"></div><img class="line-3-S4ngT7" data-id="I3107:9010;3107:9003" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/line-3-1.svg" alt="Line 3"><p class="sure-you-can-fully-c-S4ngT7 basemont10" data-id="I3107:9010;3107:9004">Sure! you can fully control them via Govee Home App. The lights also support voice control via Alexa and Google Assistant.</p></article><article class="faq-3j5QFo" data-id="3107:9015"><div class="frame-x8TaNu frame" data-id="I3107:9015;3107:8994"><p class="can-i-remotely-control-these-lights smart-rgbh3" data-id="I3107:9015;3107:8995">How can I install the lights?</p><img class="open" data-id="I3107:9015;3107:8996" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/open.svg" alt="open"></div></article><article class="faq-14asz2" data-id="3107:9053"><div class="frame-1WX4Ps frame" data-id="I3107:9053;3107:8994"><p class="can-i-remotely-control-these-lights smart-rgbh3" data-id="I3107:9053;3107:8995">How many light beads does it contain?</p><img class="open" data-id="I3107:9053;3107:8996" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/open.svg" alt="open"></div></article><article class="faq-65wxro" data-id="3107:9060"><div class="frame-1SzsVd frame" data-id="I3107:9060;3107:8994"><p class="can-i-remotely-control-these-lights smart-rgbh3" data-id="I3107:9060;3107:8995">Can I combine a few sets of curtain lights?</p><img class="open" data-id="I3107:9060;3107:8996" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/open.svg" alt="open"></div></article><article class="faq-xZxOSG" data-id="3107:9067"><div class="frame-jTKTc8 frame" data-id="I3107:9067;3107:8994"><p class="can-i-remotely-control-these-lights smart-rgbh3" data-id="I3107:9067;3107:8995">Can I set up my own gif?</p><img class="open" data-id="I3107:9067;3107:8996" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/open.svg" alt="open"></div></article><article class="faq-v06AbB" data-id="3107:9074"><div class="frame-6Ibqpc frame" data-id="I3107:9074;3107:8994"><p class="can-i-remotely-control-these-lights smart-rgbh3" data-id="I3107:9074;3107:8995">Does it have any music mode?</p><img class="open" data-id="I3107:9074;3107:8996" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/open.svg" alt="open"></div></article></div></div><div class="customer-reviews-LxTwsZ" data-id="3107:9145"><div class="txt-sYtF3i txt" data-id="3107:9195"><img class="customer-reviews-tegYO1" data-id="3107:9146" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/customer-reviews.png" alt="Customer Reviews"><div class="reviews" data-id="3107:9180"><div class="x49-25-reviews-WgqbzJ smart-rgbcaption" data-id="3107:9192">4.9 (25 reviews)</div></div></div><div class="content-sYtF3i content" data-id="3107:9255"><div class="reviewvideo" data-id="3107:9236"><div class="living-room-review-1-N9Icdd" data-id="3107:9194"></div><div class="review" data-id="3107:9196"><div class="content-yev7II content" data-id="3107:9197"><div class="frame-ptgerN frame" data-id="3107:9231"><img class="jessica-m-O60SbK" data-id="3107:9198" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/jessica-m-.png" alt="Jessica M."><img class="stars" data-id="3107:9220" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/stars-1.svg" alt="Stars"></div><p class="i-bought-two-sets-fo-ptgerN smart-rgbtextprimary1" data-id="3107:9235">I Bought two sets for the front of the house. They look incredible at night.Make sure you hang them straight and level so they all line up</p></div></div></div><div class="reviewvideo" data-id="3107:9237"><div class="draw-face-slow-1-IHI2KB" data-id="3107:9258"></div><div class="review" data-id="3107:9239"><div class="content-IKmQ9s content" data-id="3107:9240"><div class="frame-Mdc4F1 frame" data-id="3107:9241"><img class="jane-v-pTcyx4" data-id="3107:9242" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/jane-v-.png" alt="Jane V."><img class="stars" data-id="3107:9243" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/stars-2.svg" alt="Stars"></div><p class="the-software-is-real-Mdc4F1 smart-rgbtextprimary1" data-id="3107:9254">The software is really easy to use, it can be controlled by Google Home, and it's actually a really great look for streaming!I love how easy and fast it is to draw and upload a new picture.</p></div></div></div><div class="reviewvideo" data-id="3107:9259"><img class="image-14-xDteIL" data-id="3107:9286" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/image-14.png" alt="image 14"><div class="review" data-id="3107:9261"><div class="content-Ehw34H content" data-id="3107:9262"><div class="frame-8pq2Vs frame" data-id="3107:9263"><img class="sarah-smith-qQQGxf" data-id="3107:9264" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/sarah-smith.png" alt="Sarah Smith"><img class="stars" data-id="3107:9265" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/stars-3.svg" alt="Stars"></div><p class="the-order-shipped-so-8pq2Vs smart-rgbtextprimary1" data-id="3107:9276">The order shipped so fast, And the lights are really nice and bright! The customization is exactly what I was looking for. You can control everything through the app via Bluetooth or WiFi. a truly amazing experience.</p></div></div></div><div class="reviewvideo" data-id="3107:9287"><img class="image-20-jD4UyG" data-id="3107:9308" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/image-20@2x.png" alt="image 20"><div class="review" data-id="3107:9289"><div class="content-yimaHZ content" data-id="3107:9290"><div class="frame-dktXog frame" data-id="3107:9291"><img class="maggieee-YtrKMl" data-id="3107:9292" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/maggieee.png" alt="Maggieee"><img class="stars" data-id="3107:9293" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/stars-4.svg" alt="Stars"></div><p class="just-received-the-or-dktXog smart-rgbtextprimary1" data-id="3107:9304">just received the order, lights are going to look great on my wall! thanks for the quick deliverly:*</p></div></div></div><div class="reviewvideo" data-id="3107:9309"><img class="image-17-7Agyxh" data-id="3107:9328" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/image-17@2x.png" alt="image 17"><div class="review" data-id="3107:9311"><div class="content-MX2gua content" data-id="3107:9312"><div class="frame-bLrKPQ frame" data-id="3107:9313"><img class="maggie-brown-eJHX01" data-id="3107:9314" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/maggie-brown.png" alt="Maggie Brown"><img class="stars" data-id="3107:9315" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/stars-5.svg" alt="Stars"></div><p class="first-time-purchasin-bLrKPQ smart-rgbtextprimary1" data-id="3107:9326">First time purchasing the curtain lights def will not be my last. This product brings me so much joy and happiness.THANKS!!!</p></div></div></div><div class="reviewvideo" data-id="3107:9329"><img class="image-18-gxu49r" data-id="3107:9347" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/image-18@2x.png" alt="image 18"><div class="review" data-id="3107:9331"><div class="content-52qxTJ content" data-id="3107:9332"><div class="frame-p4rN55 frame" data-id="3107:9333"><img class="adam" data-id="3107:9334" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/adam.png" alt="Adam"><img class="stars" data-id="3107:9335" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/stars-6.svg" alt="Stars"></div><p class="excellent-product-an-p4rN55 smart-rgbtextprimary1" data-id="3107:9346">Excellent product and looks amazing! Great for birthday partys too or just gaming/movie nights. Highly suggest this product.</p></div></div></div><div class="reviewvideo" data-id="3107:9348"><img class="image-19-eFN9nc" data-id="3107:9367" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/image-19@2x.png" alt="image 19"><div class="review" data-id="3107:9350"><div class="content-C57nfP content" data-id="3107:9351"><div class="frame-YxBOjW frame" data-id="3107:9352"><img class="bm-rxIWx4" data-id="3107:9353" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/b-m.png" alt="B.M"><img class="stars" data-id="3107:9354" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/stars-7.svg" alt="Stars"></div><p class="these-lights-have-sa-YxBOjW smart-rgbtextprimary1" data-id="3107:9365">These lights have saved my marriage! My wife gets angry when I play video games all day and starts to yell at me.I saw that these had a bubble scene from some reviews and devised a plan, I would install them while she was at work and surprise her once she had returned.When the time came and she started to yell at me, I yelled "ALEXA, TURN ON THE CURTAIN!" for once, the yelling stopped. so far it has worked wonders, wish me luck as i create new Scenes to surprise her with everyday.Thank you for giving me a chance at marriage!</p></div></div></div><div class="review" data-id="3107:9400"><div class="content-JHiTg9 content" data-id="3107:9401"><div class="frame-qc123u frame" data-id="3107:9402"><img class="adam" data-id="3107:9403" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/adam.png" alt="Adam"><img class="stars" data-id="3107:9404" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/stars-8.svg" alt="Stars"></div><p class="best-decor-lightning-qc123u smart-rgbtextprimary1" data-id="3107:9415">BEST decor lightning Ive purchased. I pretty much always keep them on Rainbow, because it has a really nice gradient of colors, and that's perfect for me.</p></div></div></div></div><footer class="footer-LxTwsZ" data-id="3107:9445"><div class="content-HuVW5F content" data-id="I3107:9445;3107:9420"><p class="subscribe-to-our-e-mail-newsletter-lWD5xx smart-rgbh2" data-id="I3107:9445;3107:9416">Subscribe to our e-mail newsletter</p><div class="input-button-lWD5xx" data-id="I3107:9445;3107:9435"><div class="input-DkT8UB" data-id="I3107:9445;3107:9418"><div class="sample-text-XawJh9 sample-text smart-rgbtextprimary2" data-id="I3107:9445;3107:9419">E-mail</div></div><div class="button_1-DkT8UB button_1" data-id="I3107:9445;3107:9441"><div class="sample-text-iRvPkg sample-text smart-rgbbutton1" data-id="I3107:9445;3107:9441;3107:9423">SUBSCRIBE</div></div></div><div class="info-lWD5xx" data-id="I3107:9445;3107:9443"><div class="flex-container-i3107944531079427-QWqlsN" data-id="I3107:9445;3107:9427-container"><div class="text0-i3107944531079427-RZ93On smart-rgbcaption" data-id="I3107:9445;3107:9427-text0"><span class="span0-qTwabN smart-rgbcaption">*Information is not a public offer<br></span></div><div class="text1-i3107944531079427-RZ93On smart-rgbcaption" data-id="I3107:9445;3107:9427-text1"><span class="span1-ypc4nR smart-rgbcaption">This site is not part of the Facebook or Facebook Inc. website. Also, this site is not endorsed by Facebook in any way FACEBOOK is a trademark of FACEBOOK, Inc. Facebook provides a platform for serving advertising, but the opinions and/or views expressed on this website are not</span></div></div><div class="button_2-QWqlsN" data-id="I3107:9445;3107:9437"><div class="sample-text-Zo12US sample-text smart-rgbh3" data-id="I3107:9445;3107:9437;3107:9431">Read more</div><img class="line-Zo12US" data-id="I3107:9445;3107:9437;3107:9433" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/65800c950585649490cfb447/releases/65899b6812f04fcaf2fb98a9/img/line-.svg" alt="Line "></div></div></div></footer></div></div><script src="js/launchpad-banner.js" async=""></script><script defer="" src="js/restart-btn.min.js"></script></body></html>

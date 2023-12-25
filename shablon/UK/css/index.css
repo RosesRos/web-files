@@ -31,19 +31,7 @@ body {
 	width: 100%;
 	position: relative;
 }
-.swiper_label {
-	position: absolute;
-	z-index: 2;
-	top: 24px;
-	left: 20px;
-	background-color: #fff;
-	padding: 9px 12px;
-	border-radius: 14px;
-	text-align: center;
-	font-size: 24px;
-	font-weight: 700;
-	color: #272727;
-}
+
 .swiper_image {
 	width: 100%;
 	cursor: pointer;
@@ -208,19 +196,7 @@ body {
 	width: 100%;
 	position: relative;
 }
-.header__slider_label {
-	position: absolute;
-	z-index: 2;
-	top: 24px;
-	left: 20px;
-	background-color: #edf8b2;
-	padding: 9px 12px;
-	border-radius: 14px;
-	text-align: center;
-	font-size: 24px;
-	font-weight: 700;
-	color: #272727;
-}
+
 .header__slider_image {
 	width: 100%;
 	cursor: pointer;
