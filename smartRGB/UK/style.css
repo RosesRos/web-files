@@ -105,8 +105,11 @@
 .accordion-arrow.active {
     transform: rotate(0deg);
 }
-.close-mobsVO.close-arrow.active {
-    /* background-image: url("./img/close-1.svg"); */
+
+.accordion-faq.active {
+    height: auto;
+}
+.close-arrow.active {
     transform: rotate(45deg);
 }
 
@@ -182,6 +185,18 @@
 
   /* ### ### FIXED BLOCK ## ### */
   /* ### ### FIXED BLOCK ## ### */
+
+  /* ## ### ## SLIDER BOX ## ## ### */
+  /* ## ### ## SLIDER BOX ## ## ### */
+  .twinkly .c-catben-cozy-room-1-izvN34-0 {
+    height: 450px;
+  }
+  .header__slider_image {
+    width: 100%;
+  }
+
+  /* ## ### ## SLIDER BOX ## ## ### */
+  /* ## ### ## SLIDER BOX ## ## ### */
 
 @media (max-width: 390px) {
     .twinkly {
@@ -265,5 +280,11 @@
     }
     .twinkly .catben-cozy-room-1-izvN34 {
         height: 500px;
+    }
+    .twinkly .c-catben-cozy-room-1-izvN34-0 {
+        height: 400px;
+    }
+    .twinkly .logo-p1tCK8 {
+        left: 115px;
     }
 }

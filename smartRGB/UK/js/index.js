@@ -40,15 +40,9 @@ document.addEventListener('DOMContentLoaded', function () {
         currentParent.classList.toggle('active');
 
         let currentArrow = document.querySelectorAll('.accordion-arrow');
-        let closeArrow = document.querySelectorAll(".close-mobsVO");
         for (let ind = 0; ind < currentArrow.length; ind++) {
           if (index == ind) {
             currentArrow[ind].classList.toggle("active");
-          }
-        }
-        for (let inde = 0; inde < closeArrow.length; inde++) {
-          if (index == inde) {
-            closeArrow[inde].classList.toggle("active");
           }
         }
       });
@@ -56,6 +50,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
   };
   accordion();
+
+
+  function accordionFaqs() {
+    const btn = document.querySelectorAll('.accordion-faq');
+
+    btn.forEach((item, index) => {
+      item.addEventListener('click', function () {
+        let currentParent = this.closest('.accordion-faq');
+        currentParent.classList.toggle('active');
+
+        let closeArrow = document.querySelectorAll('.close-arrow');
+        for (let ind = 0; ind < closeArrow.length; ind++) {
+          if (index == ind) {
+            closeArrow[ind].classList.toggle("active");
+          }
+        }
+      });
+    });
+
+  };
+  accordionFaqs();
+
 
   function LoaderBox() {
     var loadMoreContent = document.querySelector('div[data-id="3158:436"]');
@@ -82,4 +98,18 @@ document.addEventListener('DOMContentLoaded', function () {
     handleDropdownFooter();
   });
 
+  function SliderBox() {
+    new Swiper(".swiper", {
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      }
+    });
+  }
+  SliderBox();
 });
