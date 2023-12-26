@@ -95,10 +95,10 @@
     line-height: 110%; /* 15.4px */
 }
 
-/* #### ##### #### Acordion ### #### ### */
-/* #### ##### #### Acordion ### #### ### */
-/* #### ##### #### Acordion ### #### ### */
 
+/* #### ##### #### Acordion ### #### ### */
+/* #### ##### #### Acordion ### #### ### */
+/* #### ##### #### Acordion ### #### ### */
 .accordion.active {
     height: auto;
 }
@@ -112,7 +112,6 @@
 .close-arrow.active {
     transform: rotate(45deg);
 }
-
 /* #### ##### #### Acordion ### #### ### */
 /* #### ##### #### Acordion ### #### ### */
 /* #### ##### #### Acordion ### #### ### */
@@ -167,13 +166,11 @@
   .hidden-text.show {
     display: block;
   }
-  
   /* ##### LOADER LOADER LOADER LOADER*/
   /* ##### LOADER LOADER LOADER LOADER*/
 
   /* ### ### FIXED BLOCK ## ### */
   /* ### ### FIXED BLOCK ## ### */
-
   .twinkly .fixed {
     position: fixed;
     bottom: 10px;
@@ -182,9 +179,9 @@
     width: 390px;
     margin: 0 auto;
   }
+  /* ### ### FIXED BLOCK ## ### */
+  /* ### ### FIXED BLOCK ## ### */
 
-  /* ### ### FIXED BLOCK ## ### */
-  /* ### ### FIXED BLOCK ## ### */
 
   /* ## ### ## SLIDER BOX ## ## ### */
   /* ## ### ## SLIDER BOX ## ## ### */
@@ -197,6 +194,8 @@
 
   /* ## ### ## SLIDER BOX ## ## ### */
   /* ## ### ## SLIDER BOX ## ## ### */
+
+  
 
 @media (max-width: 390px) {
     .twinkly {
