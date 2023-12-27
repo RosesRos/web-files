@@ -265,6 +265,12 @@
     }
 }
 
+@media(max-width: 370px) {
+    .twinkly .x520-teardrop-shaped-mjZBpr {
+        left: 145px;
+    }
+}
+
 @media (max-width: 330px) {
     .twinkly .frame-lxhowD {
         justify-content: space-around;
