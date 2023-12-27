@@ -1,4 +1,94 @@
-@media (max-width: 390px) {
+/* #### ##### #### Acordion ### #### ### */
+/* #### ##### #### Acordion ### #### ### */
+/* #### ##### #### Acordion ### #### ### */
+.accordion.active {
+    height: auto;
+}
+.accordion-arrow.active {
+    transform: rotate(0deg);
+}
+
+.accordion-faq.active {
+    height: auto;
+}
+.close-arrow.active {
+    transform: rotate(45deg);
+}
+/* #### ##### #### Acordion ### #### ### */
+/* #### ##### #### Acordion ### #### ### */
+/* #### ##### #### Acordion ### #### ### */
+
+
+/* ##### LOADER LOADER LOADER LOADER*/
+/* ##### LOADER LOADER LOADER LOADER*/
+.progress {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    z-index: 1;
+    width: 100%;
+  }
+  .img-1, .img-2, .img-3 {
+    position: relative;
+    border-radius: 50%;
+    background-color: var(--pink);
+    width: 18px;
+    height: 18px;
+    animation: 2s ease-in-out infinite load;
+  }
+  
+  .img-2,
+  .img-3 {
+    animation: 2s ease-in-out 0.4s infinite load;
+  }
+  .img-3 {
+    animation: 2s ease-in-out 0.8s infinite load;
+  }
+  @keyframes load {
+      50% {
+        opacity: 0;
+        transform: scale(0.7);
+      }
+  }
+  
+  
+  
+  .hidden-text {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--color-gray-500);
+  }
+  .text-1419 {
+    flex: 1;
+    position: relative;
+  }
+  .hidden-text.show {
+    display: block;
+  }
+  /* ##### LOADER LOADER LOADER LOADER*/
+  /* ##### LOADER LOADER LOADER LOADER*/
+
+  /* ### ### FIXED BLOCK ## ### */
+  /* ### ### FIXED BLOCK ## ### */
+  .nano-drone .fixed {
+    position: fixed;
+    z-index: 10;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    width: 390px;
+    margin: 0 auto;
+  }
+  #button2 {
+    /* display: none; */
+  }
+  /* ### ### FIXED BLOCK ## ### */
+  /* ### ### FIXED BLOCK ## ### */
+
+@media (max-width: 480px) {
     .nano-drone {
         width: 100%;
     }
@@ -32,12 +122,14 @@
     .nano-drone .blur-t6mEFO {
         width: 100%;
     }
-    .nano-drone .what-you-get-with-purchase-sO6gnc {
+    .nano-drone .payment-shipping-fbvBcw {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .nano-drone .shipping {
         width: 100%;
     }
-    .nano-drone .img-2-xQqxtx {
-        left: 131px;
-    }
+
     .nano-drone .what-you-get-with-purchase-XJTOip {
         width: 100%;
     }
@@ -58,5 +150,68 @@
     }
     .nano-drone .price-j83F4P {
         left: 245px;
+    }
+    .nano-drone .view-fbvBcw {
+        width: 100%;
+    }
+    .nano-drone .what-you-get-with-purchase-sO6gnc {
+        width: 100%;
+    }
+    .nano-drone .content-6DtaPO {
+        width: 95%;
+    }
+    .nano-drone .faq-reCIeY {
+        width: 100%;
+    }
+    .nano-drone .content-bhEUou {
+        width: 95%;
+    }
+    .nano-drone .review-pE8pzv {
+        width: 100%;
+    }
+    .nano-drone .review {
+        width: 100%;
+    }
+    .nano-drone .content-3DI3nx {
+        width: 100%;
+    }
+    .nano-drone .title-hShrrF {
+        width: 100%;
+    }
+    .nano-drone .input-am29Um {
+        width: 100%;
+    }
+    .nano-drone .fixed {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 390px) {
+    .nano-drone .payment-shipping-fbvBcw {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .nano-drone .shipping {
+        width: 100%;
+    }
+    .nano-drone .img-2-xQqxtx {
+        left: 140px;
+    }
+}
+
+@media (max-width: 330px) {
+    .nano-drone .logo-j83F4P {
+        left: 30px;
+        width: 165px;
+    }
+    .nano-drone .price-j83F4P {
+        left: 220px;
+    }
+    .nano-drone .free-shipping-in-country {
+        font-size: 12.5px;
+    }
+    .nano-drone .img-2-xQqxtx {
+        left: 100px;
     }
 }

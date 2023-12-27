@@ -74,10 +74,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   function LoaderBox() {
-    var loadMoreContent = document.querySelector('div[data-id="3158:436"]');
+    var loadMoreContent = document.querySelector('div[data-id="11:3648"]');
     if (loadMoreContent) {
       loadMoreContent.addEventListener("click", function (e) {
-        var loadMoreEl = document.querySelector('div[data-id="3158:436"]');
+        var loadMoreEl = document.querySelector('div[data-id="11:3648"]');
         var progressEl = document.querySelector("#progress");
     
         loadMoreEl.style.display = "none";
@@ -87,10 +87,10 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   LoaderBox();
 
-  let moreText = document.querySelector('div[data-id="I3210:465;3107:9437;3107:9431"]');
+  let moreText = document.querySelector('div[data-id="I11:3725;11:3743;11:3741"');
   function handleDropdownFooter() {
     let e = document.querySelector('.hidden-text'),
-    o = document.querySelector('div[data-id="I3210:465;3107:9437;3107:9431"]');
+    o = document.querySelector('div[data-id="I11:3725;11:3743;11:3741"]');
     e.classList.contains('show') ? (o.textContent = 'Read more') : (o.textContent = 'Read less'),
     e.classList.toggle('show');
   }
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
   }
-  scrollBox();
+  // scrollBox();
 
   function SliderBox() {
     new Swiper(".swiper", {
@@ -141,5 +141,5 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }
-  SliderBox();
+  // SliderBox();
 });
