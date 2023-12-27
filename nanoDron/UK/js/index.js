@@ -119,15 +119,18 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   scrollBox();
 
+  
   function SliderBox() {
-    new Swiper(".swiper", {
+    var swiper3 = new Swiper(".mySwiper3", {
       loop: true,
-      spaceBetween: 30,
-      centeredSlides: true,
-      // autoplay: {
-      //   delay: 2500,
-      //   disableOnInteraction: false,
-      // },
+      // spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    new Swiper(".mySwiper2", {
+      loop: true,
+      spaceBetween: 5,
       pagination: {
         el: ".swiper-pagination",
         dynamicBullets: true,
@@ -136,7 +139,10 @@ document.addEventListener('DOMContentLoaded', function () {
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev"
-      }
+      },
+      thumbs: {
+        swiper: swiper3,
+      },
     });
   }
   SliderBox();
