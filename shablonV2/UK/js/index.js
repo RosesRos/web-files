@@ -101,7 +101,9 @@ document.addEventListener('DOMContentLoaded', function () {
   function SliderBox() {
     new Swiper(".swiper", {
       loop: true,
-      spaceBetween: 30,
+      // slidesPerView: slidesPerView[0],
+      spaceBetween: 15,
+      grabCursor: true,
       centeredSlides: true,
       autoplay: {
         delay: 2500,
@@ -114,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function () {
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev"
-      }
+      },
     });
   }
   SliderBox();
