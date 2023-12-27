@@ -176,11 +176,14 @@
     bottom: 10px;
     left: 0;
     right: 0;
-    width: 390px;
+    /* width: 390px; */
+    width: 430px;
     margin: 0 auto;
+    transition: all 0.2s linear 0s;
   }
   #button2 {
-    display: none;
+    /* display: none; */
+    bottom: -4rem;
   }
   /* ### ### FIXED BLOCK ## ### */
   /* ### ### FIXED BLOCK ## ### */
@@ -198,7 +201,6 @@
   /* ## ### ## SLIDER BOX ## ## ### */
   /* ## ### ## SLIDER BOX ## ## ### */
 
-  
 
 @media (max-width: 390px) {
     .twinkly {

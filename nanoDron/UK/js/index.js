@@ -111,14 +111,12 @@ document.addEventListener('DOMContentLoaded', function () {
       // Проверяем, достигли ли порога
         if (scrollPosition >= scrollThreshold) {
           // Показываем кнопку 2 и скрываем кнопку 1
-          // button2.style.display = 'flex';
-          button2.style.bottom = "10px"
-          // button1.style.display = 'none';
+          button2.style.display = 'flex';
+          button1.style.display = 'none';
         } else {
           // Скрываем кнопку 2 и показываем кнопку 1
-          // button2.style.display = 'none';
-          button2.style.bottom = "-4rem"
-          // button1.style.display = 'flex';
+          button2.style.display = 'none';
+          button1.style.display = 'flex';
         }
     });
   }
