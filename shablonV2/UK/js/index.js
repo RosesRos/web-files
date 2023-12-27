@@ -135,7 +135,8 @@ document.addEventListener('DOMContentLoaded', function () {
       },
       pagination: {
         el: ".swiper-pagination",
-        dynamicBullets: true
+        dynamicBullets: true,
+        clicklabel: true
       },
       navigation: {
         nextEl: ".swiper-button-next",

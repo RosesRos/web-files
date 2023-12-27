@@ -124,13 +124,14 @@ document.addEventListener('DOMContentLoaded', function () {
       loop: true,
       spaceBetween: 30,
       centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
+      // autoplay: {
+      //   delay: 2500,
+      //   disableOnInteraction: false,
+      // },
       pagination: {
         el: ".swiper-pagination",
-        dynamicBullets: true
+        dynamicBullets: true,
+        clicklabel: true
       },
       navigation: {
         nextEl: ".swiper-button-next",
@@ -138,5 +139,5 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }
-  // SliderBox();
+  SliderBox();
 });
