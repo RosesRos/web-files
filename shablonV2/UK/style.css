@@ -179,6 +179,9 @@
     width: 390px;
     margin: 0 auto;
   }
+  #button2 {
+    display: none;
+  }
   /* ### ### FIXED BLOCK ## ### */
   /* ### ### FIXED BLOCK ## ### */
 
@@ -191,10 +194,6 @@
   .header__slider_image {
     width: 100%;
   }
-
-  /* .swiper-backface-hidden .swiper-slide {
-    padding-right: 1rem;
-  } */
 
   /* ## ### ## SLIDER BOX ## ## ### */
   /* ## ### ## SLIDER BOX ## ## ### */
