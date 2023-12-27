@@ -178,6 +178,10 @@
     right: 0;
     width: 390px;
     margin: 0 auto;
+    /* display: none; */
+  }
+  #button2 {
+    display: none;
   }
   /* ### ### FIXED BLOCK ## ### */
   /* ### ### FIXED BLOCK ## ### */

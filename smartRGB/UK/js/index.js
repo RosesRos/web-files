@@ -98,6 +98,30 @@ document.addEventListener('DOMContentLoaded', function () {
     handleDropdownFooter();
   });
 
+  function scrollBox() {
+    const button1 = document.getElementById('button1');
+    const button2 = document.getElementById('button2');
+    const scroElement = document.getElementById('scro');
+    const scrollThreshold = scroElement.offsetTop; // Порог прокрутки до элемента scro
+
+    window.addEventListener('scroll', function () {
+      // Получаем текущую позицию прокрутки
+      const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+      // Проверяем, достигли ли порога
+        if (scrollPosition >= scrollThreshold) {
+          // Показываем кнопку 2 и скрываем кнопку 1
+          button2.style.display = 'flex';
+          button1.style.display = 'none';
+        } else {
+          // Скрываем кнопку 2 и показываем кнопку 1
+          button2.style.display = 'none';
+          button1.style.display = 'flex';
+        }
+    });
+  }
+  scrollBox();
+
   function SliderBox() {
     new Swiper(".swiper", {
       loop: true,
