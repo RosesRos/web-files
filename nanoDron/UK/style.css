@@ -81,10 +81,32 @@
     right: 0;
     width: 390px;
     margin: 0 auto;
+    transition: all 0.2s linear 0s;
   }
   #button2 {
-    /* display: none; */
+    bottom: -4rem;
   }
+
+
+.nano-drone #button1 {
+    box-shadow: 0px 0px 18px 0px var(--yellow);
+    animation: pulse 1.5s linear infinite normal forwards;
+}
+@keyframes pulse {
+    0% {
+      animation-timing-function: linear;
+      box-shadow: 0px 0px 18px 0px var(--yellow);
+    }
+    50% {
+      animation-timing-function: linear;
+      box-shadow: 0px 0px 4px 0px var(--yellow);
+    }
+    100% {
+      animation-timing-function: linear;
+      box-shadow: 0px 0px 18px 0px var(--yellow);
+    }
+}
+
   /* ### ### FIXED BLOCK ## ### */
   /* ### ### FIXED BLOCK ## ### */
 
