@@ -219,7 +219,7 @@
       animation-timing-function: linear;
       box-shadow: 0px 0px 18px 0px var(--smart-rgbpurple);
     }
-  }
+}
 
 
 @media (max-width: 390px) {
