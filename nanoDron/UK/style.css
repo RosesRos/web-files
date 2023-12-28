@@ -235,6 +235,9 @@
         width: 95%;
         margin: 0 auto;
     }
+    .nano-drone .frame {
+        cursor: none;
+    }
 }
 
 @media (max-width: 390px) {
