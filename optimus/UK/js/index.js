@@ -51,7 +51,6 @@ document.addEventListener('DOMContentLoaded', function () {
   };
   accordion();
 
-
   function accordionFaqs() {
     const btn = document.querySelectorAll('.accordion-faq');
 
@@ -140,4 +139,28 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
   // SliderBox();
+
+  function selectImage() {
+    const images = [
+      "./img/img-1@2x.png",
+      "./img/img-2@2x.png",
+      "./img/img-3.png",
+    ];
+    const img = document.querySelector('img[data-id="158:422"]');
+    const cero = document.querySelector('div[data-id="158:424"]');
+    const uno = document.querySelector('div[data-id="158:427"]');
+    const dos = document.querySelector('div[data-id="158:430"]');
+
+    cero.addEventListener("click", function() {
+      img.src = images[0];
+    });
+    uno.addEventListener("click", function() {
+      img.src = images[1];
+    });
+    dos.addEventListener("click", function() {
+      img.src = images[2];
+    });
+  }
+  selectImage();
+
 });
