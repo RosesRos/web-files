@@ -145,5 +145,33 @@ document.addEventListener('DOMContentLoaded', function () {
       },
     });
   }
-  SliderBox();
+  // SliderBox();
+
+  function selectImage() {
+    const images = [
+      "./img/clip-path-group-1@2x.png",
+      "./img/dron@2x.png",
+      "./img/clip-path-group-3@2x-1.png",
+      "./img/clip-path-group-4@2x.png",
+    ];
+    const img = document.querySelector('img[data-id="10:2072"]');
+    const cero = document.querySelector('div[data-id="10:2409"]');
+    const uno = document.querySelector('div[data-id="10:2462"]');
+    const dos = document.querySelector('div[data-id="10:2412"]');
+    const tres = document.querySelector('div[data-id="10:2415"]');
+
+    cero.addEventListener("click", function() {
+      img.src = images[0];
+    });
+    uno.addEventListener("click", function() {
+      img.src = images[1];
+    });
+    dos.addEventListener("click", function() {
+      img.src = images[2];
+    });
+    tres.addEventListener("click", function() {
+      img.src = images[3];
+    });
+  }
+  selectImage();
 });
