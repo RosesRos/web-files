@@ -149,10 +149,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function selectImage() {
     const images = [
-      "./img/clip-path-group-1@2x.png",
-      "./img/dron@2x.png",
-      "./img/clip-path-group-3@2x-1.png",
-      "./img/clip-path-group-4@2x.png",
+      "./img/cero.png",
+      "./img/uno.png",
+      "./img/dos.png",
+      "./img/tres.png",
     ];
     const img = document.querySelector('img[data-id="10:2072"]');
     const cero = document.querySelector('div[data-id="10:2409"]');
