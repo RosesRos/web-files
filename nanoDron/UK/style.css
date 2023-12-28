@@ -88,10 +88,10 @@
   }
 
 
-.nano-drone #button1 {
+/* .nano-drone #button1 {
     box-shadow: 0px 0px 18px 0px var(--yellow);
     animation: pulse 1.5s linear infinite normal forwards;
-}
+} */
 @keyframes pulse {
     0% {
       animation-timing-function: linear;
