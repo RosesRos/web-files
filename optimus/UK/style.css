@@ -321,6 +321,15 @@
     }
 }
 
+@media (max-width: 370px) {
+    .nano-drone .c-mobil-faq {
+        height: 90px;
+    }
+    .c-mobil-faq.active {
+        height: auto;
+    }
+}
+
 
 @media (max-width: 330px) {
     .nano-drone .frame-DuxkiH {
