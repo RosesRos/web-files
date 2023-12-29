@@ -1,0 +1,142 @@
+.c-box-header-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+.c-box-header-banner {
+    width: 100%;
+    height: 527px;
+    position: relative;
+    text-align: center;
+}
+.c-box-header-banner-img-absolute {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 261px;
+}
+.c-box-header-box-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    align-self: stretch;
+    width: 100%;
+}
+.c-box-header-box-text-h2 {
+
+    /* Iron/H_1 */
+    font-family: var(--font-family-iron_man_of_war_2_ncv-regular);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: transparent;
+    background: var(--Iron-Gradient, linear-gradient(180deg, #B76765 0%, #791C1F 37.11%, #9B1E22 54.69%, #DD3A30 75%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    text-align: center;
+}
+.c-box-header-box-text-p {
+    color: var(--White, #FFF);
+
+    /* Iron/Descriptor_1 */
+    font-family: var(--font-family-iron_man_of_war_2_ncv-regular);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+[data-id="I285:2230;189:4123"] {
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    .iron-man {
+        width: 100%;
+    }
+    .iron-man .marketing-block-zANbx8 {
+        width: 100%;
+    }   
+    .iron-man .content {
+        width: 100%;
+    }
+    .iron-man .footer-zANbx8 {
+        width: 100%;
+    }
+}
+@media (max-width: 390px) {
+    .iron-man .mask-group-texture-img-3fXeNY {
+        left: 0;
+    }
+    .iron-man .jarvis-close-Kojc37 {
+        margin-right: -3rem;
+    }
+    .iron-man .jarvis-open-4FI9Ub {
+        margin-left: -2rem;
+    }
+    .iron-man .sale-Ps2A2P {
+        left: 220px;
+    }
+    .iron-man .x5-opening-modes-wHEA1C {
+        gap: 10px;
+    }
+    .iron-man .voice-control-wHEA1C {
+        gap: 10px;
+    }
+    .iron-man .led-eye-lights-wHEA1C {
+        gap: 10px;
+    }
+    .iron-man .touch-control-wHEA1C {
+        gap: 10px;
+    }
+    .iron-man .remote-control-wHEA1C {
+        gap: 10px;
+    }
+}
+@media (max-width: 370px) {
+    .iron-man .jarvis-open-4FI9Ub {
+        margin-left: -3rem;
+    }
+    .iron-man .jarvis-close-Kojc37 {
+        margin-right: -3.5rem;
+    }
+}
+
+@media (max-width: 330px) {
+    .c-box-header-box-text-h2 {
+        font-size: 40px;
+    }
+    .iron-man .mask-group-texture-img-3fXeNY {
+        left: -20px;
+    }
+    .iron-man .jarvis-open-4FI9Ub {
+        margin-left: -6rem;
+    }
+    .iron-man .jarvis-close-Kojc37 {
+        margin-right: -6rem;
+    }
+    .iron-man .smart-and-sensitive-touch-control-YwQ2M3 {
+        font-size: 10px;
+    }
+    .iron-man .led-eye-lights-81SM1C {
+        font-size: 10px;
+    }
+    .iron-man .jarvis-voice-control-Zf1pRK {
+        font-size: 10px;
+    }
+    .iron-man .sale-Ps2A2P {
+        left: 175px;
+    }
+    .iron-man .subscribe-to-our-e-mail-newsletter-LdSG5u {
+        font-size: 34px;
+    }
+}
