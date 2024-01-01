@@ -60,24 +60,29 @@ document.addEventListener('DOMContentLoaded', function () {
         let currentParent = this.closest('.accordion-faq');
         currentParent.classList.toggle('active');
 
+        let accordionFaqItem = document.querySelectorAll(".accordion-faq-item");
+        for (let ind = 0; ind < accordionFaqItem.length; ind++) {
+          if (index == ind) {
+            accordionFaqItem[ind].classList.toggle("active");
+          }
+        }
         let closeArrow = document.querySelectorAll('.close-arrow');
         for (let ind = 0; ind < closeArrow.length; ind++) {
           if (index == ind) {
             closeArrow[ind].classList.toggle("active");
-          }
+          } 
         }
       });
     });
-
   };
   accordionFaqs();
 
 
   function LoaderBox() {
-    var loadMoreContent = document.querySelector('div[data-id="3158:436"]');
+    var loadMoreContent = document.querySelector('div[data-id="262:2522"]');
     if (loadMoreContent) {
       loadMoreContent.addEventListener("click", function (e) {
-        var loadMoreEl = document.querySelector('div[data-id="3158:436"]');
+        var loadMoreEl = document.querySelector('div[data-id="262:2522"]');
         var progressEl = document.querySelector("#progress");
     
         loadMoreEl.style.display = "none";
@@ -87,10 +92,10 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   LoaderBox();
 
-  let moreText = document.querySelector('div[data-id="I3210:465;3107:9437;3107:9431"]');
+  let moreText = document.querySelector('div[data-id="I276:267;262:2561;262:2559"]');
   function handleDropdownFooter() {
     let e = document.querySelector('.hidden-text'),
-    o = document.querySelector('div[data-id="I3210:465;3107:9437;3107:9431"]');
+    o = document.querySelector('div[data-id="I276:267;262:2561;262:2559"]');
     e.classList.contains('show') ? (o.textContent = 'Read more') : (o.textContent = 'Read less'),
     e.classList.toggle('show');
   }
@@ -144,5 +149,5 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }
-  SliderBox();
+  // SliderBox();
 });
