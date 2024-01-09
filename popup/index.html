@@ -45,19 +45,12 @@
             let currentIndex = 0;
             
             function displayTime() {
-                if (currentIndex < timesShowsPopus.length) {
-                    let timeElement = document.querySelector("#newTime");
-                    timeElement.innerHTML = timesShowsPopus[currentIndex];
-
-                    currentIndex++;
-
-                    setTimeout(displayTime, 4000);
-                } else {
-                    let timeElement = document.querySelector("#newTime");
-                    timeElement.innerHTML = timesShowsPopus[0];
-                }
+              var randomNumber = Math.floor(Math.random() * 100) + 1;
+              let timeElement = document.querySelector("#newTime");
+              timeElement.innerHTML = randomNumber + " minutes ago";
+              
             }
-            // displayTime();
+            displayTime();
 
             function closePopup() {
                 let close = document.querySelector("#close");
