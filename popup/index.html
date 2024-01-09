@@ -79,11 +79,11 @@
             }
             // activePopup();
 
-            const interval = 7000; // Интервал в миллисекундах (в данном случае 5000 миллисекунд или 5 секунд)
+            const interval = 10000; // Интервал в миллисекундах (в данном случае 5000 миллисекунд или 5 секунд)
             const numberOfPopups = 5; // Количество попапов
             for (var i = 0; i < numberOfPopups; i++) {
               setTimeout(activePopup, i * interval);
-              setTimeout(displayTime, i * 6000);
+              setTimeout(displayTime, i * 9000);
             }
         }
         showPopup();
