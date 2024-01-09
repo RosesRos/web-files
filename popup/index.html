@@ -19,8 +19,6 @@
 
         var productImage = "https://img-va.myshopline.com/image/store/2004358349/1677984556255/3-1000x1000-65_128x.jpg?w=1000&amp;h=1000";
         var productName = 'Air Jordan';
-        var timeoutOpen = 5000;
-        var timeoutClose = 3000;
 
         const styles = `
           .mainPopup{position: fixed;z-index: 129;box-sizing: border-box;overflow: visible;transition: transform 1s;font-family: Helvetica, Arial, sans-serif;letter-spacing: normal;line-height: 1.5;width: 360px;cursor: pointer;top: 130px;left: 0px;transform: translate(calc(-100% - 20px))}.mainPopup.activePopup{transform: translate(30px)}
@@ -53,9 +51,9 @@
               var randomNumber = Math.floor(Math.random() * 100) + 1;
               let timeElement = document.querySelector("#newTime");
               timeElement.innerHTML = randomNumber + " minutes ago";
-              
+              console.log("time")
             }
-            displayTime();
+            // displayTime();
 
             function closePopup() {
                 let close = document.querySelector("#close");
@@ -70,19 +68,24 @@
                 setTimeout(() => {
                     active = true;
                     if (active == true) {
-                      console.log("true active");
                       contentPopup.classList.add("activePopup");
                       setTimeout(() => {
                         active = false;
                         if (active != true) {
-                          console.log("false active");
                           contentPopup.classList.remove("activePopup");
                         }
-                      }, timeoutClose);
+                      }, 3000);
                     }
-                }, timeoutOpen);
+                }, 5000);
             }
-            activePopup();
+            // activePopup();
+
+            const interval = 8000; // Интервал в миллисекундах (в данном случае 5000 миллисекунд или 5 секунд)
+            const numberOfPopups = 5; // Количество попапов
+            for (var i = 0; i < numberOfPopups; i++) {
+              setTimeout(activePopup, i * interval);
+              setTimeout(displayTime, i * 5000);
+            }
         }
         showPopup();
         
