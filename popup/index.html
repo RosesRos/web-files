@@ -20,9 +20,7 @@
         var productImage = "https://img-va.myshopline.com/image/store/2004358349/1677984556255/3-1000x1000-65_128x.jpg?w=1000&amp;h=1000";
         var productName = 'Air Jordan';
 
-        const styles = `
-          .mainPopup{position: fixed;z-index: 129;box-sizing: border-box;overflow: visible;transition: transform 1s;font-family: Helvetica, Arial, sans-serif;letter-spacing: normal;line-height: 1.5;width: 360px;cursor: pointer;top: 130px;left: 0px;transform: translate(calc(-100% - 20px))}.mainPopup.activePopup{transform: translate(30px)}
-        `;
+        const styles = `.mainPopup{position: fixed;z-index: 129;box-sizing: border-box;overflow: visible;transition: transform 1s;font-family: Helvetica, Arial, sans-serif;letter-spacing: normal;line-height: 1.5;width: 360px;cursor: pointer;top: 130px;left: 0px;transform: translate(calc(-100% - 20px))}.mainPopup.activePopup{transform: translate(30px)}@media(max-width: 480px){.mainPopup.activePopup{transform: translate(0px)}}`;
         const styleSheet = new CSSStyleSheet();
         styleSheet.replaceSync(styles);
         contentPopup.classList.add("mainPopup");
