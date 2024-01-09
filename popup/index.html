@@ -51,7 +51,6 @@
               var randomNumber = Math.floor(Math.random() * 100) + 1;
               let timeElement = document.querySelector("#newTime");
               timeElement.innerHTML = randomNumber + " minutes ago";
-              console.log("time")
             }
             // displayTime();
 
@@ -80,11 +79,11 @@
             }
             // activePopup();
 
-            const interval = 8000; // Интервал в миллисекундах (в данном случае 5000 миллисекунд или 5 секунд)
+            const interval = 7000; // Интервал в миллисекундах (в данном случае 5000 миллисекунд или 5 секунд)
             const numberOfPopups = 5; // Количество попапов
             for (var i = 0; i < numberOfPopups; i++) {
               setTimeout(activePopup, i * interval);
-              setTimeout(displayTime, i * 5000);
+              setTimeout(displayTime, i * 6000);
             }
         }
         showPopup();
