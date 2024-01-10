@@ -279,3 +279,137 @@
         top: 200px;
     }
 }
+
+@media (max-width: 300px) {
+    .buzz-lightyear .special-offer-for-co-fiRMEq {
+        font-size: 12px;
+    }
+    .buzz-lightyear .frame-t2aAYN {
+        flex-direction: column;
+    }
+    .buzz-lightyear .free-shipping {
+        gap: 6px;
+    }
+    .buzz-lightyear .free-shipping-in-country {
+        font-size: 10.5px;
+    }
+    .buzz-lightyear .frame-wZcH2x {
+        padding: 15px 5px;
+    }
+    .buzz-lightyear .frame-xqNQNZ {
+        padding: 15px 5px;
+    }
+    .buzz-lightyear .frame-PdaSBh {
+        padding: 15px 5px;
+    }
+    .buzz-lightyear .frame-CYoRzT {
+        padding: 15px 5px;
+    }
+    .buzz-lightyear .all-purchases-are-sh {
+        font-size: 10px;
+    }
+    .robototextprimary1 {
+        font-size: 10px;
+    }
+    .robotoh4caps {
+        font-size: 10px;
+    }
+    .buzz-lightyear .txt-rI47os {
+        left: 130px;
+    }
+    .buzz-lightyear .who-doesnt-like-cats-DMWh2G {
+        font-size: 12px;
+    }
+    .buzz-lightyear .img-OgZzc2 {
+        height: auto;
+    }
+    .buzz-lightyear .txt-OgZzc2 {
+        top: 250px;
+    }
+    .buzz-lightyear .c-faq-mobil-mini-x {
+        height: 65px;
+    }
+}
+
+@media (max-width: 260px) {
+    .c-robosen-buzz-lightye-pxyQEq-h2 {
+        font-size: 14px;
+    }
+    .buzz-lightyear .free-shipping-in-country {
+        width: 50%;
+    }
+    /* .buzz-lightyear .frame-jKTQfS {
+        justify-content: center;
+    } */
+    .buzz-lightyear .close {
+        display: none;
+    }
+    .buzz-lightyear .shipping {
+        height: 65px;
+    }
+    .accordion.active {
+        height: auto;
+    }
+    .buzz-lightyear .beauty-in-details-Nkh7vP {
+        flex-direction: column;
+    }
+    .buzz-lightyear .img-xOxuNl {
+        width: 100%;
+    }
+    .buzz-lightyear .xl-15-motorized-jet-pack-Nkh7vP {
+        flex-direction: column-reverse;
+    }
+    .buzz-lightyear .img-v35Nir {
+        width: 100%;
+    }
+    .buzz-lightyear .led-lights-Nkh7vP {
+        flex-direction: column;
+    }
+    .buzz-lightyear .img-w7G9ls {
+        width: 100%;
+    }
+    .buzz-lightyear .whats-in-the-box-Nkh7vP {
+        flex-direction: column-reverse;
+    }
+    .buzz-lightyear .img-ZLroSn {
+        width: 100%;
+    }
+    .buzz-lightyear .img-ihP3IJ {
+        left: 27px;
+    }
+    .buzz-lightyear .frame-1HmVXX {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .buzz-lightyear .frame-rNBJI1 {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .buzz-lightyear .frame-drLbNC {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .buzz-lightyear .frame-p2ybCa {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .buzz-lightyear .frame-bzHpra {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .buzz-lightyear .frame-VXXAMJ {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .buzz-lightyear .frame-9cLmd5 {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .buzz-lightyear .frame-qB36uT {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .buzz-lightyear .c-faq-mobil-mini-xx {
+        height: 95px;
+    }
+}
