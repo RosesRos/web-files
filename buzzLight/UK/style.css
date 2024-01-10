@@ -244,6 +244,9 @@
     .buzz-lightyear .c-faq-mobil {
         height: 65px;
     }
+    .buzz-lightyear .txt-rI47os {
+        left: 208px;
+    }
 }
 @media (max-width: 330px) {
     .buzz-lightyear .sale-M4XSTx {
@@ -270,5 +273,9 @@
     .buzz-lightyear .free-shipping-in-country {
         white-space: normal;
         font-size: 12px;
+    }
+    .buzz-lightyear .txt-rI47os {
+        left: 160px;
+        top: 200px;
     }
 }
