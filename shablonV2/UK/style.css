@@ -149,9 +149,13 @@
         transform: scale(0.7);
       }
   }
-  
-  
-  
+
+  /* ##### LOADER LOADER LOADER LOADER*/
+  /* ##### LOADER LOADER LOADER LOADER*/
+
+/* ##### hiddenText hiddenText hiddenText hiddenText*/
+/* ##### hiddenText hiddenText hiddenText hiddenText*/
+/* ##### hiddenText hiddenText hiddenText hiddenText*/
   .hidden-text {
     display: none;
     flex-direction: row;
@@ -165,8 +169,9 @@
   .hidden-text.show {
     display: block;
   }
-  /* ##### LOADER LOADER LOADER LOADER*/
-  /* ##### LOADER LOADER LOADER LOADER*/
+ /* ##### hiddenText hiddenText hiddenText hiddenText*/
+ /* ##### hiddenText hiddenText hiddenText hiddenText*/
+/* ##### hiddenText hiddenText hiddenText hiddenText*/
 
   /* ### ### FIXED BLOCK ## ### */
   /* ### ### FIXED BLOCK ## ### */

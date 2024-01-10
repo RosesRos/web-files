@@ -21,9 +21,101 @@
     }
 }
 
+
+/* #### ##### #### Acordion ### #### ### */
+/* #### ##### #### Acordion ### #### ### */
+/* #### ##### #### Acordion ### #### ### */
+.gesture-finger-light .accordion {
+    height: 60px;
+    overflow: hidden;
+    transition: all 0.2s linear 0s;
+}
+.accordion.active {
+    height: auto;
+}
+.gesture-finger-light .accordion-arrow {
+    transform: rotate(45deg);
+    transition: all 0.2s linear 0s;
+}
+.accordion-arrow.active {
+    transform: rotate(180deg);
+}
+
+.gesture-finger-light .accordion-faq {
+    height: 60px;
+    overflow: hidden;
+    transition: all 0.2s linear 0s;
+}
+.accordion-faq.active {
+    height: auto;
+}
+.close-arrow.active {
+    transform: rotate(0deg);
+}
+/* #### ##### #### Acordion ### #### ### */
+/* #### ##### #### Acordion ### #### ### */
+/* #### ##### #### Acordion ### #### ### */
+
+
+/* ##### hiddenText hiddenText hiddenText hiddenText*/
+/* ##### hiddenText hiddenText hiddenText hiddenText*/
+/* ##### hiddenText hiddenText hiddenText hiddenText*/
+.hidden-text {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--color-gray-500);
+  }
+  .text-1419 {
+    flex: 1;
+    position: relative;
+
+    align-self: stretch;
+    background-color: transparent;
+    color: var(--usedblack-2);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13.0px;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-s);
+  }
+  .hidden-text.show {
+    display: block;
+  }
+ /* ##### hiddenText hiddenText hiddenText hiddenText*/
+ /* ##### hiddenText hiddenText hiddenText hiddenText*/
+/* ##### hiddenText hiddenText hiddenText hiddenText*/
+
+/* ### ### FIXED BLOCK ## ### */
+  /* ### ### FIXED BLOCK ## ### */
+  .gesture-finger-light .fixed {
+    position: fixed;
+    z-index: 10;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    /* width: 390px; */
+    width: 430px;
+    margin: 0 auto;
+    transition: all 0.2s linear 0s;
+  }
+  #button2 {
+    /* display: none; */
+    bottom: -4rem;
+  }
+  /* ### ### FIXED BLOCK ## ### */
+  /* ### ### FIXED BLOCK ## ### */
+
 @media (max-width: 480px) {
     .gesture-finger-light {
         width: 100%;
+    }
+    .gesture-finger-light .fixed {
+        max-width: 95%;
+        margin: 0 auto;
     }
 }
 @media (max-width: 390px) {
@@ -40,5 +132,119 @@
     }
     .gesture-finger-light .free-shipping-in-country {
         font-size: 12px;
+    }
+    .gesture-finger-light .last-chance-free-del-EQPscJ {
+        font-size: 14px;
+    }
+}
+@media (max-width: 300px) {
+    .gesture-finger-light .track-your-order-LUyPs6 {
+        gap: 20px;
+    }
+    .c-express-your-driving-feelings-instantly-aat6id-h2 {
+        font-size: 20px;
+    }
+    .gesture-finger-light .car-gesture-finger-light-xEFBpK {
+        width: 100%;
+    }
+    .gesture-finger-light .free-shipping {
+        gap: 4px;
+    }
+    .gesture-finger-light .free-shipping-in-country {
+        font-size: 10px;
+    }
+    .gesture-finger-light .all-purchases-are-sh {
+        font-size: 10px;
+    }
+    .gesture-finger-light .video {
+        width: 100%;
+    }
+    .gesture-finger-light .img-Qs7RxU {
+        width: 100%;
+    }
+    .gesture-finger-light .icons-sBqLLm {
+        display: none;
+    }
+    .gesture-finger-light .frame-Yl15hx {
+        margin-top: 10px;
+    }
+    .gesture-finger-light .content-4zH2xA {
+        gap: 40px;
+    }
+    .gesture-finger-light .input-button-Tv6dnG {
+        flex-direction: column;
+    }
+    .gesture-finger-light .input-ep5yc6 {
+        width: 100%;
+    }
+    .gesture-finger-light .hurry-up-sale-ends-in-wohm6J {
+        flex-direction: column-reverse;
+    }
+}
+@media (max-width: 250px) {
+    .gesture-finger-light .track-your-order-LUyPs6 {
+        display: none;
+    }
+    .gesture-finger-light .frame-xEFBpK {
+        width: 100%;
+    }
+    .gesture-finger-light .fun-gadget-for-your-car-oQgrWt {
+        flex-direction: column;
+    }
+    .gesture-finger-light .high-quality-led-beads-oQgrWt {
+        flex-direction: column;
+    }
+    .gesture-finger-light .compliant-with-traffic-laws-oQgrWt {
+        flex-direction: column;
+    }
+    .gesture-finger-light .best-gift-for-car-owners-oQgrWt {
+        flex-direction: column;
+    }
+    .gesture-finger-light .accordion-arrow {
+        display: none;
+    }
+    .gesture-finger-light .free-shipping {
+        width: 100%;
+        gap: 10px;
+    }
+    .gesture-finger-light .free-shipping-in-country {
+        white-space: normal;
+    }
+    .gesture-finger-light .enjoy-safe-driving-c-dKmrCL {
+        width: 100%;
+    }
+    .gesture-finger-light .txt-KuvYBT {
+        width: 100%;
+    }
+    .gesture-finger-light .txt-en4efV {
+        width: 100%;
+    }
+    .gesture-finger-light .txt-dmHwQZ {
+        width: 100%;
+    }
+    .gesture-finger-light .txt-sTtvIQ {
+        width: 100%;
+    }
+    .gesture-finger-light .accordion-faq {
+        height: 70px;
+    }
+    .accordion-faq.active {
+        height: auto;
+    }
+    .gesture-finger-light .frame-eeqAFv {
+        display: none;
+    }
+    .gesture-finger-light .subscribe-to-our-e-mail-newsletter-Tv6dnG {
+        width: 100%;
+    }
+    .gesture-finger-light .trustpilot-aat6id {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .gesture-finger-light .price {
+        flex-direction: column-reverse;
+    }
+    .gesture-finger-light .hurry-up-sale-ends-in-wohm6J {
+        flex-direction: column-reverse;
     }
 }

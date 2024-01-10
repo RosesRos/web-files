@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }, 1000);
     });
   };
-  timer1();
+  // timer1();
 
   function accordion() {
     const btn = document.querySelectorAll('.accordion');
@@ -85,12 +85,12 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
   }
-  LoaderBox();
+  // LoaderBox();
 
-  let moreText = document.querySelector('div[data-id="I3210:465;3107:9437;3107:9431"]');
+  let moreText = document.querySelector('div[data-id="I670:5737;670:5703;546:2175"]');
   function handleDropdownFooter() {
     let e = document.querySelector('.hidden-text'),
-    o = document.querySelector('div[data-id="I3210:465;3107:9437;3107:9431"]');
+    o = document.querySelector('div[data-id="I670:5737;670:5703;546:2175"]');
     e.classList.contains('show') ? (o.textContent = 'Read more') : (o.textContent = 'Read less'),
     e.classList.toggle('show');
   }
@@ -111,14 +111,10 @@ document.addEventListener('DOMContentLoaded', function () {
       // Проверяем, достигли ли порога
         if (scrollPosition >= scrollThreshold) {
           // Показываем кнопку 2 и скрываем кнопку 1
-          // button2.style.display = 'flex';
           button2.style.bottom = "10px"
-          // button1.style.display = 'none';
         } else {
           // Скрываем кнопку 2 и показываем кнопку 1
-          // button2.style.display = 'none';
           button2.style.bottom = "-4rem"
-          // button1.style.display = 'flex';
         }
     });
   }
@@ -144,5 +140,5 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }
-  SliderBox();
+  // SliderBox();
 });
