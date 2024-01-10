@@ -1,0 +1,44 @@
+.c-express-your-driving-feelings-instantly-aat6id-h2 {
+    color: var(--white-ffffff-100, #FFF);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 33px */
+    text-transform: uppercase;
+    align-self: stretch; 
+    :is(span) {
+        background: var(--Orange-grad, linear-gradient(270deg, #FF7A00 1.59%, #FF9F29 98.81%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110%;
+        text-transform: uppercase;
+    }
+}
+
+@media (max-width: 480px) {
+    .gesture-finger-light {
+        width: 100%;
+    }
+}
+@media (max-width: 390px) {
+    .gesture-finger-light .img-bJqIUK {
+        height: auto;
+    }
+}
+@media (max-width: 330px) {
+    .gesture-finger-light .track-your-order-LUyPs6 {
+        gap: 30px;
+    }
+    .c-express-your-driving-feelings-instantly-aat6id-h2 {
+        font-size: 25px;
+    }
+    .gesture-finger-light .free-shipping-in-country {
+        font-size: 12px;
+    }
+}
