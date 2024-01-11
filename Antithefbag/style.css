@@ -1,0 +1,159 @@
+.c-frame-uccPDD {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.c-frame-uccPDD-video {
+    width: max-content;
+    height: 100%;
+}
+
+/* #### ##### #### Acordion ### #### ### */
+/* #### ##### #### Acordion ### #### ### */
+/* #### ##### #### Acordion ### #### ### */
+.bobby-herou8232anti-theft-backpack .accordion {
+    height: 60px;
+    overflow: hidden;
+    transition: all 0.2s linear 0s;
+}
+.accordion.active {
+    height: auto;
+}
+.bobby-herou8232anti-theft-backpack .accordion-arrow {
+    transform: rotate(45deg);
+    transition: all 0.2s linear 0s;
+}
+.accordion-arrow.active {
+    transform: rotate(180deg);
+}
+
+.bobby-herou8232anti-theft-backpack .accordion-faq {
+    height: 60px;
+    overflow: hidden;
+    transition: all 0.2s linear 0s;
+}
+.accordion-faq.active {
+    height: auto;
+}
+.bobby-herou8232anti-theft-backpack .close-arrow {
+    transform: rotate(45deg);
+    transition: all 0.2s linear 0s;
+}
+.close-arrow.active {
+    transform: rotate(180deg);
+}
+/* #### ##### #### Acordion ### #### ### */
+/* #### ##### #### Acordion ### #### ### */
+/* #### ##### #### Acordion ### #### ### */
+
+
+/* ##### LOADER LOADER LOADER LOADER*/
+/* ##### LOADER LOADER LOADER LOADER*/
+/* ##### LOADER LOADER LOADER LOADER*/
+.progress {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    z-index: 1;
+    width: 100%;
+    
+  }
+  .img-1, .img-2, .img-3 {
+    position: relative;
+    border-radius: 50%;
+    background-color: var(--black-182028100);
+    width: 18px;
+    height: 18px;
+    animation: 2s ease-in-out infinite load;
+  }
+  
+  .img-2,
+  .img-3 {
+    animation: 2s ease-in-out 0.4s infinite load;
+  }
+  .img-3 {
+    animation: 2s ease-in-out 0.8s infinite load;
+  }
+  @keyframes load {
+      50% {
+        opacity: 0;
+        transform: scale(0.7);
+      }
+  }
+/* ##### LOADER LOADER LOADER LOADER*/
+/* ##### LOADER LOADER LOADER LOADER*/
+/* ##### LOADER LOADER LOADER LOADER*/
+
+
+/* ##### hiddenText hiddenText hiddenText hiddenText*/
+/* ##### hiddenText hiddenText hiddenText hiddenText*/
+/* ##### hiddenText hiddenText hiddenText hiddenText*/
+.hidden-text {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--color-gray-500);
+  }
+  .text-1419 {
+    flex: 1;
+    position: relative;
+
+    align-self: stretch;
+    background-color: transparent;
+    color: var(--white-ffffff50);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13.0px;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-xs);
+  }
+  .hidden-text.show {
+    display: block;
+  }
+ /* ##### hiddenText hiddenText hiddenText hiddenText*/
+ /* ##### hiddenText hiddenText hiddenText hiddenText*/
+/* ##### hiddenText hiddenText hiddenText hiddenText*/
+
+@media (max-width: 480px) {
+    .bobby-herou8232anti-theft-backpack {
+        width: 100%;
+    }
+}
+@media (max-width: 370px) {
+    .bobby-herou8232anti-theft-backpack .track-your-order-q8HuJA {
+        gap: 30px;
+    }
+}
+@media (max-width: 330px) {
+    .bobby-herou8232anti-theft-backpack .track-your-order-q8HuJA {
+        gap: 20px;
+    }
+    .bobby-herou8232anti-theft-backpack .trustpilot-Dd3M1g {
+        gap: 20px;
+    }
+    .bobby-herou8232anti-theft-backpack .img-NzxprL {
+        height: 150px;
+    }
+    .bobby-herou8232anti-theft-backpack .img-NyRint {
+        height: 150px;
+    }
+    .bobby-herou8232anti-theft-backpack .img-11iIh1 {
+        height: 150px;
+    }
+    .bobby-herou8232anti-theft-backpack .our-backpacks-are-so-prCrWe {
+        width: 100%;
+    }
+    .bobby-herou8232anti-theft-backpack .the-backpack-include-9XrTk6 {
+        width: 100%;
+    }
+
+    .bobby-herou8232anti-theft-backpack .c-text-mini {
+        margin-top: -8px;
+    }
+}
