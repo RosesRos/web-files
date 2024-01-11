@@ -121,14 +121,20 @@ document.addEventListener('DOMContentLoaded', function () {
   scrollBox();
 
   function SliderBox() {
-    new Swiper(".swiper", {
+    let swiper = new Swiper(".mySwiper", {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    new Swiper(".mySwiper2", {
       loop: true,
-      spaceBetween: 30,
+      spaceBetween: 10,
       centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
+      // autoplay: {
+      //   delay: 2500,
+      //   disableOnInteraction: false,
+      // },
       pagination: {
         el: ".swiper-pagination",
         dynamicBullets: true,
@@ -137,8 +143,11 @@ document.addEventListener('DOMContentLoaded', function () {
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev"
-      }
+      },
+      thumbs: {
+        swiper: swiper,
+      },
     });
   }
-  // SliderBox();
+  SliderBox();
 });
