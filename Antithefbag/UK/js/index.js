@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
   }
-  // scrollBox();
+  scrollBox();
 
   function SliderBox() {
     let swiper = new Swiper(".mySwiper", {

@@ -315,7 +315,7 @@
   gap: 8px;
   align-self: stretch;
 }
-.c-about-box-buy-item {
+.bobby-herou8232anti-theft-backpack .c-about-box-buy-item {
   display: flex;
   height: 55px;
   padding: 20px 25px;
@@ -561,10 +561,35 @@
 /* ## ### ## SLIDER BOX ## ## ### */
 /* ## ### ## SLIDER BOX ## ## ### */
 
+
+/* ### ### FIXED BLOCK ## ### */
+/* ### ### FIXED BLOCK ## ### */
+.bobby-herou8232anti-theft-backpack .fixed {
+  position: fixed;
+  z-index: 10;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  /* width: 390px; */
+  width: 430px;
+  margin: 0 auto;
+  transition: all 0.2s linear 0s;
+}
+#button2 {
+  /* display: none; */
+  bottom: -4rem;
+}
+/* ### ### FIXED BLOCK ## ### */
+/* ### ### FIXED BLOCK ## ### */
+
 @media (max-width: 480px) {
     .bobby-herou8232anti-theft-backpack {
         width: 100%;
     }
+    .bobby-herou8232anti-theft-backpack .fixed {
+      max-width: 95%;
+      margin: 0 auto;
+  }
 }
 @media (max-width: 370px) {
     .bobby-herou8232anti-theft-backpack .track-your-order-q8HuJA {
