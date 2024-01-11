@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
 
   function timer1() {
-    // const timerEls = document.querySelectorAll('.stringWithTime');
-    // const timerTextEls = [];
-    // timerEls.forEach(element => {
-    //   timerTextEls.push(element.querySelector('span[class="timer"]'));
-    // });
+    const timerEls = document.querySelectorAll('.stringWithTime');
+    const timerTextEls = [];
+    timerEls.forEach(element => {
+      timerTextEls.push(element.querySelector('span[class="timer"]'));
+    });
 
     const hour = document.querySelector(".hour");
     const minu = document.querySelector(".minu");
@@ -37,20 +37,20 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }, 1000);
 
-    // timerTextEls.forEach(element => {
-    //   const x = setInterval(function() {
-    //     const now = new Date().getTime();
-    //     const distance = countdownDate - now;
-    //     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    //     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    //     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    //     element.textContent = `${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
-    //     if (distance < 0) {
-    //       clearInterval(x);
-    //       timerTextEl.textContent = '00:00:00';
-    //     }
-    //   }, 1000);
-    // });
+    timerTextEls.forEach(element => {
+      const x = setInterval(function() {
+        const now = new Date().getTime();
+        const distance = countdownDate - now;
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        element.textContent = `${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
+        if (distance < 0) {
+          clearInterval(x);
+          timerTextEl.textContent = '00:00:00';
+        }
+      }, 1000);
+    });
   };
   timer1();
 
@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function SliderBox() {
     let swiper = new Swiper(".mySwiper", {
       spaceBetween: 10,
-      slidesPerView: 4,
+      slidesPerView: "auto",
       freeMode: true,
       watchSlidesProgress: true,
     });
@@ -172,5 +172,35 @@ document.addEventListener('DOMContentLoaded', function () {
       },
     });
   }
-  // SliderBox();
+  SliderBox();
+
+  
+  function boxSizes() {
+    const Sizes = document.querySelectorAll(".c-about-box-size-items-item");
+    Sizes[0].classList.add('active');
+    Sizes.forEach((ele) => {
+      ele.addEventListener("click", function() {
+        Sizes.forEach((btn) => {
+          btn.classList.remove("active");
+        });
+        ele.classList.toggle("active");
+      });
+    });
+  };      
+  boxSizes();
+  
+
+  function boxColor() {
+    const Colors = document.querySelectorAll('.c-about-box-color-imgs-item');
+    Colors[0].classList.add('active');
+    Colors.forEach((colo) => {
+      colo.addEventListener("click", function() {
+        Colors.forEach((btn) => {
+          btn.classList.remove("active");
+        });
+        colo.classList.toggle("active");
+      });
+    }); 
+  };
+  boxColor();
 });
