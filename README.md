@@ -1,6 +1,6 @@
 # web-files
 
-click here to view [DEMO](https://web-files.netlify.app/losiMoto/ZA)
+click here to view [DEMO](https://web-files.netlify.app/fingerlight/uk/)
 
 click here to view [DEMO](https://web-files.netlify.app/FR/)
 
