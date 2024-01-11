@@ -1,12 +1,16 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-
   function timer1() {
-    const timerEls = document.querySelectorAll('.stringWithTime');
-    const timerTextEls = [];
-    timerEls.forEach(element => {
-      timerTextEls.push(element.querySelector('span[class="timer"]'));
-    });
+    // const timerEls = document.querySelectorAll('.stringWithTime');
+    // const timerTextEls = [];
+    // timerEls.forEach(element => {
+    //   timerTextEls.push(element.querySelector('span[class="timer"]'));
+    // });
+
+    const hour = document.querySelector(".hour");
+    const minu = document.querySelector(".minu");
+    const seco = document.querySelector(".seco");
+
     const hours = 0;
     const minutes = 46;
     const seconds = 50;
@@ -14,20 +18,39 @@ document.addEventListener('DOMContentLoaded', function () {
     countdownDate.setHours(countdownDate.getHours() + hours);
     countdownDate.setMinutes(countdownDate.getMinutes() + minutes);
     countdownDate.setSeconds(countdownDate.getSeconds() + seconds);
-    timerTextEls.forEach(element => {
-      const x = setInterval(function() {
-        const now = new Date().getTime();
-        const distance = countdownDate - now;
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        element.textContent = `${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
-        if (distance < 0) {
-          clearInterval(x);
-          timerTextEl.textContent = '00:00:00';
-        }
-      }, 1000);
-    });
+
+    const tim = setInterval(function() {
+      const now = new Date().getTime();
+      const distance = countdownDate - now;
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      hour.textContent = `${hours < 10 ? '0' + hours : hours}`;
+      seco.textContent = `${seconds < 10 ? '0' + seconds : seconds}`;
+      minu.textContent = `${minutes < 10 ? '0' + minutes : minutes}`;
+      if (distance < 0) {
+        clearInterval(tim);
+        hour.textContent = "02";
+        minu.textContent = "46";
+        seco.textContent = '50';
+      }
+    }, 1000);
+
+    // timerTextEls.forEach(element => {
+    //   const x = setInterval(function() {
+    //     const now = new Date().getTime();
+    //     const distance = countdownDate - now;
+    //     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    //     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    //     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    //     element.textContent = `${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
+    //     if (distance < 0) {
+    //       clearInterval(x);
+    //       timerTextEl.textContent = '00:00:00';
+    //     }
+    //   }, 1000);
+    // });
   };
   timer1();
 
@@ -85,12 +108,12 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
   }
-  LoaderBox();
+  // LoaderBox();
 
-  let moreText = document.querySelector('div[data-id="I3210:465;3107:9437;3107:9431"]');
+  let moreText = document.querySelector('div[data-id="I670:5737;670:5703;546:2175"]');
   function handleDropdownFooter() {
     let e = document.querySelector('.hidden-text'),
-    o = document.querySelector('div[data-id="I3210:465;3107:9437;3107:9431"]');
+    o = document.querySelector('div[data-id="I670:5737;670:5703;546:2175"]');
     e.classList.contains('show') ? (o.textContent = 'Read more') : (o.textContent = 'Read less'),
     e.classList.toggle('show');
   }
@@ -111,28 +134,30 @@ document.addEventListener('DOMContentLoaded', function () {
       // Проверяем, достигли ли порога
         if (scrollPosition >= scrollThreshold) {
           // Показываем кнопку 2 и скрываем кнопку 1
-          // button2.style.display = 'flex';
           button2.style.bottom = "10px"
-          // button1.style.display = 'none';
         } else {
           // Скрываем кнопку 2 и показываем кнопку 1
-          // button2.style.display = 'none';
           button2.style.bottom = "-4rem"
-          // button1.style.display = 'flex';
         }
     });
   }
   scrollBox();
 
   function SliderBox() {
-    new Swiper(".swiper", {
+    let swiper = new Swiper(".mySwiper", {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    new Swiper(".mySwiper2", {
       loop: true,
-      spaceBetween: 30,
+      spaceBetween: 10,
       centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
+      // autoplay: {
+      //   delay: 2500,
+      //   disableOnInteraction: false,
+      // },
       pagination: {
         el: ".swiper-pagination",
         dynamicBullets: true,
@@ -141,7 +166,10 @@ document.addEventListener('DOMContentLoaded', function () {
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev"
-      }
+      },
+      thumbs: {
+        swiper: swiper,
+      },
     });
   }
   SliderBox();
