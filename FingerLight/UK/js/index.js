@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-
   function timer1() {
     // const timerEls = document.querySelectorAll('.stringWithTime');
     // const timerTextEls = [];
