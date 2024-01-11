@@ -67,6 +67,7 @@
     justify-content: center;
     gap: 9px;
     z-index: 1;
+    width: 100%;
     
   }
   .img-1, .img-2, .img-3 {
