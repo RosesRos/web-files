@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
 
   function timer1() {
-    // const timerEls = document.querySelectorAll('.stringWithTime');
-    // const timerTextEls = [];
-    // timerEls.forEach(element => {
-    //   timerTextEls.push(element.querySelector('span[class="timer"]'));
-    // });
+    const timerEls = document.querySelectorAll('.stringWithTime');
+    const timerTextEls = [];
+    timerEls.forEach(element => {
+      timerTextEls.push(element.querySelector('span[class="timer"]'));
+    });
 
     const hour = document.querySelector(".hour");
     const minu = document.querySelector(".minu");
@@ -37,20 +37,20 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }, 1000);
 
-    // timerTextEls.forEach(element => {
-    //   const x = setInterval(function() {
-    //     const now = new Date().getTime();
-    //     const distance = countdownDate - now;
-    //     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    //     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    //     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    //     element.textContent = `${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
-    //     if (distance < 0) {
-    //       clearInterval(x);
-    //       timerTextEl.textContent = '00:00:00';
-    //     }
-    //   }, 1000);
-    // });
+    timerTextEls.forEach(element => {
+      const x = setInterval(function() {
+        const now = new Date().getTime();
+        const distance = countdownDate - now;
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        element.textContent = `${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
+        if (distance < 0) {
+          clearInterval(x);
+          timerTextEl.textContent = '00:00:00';
+        }
+      }, 1000);
+    });
   };
   timer1();
 
@@ -97,10 +97,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   function LoaderBox() {
-    var loadMoreContent = document.querySelector('div[data-id="3158:436"]');
+    var loadMoreContent = document.querySelector('div[data-id="739:14544"]');
     if (loadMoreContent) {
       loadMoreContent.addEventListener("click", function (e) {
-        var loadMoreEl = document.querySelector('div[data-id="3158:436"]');
+        var loadMoreEl = document.querySelector('div[data-id="739:14544"]');
         var progressEl = document.querySelector("#progress");
     
         loadMoreEl.style.display = "none";
@@ -108,12 +108,12 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
   }
-  // LoaderBox();
+  LoaderBox();
 
-  let moreText = document.querySelector('div[data-id="I670:5737;670:5703;546:2175"]');
+  let moreText = document.querySelector('div[data-id="I739:14587;739:14556;546:2175"]');
   function handleDropdownFooter() {
     let e = document.querySelector('.hidden-text'),
-    o = document.querySelector('div[data-id="I670:5737;670:5703;546:2175"]');
+    o = document.querySelector('div[data-id="I739:14587;739:14556;546:2175"]');
     e.classList.contains('show') ? (o.textContent = 'Read more') : (o.textContent = 'Read less'),
     e.classList.toggle('show');
   }
@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function SliderBox() {
     let swiper = new Swiper(".mySwiper", {
       spaceBetween: 10,
-      slidesPerView: 4,
+      slidesPerView: "auto",
       freeMode: true,
       watchSlidesProgress: true,
     });
@@ -173,4 +173,34 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
   SliderBox();
+
+  
+  function boxSizes() {
+    const Sizes = document.querySelectorAll(".c-about-box-size-items-item");
+    Sizes[0].classList.add('active');
+    Sizes.forEach((ele) => {
+      ele.addEventListener("click", function() {
+        Sizes.forEach((btn) => {
+          btn.classList.remove("active");
+        });
+        ele.classList.toggle("active");
+      });
+    });
+  };      
+  boxSizes();
+  
+
+  function boxColor() {
+    const Colors = document.querySelectorAll('.c-about-box-color-imgs-item');
+    Colors[0].classList.add('active');
+    Colors.forEach((colo) => {
+      colo.addEventListener("click", function() {
+        Colors.forEach((btn) => {
+          btn.classList.remove("active");
+        });
+        colo.classList.toggle("active");
+      });
+    }); 
+  };
+  boxColor();
 });
