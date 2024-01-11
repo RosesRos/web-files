@@ -57,6 +57,45 @@
 /* #### ##### #### Acordion ### #### ### */
 
 
+/* ##### LOADER LOADER LOADER LOADER*/
+/* ##### LOADER LOADER LOADER LOADER*/
+/* ##### LOADER LOADER LOADER LOADER*/
+.progress {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    z-index: 1;
+    
+  }
+  .img-1, .img-2, .img-3 {
+    position: relative;
+    border-radius: 50%;
+    background-color: #1C8552;
+    width: 18px;
+    height: 18px;
+    animation: 2s ease-in-out infinite load;
+  }
+  
+  .img-2,
+  .img-3 {
+    animation: 2s ease-in-out 0.4s infinite load;
+  }
+  .img-3 {
+    animation: 2s ease-in-out 0.8s infinite load;
+  }
+  @keyframes load {
+      50% {
+        opacity: 0;
+        transform: scale(0.7);
+      }
+  }
+/* ##### LOADER LOADER LOADER LOADER*/
+/* ##### LOADER LOADER LOADER LOADER*/
+/* ##### LOADER LOADER LOADER LOADER*/
+
+
 /* ##### hiddenText hiddenText hiddenText hiddenText*/
 /* ##### hiddenText hiddenText hiddenText hiddenText*/
 /* ##### hiddenText hiddenText hiddenText hiddenText*/
