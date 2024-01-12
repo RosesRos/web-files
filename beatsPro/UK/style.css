@@ -4,6 +4,9 @@
 .beats-studio-pro .c-review_-img-or-video-2 {
     background-image: url("./img/review-img-or-video-1.svg");
 }
+.beats-studio-pro .review_-img-or-video .c-video-1 {
+  top: -50%;
+}
 
 
 
