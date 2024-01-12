@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
 
   function timer1() {
-    const timerEls = document.querySelectorAll('.stringWithTime');
-    const timerTextEls = [];
-    timerEls.forEach(element => {
-      timerTextEls.push(element.querySelector('span[class="timer"]'));
-    });
+    // const timerEls = document.querySelectorAll('.stringWithTime');
+    // const timerTextEls = [];
+    // timerEls.forEach(element => {
+    //   timerTextEls.push(element.querySelector('span[class="timer"]'));
+    // });
 
     const hour = document.querySelector(".hour");
     const minu = document.querySelector(".minu");
@@ -37,22 +37,125 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }, 1000);
 
-    timerTextEls.forEach(element => {
-      const x = setInterval(function() {
-        const now = new Date().getTime();
-        const distance = countdownDate - now;
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        element.textContent = `${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
-        if (distance < 0) {
-          clearInterval(x);
-          timerTextEl.textContent = '00:00:00';
-        }
-      }, 1000);
-    });
+    // timerTextEls.forEach(element => {
+    //   const x = setInterval(function() {
+    //     const now = new Date().getTime();
+    //     const distance = countdownDate - now;
+    //     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    //     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    //     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    //     element.textContent = `${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
+    //     if (distance < 0) {
+    //       clearInterval(x);
+    //       timerTextEl.textContent = '00:00:00';
+    //     }
+    //   }, 1000);
+    // });
   };
   timer1();
+
+
+  function selectImage() {
+
+    // path to  images //
+    // path to  images //
+    const imagesBlack = [
+      "./img/slider-1.png",
+      "./img/slider-1-2.png",
+      "./img/slider-1-3.png",
+    ];
+    const imagesGray = [
+      "./img/slider-3.png",
+      "./img/slider-3-2.png",
+      "./img/slider-3-3.png",
+    ];
+    const imagesPink = [
+      "./img/slider-2.png",
+      "./img/slider-2-2.png",
+      "./img/slider-2-3.png",
+    ];
+    const imagesRedBlack = [
+      "./img/slider-4.png",
+      "./img/slider-4-2.png",
+      "./img/slider-4-3.png",
+    ];
+    // path to  images //
+    // path to  images //
+
+
+    const slider0 = document.getElementById("slider-0");
+    const slider1 = document.getElementById("slider-1");
+    const slider2 = document.getElementById("slider-2");
+
+    const mySwiperImg = document.querySelectorAll(".c-swiper-mySwiper-img");
+
+    // clicklabel buttons //
+    // clicklabel buttons //
+    const blackBtn = document.querySelector('div[data-id="781:6901"]');
+    const grayBtn = document.querySelector('div[data-id="781:6903"]');
+    const pinkBtn = document.querySelector('div[data-id="781:6905"]');
+    const redBlackBtn = document.querySelector('div[data-id="781:6907"]');
+    // clicklabel buttons //
+    // clicklabel buttons //
+
+    blackBtn.addEventListener("click", function() {
+      slider0.src = imagesBlack[0];
+      slider1.src = imagesBlack[1];
+      slider2.src = imagesBlack[2];
+
+      // slider thumbsSlider //
+      // slider thumbsSlider //
+      mySwiperImg[0].src = imagesBlack[0];
+      mySwiperImg[1].src = imagesBlack[1];
+      mySwiperImg[2].src = imagesBlack[2];
+      // slider thumbsSlider //
+      // slider thumbsSlider //
+    });
+
+    grayBtn.addEventListener("click", function() {
+      slider0.src = imagesGray[0];
+      slider1.src = imagesGray[1];
+      slider2.src = imagesGray[2];
+
+      // slider thumbsSlider //
+      // slider thumbsSlider //
+      mySwiperImg[0].src = imagesGray[0];
+      mySwiperImg[1].src = imagesGray[1];
+      mySwiperImg[2].src = imagesGray[2];
+      // slider thumbsSlider //
+      // slider thumbsSlider //
+    });
+
+    pinkBtn.addEventListener("click", function() {
+      slider0.src = imagesPink[0];
+      slider1.src = imagesPink[1];
+      slider2.src = imagesPink[2];
+
+      // slider thumbsSlider //
+      // slider thumbsSlider //
+      mySwiperImg[0].src = imagesPink[0];
+      mySwiperImg[1].src = imagesPink[1];
+      mySwiperImg[2].src = imagesPink[2];
+      // slider thumbsSlider //
+      // slider thumbsSlider //
+    });
+
+    redBlackBtn.addEventListener("click", function() {
+      slider0.src = imagesRedBlack[0];
+      slider1.src = imagesRedBlack[1];
+      slider2.src = imagesRedBlack[2];
+
+      // slider thumbsSlider //
+      // slider thumbsSlider //
+      mySwiperImg[0].src = imagesRedBlack[0];
+      mySwiperImg[1].src = imagesRedBlack[1];
+      mySwiperImg[2].src = imagesRedBlack[2];
+      // slider thumbsSlider //
+      // slider thumbsSlider //
+    });
+  }
+  selectImage();
+
 
   function accordion() {
     const btn = document.querySelectorAll('.accordion');
@@ -97,10 +200,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   function LoaderBox() {
-    var loadMoreContent = document.querySelector('div[data-id="739:14544"]');
+    var loadMoreContent = document.querySelector('div[data-id="795:9233"]');
     if (loadMoreContent) {
       loadMoreContent.addEventListener("click", function (e) {
-        var loadMoreEl = document.querySelector('div[data-id="739:14544"]');
+        var loadMoreEl = document.querySelector('div[data-id="795:9233"]');
         var progressEl = document.querySelector("#progress");
     
         loadMoreEl.style.display = "none";
@@ -110,10 +213,10 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   LoaderBox();
 
-  let moreText = document.querySelector('div[data-id="I739:14587;739:14556;546:2175"]');
+  let moreText = document.querySelector('div[data-id="I795:9562;795:9213;546:2175"]');
   function handleDropdownFooter() {
     let e = document.querySelector('.hidden-text'),
-    o = document.querySelector('div[data-id="I739:14587;739:14556;546:2175"]');
+    o = document.querySelector('div[data-id="I795:9562;795:9213;546:2175"]');
     e.classList.contains('show') ? (o.textContent = 'Read more') : (o.textContent = 'Read less'),
     e.classList.toggle('show');
   }
@@ -152,6 +255,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     new Swiper(".mySwiper2", {
       loop: true,
+      slidesPerView: "auto",
       spaceBetween: 10,
       centeredSlides: true,
       // autoplay: {
@@ -187,11 +291,11 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   };      
-  boxSizes();
+  // boxSizes();
   
 
   function boxColor() {
-    const Colors = document.querySelectorAll('.c-about-box-color-imgs-item');
+    const Colors = document.querySelectorAll('.selector_-color');
     Colors[0].classList.add('active');
     Colors.forEach((colo) => {
       colo.addEventListener("click", function() {
@@ -203,4 +307,5 @@ document.addEventListener('DOMContentLoaded', function () {
     }); 
   };
   boxColor();
+
 });

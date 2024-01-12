@@ -1,359 +1,16 @@
-.c-frame-uccPDD {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+.beats-studio-pro .c-review_-img-or-video-1 {
+    background-image: url("./img/review-img-or-video.svg");
 }
-.c-frame-uccPDD-video {
-    width: max-content;
-    height: 100%;
+.beats-studio-pro .c-review_-img-or-video-2 {
+    background-image: url("./img/review-img-or-video-1.svg");
 }
 
-.bobby-herou8232anti-theft-backpack .c-about-box {
-  display: flex;
-  padding: 0px 10px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
-  align-self: stretch;
-}
-.c-about-box-txt {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-  align-self: stretch;
-}
-.c-about-box-txt-product-reviews {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-}
-.c-about-box-txt-product-reviews-h2 {
-  color: var(--black-182028100, #182028);
-
-  /* Roboto/H_2 */
-  font-family: Roboto;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 115%; /* 27.6px */
-}
-.c-about-box-txt-product-reviews-raiting {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.c-about-box-txt-product-reviews-raiting-span {
-  color: var(--Used-Dark-Gray, #626262);
-
-  /* Roboto/Text_Primary_1 */
-  font-family: Roboto;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%; /* 15.6px */
-}
-.c-about-box-txt-div-description {
-  align-self: stretch;
-  color: var(--black-18202880, rgba(24, 32, 40, 0.80));
-
-  /* Roboto/Text_Primary_2 */
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%; /* 18.2px */
-}
-.c-about-box-price {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-self: stretch;
-}
-.c-about-box-price-prices {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 2px;
-}
-.c-about-box-price-prices-old {
-  color: var(--Used-Dark-Gray, #626262);
-  font-family: Roboto;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 100%; /* 18px */
-  text-decoration: line-through;
-  text-transform: capitalize;
-}
-.c-about-box-price-prices-new {
-  color: var(--black-182028100, #182028);
-
-  /* Roboto/Price_1 */
-  font-family: Roboto;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-.c-about-box-price-time {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-}
-.c-about-box-price-time-text {
-  color: var(--black-0-b-0-b-0-b-100, #0B0B0B);
-  text-align: center;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 140%; /* 19.6px */
-  text-transform: uppercase;
-}
-.c-about-box-price-time-item {
-  display: flex;
-  padding: 4px 10px;
-  align-items: center;
-  gap: 10px;
-  border: 1px solid #D03434;
-}
-.c-about-box-price-time-tim {
-  color: var(--black-0-b-0-b-0-b-100, #0B0B0B);
-  text-align: center;
-  font-family: Roboto;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 110%; /* 19.8px */
-  text-transform: uppercase;
-}
-.c-about-box-frame {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 8px;
-  width: 100%;
-}
-.c-about-box-frame-items {
-  display: flex;
-  width: 185px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-}
-.c-about-box-frame-items-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-.c-about-box-frame-items-item-img {
-  width: 28px;
-  height: 28px;
-}
-.c-about-box-frame-items-item-p {
-  color: var(--black-182028100, #182028);
-
-  /* Roboto/Text_Primary_2 */
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%; /* 18.2px */
-}
-
-.c-about-box-size {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 6px;
-  width: 100%;
-}
-.c-about-box-size-text-p {
-  color: var(--black-182028100, #182028);
-
-  /* Roboto/H_3_Caps */
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 110%; /* 15.4px */
-  text-transform: uppercase;
-}
-.c-about-box-size-items {
-  display: flex;
-  align-items: flex-start;
-  gap: 4px;
-}
-.c-about-box-size-items-item {
-  display: flex;
-  padding: 5px 8px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  background: var(--black-18202880, rgba(24, 32, 40, 0.80));
-  cursor: pointer;
-}
-.c-about-box-size-items-item.active {
-  background: var(--black-182028100, #182028);
-}
-
-.c-about-box-size-items-item-p {
-  color: var(--white-ffffff-100, #FFF);
-
-  /* Roboto/Text_Primary_2_Accent */
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 130%; /* 18.2px */
-  letter-spacing: 0.14px;
-}
-.c-about-box-color {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 6px;
-  width: 100%;
-}
-.c-about-box-color-text-p {
-  color: var(--black-182028100, #182028);
-
-  /* Roboto/H_3_Caps */
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 110%; /* 15.4px */
-  text-transform: uppercase;
-}
-.c-about-box-color-imgs {
-  display: flex;
-  align-items: flex-start;
-  gap: 4px;
-  align-self: stretch;
-}
-.c-about-box-color-imgs-item {
-  display: flex;
-  width: 60px;
-  height: 60px;
-  padding: 3px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  cursor: pointer;
-}
-.c-about-box-color-imgs-item-img {
-  width: 100%;
-}
-.c-about-box-color-imgs-item.active {
-  border: 1px solid var(--Used-Dark-Gray, #626262);
-}
-
-.c-about-box-detatil {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-  width: 100%;
-}
-.c-about-box-detatil-text-p {
-  color: var(--black-182028100, #182028);
-
-  /* Roboto/H_3_Caps */
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 110%; /* 15.4px */
-  text-transform: uppercase;
-}
-.c-about-box-detatil-items {
-  display: flex;
-  /* width: 340px; */
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 6px;
-  width: 100%;
-}
-.c-about-box-detatil-items-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  align-self: stretch;
-}
-.c-about-box-detatil-items-item-p {
-  color: var(--black-182028100, #182028);
-  /* Roboto/Text_Primary_2 */
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%; /* 18.2px */
-
-  width: 150px;
-}
-.c-about-box-detatil-items-item-p-2 {
-  color: var(--black-18202880, rgba(24, 32, 40, 0.80));
-  flex: 1 0 0;
-  /* Roboto/Text_Primary_2 */
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%; /* 18.2px */
-}
-
-.c-about-box-buy {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  align-self: stretch;
-}
-.bobby-herou8232anti-theft-backpack .c-about-box-buy-item {
-  display: flex;
-  height: 55px;
-  padding: 20px 25px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  align-self: stretch;
-  background: var(--black-182028100, #182028);
-}
-.c-about-box-buy-item-text-p {
-  color: var(--white-ffffff-100, #FFF);
-  text-align: center;
-
-  /* Roboto/Button_1 */
-  font-family: Roboto;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 130%; /* 22.1px */
-}
-.c-about-box-buy-item-imgs {
-  display: flex;
-  align-items: center;
-  gap: -8px;
-}
-.c-about-box-buy-item-imgs-img {
-  width: 22px;
-  height: 22px;
-}
-.c-img-minus {
-  margin-left: -8px;
-}
 
 
 /* #### ##### #### Acordion ### #### ### */
 /* #### ##### #### Acordion ### #### ### */
 /* #### ##### #### Acordion ### #### ### */
-.bobby-herou8232anti-theft-backpack .accordion {
+.beats-studio-pro .accordion {
     height: 60px;
     overflow: hidden;
     transition: all 0.2s linear 0s;
@@ -361,15 +18,22 @@
 .accordion.active {
     height: auto;
 }
-.bobby-herou8232anti-theft-backpack .accordion-arrow {
-    transform: rotate(45deg);
+.beats-studio-pro .accordion-arrow {
+    transform: rotate(180deg);
     transition: all 0.2s linear 0s;
+    background-image: url("./img/openAcordion.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
 }
 .accordion-arrow.active {
     transform: rotate(180deg);
+    background-image: url("./img/closeAcordion.svg");
 }
 
-.bobby-herou8232anti-theft-backpack .accordion-faq {
+.beats-studio-pro .accordion-faq {
     height: 60px;
     overflow: hidden;
     transition: all 0.2s linear 0s;
@@ -377,12 +41,19 @@
 .accordion-faq.active {
     height: auto;
 }
-.bobby-herou8232anti-theft-backpack .close-arrow {
-    transform: rotate(45deg);
+.beats-studio-pro .close-arrow {
+    transform: rotate(180deg);
     transition: all 0.2s linear 0s;
+    background-image: url("./img/openFaq.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
 }
 .close-arrow.active {
     transform: rotate(180deg);
+    background-image: url("./img/closeFaq.svg");
 }
 /* #### ##### #### Acordion ### #### ### */
 /* #### ##### #### Acordion ### #### ### */
@@ -405,7 +76,8 @@
   .img-1, .img-2, .img-3 {
     position: relative;
     border-radius: 50%;
-    background-color: var(--black-182028100);
+    /* background-color: var(--black-182028100); */
+    background: linear-gradient(91deg, #FC5C7D 0%, #6A82FB 100%);
     width: 18px;
     height: 18px;
     animation: 2s ease-in-out infinite load;
@@ -444,15 +116,15 @@
 
     align-self: stretch;
     background-color: transparent;
-    color: var(--white-ffffff50);
+    color: var(--black-282828100);
     font-style: normal;
     font-weight: 400;
     line-height: 13.0px;
     margin-top: -1px;
     position: relative;
     text-align: center;
-    font-family: var(--font-family-roboto);
-    font-size: var(--font-size-xs);
+    font-family: var(--font-family-gilroy-regular);
+    font-size: var(--font-size-s);
   }
   .hidden-text.show {
     display: block;
@@ -462,11 +134,10 @@
 /* ##### hiddenText hiddenText hiddenText hiddenText*/
 
 
-
 /* ## ### ## SLIDER BOX ## ## ### */
 /* ## ### ## SLIDER BOX ## ## ### */
 /* ## ### ## SLIDER BOX ## ## ### */
-  .swiper {
+.swiper {
     width: 100%;
     height: 100%;
   }
@@ -508,8 +179,8 @@
   }
   .swiper-free-mode>.c-swiper-wrapper-mySwiper {
     gap: 10px;
-    justify-content: center;
-    max-width: 50%;
+    justify-content: space-between;
+    max-width: 100%;
     margin: 0 auto;
   }
   .c-swiper-mySwiper2 {
@@ -521,6 +192,9 @@
     justify-content: center;
     align-items: flex-end;
     gap: 10px;
+    /* margin-right: 0px !important; */
+    margin: 0 auto;
+    align-items: center;
   }
   .c-swiper-mySwiper {
     display: flex;
@@ -531,9 +205,10 @@
     align-items: flex-end;
     gap: 10px;
     cursor: pointer;
-    margin-right: 0px !important; // Add this line
+    margin-right: 0px !important; 
   }
   .mySwiper .swiper-slide-thumb-active {
+    border-radius: 20px;
     border: 1px solid var(--Used-Light-Gray, #DCDCDC);
   }
 
@@ -564,270 +239,233 @@
 
 /* ### ### FIXED BLOCK ## ### */
 /* ### ### FIXED BLOCK ## ### */
-.bobby-herou8232anti-theft-backpack .fixed {
-  position: fixed;
-  z-index: 10;
-  bottom: 10px;
-  left: 0;
-  right: 0;
-  /* width: 390px; */
-  width: 430px;
-  margin: 0 auto;
-  transition: all 0.2s linear 0s;
+.beats-studio-pro .fixed {
+    position: fixed;
+    z-index: 10;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    /* width: 390px; */
+    width: 430px;
+    margin: 0 auto;
+    transition: all 0.2s linear 0s;
+  }
+  #button2 {
+    /* display: none; */
+    bottom: -4rem;
+  }
+  /* ### ### FIXED BLOCK ## ### */
+  /* ### ### FIXED BLOCK ## ### */
+
+
+.selector_-color.active {
+    border: 1px solid;
+    border-color: var(--useddark-gray);
+    border-radius: 900px;
+    height: 42px;
+    margin-bottom: -1px;
+    margin-left: -1px;
+    margin-top: -1px;
+    width: 42px;
 }
-#button2 {
-  /* display: none; */
-  bottom: -4rem;
-}
-/* ### ### FIXED BLOCK ## ### */
-/* ### ### FIXED BLOCK ## ### */
 
 @media (max-width: 480px) {
-    .bobby-herou8232anti-theft-backpack {
+    .beats-studio-pro {
         width: 100%;
     }
-    .bobby-herou8232anti-theft-backpack .fixed {
-      max-width: 95%;
-      margin: 0 auto;
+    .beats-studio-pro .fixed {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 390px) {
+  .swiper-free-mode>.c-swiper-wrapper-mySwiper {
+    gap: 5px;
+  }
+  .swiper-slide .c-swiper-mySwiper2-img {
+    width: 90%;
+    height: 90%;
   }
 }
 @media (max-width: 370px) {
-    .bobby-herou8232anti-theft-backpack .track-your-order-q8HuJA {
-      gap: 30px;
-    }
-    .c-about-box-frame-items {
-      width: auto;
-    }
-    .c-about-box-detatil-items-item-p {
-      width: 100px;
-    }
-    .c-about-box-txt-product-reviews-h2 {
-      font-size: 22px;
-    }
-    .c-about-box-txt-div-description {
-      font-size: 13px;
-    }
-}
-@media (max-width: 330px) {
-    .bobby-herou8232anti-theft-backpack .track-your-order-q8HuJA {
-        gap: 20px;
-    }
-    .bobby-herou8232anti-theft-backpack .trustpilot-Dd3M1g {
-        gap: 20px;
-    }
-    .bobby-herou8232anti-theft-backpack .img-NzxprL {
-        height: 150px;
-    }
-    .bobby-herou8232anti-theft-backpack .img-NyRint {
-        height: 150px;
-    }
-    .bobby-herou8232anti-theft-backpack .img-11iIh1 {
-        height: 150px;
-    }
-    .bobby-herou8232anti-theft-backpack .our-backpacks-are-so-prCrWe {
-        width: 100%;
-    }
-    .bobby-herou8232anti-theft-backpack .the-backpack-include-9XrTk6 {
-        width: 100%;
-    }
-
-    .bobby-herou8232anti-theft-backpack .c-text-mini {
-        margin-top: -8px;
-    }
-    .c-about-box-txt-product-reviews-h2 {
-      font-size: 20px;
-    }
-}
-@media (max-width: 300px) {
-  .bobby-herou8232anti-theft-backpack .input-button-6oExpA {
-    flex-direction: column;
-  }
-  .bobby-herou8232anti-theft-backpack .input-axodlg {
-    width: 100%;
-  }
-  .bobby-herou8232anti-theft-backpack .button_1 {
-    width: 100%;
-  }
-  .bobby-herou8232anti-theft-backpack .txt-3qB1vJ {
-    flex-direction: column;
-  }
-  .bobby-herou8232anti-theft-backpack .txt-AlGMc1 {
-    flex-direction: column;
-  }
-  .bobby-herou8232anti-theft-backpack .txt-LAQSxd {
-    flex-direction: column;
-  }
-  .bobby-herou8232anti-theft-backpack .txt-QwGgVf {
-    flex-direction: column;
-  }
-  .bobby-herou8232anti-theft-backpack .txt-A2u8Qf {
-    flex-direction: column;
-  }
-  .bobby-herou8232anti-theft-backpack .txt-Co0Mxl {
-    flex-direction: column;
-  }
-  .bobby-herou8232anti-theft-backpack .txt-qd2K8G {
-    flex-direction: column;
-  }
-  .bobby-herou8232anti-theft-backpack .x212-vPayrU {
-    display: none;
-  }
-  .bobby-herou8232anti-theft-backpack .x140-Qrx4k5 {
-    display: none;
-  }
-  .bobby-herou8232anti-theft-backpack .x43-d5CLSC {
-    display: none;
-  }
-  .bobby-herou8232anti-theft-backpack .x21 {
-    display: none;
-  }
-  .bobby-herou8232anti-theft-backpack .x21 {
-    display: none;
-  }
-  .bobby-herou8232anti-theft-backpack .frame-Ai9xIR {
-    gap: 0px;
-  }
-  .bobby-herou8232anti-theft-backpack .img-NzxprL video {
-    width: auto;
-    height: 100%;
-    position: absolute;
-    left: -10%;
-  }
-  .bobby-herou8232anti-theft-backpack .img-NyRint video {
-    width: auto;
-    height: 100%;
-    position: absolute;
-    left: -10%;
-  }
-  .bobby-herou8232anti-theft-backpack .img-11iIh1 video {
-    width: auto;
-    height: 100%;
-    position: absolute;
-    left: -10%;
-  }
-  .bobby-herou8232anti-theft-backpack .free-shipping-in-country {
-    font-size: 10px;
-  }
-  .bobby-herou8232anti-theft-backpack .all-purchases-are-sh {
-    font-size: 10px;
-  }
-  .c-swiper-mySwiper {
-    width: 65px;
-    height: 65px;
-  }
-  .bobby-herou8232anti-theft-backpack .track-your-order-q8HuJA {
-    gap: 10px;
-  }
-  .bobby-herou8232anti-theft-backpack .bobby-hero-anti-theft-backpack-ApihOR {
-    width: 100%;
-  }
-  .bobby-herou8232anti-theft-backpack .price-sale-ApihOR {
-    flex-direction: column;
-  }
-  .bobby-herou8232anti-theft-backpack .trustpilot-Dd3M1g {
-    gap: 10px;
-  }
-  .bobby-herou8232anti-theft-backpack .subscribe-to-our-e-mail-newsletter-6oExpA {
-    width: 100%;
-  }
-  .c-swiper-mySwiper2 {
-    width: 100% !important;
-  }
-}
-
-@media (max-width: 250px) {
-  .bobby-herou8232anti-theft-backpack .frame-AjGIPW {
-    flex-direction: column;
-  }
-  .bobby-herou8232anti-theft-backpack .frame-twmXnb {
-    flex-direction: column;
-  }
-  .bobby-herou8232anti-theft-backpack .frame-ixOAco {
-    flex-direction: column;
-  }
-  .bobby-herou8232anti-theft-backpack .frame-aFM30H {
-    flex-direction: column;
-  }
-  .bobby-herou8232anti-theft-backpack .frame-vN125w {
-    flex-direction: column;
-  }
-  .bobby-herou8232anti-theft-backpack .frame-D4xSBn {
-    flex-direction: column;
-  }
-  .bobby-herou8232anti-theft-backpack .frame-9Q4jdh {
-    flex-direction: column;
-  }
-  .bobby-herou8232anti-theft-backpack .customer-reviews-0Nuw2X {
-    white-space: normal;
-  }
-  .bobby-herou8232anti-theft-backpack .accordion-faq {
-    height: 110px;
-  }
-  .accordion-faq.active {
-    height: auto;
-  }
-  .bobby-herou8232anti-theft-backpack .frame-ssv8JH {
-    flex-direction: column;
-  }
-  .bobby-herou8232anti-theft-backpack .img-NzxprL video {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    left: 0;
-    top: -30%;
-  }
-  .bobby-herou8232anti-theft-backpack .frame-Nxxrgj {
-    flex-direction: column;
-  }
-  .bobby-herou8232anti-theft-backpack .img-NyRint video {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    left: 0;
-    top: -30%;
-  }
-  .bobby-herou8232anti-theft-backpack .frame-IRL3GY {
-    flex-direction: column;
-  }
-  .bobby-herou8232anti-theft-backpack .img-11iIh1 video {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    left: 0;
-    top: -30%;
-  }
-  .bobby-herou8232anti-theft-backpack .txt-uixi5a {
-    flex-direction: column;
-  }
-  .c-about-box-detatil-items-item-p {
-    width: auto;
-  }
-  .c-about-box-color-imgs-item {
-    height: 35px;
-  }
-  .c-about-box-frame {
-    flex-direction: column;
-  }
-  .c-about-box-price {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .mySwiper2 {
-    height: 270px !important;
-  }
-  .c-swiper-mySwiper2 {
-    height: 270px !important;
+  .beats-studio-pro .img_-slider-yfIjH7 {
+    padding: 0px 5px;
   }
   .swiper-free-mode>.c-swiper-wrapper-mySwiper {
     gap: 0px;
   }
-  .bobby-herou8232anti-theft-backpack .trustpilot-Dd3M1g {
+}
+@media (max-width: 330px) {
+    .beats-studio-pro .menu-jlI8xU {
+        gap: 30px;
+    }
+    .beats-studio-pro .time-LcApnO {
+        gap: 0px;
+    }
+    .beats-studio-pro .hurry-up-sale-ends-in-qiUAeO {
+        padding: 0px;
+    }
+    .beats-studio-pro .video-8WLh1D video {
+        width: max-content;
+        height: 100%;
+    }
+    .beats-studio-pro .img-ni8B9Z {
+        height: 205px;
+        width: 155px;
+    }
+    .beats-studio-pro .review_-img-or-video-4cuTBo {
+        object-fit: contain;
+        height: 100%;
+    }
+    .beats-studio-pro .free-shipping-in-country {
+        white-space: normal;
+        width: 84%;
+    }
+    .c-swiper-mySwiper {
+      width: 75px;
+      height: 75px;
+    }
+    .c-swiper-mySwiper2 {
+      height: 320px;
+    }
+    .mySwiper2 {
+      height: 320px;
+    }
+    .swiper-slide .c-swiper-mySwiper2-img {
+      width: 80%;
+      height: 80%;
+    }
+}
+
+@media (max-width: 300px) {
+  .beats-studio-pro .menu-jlI8xU {
+    gap: 10px;
+  }
+  .beats-studio-pro .video-JZja8w {
+    right: -20%;
+  }
+  .c-swiper-mySwiper {
+    width: 55px;
+    height: 55px;
+  }
+  .beats-studio-pro .hurry-up-sale-ends-in-qiUAeO {
     flex-direction: column;
   }
-  .bobby-herou8232anti-theft-backpack .track-your-order-q8HuJA {
+  .beats-studio-pro .free-shipping-in-country {
+    width: 64%;
+    font-size: 12px;
+  }
+  .beats-studio-pro .frame-qftMi8 {
+    flex-direction: column;
+  }
+  .beats-studio-pro .frame-147-ZGz1gU {
+    flex-direction: column;
+  }
+  .beats-studio-pro .customer-reviews-hRuWe7 {
+    padding: 15px 5px;
+  }
+  .beats-studio-pro .txt-Rd9qxK {
+    flex-direction: column;
+  }
+  .beats-studio-pro .txt-mwUx5H {
+    flex-direction: column;
+  }
+  .beats-studio-pro .txt-xTmFxj {
+    flex-direction: column;
+  }
+  .beats-studio-pro .txt-QBmtox {
+    flex-direction: column;
+  }
+  .beats-studio-pro .txt-I5VrEx {
+    flex-direction: column;
+  }
+  .beats-studio-pro .txt-z7UhTe {
+    flex-direction: column;
+  }
+  .beats-studio-pro .input-button-YhxpCQ {
+    flex-direction: column;
+  }
+  .beats-studio-pro .input-hCDJnb {
+    width: 100%;
+  }
+  .beats-studio-pro .button_1-hCDJnb {
+    width: 100%;
+  }
+}
+
+@media (max-width: 250px) {
+  .beats-studio-pro .menu-jlI8xU {
+    flex-direction: column;
+  }
+  .beats-studio-pro .trustpilot-yfIjH7 {
+    flex-direction: column;
+  }
+  .c-swiper-mySwiper {
+    width: 45px;
+    height: 45px;
+  }
+  .swiper-slide .c-swiper-mySwiper2-img {
+    width: 60%;
+    height: 60%;
+  }
+  .beats-studio-pro .beats-studio-pro-VOXNeZ {
+    white-space: normal;
+  }
+  .beats-studio-pro .frame-tbrMj2 {
+    flex-direction: column;
+  }
+  .beats-studio-pro .frame-rqnf8m {
+    flex-direction: column;
+  }
+  .beats-studio-pro .frame-reHSux {
+    flex-direction: column;
+  }
+  .beats-studio-pro .detailed-features-specifications-zI8GSv {
+    white-space: normal;
+  }
+  .beats-studio-pro .frame-Oq7vGt {
     display: none;
   }
-  .bobby-herou8232anti-theft-backpack .frame-iVmrr7 {
-    gap: 1px;
+  .beats-studio-pro .accordion-arrow {
+    display: none;
+  }
+  .beats-studio-pro .frame-Lm7Qkj {
+    flex-direction: column;
+  }
+  .beats-studio-pro .frame-ueXDLk {
+    flex-direction: column;
+  }
+  .c-mini-text {
+    margin-top: -5px;
+  }
+  .c-mini-icon {
+    margin-top: -10px;
+  }
+  .beats-studio-pro .customer-reviews-r9qd4y {
+    white-space: normal;
+  }
+  .beats-studio-pro .frame-dBPwrg {
+    flex-direction: column;
+  }
+  .beats-studio-pro .frame-xniEL1 {
+    flex-direction: column;
+  }
+  .beats-studio-pro .frame-kMYBLE {
+    flex-direction: column;
+  }
+  .beats-studio-pro .frame-zXP2vi {
+    flex-direction: column;
+  }
+  .beats-studio-pro .frame-UWZ2bX {
+    flex-direction: column;
+  }
+  .beats-studio-pro .frame-wh9Ywe {
+    flex-direction: column;
+  }
+  .beats-studio-pro .button_1-ADQIR3 {
+    width: 100%;
+  }
+  .beats-studio-pro .subscribe-to-our-e-mail-newsletter-YhxpCQ {
+    width: 100%;
   }
 }
