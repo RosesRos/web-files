@@ -392,3 +392,80 @@
     width: 100%;
   }
 }
+
+@media (max-width: 250px) {
+  .beats-studio-pro .menu-jlI8xU {
+    flex-direction: column;
+  }
+  .beats-studio-pro .trustpilot-yfIjH7 {
+    flex-direction: column;
+  }
+  .c-swiper-mySwiper {
+    width: 45px;
+    height: 45px;
+  }
+  .swiper-slide .c-swiper-mySwiper2-img {
+    width: 60%;
+    height: 60%;
+  }
+  .beats-studio-pro .beats-studio-pro-VOXNeZ {
+    white-space: normal;
+  }
+  .beats-studio-pro .frame-tbrMj2 {
+    flex-direction: column;
+  }
+  .beats-studio-pro .frame-rqnf8m {
+    flex-direction: column;
+  }
+  .beats-studio-pro .frame-reHSux {
+    flex-direction: column;
+  }
+  .beats-studio-pro .detailed-features-specifications-zI8GSv {
+    white-space: normal;
+  }
+  .beats-studio-pro .frame-Oq7vGt {
+    display: none;
+  }
+  .beats-studio-pro .accordion-arrow {
+    display: none;
+  }
+  .beats-studio-pro .frame-Lm7Qkj {
+    flex-direction: column;
+  }
+  .beats-studio-pro .frame-ueXDLk {
+    flex-direction: column;
+  }
+  .c-mini-text {
+    margin-top: -5px;
+  }
+  .c-mini-icon {
+    margin-top: -10px;
+  }
+  .beats-studio-pro .customer-reviews-r9qd4y {
+    white-space: normal;
+  }
+  .beats-studio-pro .frame-dBPwrg {
+    flex-direction: column;
+  }
+  .beats-studio-pro .frame-xniEL1 {
+    flex-direction: column;
+  }
+  .beats-studio-pro .frame-kMYBLE {
+    flex-direction: column;
+  }
+  .beats-studio-pro .frame-zXP2vi {
+    flex-direction: column;
+  }
+  .beats-studio-pro .frame-UWZ2bX {
+    flex-direction: column;
+  }
+  .beats-studio-pro .frame-wh9Ywe {
+    flex-direction: column;
+  }
+  .beats-studio-pro .button_1-ADQIR3 {
+    width: 100%;
+  }
+  .beats-studio-pro .subscribe-to-our-e-mail-newsletter-YhxpCQ {
+    width: 100%;
+  }
+}
