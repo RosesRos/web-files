@@ -336,3 +336,59 @@
       height: 80%;
     }
 }
+
+@media (max-width: 300px) {
+  .beats-studio-pro .menu-jlI8xU {
+    gap: 10px;
+  }
+  .beats-studio-pro .video-JZja8w {
+    right: -20%;
+  }
+  .c-swiper-mySwiper {
+    width: 55px;
+    height: 55px;
+  }
+  .beats-studio-pro .hurry-up-sale-ends-in-qiUAeO {
+    flex-direction: column;
+  }
+  .beats-studio-pro .free-shipping-in-country {
+    width: 64%;
+    font-size: 12px;
+  }
+  .beats-studio-pro .frame-qftMi8 {
+    flex-direction: column;
+  }
+  .beats-studio-pro .frame-147-ZGz1gU {
+    flex-direction: column;
+  }
+  .beats-studio-pro .customer-reviews-hRuWe7 {
+    padding: 15px 5px;
+  }
+  .beats-studio-pro .txt-Rd9qxK {
+    flex-direction: column;
+  }
+  .beats-studio-pro .txt-mwUx5H {
+    flex-direction: column;
+  }
+  .beats-studio-pro .txt-xTmFxj {
+    flex-direction: column;
+  }
+  .beats-studio-pro .txt-QBmtox {
+    flex-direction: column;
+  }
+  .beats-studio-pro .txt-I5VrEx {
+    flex-direction: column;
+  }
+  .beats-studio-pro .txt-z7UhTe {
+    flex-direction: column;
+  }
+  .beats-studio-pro .input-button-YhxpCQ {
+    flex-direction: column;
+  }
+  .beats-studio-pro .input-hCDJnb {
+    width: 100%;
+  }
+  .beats-studio-pro .button_1-hCDJnb {
+    width: 100%;
+  }
+}
