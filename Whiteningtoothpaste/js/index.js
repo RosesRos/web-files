@@ -251,15 +251,15 @@ document.addEventListener('DOMContentLoaded', function () {
       loop: true,
       slidesPerView: "auto",
       spaceBetween: 10,
-      centeredSlides: true,
+      // centeredSlides: true,
       // autoplay: {
       //   delay: 2500,
       //   disableOnInteraction: false,
       // },
       pagination: {
         el: ".swiper-pagination",
-        dynamicBullets: true,
-        clicklabel: true
+        dynamicBullets: false,
+        clickable: true
       },
       navigation: {
         nextEl: ".swiper-button-next",
