@@ -401,3 +401,35 @@
         margin-top: -12px;
     }
 }
+@media (max-width: 300px) {
+  .purple-whitening-toothpaste .menu-9Mvoxx {
+    flex-direction: column;
+  }
+  .purple-whitening-toothpaste .trustpilot-xmalWx {
+    gap: 10px;
+  }
+  .purple-whitening-toothpaste .price-sale-RCogGP {
+    flex-direction: column;
+  }
+  .purple-whitening-toothpaste .frame-t6Z3Ca {
+    width: 50px;
+    height: 60px;
+  }
+  .purple-whitening-toothpaste .frame-99rKhX {
+    width: 50px;
+    height: 60px
+  }
+  .purple-whitening-toothpaste .frame-xi6d9W {
+    width: 50px;
+    height: 60px
+  }
+  .purple-whitening-toothpaste .hours-lmmSMS{
+    font-size: 8px;
+  }
+  .purple-whitening-toothpaste .minutes-EGBWVe {
+    font-size: 8px;
+  }
+  .purple-whitening-toothpaste .seconds-6FYsqK {
+    font-size: 8px;
+  }
+}
