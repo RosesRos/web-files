@@ -1,0 +1,3901 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="./js/swiper-bundle.min.css">
+    <title>Beats Studio Pro</title>
+    <link rel="shortcut icon" href="./img/icons-icon-2.svg" type="image/svg">
+    <style type="text/css">
+      .turbo-progress-bar {
+        position: fixed;
+        display: block;
+        top: 0;
+        left: 0;
+        height: 3px;
+        background: #0076ff;
+        z-index: 9999;
+        transition:
+          width 300ms ease-out,
+          opacity 150ms 150ms ease-in;
+        transform: translate3d(0, 0, 0);
+      }
+    </style>
+    <style id="st_globalStyles">
+      /* SCROLLBAR */
+      [dark-scroll]::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+      }
+
+      [dark-scroll]::-webkit-scrollbar-track-piece {
+        background-color: #2b2b2b;
+        border: 1px solid #1d1d1d;
+      }
+
+      [dark-scroll]::-webkit-scrollbar-thumb {
+        height: 10px;
+        background-color: #4d4d4d;
+      }
+
+      [dark-scroll]::-webkit-scrollbar-thumb:hover {
+        background-color: #5a5a5a;
+      }
+
+      /* LOAD PROGRESS */
+      .turbolinks-progress-bar {
+        height: 3px;
+        background-color: #ff6250;
+      }
+
+      /* GROUPING */
+      [data-id].ui-selecting {
+        box-shadow: inset 0 0 0 1px #4285f4 !important;
+      }
+
+      [data-id].ui-selected {
+        box-shadow: inset 0 0 0 1px #4285f4 !important;
+      }
+
+      /* CURSOR */
+      body[mode='comments'] * {
+        cursor: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik00LjkxNjQ4IDIzLjQxMDlDNS40OTE1MyAyMi45ODg3IDUuOTMxNzkgMjIuMzkzNSA2LjIzMjggMjEuNjQwN0M0Ljc5MDY5IDE5LjczODMgNCAxNy4zOTMzIDQgMTQuOTk3NUM0IDguOTM0MSA4LjkzMjgyIDQgMTUuMDAyMiA0QzIxLjA3MTcgNCAyNiA4LjkzOTE5IDI2IDE1LjAwMjVDMjYgMjEuMDY1OSAyMS4wNjcyIDI2IDE0Ljk5NzggMjZDMTIuOTg5NiAyNiAxMS4wMzUzIDI1LjQ1NTcgOS4zMjM2NyAyNC40MjMxQzguNDI5NjUgMjQuOTU3MiA3LjQxNDM0IDI1LjIyNjggNi4zMDAxOCAyNS4yMjY4QzUuOTU0MjYgMjUuMjI2OCA1LjU5OTM1IDI1LjIwMTQgNS4yNTM0MiAyNS4xNDU0QzQuOTAzIDI1LjA4OTUgNC42Mjg5NiAyNC44MDQ2IDQuNTUyNTggMjQuNDE4QzQuNDc2MjEgMjQuMDI2NCA0LjYxOTk3IDIzLjYyOTYgNC45MTY0OCAyMy40MTA5WiIgZmlsbD0iI0ZGNjI1MCIvPgo8L3N2Zz4K') 0 24,
+          auto !important;
+      }
+
+      body[mode='code'] [data-id]:not(.hidden) {
+        cursor: default;
+      }
+
+      /* default node state */
+      body[mode='code'] [data-id]:not(.hidden),
+      body[mode='comments'] [data-id]:not(.hidden) {
+        pointer-events: all;
+      }
+
+      /* is_image */
+      body[mode='code'] [data-id].is_image [data-id],
+      body[mode='comments'] [data-id].is_image [data-id] {
+        pointer-events: none !important;
+      }
+
+      /* without a data-id or ignored */
+      [data-id].ignore,
+      body[mode='code'] *:not([data-id]) {
+        pointer-events: none !important;
+      }
+
+      /* disable transforms for ignored elements */
+      body[mode='code'] [data-id]:hover {
+        transform: none !important;
+      }
+
+      div[class^='i-o-sparts'] {
+        pointer-events: none !important;
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="og:type" content="website">
+    <meta name="twitter:card" content="photo">
+    <style id="hotspots-styles">
+      .hotspot {
+        position: absolute;
+        border: 1px solid #2a9fd8;
+        background: rgba(0, 173, 255, 0.54);
+        opacity: 0;
+        z-index: -1;
+        pointer-events: none;
+      }
+    </style>
+    <style>
+      @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+      @import url("https://fonts.googleapis.com/css?family=Roboto:500,400,700,600|Montserrat:400,500,600,700");
+
+      /* onw fonts */
+      @font-face {
+        font-family: "Gilroy";
+        font-style: normal;
+        src: url('./fonts/Gilroy-Light.otf') format("opentype");
+      }
+
+      @font-face {
+        font-family: "Gilroy-Semibold";
+        font-style: normal;
+        font-weight: 400;
+        src: url('./fonts/Gilroy-Semibold.otf') format("opentype");
+      }
+
+      @font-face {
+        font-family: "Gilroy-Regular";
+        font-style: normal;
+        font-weight: 400;
+        src: url('./fonts/gilroy-black.ttf') format("truetype");
+      }
+
+      @font-face {
+        font-family: "Neuzeit Grotesk-Bold";
+        font-style: normal;
+        font-weight: 700;
+        src: url('./fonts/neuzeitgro-bol.ttf') format("truetype");
+      }
+
+      @font-face {
+        font-family: "Gilroy-Medium";
+        font-style: normal;
+        font-weight: 500;
+        src: url('./fonts/gilroy-medium.ttf') format("truetype");
+      }
+
+      @font-face {
+        font-family: "Neuzeit-Grotesk-CondensedBlack";
+        font-style: normal;
+        font-weight: 500;
+        src: url('./fonts/NeuzeitGroCon-Bla.ttf') format("truetype");
+      }
+
+      @font-face {
+        font-family: "Neuzeit-Grotesk-Extra-condensedBlack";
+        font-style: normal;
+        src: url('./fonts/NeuzeitGroExt-Bla.ttf') format("truetype");
+      }
+
+      /* onw fonts */
+      @font-face {
+        font-family: "Neuzeit Grotesk-Bold";
+        font-style: normal;
+        font-weight: 700;
+        src: url('https://anima-uploads.s3.amazonaws.com/projects/605e0635b2357c7f127bb5d2/fonts/neuzeitgro-bol.ttf') format("truetype");
+      }
+
+      @font-face {
+        font-family: "Gilroy-Regular";
+        font-style: normal;
+        font-weight: 400;
+        src: url('https://anima-uploads.s3.amazonaws.com/projects/65394dc1322d528425c8cee9/fonts/gilroy-black.ttf') format("truetype");
+      }
+
+      @font-face {
+        font-family: "Gilroy-Medium";
+        font-style: normal;
+        font-weight: 500;
+        src: url('https://anima-uploads.s3.amazonaws.com/projects/635131b13f27792e46569104/fonts/gilroy-medium.ttf') format("truetype");
+      }
+
+      /* The following line is used to measure usage of this code. You can remove it if you want. */
+      @import url("https://px.animaapp.com/65800c930585649490cfb442.65800c940585649490cfb445.iRv3U0d.hch.png");
+
+      .screen textarea:focus,
+      .screen input:focus {
+        outline: none;
+      }
+
+      .screen * {
+        -webkit-font-smoothing: antialiased;
+        box-sizing: border-box;
+      }
+
+      .screen div {
+        -webkit-text-size-adjust: none;
+      }
+
+      .component-wrapper a {
+        display: contents;
+        pointer-events: auto;
+        text-decoration: none;
+      }
+
+      .component-wrapper * {
+        -webkit-font-smoothing: antialiased;
+        box-sizing: border-box;
+        pointer-events: none;
+      }
+
+      .component-wrapper a *,
+      .component-wrapper input,
+      .component-wrapper video,
+      .component-wrapper iframe {
+        pointer-events: auto;
+      }
+
+      .component-wrapper.not-ready,
+      .component-wrapper.not-ready * {
+        visibility: hidden !important;
+      }
+
+      .screen a {
+        display: contents;
+        text-decoration: none;
+      }
+
+      .full-width-a {
+        width: 100%;
+      }
+
+      .full-height-a {
+        height: 100%;
+      }
+
+      .container-center-vertical {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        pointer-events: none;
+      }
+
+      .container-center-vertical>* {
+        flex-shrink: 0;
+        pointer-events: auto;
+      }
+
+      .container-center-horizontal {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        pointer-events: none;
+        width: 100%;
+      }
+
+      .container-center-horizontal>* {
+        flex-shrink: 0;
+        pointer-events: auto;
+      }
+
+      .auto-animated div {
+        --z-index: -1;
+        opacity: 0;
+        position: absolute;
+      }
+
+      .auto-animated input {
+        --z-index: -1;
+        opacity: 0;
+        position: absolute;
+      }
+
+      .auto-animated .container-center-vertical,
+      .auto-animated .container-center-horizontal {
+        opacity: 1;
+      }
+
+      .overlay-base {
+        display: none;
+        height: 100%;
+        opacity: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      .overlay-base.animate-appear {
+        align-items: center;
+        animation: reveal 0.3s ease-in-out 1 normal forwards;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        opacity: 0;
+      }
+
+      .overlay-base.animate-disappear {
+        animation: reveal 0.3s ease-in-out 1 reverse forwards;
+        display: block;
+        opacity: 1;
+        pointer-events: none;
+      }
+
+      .overlay-base.animate-disappear * {
+        pointer-events: none;
+      }
+
+      @keyframes reveal {
+        from {
+          opacity: 0
+        }
+
+        to {
+          opacity: 1
+        }
+      }
+
+      .animate-nodelay {
+        animation-delay: 0s;
+      }
+
+      .align-self-flex-start {
+        align-self: flex-start;
+      }
+
+      .align-self-flex-end {
+        align-self: flex-end;
+      }
+
+      .align-self-flex-center {
+        align-self: flex-center;
+      }
+
+      .valign-text-middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .valign-text-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+
+      input:focus {
+        outline: none;
+      }
+
+      .listeners-active,
+      .listeners-active * {
+        pointer-events: auto;
+      }
+
+      .hidden,
+      .hidden * {
+        pointer-events: none;
+        visibility: hidden;
+      }
+
+      .smart-layers-pointers,
+      .smart-layers-pointers * {
+        pointer-events: auto;
+        visibility: visible;
+      }
+
+      .listeners-active-click,
+      .listeners-active-click * {
+        cursor: pointer;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      :root {
+        --black-0b0b0b100: #0a0a0a;
+        --black-0b0b0b50: #0a0a0a80;
+        --black-0b0b0b80: #0a0a0acc;
+        --black-182028100: #182028;
+        --black-18202880: #182028cc;
+        --black-282828100: #282828;
+        --manatee: #9483a3;
+        --usedblack-00000: #000000;
+        --usedblack-2: #282828;
+        --useddark-gray: #616161;
+        --usedlight-gray: #dbdbdb;
+        --white-ffffff100: #ffffff;
+        --white-ffffffall-graye6: #e6e6e6;
+        --white-ffffffall-grayf7: #f7f7f7;
+        --font-size-l: 16px;
+        --font-size-m: 14px;
+        --font-size-s: 12px;
+        --font-size-xl: 17px;
+        --font-size-xs: 10px;
+        --font-size-xxl: 24px;
+        --font-size-xxxl: 30px;
+        --font-family-gilroy-medium: "Gilroy-Medium", Helvetica;
+        --font-family-gilroy-regular: "Gilroy", Helvetica;
+        --font-family-montserrat: "Montserrat", Helvetica;
+        --font-family-neuzeit_grotesk-bold: "Neuzeit Grotesk-Bold", Helvetica;
+        --font-family-roboto: "Roboto", Helvetica;
+      }
+
+      .gilroyh4caps {
+        font-family: var(--font-family-gilroy-medium);
+        font-size: var(--font-size-s);
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: 0px;
+      }
+
+      .gilroytextprimary1 {
+        font-family: var(--font-family-gilroy-regular);
+        font-size: var(--font-size-s);
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0px;
+      }
+
+      .robotoh2 {
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-xxl);
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: 0px;
+      }
+
+      .robotoh3 {
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-l);
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: 0px;
+      }
+
+      .robotoh3caps {
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-m);
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: 0px;
+      }
+
+      .robototextprimary1 {
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-s);
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0px;
+      }
+
+      .robototextprimary2 {
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-m);
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0px;
+      }
+
+      .robotobutton1 {
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-xl);
+        font-style: normal;
+        font-weight: 600;
+        letter-spacing: 0px;
+      }
+
+      .robotobutton2 {
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-m);
+        font-style: normal;
+        font-weight: 600;
+        letter-spacing: 0px;
+      }
+
+      .robotocaption {
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-xs);
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0px;
+      }
+
+      .roboto-bold-white-30px {
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-xxxl);
+        font-style: normal;
+        font-weight: 700;
+      }
+
+      /* screen - purple-whitening-toothpaste */
+      .purple-whitening-toothpaste {
+        background-color: var(--white-ffffff100);
+        overflow: hidden;
+        overflow-x: hidden;
+        position: relative;
+        /* width: 390px; */
+        width: 430px;
+      }
+
+      .purple-whitening-toothpaste .content-hWgV15 {
+        align-items: center;
+        gap: 60px;
+        left: 0px;
+        top: 0px;
+      }
+
+      .purple-whitening-toothpaste .product-GVGhEx {
+        align-items: center;
+        background-color: transparent;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+        /* width: 390px; */
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .offer-3qpnkC {
+        align-self: stretch;
+        background-color: transparent;
+        flex-direction: column;
+        gap: 12px;
+        /* padding: 0px 10px; */
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .header-xmalWx {
+        flex-direction: column;
+        gap: 16px;
+        margin-left: -10.00px;
+        margin-right: -10.00px;
+        /* width: 390px; */
+
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .offer-WYy7aL {
+        background-color: #e3d559;
+        gap: 10px;
+        justify-content: center;
+        padding: 10px;
+        /* width: 390px; */
+
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .flash-sale-in-countr-iWHvXf {
+        background-color: transparent;
+        color: var(--black-0b0b0b100);
+        font-family: var(--font-family-neuzeit_grotesk-bold);
+        font-size: var(--font-size-m);
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 0.00px;
+        line-height: 15.4px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+        width: fit-content;
+      }
+
+      .purple-whitening-toothpaste .header-WYy7aL {
+        align-self: stretch;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-color: var(--usedlight-gray);
+        border-left-style: none;
+        border-right-style: none;
+        border-top-style: none;
+        gap: 60px;
+        margin-bottom: -1.00px;
+        margin-left: -1.00px;
+        margin-right: -1.00px;
+        overflow: hidden;
+        padding: 0px 10px 10px;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .logo-9Mvoxx {
+        align-items: center;
+        background-color: transparent;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 8px;
+        position: relative;
+      }
+
+      .purple-whitening-toothpaste .img-aeeO8q {
+        background-color: transparent;
+        height: 28px;
+        position: relative;
+        width: 36px;
+      }
+
+      .purple-whitening-toothpaste .group-aeeO8q {
+        background-color: transparent;
+        height: 17.998685836791992px;
+        position: relative;
+        width: 80.58275604248047px;
+      }
+
+      .purple-whitening-toothpaste .menu-9Mvoxx {
+        align-items: center;
+        background-color: transparent;
+        display: flex;
+        flex: 1;
+        flex-grow: 1;
+        justify-content: space-between;
+        position: relative;
+      }
+
+      .purple-whitening-toothpaste .reviews-qn6SWW {
+        color: var(--black-18202880);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15.6px;
+        margin-top: -1.00px;
+        text-align: left;
+        white-space: nowrap;
+        width: fit-content;
+      }
+
+      .purple-whitening-toothpaste .faq-qn6SWW {
+        background-color: transparent;
+        color: var(--black-18202880);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15.6px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+        width: 26px;
+      }
+
+      .purple-whitening-toothpaste .contact-us-qn6SWW {
+        background-color: transparent;
+        color: var(--black-18202880);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15.6px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+        white-space: nowrap;
+        width: fit-content;
+      }
+
+      .purple-whitening-toothpaste .img-xmalWx {
+        background-color: transparent;
+        height: 259px;
+        position: relative;
+        /* width: 370px; */
+        width: 95%;
+      }
+
+      .purple-whitening-toothpaste .trustpilot-xmalWx {
+        align-items: center;
+        align-self: stretch;
+        background-color: transparent;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-color: var(--usedlight-gray);
+        border-left-style: none;
+        border-right-style: none;
+        border-top-style: none;
+        display: flex;
+        flex: 0 0 auto;
+        gap: 40px;
+        justify-content: center;
+        margin-left: -1.00px;
+        margin-right: -1.00px;
+        padding: 0px 0px 10px;
+        position: relative;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .rating-ykDHvP {
+        align-items: center;
+        display: inline-flex;
+        gap: 6px;
+        justify-content: center;
+      }
+
+      .purple-whitening-toothpaste .excellent-495-uxskD7 {
+        background-color: transparent;
+        color: var(--black-0b0b0b100);
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-s);
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 0.00px;
+        line-height: 15.6px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+        white-space: nowrap;
+        width: fit-content;
+      }
+
+      .purple-whitening-toothpaste .logo-white-1-ykDHvP {
+        background-color: transparent;
+        height: 14px;
+        position: relative;
+        width: 74px;
+      }
+
+      .purple-whitening-toothpaste .best-selling-ykDHvP {
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent;
+        background: linear-gradient(180deg, rgb(68.63750293850899, 126.47190436720848, 216.75000607967377) 0%, rgb(69.33697700500488, 121.52464583516121, 202.93750405311584) 51.5625%, rgb(81.40078246593475, 143.81743401288986, 241.18749797344208) 100%);
+        background-clip: text;
+        background-color: transparent;
+        color: transparent;
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-s);
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 0.00px;
+        line-height: 15.6px;
+        margin-top: -0.50px;
+        position: relative;
+        text-align: left;
+        /* text-fill-color: transparent; */
+        white-space: nowrap;
+        width: fit-content;
+      }
+
+      .purple-whitening-toothpaste .img-g1xEhx {
+        background-color: transparent;
+        height: 121px;
+        position: relative;
+        /* width: 370px; */
+        
+        width: 95%;
+      }
+
+      .purple-whitening-toothpaste .img_-slider-xmalWx {
+        align-items: flex-start;
+        background-position: 50% 50%;
+        background-size: cover;
+        border: 1px solid;
+        border-color: var(--usedlight-gray);
+        border-radius: 20px;
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+        margin-left: -1.00px;
+        margin-right: -1.00px;
+        width: 95%;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+
+      .purple-whitening-toothpaste .slider-QttT1f {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        gap: 7px;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .rectangle-VeU8x9 {
+        background-color: #290646;
+        border-radius: 20px;
+        flex: 1;
+        flex-grow: 1;
+        height: 3px;
+        position: relative;
+      }
+
+      .purple-whitening-toothpaste .rectangle-MROIgc {
+        background-color: var(--manatee);
+        border-radius: 20px;
+        flex: 1;
+        flex-grow: 1;
+        height: 3px;
+        position: relative;
+      }
+
+      .purple-whitening-toothpaste .rectangle-ERNm5O {
+        background-color: var(--manatee);
+        border-radius: 20px;
+        flex: 1;
+        flex-grow: 1;
+        height: 3px;
+        position: relative;
+      }
+
+      .purple-whitening-toothpaste .arrow_-slider-QttT1f {
+        position: absolute;
+      }
+
+      .purple-whitening-toothpaste .about-xmalWx {
+        align-items: flex-start;
+        align-self: stretch;
+        background-color: transparent;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 12px;
+        position: relative;
+        width: 95%;
+        margin: 0 auto;
+      }
+
+      .purple-whitening-toothpaste .product-name-reviews-EITDHM {
+        align-items: flex-start;
+        align-self: stretch;
+        background-color: transparent;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 4px;
+        position: relative;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .v34-colour-corrector-serum-PKHbV9 {
+        align-self: stretch;
+        background-color: transparent;
+        color: var(--black-0b0b0b100);
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-xxxl);
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 0.00px;
+        line-height: 33.0px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+      }
+
+      .purple-whitening-toothpaste .reviews-PKHbV9 {
+        align-items: center;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 8px;
+      }
+
+      .purple-whitening-toothpaste .stars-zO4wfv {
+        background-color: transparent;
+        flex: 0 0 auto;
+        position: relative;
+      }
+
+      .purple-whitening-toothpaste .x478-361-reviews-zO4wfv {
+        background-color: transparent;
+        color: var(--useddark-gray);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15.6px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+        white-space: nowrap;
+        width: fit-content;
+      }
+
+      .purple-whitening-toothpaste .v34-is-a-purple-toot-EITDHM {
+        background-color: transparent;
+        color: var(--black-0b0b0b80);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18.2px;
+        position: relative;
+        text-align: left;
+        width: 370px;
+      }
+
+      .purple-whitening-toothpaste .frame-EITDHM {
+        align-items: flex-start;
+        background-color: transparent;
+        display: flex;
+        flex: 0 0 auto;
+        justify-content: space-between;
+        padding: 10px 0px;
+        position: relative;
+        /* width: 370px; */
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .colour-correcting-technology-7zATal {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 110px;
+      }
+
+      .purple-whitening-toothpaste .colour-correcting-technology-eSZhU5 {
+        align-self: stretch;
+        color: var(--black-0b0b0b80);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18.2px;
+        text-align: center;
+      }
+
+      .purple-whitening-toothpaste .line-7zATal {
+        width: 1px;
+      }
+
+      .purple-whitening-toothpaste .no-peroxide-and-baking-soda-7zATal {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 110px;
+      }
+
+      .purple-whitening-toothpaste .no-peroxide-and-baking-soda-xFxSJi {
+        align-self: stretch;
+        color: var(--black-0b0b0b80);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18.2px;
+        text-align: center;
+      }
+
+      .purple-whitening-toothpaste .line-2tAeZj {
+        width: 1px;
+      }
+
+      .purple-whitening-toothpaste .instant-brightening-7zATal {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 110px;
+      }
+
+      .purple-whitening-toothpaste .instant-brightening-U9lwAi {
+        align-self: stretch;
+        color: var(--black-0b0b0b80);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18.2px;
+        text-align: center;
+      }
+
+      .purple-whitening-toothpaste .buy-3qpnkC {
+        align-items: center;
+        background-color: transparent;
+        display: inline-flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 16px;
+        position: relative;
+
+        width: 95%;
+        margin: 0 auto;
+      }
+
+      .purple-whitening-toothpaste .price-sale-RCogGP {
+        align-items: center;
+        align-self: stretch;
+        background-color: transparent;
+        display: flex;
+        flex: 0 0 auto;
+        gap: 20px;
+        position: relative;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .sale-CMqMYR {
+        -webkit-backdrop-filter: blur(15px) brightness(100%);
+        align-items: center;
+        backdrop-filter: blur(15px) brightness(100%);
+        background-color: #a17fe0;
+        border-radius: 40px;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 10px;
+        padding: 4px 14px;
+        position: relative;
+      }
+
+      .purple-whitening-toothpaste .x90-off-U7REim {
+        background-color: transparent;
+        color: var(--white-ffffff100);
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-xxxl);
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 0.00px;
+        line-height: 33.0px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: center;
+        white-space: nowrap;
+        width: fit-content;
+      }
+
+      .purple-whitening-toothpaste .price-CMqMYR {
+        align-items: center;
+        background-color: transparent;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 8px;
+        position: relative;
+      }
+
+      .purple-whitening-toothpaste .x30-jPexXn {
+        background-color: transparent;
+        color: var(--useddark-gray);
+        font-family: var(--font-family-roboto);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 0.00px;
+        line-height: 18px;
+        position: relative;
+        text-align: left;
+        text-decoration: line-through;
+        white-space: nowrap;
+        width: fit-content;
+      }
+
+      .purple-whitening-toothpaste .x300-jPexXn {
+        background-color: transparent;
+        color: var(--black-0b0b0b100);
+        font-family: var(--font-family-roboto);
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 0.00px;
+        line-height: normal;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+        white-space: nowrap;
+        width: fit-content;
+      }
+
+      .purple-whitening-toothpaste .button_1-RCogGP {
+        align-self: stretch;
+        background-color: #5966e3;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .sample-text-Q1Lnqd {
+        color: var(--white-ffffff100);
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-xl);
+        font-weight: 700;
+        letter-spacing: 0.00px;
+        line-height: 22.1px;
+        margin-bottom: -2.50px;
+        margin-top: -4.50px;
+        text-align: center;
+      }
+
+      .purple-whitening-toothpaste .pay-services-RCogGP {
+        background-color: transparent;
+        flex: 0 0 auto;
+        position: relative;
+
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .sales-end-RCogGP {
+        align-items: center;
+        background-color: var(--white-ffffffall-grayf7);
+        border: 1px solid;
+        border-color: var(--white-ffffffall-graye6);
+        border-radius: 30px;
+        box-shadow: 2px 2px 10px #2d2d2d1a;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: -1.00px;
+        margin-left: -1.00px;
+        margin-right: -1.00px;
+        padding: 15px;
+        position: relative;
+        /* width: 372px; */
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .txt-Spjq2A {
+        align-items: center;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 6px;
+      }
+
+      .purple-whitening-toothpaste .hurry-up-qtKB8n {
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent;
+        background: linear-gradient(180deg, rgb(161.0000056028366, 127.00000002980232, 224.000001847744) 0%, rgb(93.00000205636024, 38.0000015348196, 193.00000369548798) 100%);
+        background-clip: text;
+        background-color: transparent;
+        color: transparent;
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-xxl);
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 0.00px;
+        line-height: 27.6px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+        /* text-fill-color: transparent; */
+        white-space: nowrap;
+        width: fit-content;
+      }
+
+      .purple-whitening-toothpaste .sales-end-in-qtKB8n {
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent;
+        background: linear-gradient(180deg, rgb(161.0000056028366, 127.00000002980232, 224.000001847744) 0%, rgb(93.00000205636024, 38.0000015348196, 193.00000369548798) 100%);
+        background-clip: text;
+        background-color: transparent;
+        color: transparent;
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-s);
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 0.00px;
+        line-height: 15.6px;
+        position: relative;
+        text-align: left;
+        /* text-fill-color: transparent; */
+        white-space: nowrap;
+        width: fit-content;
+      }
+
+      .purple-whitening-toothpaste .frame-Spjq2A {
+        align-items: center;
+        background-color: transparent;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 12px;
+        position: relative;
+      }
+
+      .purple-whitening-toothpaste .frame-t6Z3Ca {
+        align-items: center;
+        background-color: transparent;
+        border: 1px solid;
+        border-color: transparent;
+        border-image: linear-gradient(to bottom, rgb(161.0000056028366, 127.00000002980232, 224.000001847744), rgb(93.00000205636024, 38.0000015348196, 193.00000369548798)) 1;
+        border-radius: 900px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-bottom: -1.00px;
+        margin-left: -1.00px;
+        margin-top: -1.00px;
+        padding: 10px;
+        position: relative;
+        width: 80px;
+        height: 80px;
+        border-radius: 900px;
+        border: 1px solid #A17FE0;
+      }
+
+      .purple-whitening-toothpaste .txt-lZBdrG {
+        align-items: center;
+        display: inline-flex;
+        flex: 0 0 auto;
+        justify-content: center;
+      }
+
+      .purple-whitening-toothpaste .hours-lmmSMS {
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent;
+        background: linear-gradient(180deg, rgb(161.0000056028366, 127.00000002980232, 224.000001847744) 0%, rgb(93.00000205636024, 38.0000015348196, 193.00000369548798) 100%);
+        background-clip: text;
+        background-color: transparent;
+        color: transparent;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 15.6px;
+        position: relative;
+        text-align: left;
+        /* text-fill-color: transparent; */
+        white-space: nowrap;
+        width: fit-content;
+      }
+
+      .purple-whitening-toothpaste .frame-99rKhX {
+        align-items: center;
+        background-color: transparent;
+        border: 1px solid;
+        border-color: transparent;
+        border-image: linear-gradient(to bottom, rgb(161.0000056028366, 127.00000002980232, 224.000001847744), rgb(93.00000205636024, 38.0000015348196, 193.00000369548798)) 1;
+        border-radius: 900px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-bottom: -1.00px;
+        margin-top: -1.00px;
+        padding: 10px;
+        position: relative;
+        width: 80px;
+        height: 80px;
+        border-radius: 900px;
+        border: 1px solid #A17FE0;
+      }
+
+      .purple-whitening-toothpaste .txt-LQ6wNd {
+        align-items: center;
+        display: inline-flex;
+        flex: 0 0 auto;
+        justify-content: center;
+      }
+
+      .purple-whitening-toothpaste .minutes-EGBWVe {
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent;
+        background: linear-gradient(180deg, rgb(161.0000056028366, 127.00000002980232, 224.000001847744) 0%, rgb(93.00000205636024, 38.0000015348196, 193.00000369548798) 100%);
+        background-clip: text;
+        background-color: transparent;
+        color: transparent;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 15.6px;
+        position: relative;
+        text-align: left;
+        /* text-fill-color: transparent; */
+        white-space: nowrap;
+        width: fit-content;
+      }
+
+      .purple-whitening-toothpaste .frame-xi6d9W {
+        align-items: center;
+        background-color: transparent;
+        border: 1px solid;
+        border-color: transparent;
+        border-image: linear-gradient(to bottom, rgb(161.0000056028366, 127.00000002980232, 224.000001847744), rgb(93.00000205636024, 38.0000015348196, 193.00000369548798)) 1;
+        border-radius: 900px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-bottom: -1.00px;
+        margin-right: -1.00px;
+        margin-top: -1.00px;
+        padding: 10px;
+        position: relative;
+        width: 80px;
+        height: 80px;
+        border-radius: 900px;
+        border: 1px solid #A17FE0;
+      }
+
+      .purple-whitening-toothpaste .txt-gxtgHq {
+        align-items: center;
+        display: inline-flex;
+        flex: 0 0 auto;
+        justify-content: center;
+      }
+
+      .purple-whitening-toothpaste .seconds-6FYsqK {
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent;
+        background: linear-gradient(180deg, rgb(161.0000056028366, 127.00000002980232, 224.000001847744) 0%, rgb(93.00000205636024, 38.0000015348196, 193.00000369548798) 100%);
+        background-clip: text;
+        background-color: transparent;
+        color: transparent;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 15.6px;
+        position: relative;
+        text-align: left;
+        /* text-fill-color: transparent; */
+        white-space: nowrap;
+        width: fit-content;
+      }
+
+      .purple-whitening-toothpaste .shipping-3qpnkC {
+        align-self: stretch;
+        background-color: transparent;
+        gap: 16px;
+        padding: 0px 10px;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .product-details-pa4WoG {
+        background-color: transparent;
+        color: var(--black-182028100);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 27.6px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+        white-space: nowrap;
+        width: fit-content;
+      }
+
+      .purple-whitening-toothpaste .content-pa4WoG {
+        align-items: flex-start;
+        flex: 0 0 auto;
+        gap: 10px;
+      }
+
+      .purple-whitening-toothpaste .shipping-hit42i {
+        -webkit-backdrop-filter: blur(15px) brightness(100%);
+        backdrop-filter: blur(15px) brightness(100%);
+        background-color: var(--white-ffffffall-grayf7);
+        border: 1px solid;
+        border-color: var(--white-ffffffall-graye6);
+        border-radius: 20px;
+        gap: 20px;
+        margin-left: -1.00px;
+        margin-right: -1.00px;
+        margin-top: -1.00px;
+        padding: 15px;
+        /* width: 372px; */
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .frame-v0dfKg {
+        align-items: center;
+        align-self: stretch;
+        background-color: transparent;
+        display: flex;
+        height: 28px;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .close-1tIrin {
+        height: 24px;
+        width: 24px;
+      }
+
+      .purple-whitening-toothpaste .shipping-KzKAcd {
+        -webkit-backdrop-filter: blur(15px) brightness(100%);
+        backdrop-filter: blur(15px) brightness(100%);
+        background-color: var(--white-ffffffall-grayf7);
+        border: 1px solid;
+        border-color: var(--white-ffffffall-graye6);
+        border-radius: 20px;
+        gap: 20px;
+        margin-left: -1.00px;
+        margin-right: -1.00px;
+        padding: 15px;
+        /* width: 372px; */
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .frame-JWFXYt {
+        align-items: center;
+        align-self: stretch;
+        background-color: transparent;
+        display: flex;
+        height: 28px;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .close-CD5xcu {
+        height: 24px;
+        width: 24px;
+      }
+
+      .purple-whitening-toothpaste .shipping-eY7gtr {
+        -webkit-backdrop-filter: blur(15px) brightness(100%);
+        backdrop-filter: blur(15px) brightness(100%);
+        background-color: var(--white-ffffffall-grayf7);
+        border: 1px solid;
+        border-color: var(--white-ffffffall-graye6);
+        border-radius: 20px;
+        gap: 20px;
+        margin-bottom: -1.00px;
+        margin-left: -1.00px;
+        margin-right: -1.00px;
+        padding: 15px;
+        /* width: 372px; */
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .frame-zwLU5y {
+        align-items: center;
+        align-self: stretch;
+        background-color: transparent;
+        display: flex;
+        height: 28px;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .close-pGvXvG {
+        height: 24px;
+        width: 24px;
+      }
+
+      .purple-whitening-toothpaste .about-product-GVGhEx {
+        align-items: center;
+        background-color: transparent;
+        display: inline-flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 32px;
+        position: relative;
+        width: 95%;
+        margin: 0 auto;
+      }
+
+      .purple-whitening-toothpaste .frame-VZPJLb {
+        align-items: center;
+        align-self: stretch;
+        background-color: transparent;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 8px;
+        position: relative;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .video-H2Kjpf {
+        align-items: flex-start;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.949999988079071) 0%, rgba(255, 255, 255, 0) 100%);
+        border: 1px solid;
+        border-color: var(--white-ffffffall-graye6);
+        border-radius: 20px;
+        display: flex;
+        gap: 10px;
+        height: 372px;
+        margin-left: -1.00px;
+        margin-right: -1.00px;
+        margin-top: -1.00px;
+        padding: 15px;
+        overflow: hidden;
+      }
+
+      .purple-whitening-toothpaste .video-H2Kjpf video {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      .purple-whitening-toothpaste .we-found-the-perfect-mgKeVU {
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent;
+        background: linear-gradient(180deg, rgb(161.0000056028366, 127.00000002980232, 224.000001847744) 0%, rgb(93.00000205636024, 38.0000015348196, 193.00000369548798) 100%);
+        background-clip: text;
+        background-color: transparent;
+        color: transparent;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 27.6px;
+        margin-top: -0.50px;
+        position: relative;
+        text-align: left;
+        /* text-fill-color: transparent; */
+        width: 307px;
+        z-index: 5;
+      }
+
+      .purple-whitening-toothpaste .applying-purple-to-y-H2Kjpf {
+        -webkit-backdrop-filter: blur(15px) brightness(100%);
+        align-items: center;
+        align-self: stretch;
+        backdrop-filter: blur(15px) brightness(100%);
+        background: linear-gradient(180deg, rgb(161.0000056028366, 127.00000002980232, 224.000001847744) 0%, rgb(93.00000205636024, 38.0000015348196, 193.00000369548798) 100%);
+        border-radius: 20px;
+        display: flex;
+        flex: 0 0 auto;
+        gap: 20px;
+        padding: 15px;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .applying-purple-to-y-ESobVM {
+        color: var(--white-ffffff100);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18.2px;
+        text-align: left;
+        width: 213px;
+      }
+
+      .purple-whitening-toothpaste .fi_743287-ESobVM {
+        background-color: transparent;
+        height: 111px;
+        margin-right: -4.00px;
+        position: relative;
+        width: 111px;
+      }
+
+      .purple-whitening-toothpaste .frame-8zsTMG {
+        align-items: center;
+        background-color: transparent;
+        display: inline-flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 32px;
+        position: relative;
+
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .gain-your-confidence-seUqGl {
+        align-items: center;
+        display: inline-flex;
+        justify-content: space-between;
+        flex: 0 0 auto;
+        gap: 16px;
+
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .img-13rpBX {
+        background-color: transparent;
+        height: 212px;
+        object-fit: cover;
+        position: relative;
+        width: 212px;
+      }
+
+      .purple-whitening-toothpaste .txt-13rpBX {
+        align-items: flex-start;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 8px;
+      }
+
+      .purple-whitening-toothpaste .gain-your-confidence-wOxaZE {
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent;
+        background: linear-gradient(180deg, rgb(161.0000056028366, 127.00000002980232, 224.000001847744) 0%, rgb(93.00000205636024, 38.0000015348196, 193.00000369548798) 100%);
+        background-clip: text;
+        color: transparent;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 17.6px;
+        margin-top: -1.00px;
+        text-align: left;
+        /* text-fill-color: transparent; */
+        width: 142px;
+      }
+
+      .purple-whitening-toothpaste .v34-removes-years-of-wOxaZE {
+        background-color: transparent;
+        color: var(--black-0b0b0b80);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15.6px;
+        position: relative;
+        text-align: left;
+        width: 142px;
+      }
+
+      .purple-whitening-toothpaste .enamel-protection-seUqGl {
+        align-items: center;
+        display: inline-flex;
+        justify-content: space-between;
+        flex: 0 0 auto;
+        gap: 16px;
+
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .txt-aKxY1a {
+        align-items: flex-start;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 8px;
+      }
+
+      .purple-whitening-toothpaste .enamel-protection-pftU4Y {
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent;
+        background: linear-gradient(180deg, rgb(161.0000056028366, 127.00000002980232, 224.000001847744) 0%, rgb(93.00000205636024, 38.0000015348196, 193.00000369548798) 100%);
+        background-clip: text;
+        color: transparent;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 17.6px;
+        margin-top: -1.00px;
+        text-align: left;
+        /* text-fill-color: transparent; */
+        width: 142px;
+      }
+
+      .purple-whitening-toothpaste .non-invasive-and-per-pftU4Y {
+        background-color: transparent;
+        color: var(--black-0b0b0b80);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15.6px;
+        position: relative;
+        text-align: left;
+        width: 142px;
+      }
+
+      .purple-whitening-toothpaste .img-aKxY1a {
+        background-color: var(--usedblack-00000);
+        border-radius: 20px;
+        height: 212px;
+        position: relative;
+        width: 212px;
+        overflow: hidden;
+      }
+      .purple-whitening-toothpaste .img-aKxY1a video {
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .frame-VW47Rg {
+        align-items: flex-start;
+        align-self: stretch;
+        background-color: var(--white-ffffffall-grayf7);
+        border: 1px solid;
+        border-color: var(--white-ffffffall-graye6);
+        border-radius: 20px;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 8px;
+        padding: 15px 0px;
+        position: relative;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .dentists-approved-J9wYQR {
+        align-items: flex-start;
+        border-radius: 20px;
+        display: flex;
+        flex: 0 0 auto;
+        justify-content: space-between;
+        padding: 15px;
+        gap: 10px;
+        /* width: 370px; */
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .txt-9TrUGp {
+        align-items: flex-start;
+        display: flex;
+        gap: 8px;
+        width: 225px;
+      }
+
+      .purple-whitening-toothpaste .dentists-approved-FbLPM0 {
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent;
+        align-self: stretch;
+        background: linear-gradient(180deg, rgb(161.0000056028366, 127.00000002980232, 224.000001847744) 0%, rgb(93.00000205636024, 38.0000015348196, 193.00000369548798) 100%);
+        background-clip: text;
+        color: transparent;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 17.6px;
+        margin-top: -1.00px;
+        text-align: left;
+        /* text-fill-color: transparent; */
+      }
+
+      .purple-whitening-toothpaste .it-works-on-the-surf-FbLPM0 {
+        align-self: stretch;
+        background-color: transparent;
+        color: var(--black-0b0b0b80);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15.6px;
+        position: relative;
+        text-align: left;
+      }
+
+      .purple-whitening-toothpaste .safe-for-daily-use-J9wYQR {
+        align-items: flex-start;
+        border-radius: 20px;
+        display: flex;
+        flex: 0 0 auto;
+        justify-content: space-between;
+        padding: 15px;
+        gap: 10px;
+        /* width: 370px; */
+
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .txt-A3aXZj {
+        align-items: flex-start;
+        display: flex;
+        gap: 8px;
+        width: 225px;
+      }
+
+      .purple-whitening-toothpaste .safe-for-daily-use-Wxv2yB {
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent;
+        align-self: stretch;
+        background: linear-gradient(180deg, rgb(161.0000056028366, 127.00000002980232, 224.000001847744) 0%, rgb(93.00000205636024, 38.0000015348196, 193.00000369548798) 100%);
+        background-clip: text;
+        color: transparent;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 17.6px;
+        margin-top: -1.00px;
+        text-align: left;
+        /* text-fill-color: transparent; */
+      }
+
+      .purple-whitening-toothpaste .v34-is-very-gentle-t-Wxv2yB {
+        align-self: stretch;
+        background-color: transparent;
+        color: var(--black-0b0b0b80);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15.6px;
+        position: relative;
+        text-align: left;
+      }
+
+      .purple-whitening-toothpaste .how-to-use-it-VZPJLb {
+        align-items: center;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .txt-nTGKWV {
+        align-items: center;
+        align-self: stretch;
+        display: flex;
+        flex: 0 0 auto;
+        gap: 8px;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .how-to-use-it-ilxbx2 {
+        color: var(--black-0b0b0b100);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 27.6px;
+        margin-top: -1.00px;
+        text-align: center;
+      }
+
+      .purple-whitening-toothpaste .directly-apply-the-v-ilxbx2 {
+        background-color: transparent;
+        color: var(--black-0b0b0b80);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15.6px;
+        position: relative;
+        text-align: center;
+        width: 283px;
+      }
+
+      .purple-whitening-toothpaste .img_-slider-nTGKWV {
+        align-items: center;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 8px;
+
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .img-K4MXuy {
+        background-color: var(--usedblack-00000);
+        border-radius: 20px;
+        height: 370px;
+        position: relative;
+        width: 370px;
+      }
+
+      .purple-whitening-toothpaste .arrow_-slider-pGlDvP {
+        position: relative;
+      }
+
+      .purple-whitening-toothpaste .slider-K4MXuy {
+        align-items: center;
+        display: inline-flex;
+        gap: 8px;
+      }
+
+      .purple-whitening-toothpaste .ellipse-4LcVR9 {
+        background-color: #290646;
+        border-radius: 6px;
+        height: 12px;
+        position: relative;
+        width: 12px;
+      }
+
+      .purple-whitening-toothpaste .ellipse-DwsiqS {
+        background-color: var(--manatee);
+        border-radius: 4px;
+        height: 8px;
+        position: relative;
+        width: 8px;
+      }
+
+      .purple-whitening-toothpaste .fa-qs-GVGhEx {
+        align-items: center;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 16px;
+        padding: 0px 10px;
+        /* width: 390px; */
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .fa-qs-QDGij8 {
+        color: var(--black-282828100);
+        font-family: var(--font-family-neuzeit_grotesk-bold);
+        font-size: var(--font-size-xxl);
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 0.00px;
+        line-height: 27.6px;
+        margin-top: -1.00px;
+        text-align: left;
+        white-space: nowrap;
+        width: fit-content;
+      }
+
+      .purple-whitening-toothpaste .content-QDGij8 {
+        align-items: flex-start;
+        flex: 0 0 auto;
+        gap: 10px;
+      }
+
+      .purple-whitening-toothpaste .faq-WO4umf {
+        align-items: flex-start;
+        background-color: var(--white-ffffffall-grayf7);
+        border: 1px solid;
+        border-color: var(--white-ffffffall-graye6);
+        border-radius: 20px;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 15px;
+        margin-left: -1.00px;
+        margin-right: -1.00px;
+        margin-top: -1.00px;
+        padding: 15px;
+        position: relative;
+        /* width: 372px; */
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .frame-15AVVh {
+        align-items: center;
+        align-self: stretch;
+        background-color: transparent;
+        display: flex;
+        flex: 0 0 auto;
+        gap: 20px;
+        position: relative;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .close-m24PFr {
+        height: 24.000001049073262px;
+        width: 24.000001049073262px;
+      }
+
+      .purple-whitening-toothpaste .line-15AVVh {
+        height: 1px;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .faq-Tyn790 {
+        align-items: flex-start;
+        background-color: var(--white-ffffffall-grayf7);
+        border: 1px solid;
+        border-color: var(--white-ffffffall-graye6);
+        border-radius: 20px;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 15px;
+        margin-left: -1.00px;
+        margin-right: -1.00px;
+        padding: 15px;
+        position: relative;
+        /* width: 372px; */
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .frame-F1Lohl {
+        align-items: center;
+        align-self: stretch;
+        background-color: transparent;
+        display: flex;
+        flex: 0 0 auto;
+        gap: 20px;
+        position: relative;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .close-YpDi9c {
+        height: 24.000001049073262px;
+        width: 24.000001049073262px;
+      }
+
+      .purple-whitening-toothpaste .line-F1Lohl {
+        height: 1px;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .faq-7rI7PV {
+        align-items: flex-start;
+        background-color: var(--white-ffffffall-grayf7);
+        border: 1px solid;
+        border-color: var(--white-ffffffall-graye6);
+        border-radius: 20px;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 15px;
+        margin-left: -1.00px;
+        margin-right: -1.00px;
+        padding: 15px;
+        position: relative;
+        /* width: 372px; */
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .frame-LJZ11t {
+        align-items: center;
+        align-self: stretch;
+        background-color: transparent;
+        display: flex;
+        flex: 0 0 auto;
+        gap: 20px;
+        position: relative;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .close-XxNRx7 {
+        height: 24.000001049073262px;
+        width: 24.000001049073262px;
+      }
+
+      .purple-whitening-toothpaste .line-LJZ11t {
+        height: 1px;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .faq-mgxQUf {
+        align-items: flex-start;
+        background-color: var(--white-ffffffall-grayf7);
+        border: 1px solid;
+        border-color: var(--white-ffffffall-graye6);
+        border-radius: 20px;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 15px;
+        margin-left: -1.00px;
+        margin-right: -1.00px;
+        padding: 15px;
+        position: relative;
+        /* width: 372px; */
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .frame-Tl4zds {
+        align-items: center;
+        align-self: stretch;
+        background-color: transparent;
+        display: flex;
+        flex: 0 0 auto;
+        gap: 20px;
+        position: relative;
+        width: 100%;
+        margin-top: 5px;
+      }
+
+      .purple-whitening-toothpaste .close-IbdywS {
+        height: 24.000001049073262px;
+        width: 24.000001049073262px;
+      }
+
+      .purple-whitening-toothpaste .line-Tl4zds {
+        height: 1px;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .faq-M7FQCG {
+        align-items: flex-start;
+        background-color: var(--white-ffffffall-grayf7);
+        border: 1px solid;
+        border-color: var(--white-ffffffall-graye6);
+        border-radius: 20px;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: -1.00px;
+        margin-left: -1.00px;
+        margin-right: -1.00px;
+        padding: 15px;
+        position: relative;
+        /* width: 372px; */
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .frame-lEUxND {
+        align-items: center;
+        align-self: stretch;
+        background-color: transparent;
+        display: flex;
+        flex: 0 0 auto;
+        gap: 20px;
+        position: relative;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .close-84fjBA {
+        height: 24.000001049073262px;
+        width: 24.000001049073262px;
+      }
+
+      .purple-whitening-toothpaste .line-lEUxND {
+        height: 1px;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .customer-reviews-GVGhEx {
+        align-items: center;
+        background-color: transparent;
+        border-radius: 20px;
+        /* box-shadow: 0px 0px 6px #0000000f; */
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 16px;
+        padding: 0px 10px;
+        position: relative;
+        /* width: 390px; */
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .customer-reviews-F1aaYL {
+        background-color: transparent;
+        color: var(--black-0b0b0b100);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 27.6px;
+        margin-top: -0.50px;
+        position: relative;
+        text-align: left;
+        white-space: nowrap;
+        width: fit-content;
+      }
+
+      .purple-whitening-toothpaste .customer-reviews-TAuQx4 {
+        align-items: flex-start;
+        align-self: stretch;
+        background-color: var(--white-ffffff100);
+        border: 1px solid;
+        border-color: var(--white-ffffffall-graye6);
+        border-radius: 20px;
+        box-shadow: 2px 2px 10px #2d2d2d1a;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 16px;
+        padding: 15px;
+        position: relative;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .based-on-0SExYF {
+        align-items: flex-start;
+        align-self: stretch;
+        background-color: transparent;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 12px;
+        position: relative;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .based-on-60-reviews-z9heI3 {
+        background-color: transparent;
+        color: var(--useddark-gray);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15.6px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+        width: 111px;
+      }
+
+      .purple-whitening-toothpaste .rating-z9heI3 {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .frame-MaagLL {
+        align-items: center;
+        align-self: stretch;
+        background-color: transparent;
+        display: flex;
+        flex: 0 0 auto;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .frame-odJkcb {
+        align-items: center;
+        background-color: transparent;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 16px;
+        position: relative;
+      }
+
+      .purple-whitening-toothpaste .rectangle-XCZhNF {
+        background-color: transparent;
+        border: 1px solid;
+        border-color: var(--usedlight-gray);
+        border-radius: 20px;
+        height: 12px;
+        left: 0px;
+        position: absolute;
+        top: 0px;
+        width: 100px;
+      }
+
+      .purple-whitening-toothpaste .rectangle-pNdMN4 {
+        background-color: var(--useddark-gray);
+        border-radius: 20px;
+        height: 12px;
+        left: 0px;
+        position: absolute;
+        top: 0px;
+        width: 85px;
+      }
+
+      .purple-whitening-toothpaste .x85-HGyxZu {
+        background-color: transparent;
+        color: var(--useddark-gray);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15.6px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+        white-space: nowrap;
+        width: fit-content;
+      }
+
+      .purple-whitening-toothpaste .x51-odJkcb {
+        background-color: transparent;
+        color: var(--usedlight-gray);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15.6px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+        white-space: nowrap;
+        width: fit-content;
+      }
+
+      .purple-whitening-toothpaste .frame-VzxWW8 {
+        align-items: center;
+        align-self: stretch;
+        background-color: transparent;
+        display: flex;
+        flex: 0 0 auto;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .frame-FL2TK6 {
+        align-items: center;
+        background-color: transparent;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 16px;
+        position: relative;
+      }
+
+      .purple-whitening-toothpaste .rectangle-I7f8Kf {
+        background-color: transparent;
+        border: 1px solid;
+        border-color: var(--usedlight-gray);
+        border-radius: 20px;
+        height: 12px;
+        left: 0px;
+        position: absolute;
+        top: 0px;
+        width: 100px;
+      }
+
+      .purple-whitening-toothpaste .rectangle-UohpZD {
+        background-color: var(--useddark-gray);
+        border-radius: 20px;
+        height: 12px;
+        left: 0px;
+        position: absolute;
+        top: 0px;
+        width: 15px;
+      }
+
+      .purple-whitening-toothpaste .x15-GKxsWx {
+        background-color: transparent;
+        color: var(--useddark-gray);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15.6px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+        white-space: nowrap;
+        width: fit-content;
+      }
+
+      .purple-whitening-toothpaste .x9-FL2TK6 {
+        background-color: transparent;
+        color: var(--usedlight-gray);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15.6px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+        white-space: nowrap;
+        width: fit-content;
+      }
+
+      .purple-whitening-toothpaste .frame-ZxAnxg {
+        align-items: center;
+        align-self: stretch;
+        background-color: transparent;
+        display: flex;
+        flex: 0 0 auto;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .frame-g9c1KQ {
+        align-items: center;
+        background-color: transparent;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 16px;
+        position: relative;
+      }
+
+      .purple-whitening-toothpaste .rectangle-lf6TK0 {
+        background-color: transparent;
+        border: 1px solid;
+        border-color: var(--usedlight-gray);
+        border-radius: 20px;
+        height: 12px;
+        left: 0px;
+        position: absolute;
+        top: 0px;
+        width: 100px;
+      }
+
+      .purple-whitening-toothpaste .rectangle-DJ3IjQ {
+        background-color: transparent;
+        border: 1px solid;
+        border-color: var(--usedlight-gray);
+        border-radius: 20px;
+        height: 12px;
+        left: 0px;
+        position: absolute;
+        top: 0px;
+        width: 100px;
+      }
+
+      .purple-whitening-toothpaste .x0-EkQ6IB {
+        color: var(--useddark-gray);
+      }
+
+      .purple-whitening-toothpaste .x0-g9c1KQ {
+        color: var(--usedlight-gray);
+      }
+
+      .purple-whitening-toothpaste .frame-FvM9IN {
+        align-items: center;
+        align-self: stretch;
+        background-color: transparent;
+        display: flex;
+        flex: 0 0 auto;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .frame-vOY2pL {
+        align-items: center;
+        background-color: transparent;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 16px;
+        position: relative;
+      }
+
+      .purple-whitening-toothpaste .rectangle-iCMsed {
+        background-color: transparent;
+        border: 1px solid;
+        border-color: var(--usedlight-gray);
+        border-radius: 20px;
+        height: 12px;
+        left: 0px;
+        position: absolute;
+        top: 0px;
+        width: 100px;
+      }
+
+      .purple-whitening-toothpaste .rectangle-4cr0xy {
+        background-color: transparent;
+        border: 1px solid;
+        border-color: var(--usedlight-gray);
+        border-radius: 20px;
+        height: 12px;
+        left: 0px;
+        position: absolute;
+        top: 0px;
+        width: 100px;
+      }
+
+      .purple-whitening-toothpaste .x0-ycRErA {
+        color: var(--useddark-gray);
+      }
+
+      .purple-whitening-toothpaste .x0-vOY2pL {
+        color: var(--usedlight-gray);
+      }
+
+      .purple-whitening-toothpaste .frame-2OnXS6 {
+        align-items: center;
+        align-self: stretch;
+        background-color: transparent;
+        display: flex;
+        flex: 0 0 auto;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .frame-ld27cU {
+        align-items: center;
+        background-color: transparent;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 16px;
+        position: relative;
+      }
+
+      .purple-whitening-toothpaste .rectangle-SSKqZR {
+        background-color: transparent;
+        border: 1px solid;
+        border-color: var(--usedlight-gray);
+        border-radius: 20px;
+        height: 12px;
+        left: 0px;
+        position: absolute;
+        top: 0px;
+        width: 100px;
+      }
+
+      .purple-whitening-toothpaste .rectangle-2NXKWD {
+        background-color: transparent;
+        border: 1px solid;
+        border-color: var(--usedlight-gray);
+        border-radius: 20px;
+        height: 12px;
+        left: 0px;
+        position: absolute;
+        top: 0px;
+        width: 100px;
+      }
+
+      .purple-whitening-toothpaste .x0-xYz9Jc {
+        color: var(--useddark-gray);
+      }
+
+      .purple-whitening-toothpaste .x0-ld27cU {
+        color: var(--usedlight-gray);
+      }
+
+      .purple-whitening-toothpaste .reviews-F1aaYL {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .review-F5uChk {
+        margin-top: -1.00px;
+      }
+
+      .purple-whitening-toothpaste .txt-qYmHKz {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex: 0 0 auto;
+        gap: 12px;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .frame-rD6FMg {
+        align-items: center;
+        align-self: stretch;
+        background-color: transparent;
+        display: flex;
+        flex: 0 0 auto;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .txt-AFKHRw {
+        align-items: flex-start;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 4px;
+      }
+
+      .purple-whitening-toothpaste .user-cwhwYZ {
+        line-height: 17.6px;
+      }
+
+      .purple-whitening-toothpaste .review_-img-or-video-qYmHKz {
+        background-color: transparent;
+        background-image: url(./img/type-img-1.png);
+        background-position: 50% 50%;
+        background-size: cover;
+      }
+
+      .purple-whitening-toothpaste .txt-35OxOW {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex: 0 0 auto;
+        gap: 12px;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .frame-ovkVmK {
+        align-items: center;
+        align-self: stretch;
+        background-color: transparent;
+        display: flex;
+        flex: 0 0 auto;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .txt-ZrAuj2 {
+        align-items: flex-start;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 4px;
+      }
+
+      .purple-whitening-toothpaste .user-MDNasj {
+        line-height: 17.6px;
+      }
+
+      .purple-whitening-toothpaste .review_-img-or-video-35OxOW {
+        align-items: center;
+        background-color: var(--usedblack-00000);
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+      }
+
+      .purple-whitening-toothpaste .play-PfwURc {
+        -webkit-backdrop-filter: blur(8px) brightness(100%);
+        backdrop-filter: blur(8px) brightness(100%);
+        background-color: transparent;
+        height: 50px;
+        position: relative;
+        width: 50px;
+      }
+
+      .purple-whitening-toothpaste .ellipse-ka9FmL {
+        background-color: #61616180;
+        border-radius: 25px;
+        height: 50px;
+        left: 0px;
+        position: absolute;
+        top: 0px;
+        width: 50px;
+      }
+
+      .purple-whitening-toothpaste .polygon-ka9FmL {
+        background-color: transparent;
+        height: 14px;
+        left: 20px;
+        position: absolute;
+        top: 17px;
+        width: 13px;
+      }
+
+      .purple-whitening-toothpaste .txt-RdqWuE {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex: 0 0 auto;
+        gap: 12px;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .frame-baX20e {
+        align-items: center;
+        align-self: stretch;
+        background-color: transparent;
+        display: flex;
+        flex: 0 0 auto;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .txt-i9JJVk {
+        align-items: flex-start;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 4px;
+      }
+
+      .purple-whitening-toothpaste .user-f1JEjM {
+        line-height: 17.6px;
+      }
+
+      /* .purple-whitening-toothpaste .video-RdqWuE {
+        height: 173px;
+        object-fit: cover;
+      } */
+
+      .purple-whitening-toothpaste .txt-KcaC6A {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex: 0 0 auto;
+        gap: 12px;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .frame-Q2PkFL {
+        align-items: center;
+        align-self: stretch;
+        background-color: transparent;
+        display: flex;
+        flex: 0 0 auto;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .txt-fiVESo {
+        align-items: flex-start;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 4px;
+      }
+
+      .purple-whitening-toothpaste .user-3nMWKv {
+        line-height: 18.2px;
+      }
+
+      .purple-whitening-toothpaste .txt-oBc28P {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex: 0 0 auto;
+        gap: 12px;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .frame-FVksGq {
+        align-items: center;
+        align-self: stretch;
+        background-color: transparent;
+        display: flex;
+        flex: 0 0 auto;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .txt-SNHhY2 {
+        align-items: flex-start;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 4px;
+      }
+
+      .purple-whitening-toothpaste .user-B58sn5 {
+        line-height: 18.2px;
+      }
+
+      /* .purple-whitening-toothpaste .video-oBc28P {
+        height: 243px;
+        object-fit: cover;
+      } */
+
+      .purple-whitening-toothpaste .txt-PomJog {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex: 0 0 auto;
+        gap: 12px;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .frame-bqpSJT {
+        align-items: center;
+        align-self: stretch;
+        background-color: transparent;
+        display: flex;
+        flex: 0 0 auto;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .txt-ksWw9z {
+        align-items: flex-start;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 4px;
+      }
+
+      .purple-whitening-toothpaste .user-K7GQDd {
+        line-height: 17.6px;
+      }
+
+      /* .purple-whitening-toothpaste .video-PomJog {
+        height: 173px;
+        object-fit: cover;
+      } */
+
+      .purple-whitening-toothpaste .txt-g4Pqxx {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex: 0 0 auto;
+        gap: 12px;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .frame-NmQz6C {
+        align-items: center;
+        align-self: stretch;
+        background-color: transparent;
+        display: flex;
+        flex: 0 0 auto;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .txt-vzOuam {
+        align-items: flex-start;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 4px;
+      }
+
+      .purple-whitening-toothpaste .user-GxsWTL {
+        line-height: 17.6px;
+      }
+
+      /* .purple-whitening-toothpaste .video-g4Pqxx {
+        height: 173px;
+        object-fit: cover;
+      } */
+
+      .purple-whitening-toothpaste .txt-5qdEm3 {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex: 0 0 auto;
+        gap: 12px;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .frame-hLRsGP {
+        align-items: center;
+        align-self: stretch;
+        background-color: transparent;
+        display: flex;
+        flex: 0 0 auto;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .txt-7dyWCJ {
+        align-items: flex-start;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 4px;
+      }
+
+      .purple-whitening-toothpaste .user-3XTUz9 {
+        line-height: 17.6px;
+      }
+
+      .purple-whitening-toothpaste .review-RNkTpx {
+        margin-bottom: -1.00px;
+      }
+
+      .purple-whitening-toothpaste .txt-EcLdeE {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex: 0 0 auto;
+        gap: 12px;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .frame-yuHzbC {
+        align-items: center;
+        align-self: stretch;
+        background-color: transparent;
+        display: flex;
+        flex: 0 0 auto;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .txt-7oef1T {
+        align-items: flex-start;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 4px;
+      }
+
+      .purple-whitening-toothpaste .user-ZBLlia {
+        line-height: 17.6px;
+      }
+
+      .purple-whitening-toothpaste .button_1-F1aaYL {
+        background-color: var(--black-0b0b0b100);
+        width: 144px;
+      }
+
+      .purple-whitening-toothpaste .sample-text-lVWs0d {
+        color: var(--white-ffffff100);
+        font-weight: 600;
+        line-height: 22.1px;
+        margin-bottom: -3.00px;
+        margin-top: -4.00px;
+        text-align: center;
+      }
+
+      .purple-whitening-toothpaste .footer-GVGhEx {
+        align-items: flex-start;
+        background-color: #bcbcbc;
+        border-radius: 20px 20px 0px 0px;
+        display: inline-flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 10px;
+        padding: 40px 10px 20px;
+        position: relative;
+        width: 100%;
+        padding-bottom: 4.5rem;
+      }
+
+      .purple-whitening-toothpaste .content-VjSjE9 {
+        align-items: center;
+        flex: 0 0 auto;
+        gap: 20px;
+      }
+
+      .purple-whitening-toothpaste .subscribe-to-our-e-mail-newsletter-hkDi07 {
+        background-color: transparent;
+        color: var(--black-0b0b0b100);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 27.6px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: center;
+        width: 262px;
+      }
+
+      .purple-whitening-toothpaste .input-button-hkDi07 {
+        align-items: center;
+        align-self: stretch;
+        background-color: transparent;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .input-o6hf4L {
+        align-items: center;
+        background-color: var(--white-ffffff100);
+        border-radius: 40px;
+        display: flex;
+        gap: 10px;
+        height: 55px;
+        padding: 20px 25px;
+        position: relative;
+        /* width: 370px; */
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .sample-text-A2XnEp {
+        color: var(--useddark-gray);
+        font-weight: 400;
+        line-height: 18.2px;
+        margin-bottom: -0.50px;
+        margin-top: -2.50px;
+        text-align: left;
+      }
+
+      .purple-whitening-toothpaste .button_1-o6hf4L {
+        align-self: stretch;
+        background: linear-gradient(97deg, #A17FE0 8.09%, #5D26C1 98.73%);
+        background-color: transparent;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .sample-text-6xJUxA {
+        color: var(--white-ffffff100);
+        font-weight: 600;
+        line-height: 22.1px;
+        margin-bottom: -2.50px;
+        margin-top: -4.50px;
+        text-align: center;
+      }
+
+      .purple-whitening-toothpaste .info-hkDi07 {
+        align-items: center;
+        align-self: stretch;
+        background-color: transparent;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .information-is-not-a-nSS96f {
+        align-self: stretch;
+        background-color: transparent;
+        color: var(--black-0b0b0b50);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 13.0px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: center;
+      }
+
+      .purple-whitening-toothpaste .button_2-nSS96f {
+        align-items: center;
+        background-color: transparent;
+        display: inline-flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 3px;
+        position: relative;
+        cursor: pointer;
+      }
+
+      .purple-whitening-toothpaste .sample-text-ol4cFe {
+        color: var(--useddark-gray);
+        font-weight: 600;
+        line-height: 18.2px;
+        margin-top: -1.00px;
+        text-align: left;
+      }
+
+      .purple-whitening-toothpaste .line-ol4cFe {
+        height: 1px;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .x2024-hi-smile-all-rights-reserved-nSS96f {
+        align-self: stretch;
+        background-color: transparent;
+        color: var(--black-282828100);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 13.0px;
+        position: relative;
+        text-align: right;
+      }
+
+      .purple-whitening-toothpaste .all-purchases-are-sh {
+        align-self: stretch;
+        background-color: transparent;
+        color: var(--black-0b0b0b80);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18.2px;
+        position: relative;
+        text-align: left;
+      }
+
+      .purple-whitening-toothpaste .applying-purple-to-y {
+        background-color: transparent;
+        position: relative;
+      }
+
+      .purple-whitening-toothpaste .arrow_-slider {
+        align-items: center;
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        left: 10px;
+        top: 168px;
+        width: 350px;
+      }
+
+      .purple-whitening-toothpaste .button_-arrow {
+        background-color: transparent;
+        height: 35px;
+        position: relative;
+        width: 35px;
+      }
+
+      .purple-whitening-toothpaste .button_1 {
+        align-items: center;
+        border-radius: 40px;
+        display: flex;
+        gap: 10px;
+        height: 55px;
+        justify-content: center;
+        padding: 20px 25px;
+        position: relative;
+
+        cursor: pointer;
+      }
+
+      .purple-whitening-toothpaste .close {
+        background-color: transparent;
+        position: relative;
+      }
+
+      .purple-whitening-toothpaste .colour-correcting-technology {
+        background-color: transparent;
+        position: relative;
+      }
+
+      .purple-whitening-toothpaste .component-1 {
+        background-color: transparent;
+        height: 28px;
+        position: relative;
+        width: 28px;
+      }
+
+      .purple-whitening-toothpaste .content {
+        background-color: transparent;
+        display: inline-flex;
+        flex-direction: column;
+        position: relative;
+
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .dentists-approved {
+        background-color: transparent;
+        position: relative;
+      }
+
+      .purple-whitening-toothpaste .does-it-work-with-ios {
+        background-color: transparent;
+        color: var(--black-182028100);
+        flex: 1;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 17.6px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+      }
+
+      .purple-whitening-toothpaste .enamel-protection {
+        background-color: transparent;
+        position: relative;
+      }
+
+      .purple-whitening-toothpaste .fa-qs {
+        background-color: transparent;
+        position: relative;
+      }
+
+      .purple-whitening-toothpaste .free-shipping {
+        align-items: center;
+        background-color: transparent;
+        border-radius: 6px;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 8px;
+        position: relative;
+      }
+
+      .purple-whitening-toothpaste .free-shipping-in-country {
+        background-color: transparent;
+        color: var(--black-182028100);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 17.6px;
+        position: relative;
+        text-align: left;
+        white-space: nowrap;
+        width: fit-content;
+      }
+
+      .purple-whitening-toothpaste .gain-your-confidence {
+        background-color: transparent;
+        position: relative;
+      }
+
+      .purple-whitening-toothpaste .header {
+        align-items: center;
+        background-color: transparent;
+        display: flex;
+        flex: 0 0 auto;
+        position: relative;
+      }
+
+      .purple-whitening-toothpaste .how-to-use-it {
+        align-self: stretch;
+        background-color: transparent;
+        position: relative;
+      }
+
+      .purple-whitening-toothpaste .icons-icon {
+        background-color: transparent;
+        height: 28px;
+        position: relative;
+        width: 28px;
+      }
+
+      .purple-whitening-toothpaste .illustration {
+        background-color: transparent;
+        height: 90px;
+        position: relative;
+        width: 90px;
+      }
+
+      .purple-whitening-toothpaste .img_-slider {
+        background-color: transparent;
+        flex-direction: column;
+        position: relative;
+      }
+
+      .purple-whitening-toothpaste .instant-brightening {
+        background-color: transparent;
+        position: relative;
+      }
+
+      .purple-whitening-toothpaste .it-works-with-both-android-and-i-phone {
+        align-self: stretch;
+        background-color: transparent;
+        color: var(--black-0b0b0b80);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18.2px;
+        position: relative;
+        text-align: left;
+      }
+
+      .purple-whitening-toothpaste .line {
+        align-self: stretch;
+        background-color: transparent;
+        object-fit: cover;
+        position: relative;
+      }
+
+      .purple-whitening-toothpaste .no-peroxide-and-baking-soda {
+        background-color: transparent;
+        position: relative;
+      }
+
+      .purple-whitening-toothpaste .offer {
+        align-items: center;
+        display: flex;
+        flex: 0 0 auto;
+        position: relative;
+      }
+
+      .purple-whitening-toothpaste .rating {
+        background-color: transparent;
+        flex: 0 0 auto;
+        position: relative;
+      }
+
+      .purple-whitening-toothpaste .review {
+        align-items: flex-start;
+        background-color: var(--white-ffffffall-grayf7);
+        border: 1px solid;
+        border-color: var(--white-ffffffall-graye6);
+        border-radius: 20px;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 16px;
+        margin-left: -1.00px;
+        margin-right: -1.00px;
+        padding: 15px;
+        position: relative;
+        /* width: 372px; */
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .review_-img-or-video {
+        border-radius: 20px;
+        height: 170px;
+        position: relative;
+        /* width: 340px; */
+        width: 100%;
+        overflow: hidden;
+      }
+      .purple-whitening-toothpaste .review_-img-or-video video {
+        width: 100%;
+        position: absolute;
+        top: -50%;
+        left: 0;
+      }
+
+      .purple-whitening-toothpaste .reviews {
+        background-color: transparent;
+        position: relative;
+      }
+
+      .purple-whitening-toothpaste .safe-for-daily-use {
+        background-color: transparent;
+        position: relative;
+      }
+
+      .purple-whitening-toothpaste .sample-text {
+        background-color: transparent;
+        font-style: normal;
+        position: relative;
+        white-space: nowrap;
+        width: fit-content;
+      }
+
+      .purple-whitening-toothpaste .shipping {
+        align-items: flex-start;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        position: relative;
+      }
+
+      .purple-whitening-toothpaste .slider {
+        background-color: transparent;
+        flex: 0 0 auto;
+        position: relative;
+      }
+
+      .purple-whitening-toothpaste .this-is-just-a-piece {
+        align-self: stretch;
+        background-color: transparent;
+        color: var(--black-0b0b0b80);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18.2px;
+        position: relative;
+        text-align: left;
+      }
+
+      .purple-whitening-toothpaste .txt {
+        background-color: transparent;
+        flex-direction: column;
+        position: relative;
+      }
+
+      .purple-whitening-toothpaste .user {
+        background-color: transparent;
+        color: var(--black-182028100);
+        font-style: normal;
+        font-weight: 500;
+        height: 16px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+        white-space: nowrap;
+        width: 91px;
+      }
+
+      .purple-whitening-toothpaste .video {
+        align-self: stretch;
+        background-color: transparent;
+        position: relative;
+        width: 100%;
+      }
+
+      .purple-whitening-toothpaste .view {
+        background-color: transparent;
+        height: 12px;
+        position: relative;
+        width: 100px;
+      }
+
+      .purple-whitening-toothpaste .x {
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent;
+        background: linear-gradient(180deg, rgb(161.0000056028366, 127.00000002980232, 224.000001847744) 0%, rgb(93.00000205636024, 38.0000015348196, 193.00000369548798) 100%);
+        background-clip: text;
+        background-color: transparent;
+        color: transparent;
+        font-family: var(--font-family-montserrat);
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 0.00px;
+        line-height: 41.6px;
+        position: relative;
+        text-align: left;
+        /* text-fill-color: transparent; */
+        white-space: nowrap;
+        width: fit-content;
+      }
+
+      .purple-whitening-toothpaste .x0 {
+        background-color: transparent;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15.6px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+        white-space: nowrap;
+        width: fit-content;
+      }
+
+      .purple-whitening-toothpaste .x00 {
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent;
+        background: linear-gradient(180deg, rgb(161.0000056028366, 127.00000002980232, 224.000001847744) 0%, rgb(93.00000205636024, 38.0000015348196, 193.00000369548798) 100%);
+        background-clip: text;
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 33.0px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+        /* text-fill-color: transparent; */
+        white-space: nowrap;
+        width: fit-content;
+      }
+
+      .purple-whitening-toothpaste .x9th-sep-2023 {
+        background-color: transparent;
+        color: var(--useddark-gray);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 13.0px;
+        position: relative;
+        text-align: left;
+        white-space: nowrap;
+        width: fit-content;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body style="margin: 0;background: #ffffff;">
+    <div class="container-center-horizontal">
+      <div class="purple-whitening-toothpaste screen " data-id="868:6560">
+        <div class="content-hWgV15 content" data-id="872:10358">
+          <div class="product-GVGhEx" data-id="868:6570">
+            <div class="offer-3qpnkC offer" data-id="868:6571">
+              <div class="header-xmalWx header" data-id="868:6572">
+                <div class="offer-WYy7aL offer" data-id="868:6573">
+                  <p class="flash-sale-in-countr-iWHvXf" data-id="868:6574">Flash Sale in UK: Free 2-3 Day express delivery!</p>
+                </div>
+                <div class="header-WYy7aL header" data-id="872:11577">
+                  <div class="logo-9Mvoxx" data-id="872:11582">
+                    <img class="img-aeeO8q" data-id="872:11583" src="./img/img-3@2x.png" anima-src="./img/img-3@2x.png" alt="Img">
+                    <img class="group-aeeO8q" data-id="872:11584" src="./img/group-@2x.png" anima-src="./img/group-@2x.png" alt="Group ">
+                  </div>
+                  <div class="menu-9Mvoxx" data-id="872:11595">
+                    <div class="reviews-qn6SWW reviews robototextprimary1" data-id="872:11579">Reviews</div>
+                    <div class="faq-qn6SWW robototextprimary1" data-id="872:11580">FAQ</div>
+                    <div class="contact-us-qn6SWW robototextprimary1" data-id="872:11581">Contact Us</div>
+                  </div>
+                </div>
+              </div>
+              <div class="img-xmalWx" data-id="868:6717">
+                <img class="c-img-xmalWx-image" src="./img/img.png" anima-src="./img/img.png" alt="png">
+                <div class="c-img-xmalWx-prices">
+                  <div class="c-img-xmalWx-prices-text">
+                    <h2 class="c-img-xmalWx-prices-text-h2">V34 instant teeth brightener</h2>
+                  </div>
+                  <div class="c-img-xmalWx-prices-items">
+                    <p class="c-img-xmalWx-prices-items-old">£30</p>
+                    <p class="c-img-xmalWx-prices-items-new">£3.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="trustpilot-xmalWx" data-id="868:6702">
+                <div class="rating-ykDHvP rating" data-id="868:6703">
+                  <div class="excellent-495-uxskD7" data-id="868:6704">Excellent 4.9/5</div>
+                </div>
+                <img class="logo-white-1-ykDHvP" data-id="868:6705" src="./img/logo-white-1.svg" anima-src="./img/logo-white-1.svg" alt="logo-white 1">
+                <div class="best-selling-ykDHvP" data-id="868:6708">Best Selling</div>
+              </div>
+              <img class="img-g1xEhx" data-id="868:6697" src="./img/img-1.png" anima-src="./img/img-1.png" alt="Img">
+              <div class="img_-slider-xmalWx img_-slider" data-id="872:8738-d65b73a1-ac89-4745-9d95-beefcbbb699c">
+
+                <!-- Swiper -->
+
+                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide c-swiper-mySwiper2">
+                      <img class="c-swiper-mySwiper2-img" id="slider-0" src="./img/slider-1.png" />
+                    </div>
+                    <div class="swiper-slide c-swiper-mySwiper2">
+                      <img class="c-swiper-mySwiper2-img" id="slider-1" src="./img/slider-1-2.png" />
+                    </div>
+                    <div class="swiper-slide c-swiper-mySwiper2">
+                      <img class="c-swiper-mySwiper2-img" id="slider-2" src="./img/slider-1-3.png" />
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-pagination c-swiper-pagination"></div>
+                </div>
+                
+                <!-- Swiper JS -->
+
+              </div>
+              <div class="about-xmalWx" data-id="868:6582">
+                <div class="product-name-reviews-EITDHM" data-id="868:6583">
+                  <div class="v34-colour-corrector-serum-PKHbV9" data-id="868:6584">V34 Colour Corrector Serum</div>
+                  <div class="reviews-PKHbV9 reviews" data-id="868:6585">
+                    <img class="stars-zO4wfv" data-id="868:6586" src="./img/stars.svg" anima-src="./img/stars.svg" alt="Stars">
+                    <div class="x478-361-reviews-zO4wfv gilroytextprimary1" data-id="868:6597">4.78 (361 reviews)</div>
+                  </div>
+                </div>
+                <p class="v34-is-a-purple-toot-EITDHM robototextprimary2" data-id="868:6601">V34 is a purple toothpaste which is a combination of red and blue dye. When this purple paste combines with yellow stains it actually gives a whitish appearance. <br>it work on the surface of your teeth not penetrating deep into the enamel therefore it is 100% safe even for sensitive teeth </p>
+                <div class="frame-EITDHM" data-id="872:9070">
+                  <div class="colour-correcting-technology-7zATal colour-correcting-technology" data-id="872:9088">
+                    <img class="component-1" data-id="872:9116" src="./img/component-1.svg" anima-src="./img/component-1.svg" alt="Component 1">
+                    <div class="colour-correcting-technology-eSZhU5 colour-correcting-technology robototextprimary2" data-id="872:9101">Colour correcting technology</div>
+                  </div>
+                  <img class="line-7zATal line" data-id="872:9080" src="./img/line-.svg" anima-src="./img/line-.svg" alt="Line ">
+                  <div class="no-peroxide-and-baking-soda-7zATal no-peroxide-and-baking-soda" data-id="872:9081">
+                    <img class="component-1" data-id="872:9130" src="./img/component-1-1.svg" anima-src="./img/component-1-1.svg" alt="Component 1">
+                    <p class="no-peroxide-and-baking-soda-xFxSJi no-peroxide-and-baking-soda robototextprimary2" data-id="872:9086">No Peroxide and Baking Soda</p>
+                  </div>
+                  <img class="line-2tAeZj line" data-id="872:9087" src="./img/line-.svg" anima-src="./img/line-.svg" alt="Line ">
+                  <div class="instant-brightening-7zATal instant-brightening" data-id="872:9071">
+                    <img class="component-1" data-id="872:9137" src="./img/component-1-2.svg" anima-src="./img/component-1-2.svg" alt="Component 1">
+                    <div class="instant-brightening-U9lwAi instant-brightening robototextprimary2" data-id="872:9079"> Instant brightening</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="buy-3qpnkC" data-id="868:6617">
+              <div class="price-sale-RCogGP" data-id="870:8252">
+                <div class="sale-CMqMYR" data-id="870:8253">
+                  <div class="x90-off-U7REim" data-id="870:8254">90% OFF</div>
+                </div>
+                <div class="price-CMqMYR" data-id="870:8255">
+                  <div class="x30-jPexXn" data-id="870:8256">£30</div>
+                  <h1 class="x300-jPexXn" data-id="870:8257">£3.00</h1>
+                </div>
+              </div>
+              <a href="" class="button_1-RCogGP button_1" id="button1" data-id="870:8283">
+                <div class="sample-text-Q1Lnqd sample-text" data-id="I870:8283;870:8260">BUY NOW</div>
+              </a>
+              <img class="pay-services-RCogGP" data-id="868:6620" src="./img/pay-services-.svg" anima-src="./img/pay-services-.svg" alt="Pay services ">
+              <div class="sales-end-RCogGP" data-id="868:6618">
+                <div class="txt-Spjq2A txt" data-id="I868:6618;541:974">
+                  <div class="hurry-up-qtKB8n" data-id="I868:6618;541:975">Hurry up!</div>
+                  <div class="sales-end-in-qtKB8n" data-id="I868:6618;541:976">Sales end in:</div>
+                </div>
+                <div class="frame-Spjq2A" data-id="I868:6618;541:977">
+                  <div class="frame-t6Z3Ca" data-id="I868:6618;541:978">
+                    <div class="txt-lZBdrG txt" data-id="I868:6618;541:979">
+                      <div class="x00 roboto-bold-white-30px" data-id="I868:6618;541:980"><span class="hour">01</span></div>
+                      <div class="hours-lmmSMS gilroyh4caps" data-id="I868:6618;541:981">Hours</div>
+                    </div>
+                  </div>
+                  <div class="x" data-id="I868:6618;541:982">:</div>
+                  <div class="frame-99rKhX" data-id="I868:6618;541:983">
+                    <div class="txt-LQ6wNd txt" data-id="I868:6618;541:984">
+                      <div class="x00 roboto-bold-white-30px" data-id="I868:6618;541:985"><span class="minu">59</span></div>
+                      <div class="minutes-EGBWVe gilroyh4caps" data-id="I868:6618;541:986">Minutes</div>
+                    </div>
+                  </div>
+                  <div class="x" data-id="I868:6618;541:987">:</div>
+                  <div class="frame-xi6d9W" data-id="I868:6618;541:988">
+                    <div class="txt-gxtgHq txt" data-id="I868:6618;541:989">
+                      <div class="x00 roboto-bold-white-30px" data-id="I868:6618;541:990"><span class="seco">57</span></div>
+                      <div class="seconds-6FYsqK gilroyh4caps" data-id="I868:6618;541:991">Seconds</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shipping-3qpnkC shipping" data-id="872:9140">
+              <div class="product-details-pa4WoG robotoh2" data-id="872:9141">Product details</div>
+              <div class="content-pa4WoG content" data-id="872:9142">
+                <article class="shipping-hit42i shipping accordion" data-id="872:9861">
+                  <div class="frame-v0dfKg" data-id="I872:9861;872:9833">
+                    <div class="free-shipping" data-id="I872:9861;872:9834">
+                      <img class="icons-icon" data-id="I872:9861;872:9852" src="./img/icons-icon.svg" anima-src="./img/icons-icon.svg" alt="Icons/Icon">
+                      <div class="free-shipping-in-country robotoh3" data-id="I872:9861;872:9836">Free shipping in UK</div>
+                    </div>
+                    <img class="close-1tIrin close accordion-arrow" data-id="I872:9861;872:9837" src="./img/close.svg" anima-src="https://cdn.animaapp.com/projects/658abb6470e6cc99f45224c4/releases/659fb351ae2885e9b90b21f0/img/close.svg" alt="Close">
+                  </div>
+                  <p class="all-purchases-are-sh robototextprimary2" data-id="I872:9861;872:9731">All purchases are shipped from our warehouse in UK and are fully insured with a tracking number. Tracked delivery between 2 - 4 days in UK + Free Delivery</p>
+                </article>
+                <article class="shipping-KzKAcd shipping accordion" data-id="872:9876">
+                  <div class="frame-JWFXYt" data-id="I872:9876;872:9833">
+                    <div class="free-shipping" data-id="I872:9876;872:9834">
+                      <img class="icons-icon" data-id="I872:9876;872:9852" src="./img/icons-icon-1.svg" anima-src="./img/icons-icon-1.svg" alt="Icons/Icon">
+                      <div class="free-shipping-in-country robotoh3" data-id="I872:9876;872:9836">100% money-back guarantee</div>
+                    </div>
+                    <img class="close-CD5xcu close accordion-arrow" data-id="I872:9876;872:9837" src="./img/close.svg" anima-src="https://cdn.animaapp.com/projects/658abb6470e6cc99f45224c4/releases/659fb351ae2885e9b90b21f0/img/close.svg" alt="Close">
+                  </div>
+                  <p class="all-purchases-are-sh robototextprimary2" data-id="I872:9876;872:9731">If you're not satisfied with your Case, we offer a 100% Money Back Guarantee. No Questions Asked</p>
+                </article>
+                <article class="shipping-eY7gtr shipping accordion" data-id="872:9900">
+                  <div class="frame-zwLU5y" data-id="I872:9900;872:9833">
+                    <div class="free-shipping" data-id="I872:9900;872:9834">
+                      <img class="icons-icon" data-id="I872:9900;872:9852" src="./img/icons-icon-2.svg" anima-src="./img/icons-icon-2.svg" alt="Icons/Icon">
+                      <div class="free-shipping-in-country robotoh3" data-id="I872:9900;872:9836">5 years warranty</div>
+                    </div>
+                    <img class="close-pGvXvG close accordion-arrow" data-id="I872:9900;872:9837" src="./img/close.svg" anima-src="https://cdn.animaapp.com/projects/658abb6470e6cc99f45224c4/releases/659fb351ae2885e9b90b21f0/img/close.svg" alt="Close">
+                  </div>
+                  <p class="all-purchases-are-sh robototextprimary2" data-id="I872:9900;872:9731">Our product is guaranteed for 5 years from the date of your purchase. <br>For more information, please contact our team </p>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-product-GVGhEx" id="scro" data-id="872:10049">
+            <div class="frame-VZPJLb" data-id="872:10066">
+              <div class="video-H2Kjpf video" data-id="872:10067">
+                <p class="we-found-the-perfect-mgKeVU robotoh2" data-id="872:10068">We found the perfect shade of deep violet purple, that neutralises yellow</p>
+                <div class="c-video-H2Kjpf-bg"></div>
+                <video muted loop autoplay playsinline>
+                  <source src="./video/top.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="applying-purple-to-y-H2Kjpf applying-purple-to-y" data-id="872:10083">
+                <p class="applying-purple-to-y-ESobVM applying-purple-to-y robototextprimary2" data-id="872:10070"> Applying purple to your teeth neutralises the yellow undertones, making them less visible and revealing a brighter shade of white. Cool, huh?</p>
+                <img class="fi_743287-ESobVM" data-id="872:10071" src="./img/fi-743287.png" anima-src="./img/fi-743287.png" alt="fi_743287">
+              </div>
+            </div>
+            <div class="frame-8zsTMG" data-id="872:10084">
+              <div class="gain-your-confidence-seUqGl gain-your-confidence" data-id="872:10085">
+                <div class="img-aKxY1a" data-id="872:10096">
+                  <video muted loop autoplay playsinline>
+                    <source src="./video/top-2.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="txt-13rpBX txt" data-id="872:10087">
+                  <p class="gain-your-confidence-wOxaZE gain-your-confidence robotoh3" data-id="872:10088">Gain your confidence back in 2 minutes a day</p>
+                  <p class="v34-removes-years-of-wOxaZE robototextprimary1" data-id="872:10089">V34 Removes years of stains by utilizing color-correcting technology.&nbsp;&nbsp;Say goodbye to tobacco, wine, coffee and tea stains</p>
+                </div>
+              </div>
+              <div class="enamel-protection-seUqGl enamel-protection" data-id="872:10095">
+                <div class="txt-aKxY1a txt" data-id="872:10097">
+                  <div class="enamel-protection-pftU4Y enamel-protection robotoh3" data-id="872:10098">Enamel protection </div>
+                  <p class="non-invasive-and-per-pftU4Y robototextprimary1" data-id="872:10099">non-invasive and peroxide-free whitening treatment will not cause any damage to your enamel</p>
+                </div>
+                <div class="img-aKxY1a" data-id="872:10096">
+                  <video muted loop autoplay playsinline>
+                    <source src="./video/top-1.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+            <div class="frame-VW47Rg" data-id="872:10142">
+              <div class="dentists-approved-J9wYQR dentists-approved" data-id="872:10190">
+                <img class="illustration" data-id="872:10195" src="./img/illustration.svg" anima-src="./img/illustration.svg" alt="Illustration">
+                <div class="txt-9TrUGp txt" data-id="872:10191">
+                  <div class="dentists-approved-FbLPM0 dentists-approved robotoh3" data-id="872:10192">Dentists approved </div>
+                  <p class="it-works-on-the-surf-FbLPM0 robototextprimary1" data-id="872:10193">It works on the surface of your teeth not penetrating deep into the enamel therefore it is 100% safe even for sensitive teeth</p>
+                </div>
+              </div>
+              <div class="safe-for-daily-use-J9wYQR safe-for-daily-use" data-id="872:10206">
+                <div class="txt-A3aXZj txt" data-id="872:10216">
+                  <div class="safe-for-daily-use-Wxv2yB safe-for-daily-use robotoh3" data-id="872:10217">Safe for daily use</div>
+                  <p class="v34-is-very-gentle-t-Wxv2yB robototextprimary1" data-id="872:10218">V34 is very gentle to any type of teeth, which makes it a perfect addiction to your oral care routine</p>
+                </div>
+                <img class="illustration" data-id="872:10219" src="./img/illustration-1.png" anima-src="./img/illustration-1.png" alt="Illustration">
+              </div>
+            </div>
+            <div class="how-to-use-it-VZPJLb how-to-use-it" data-id="872:10124">
+              <div class="txt-nTGKWV txt" data-id="872:10125">
+                <div class="how-to-use-it-ilxbx2 how-to-use-it robotoh2" data-id="872:10126">How to use it?</div>
+                <p class="directly-apply-the-v-ilxbx2 robototextprimary1" data-id="872:10127">Directly apply the V34 serum with a cotton swab, or brush your teeth for a better result. it is important to gently polish the serum onto your teeth, specifically focusing on the spots that are the most yellow</p>
+              </div>
+              <div class="img_-slider-nTGKWV img_-slider" data-id="872:10289">
+
+                <!-- Swiper -->
+                <div class="swiper mySwiper" style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff">
+                  <div class="swiper-wrapper c-mySwiper">
+                    <div class="swiper-slide">
+                      <video class="c-slider-2-video" muted loop autoplay playsinline>
+                        <source src="./video/slider-1.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                    <div class="swiper-slide">
+                      <video class="c-slider-2-video" muted loop autoplay playsinline>
+                        <source src="./video/slider-2.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-pagination-2 c-swiper-pagination-2"></div>
+                </div>
+                <!-- Swiper JS -->
+
+
+              </div>
+            </div>
+          </div>
+          <div class="fa-qs-GVGhEx fa-qs" data-id="872:10443">
+            <div class="fa-qs-QDGij8 fa-qs" data-id="872:10444">FAQs</div>
+            <div class="content-QDGij8 content" data-id="872:10445">
+              <article class="faq-WO4umf accordion-faq" data-id="872:10446">
+                <div class="frame-15AVVh" data-id="I872:10446;872:10308">
+                  <p class="does-it-work-with-ios robotoh3" data-id="I872:10446;872:10309">How often should I use the serum for the best results?</p>
+                  <img class="close-m24PFr close close-arrow" data-id="I872:10446;872:10317" src="./img/close-3.svg" anima-src="./img/close-3.svg" alt="Close">
+                </div>
+                <img class="line-15AVVh line" data-id="I872:10446;872:10313" src="./img/line-(1).svg" anima-src="https://cdn.animaapp.com/projects/658abb6470e6cc99f45224c4/releases/659fb351ae2885e9b90b21f0/img/line-.svg" alt="Line ">
+                <p class="it-works-with-both-android-and-i-phone robototextprimary2" data-id="I872:10446;872:10314"> For optimal results, it is typically recommended to use the serum daily, following the instructions provided with the product</p>
+              </article>
+              <article class="faq-Tyn790 accordion-faq" data-id="872:10447">
+                <div class="frame-F1Lohl" data-id="I872:10447;872:10308">
+                  <p class="does-it-work-with-ios robotoh3" data-id="I872:10447;872:10309">Can the serum be used on dental work such as veneers, crowns, or fillings?</p>
+                  <img class="close-YpDi9c close close-arrow" data-id="I872:10447;872:10317" src="./img/close-3.svg" anima-src="./img/close-3.svg" alt="Close">
+                </div>
+                <img class="line-F1Lohl line" data-id="I872:10447;872:10313" src="./img/line-(1).svg" anima-src="https://cdn.animaapp.com/projects/658abb6470e6cc99f45224c4/releases/659fb351ae2885e9b90b21f0/img/line-.svg" alt="Line ">
+                <p class="it-works-with-both-android-and-i-phone robototextprimary2" data-id="I872:10447;872:10314"> The serum is designed for use on natural teeth. It might not have the same whitening effect on dental work like veneers, crowns, or fillings. It's always best to consult your dentist for advice</p>
+              </article>
+              <article class="faq-7rI7PV accordion-faq" data-id="872:10448">
+                <div class="frame-LJZ11t" data-id="I872:10448;872:10308">
+                  <p class="does-it-work-with-ios robotoh3" data-id="I872:10448;872:10309">How long does it take to see results from the V34 HiSmile Teeth Whitening Serum?</p>
+                  <img class="close-XxNRx7 close close-arrow" data-id="I872:10448;872:10317" src="./img/close-3.svg" anima-src="./img/close-3.svg" alt="Close">
+                </div>
+                <img class="line-LJZ11t line" data-id="I872:10448;872:10313" src="./img/line-(1).svg" anima-src="https://cdn.animaapp.com/projects/658abb6470e6cc99f45224c4/releases/659fb351ae2885e9b90b21f0/img/line-.svg" alt="Line ">
+                <p class="it-works-with-both-android-and-i-phone robototextprimary2" data-id="I872:10448;872:10314"> Results can vary depending on your initial tooth color and the type of staining. most users see noticeable results after the first applications</p>
+              </article>
+              <article class="faq-mgxQUf accordion-faq" data-id="872:10449">
+                <div class="frame-Tl4zds" data-id="I872:10449;872:10308">
+                  <p class="does-it-work-with-ios robotoh3" data-id="I872:10449;872:10309">How long does one bottle of the serum last?</p>
+                  <img class="close-IbdywS close close-arrow" data-id="I872:10449;872:10317" src="./img/close-3.svg" anima-src="./img/close-3.svg" alt="Close">
+                </div>
+                <img class="line-Tl4zds line" data-id="I872:10449;872:10313" src="./img/line-(1).svg" anima-src="https://cdn.animaapp.com/projects/658abb6470e6cc99f45224c4/releases/659fb351ae2885e9b90b21f0/img/line-.svg" alt="Line ">
+                <p class="it-works-with-both-android-and-i-phone robototextprimary2" data-id="I872:10449;872:10314"> The duration a bottle lasts depends on your usage frequency. Typically, a bottle can last for several weeks when used as directed</p>
+              </article>
+              <article class="faq-M7FQCG accordion-faq" data-id="872:10450">
+                <div class="frame-lEUxND" data-id="I872:10450;872:10308">
+                  <p class="does-it-work-with-ios robotoh3" data-id="I872:10450;872:10309">Can the serum remove all types of stains from the teeth?</p>
+                  <img class="close-84fjBA close close-arrow" data-id="I872:10450;872:10317" src="./img/close-3.svg" anima-src="./img/close-3.svg" alt="Close">
+                </div>
+                <img class="line-lEUxND line" data-id="I872:10450;872:10313" src="./img/line-(1).svg" anima-src="https://cdn.animaapp.com/projects/658abb6470e6cc99f45224c4/releases/659fb351ae2885e9b90b21f0/img/line-.svg" alt="Line ">
+                <p class="it-works-with-both-android-and-i-phone robototextprimary2" data-id="I872:10450;872:10314">The serum is effective in removing many common surface stains caused by food, drink, and tobacco. However, it may be less effective on discoloration caused by certain medications or dental trauma</p>
+              </article>
+            </div>
+          </div>
+          <div class="customer-reviews-GVGhEx" data-id="872:10481">
+            <div class="customer-reviews-F1aaYL robotoh2" data-id="872:11139">Customer Reviews</div>
+            <div class="customer-reviews-TAuQx4" data-id="872:10482">
+              <div class="based-on-0SExYF" data-id="872:11140">
+                <div class="based-on-60-reviews-z9heI3 robototextprimary1" data-id="872:11141">Based on 60 reviews</div>
+                <div class="rating-z9heI3 rating" data-id="872:11142">
+                  <div class="frame-MaagLL" data-id="872:11143">
+                    <div class="frame-odJkcb" data-id="872:11144">
+                      <img class="rating" data-id="872:11145" src="./img/rating-4.svg" anima-src="./img/rating-4.svg" alt="Rating">
+                      <div class="view" data-id="872:11146">
+                        <div class="rectangle-XCZhNF" data-id="872:11147"></div>
+                        <div class="rectangle-pNdMN4" data-id="872:11148"></div>
+                      </div>
+                      <div class="x85-HGyxZu robototextprimary1" data-id="872:11149">85%</div>
+                    </div>
+                    <div class="x51-odJkcb robototextprimary1" data-id="872:11150">(51)</div>
+                  </div>
+                  <div class="frame-VzxWW8" data-id="872:11151">
+                    <div class="frame-FL2TK6" data-id="872:11152">
+                      <img class="rating" data-id="872:11153" src="./img/rating-5.svg" anima-src="./img/rating-5.svg" alt="Rating">
+                      <div class="view" data-id="872:11154">
+                        <div class="rectangle-I7f8Kf" data-id="872:11155"></div>
+                        <div class="rectangle-UohpZD" data-id="872:11156"></div>
+                      </div>
+                      <div class="x15-GKxsWx robototextprimary1" data-id="872:11157">15%</div>
+                    </div>
+                    <div class="x9-FL2TK6 robototextprimary1" data-id="872:11158">(9)</div>
+                  </div>
+                  <div class="frame-ZxAnxg" data-id="872:11159">
+                    <div class="frame-g9c1KQ" data-id="872:11160">
+                      <img class="rating" data-id="872:11161" src="./img/rating-6.svg" anima-src="./img/rating-6.svg" alt="Rating">
+                      <div class="view" data-id="872:11162">
+                        <div class="rectangle-lf6TK0" data-id="872:11163"></div>
+                        <div class="rectangle-DJ3IjQ" data-id="872:11164"></div>
+                      </div>
+                      <div class="x0-EkQ6IB x0 robototextprimary1" data-id="872:11165">0%</div>
+                    </div>
+                    <div class="x0-g9c1KQ x0 robototextprimary1" data-id="872:11166">(0)</div>
+                  </div>
+                  <div class="frame-FvM9IN" data-id="872:11167">
+                    <div class="frame-vOY2pL" data-id="872:11168">
+                      <img class="rating" data-id="872:11169" src="./img/rating-7.svg" anima-src="./img/rating-7.svg" alt="Rating">
+                      <div class="view" data-id="872:11170">
+                        <div class="rectangle-iCMsed" data-id="872:11171"></div>
+                        <div class="rectangle-4cr0xy" data-id="872:11172"></div>
+                      </div>
+                      <div class="x0-ycRErA x0 robototextprimary1" data-id="872:11173">0%</div>
+                    </div>
+                    <div class="x0-vOY2pL x0 robototextprimary1" data-id="872:11174">(0)</div>
+                  </div>
+                  <div class="frame-2OnXS6" data-id="872:11175">
+                    <div class="frame-ld27cU" data-id="872:11176">
+                      <img class="rating" data-id="872:11177" src="./img/rating-8.svg" anima-src="./img/rating-8.svg" alt="Rating">
+                      <div class="view" data-id="872:11178">
+                        <div class="rectangle-SSKqZR" data-id="872:11179"></div>
+                        <div class="rectangle-2NXKWD" data-id="872:11180"></div>
+                      </div>
+                      <div class="x0-xYz9Jc x0 robototextprimary1" data-id="872:11181">0%</div>
+                    </div>
+                    <div class="x0-ld27cU x0 robototextprimary1" data-id="872:11182">(0)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reviews-F1aaYL reviews" data-id="872:10523">
+              <div class="review-F5uChk review" data-id="872:10740">
+                <div class="txt-qYmHKz txt" data-id="872:10741">
+                  <div class="frame-rD6FMg" data-id="I872:10741;504:3417">
+                    <div class="txt-AFKHRw txt" data-id="I872:10741;504:3418">
+                      <div class="user-cwhwYZ user robotoh3" data-id="I872:10741;504:3419">M.D.</div>
+                      <div class="x9th-sep-2023 valign-text-middle robotocaption" data-id="I872:10741;504:3421">10th Jan 2024</div>
+                    </div>
+                    <img class="rating" data-id="I872:10741;506:818" src="./img/rating-9.svg" anima-src="./img/rating-9.svg" alt="Rating">
+                  </div>
+                  <p class="this-is-just-a-piece robototextprimary2" data-id="I872:10741;504:3436">Great product! I saw visible results in just two usages. I love that it doesn't have a strong taste and it's gentle on my gums. Will definitely continue using it.</p>
+                </div>
+                <div class="review_-img-or-video-qYmHKz review_-img-or-video" data-id="872:11327-9357c74a-71d3-4b12-b987-0bdb14c7e4a7"></div>
+              </div>
+              <div class="review" data-id="872:11234">
+                <div class="txt-35OxOW txt" data-id="872:11235">
+                  <div class="frame-ovkVmK" data-id="I872:11235;504:3417">
+                    <div class="txt-ZrAuj2 txt" data-id="I872:11235;504:3418">
+                      <div class="user-MDNasj user robotoh3" data-id="I872:11235;504:3419">User</div>
+                      <div class="x9th-sep-2023 valign-text-middle robotocaption" data-id="I872:11235;504:3421">4th Jan 2024</div>
+                    </div>
+                    <img class="rating" data-id="I872:11235;506:818" src="./img/rating-10.svg" anima-src="./img/rating-10.svg" alt="Rating">
+                  </div>
+                  <p class="this-is-just-a-piece robototextprimary2" data-id="I872:11235;504:3436">Impressive results! As a coffee drinker, I had some stubborn stains, and this serum helped lighten them significantly. It’s become a staple in my daily routine."</p>
+                </div>
+                <div class="review_-img-or-video-35OxOW review_-img-or-video" data-id="872:11364">
+                  <!-- <div class="play-PfwURc" data-id="872:11365">
+                    <div class="ellipse-ka9FmL" data-id="872:11366"></div>
+                    <img class="polygon-ka9FmL" data-id="872:11367" src="./img/polygon-.svg" anima-src="./img/polygon-.svg" alt="Polygon ">
+                  </div> -->
+                  <video loop muted autoplay playsinline>
+                    <source src="./video/review-1.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+              <div class="review" data-id="872:11257">
+                <div class="txt-RdqWuE txt" data-id="872:11258">
+                  <div class="frame-baX20e" data-id="I872:11258;504:3417">
+                    <div class="txt-i9JJVk txt" data-id="I872:11258;504:3418">
+                      <div class="user-f1JEjM user robotoh3" data-id="I872:11258;504:3419">Jess A.</div>
+                      <div class="x9th-sep-2023 valign-text-middle robotocaption" data-id="I872:11258;504:3421">1th Jan 2024</div>
+                    </div>
+                    <img class="rating" data-id="I872:11258;506:818" src="./img/rating-11.svg" anima-src="./img/rating-11.svg" alt="Rating">
+                  </div>
+                  <p class="this-is-just-a-piece robototextprimary2" data-id="I872:11258;504:3436">The serum is okay. It's convenient to use, but the results aren't as dramatic as I hoped for. My teeth are a bit whiter, but not the 'Hollywood smile' I was expecting</p>
+                </div>
+                <img class="video-RdqWuE video" data-id="872:11259" src="./img/video.png" anima-src="./img/video.png" alt="Video">
+              </div>
+              <div class="review" data-id="872:11388">
+                <div class="txt-KcaC6A txt" data-id="872:11389">
+                  <div class="frame-Q2PkFL" data-id="I872:11389;504:3417">
+                    <div class="txt-fiVESo txt" data-id="I872:11389;504:3418">
+                      <div class="user-3nMWKv user robotoh3caps" data-id="I872:11389;504:3419">Jordan_8</div>
+                      <div class="x9th-sep-2023 valign-text-middle robotocaption" data-id="I872:11389;504:3421">3th Jan 2024</div>
+                    </div>
+                    <img class="rating" data-id="I872:11389;506:818" src="./img/rating-12.svg" anima-src="./img/rating-12.svg" alt="Rating">
+                  </div>
+                  <p class="this-is-just-a-piece robototextprimary2" data-id="I872:11389;504:3436">This is just a piece of art! You guys are making unbelievably good product, I can`t be happier with my purchase. Nothing was missed, jetpack,cat etc are here in the box. Thanks!</p>
+                </div>
+              </div>
+              <div class="review" data-id="872:11411">
+                <div class="txt-oBc28P txt" data-id="872:11412">
+                  <div class="frame-FVksGq" data-id="I872:11412;504:3417">
+                    <div class="txt-SNHhY2 txt" data-id="I872:11412;504:3418">
+                      <div class="user-B58sn5 user robotoh3caps" data-id="I872:11412;504:3419">Greg BN</div>
+                      <div class="x9th-sep-2023 valign-text-middle robotocaption" data-id="I872:11412;504:3421">9th Jan 2024</div>
+                    </div>
+                    <img class="rating" data-id="I872:11412;506:818" src="./img/rating-13.svg" anima-src="./img/rating-13.svg" alt="Rating">
+                  </div>
+                  <p class="this-is-just-a-piece robototextprimary2" data-id="I872:11412;504:3436">This is just a piece of art! You guys are making unbelievably good product, I can`t be happier with my purchase. Nothing was missed, jetpack,cat etc are here in the box. Thanks!</p>
+                </div>
+                <img class="video-oBc28P video" data-id="872:11413" src="./img/video-3.png" anima-src="./img/video-3.png" alt="Video">
+              </div>
+              <div class="review" data-id="872:11434">
+                <div class="txt-PomJog txt" data-id="872:11435">
+                  <div class="frame-bqpSJT" data-id="I872:11435;504:3417">
+                    <div class="txt-ksWw9z txt" data-id="I872:11435;504:3418">
+                      <div class="user-K7GQDd user robotoh3" data-id="I872:11435;504:3419">Lisa Lisa</div>
+                      <div class="x9th-sep-2023 valign-text-middle robotocaption" data-id="I872:11435;504:3421">9th Jan 2024</div>
+                    </div>
+                    <img class="rating" data-id="I872:11435;506:818" src="./img/rating.svg" anima-src="./img/rating.svg" alt="Rating">
+                  </div>
+                  <p class="this-is-just-a-piece robototextprimary2" data-id="I872:11435;504:3436">A solid choice for at-home teeth whitening. It’s affordable, easy to use, and effective, though not a quick fix. It's improved my smile for sure, but it required a week at least</p>
+                </div>
+                <img class="video-PomJog video" data-id="872:11436" src="./img/video-1.png" anima-src="./img/video-1.png" alt="Video">
+              </div>
+              <div class="review" data-id="872:11457">
+                <div class="txt-g4Pqxx txt" data-id="872:11458">
+                  <div class="frame-NmQz6C" data-id="I872:11458;504:3417">
+                    <div class="txt-vzOuam txt" data-id="I872:11458;504:3418">
+                      <div class="user-GxsWTL user robotoh3" data-id="I872:11458;504:3419">Mark W.</div>
+                      <div class="x9th-sep-2023 valign-text-middle robotocaption" data-id="I872:11458;504:3421">10th Jan 2024</div>
+                    </div>
+                    <img class="rating" data-id="I872:11458;506:818" src="./img/rating-1.svg" anima-src="./img/rating-1.svg" alt="Rating">
+                  </div>
+                  <p class="this-is-just-a-piece robototextprimary2" data-id="I872:11458;504:3436">I'm happy with this purchase. The serum doesn’t cause any sensitivity, and I can see my teeth getting brighter. And it doesn't contain any critical or toxic components which is extremely important for ecogolics like me haha</p>
+                </div>
+                <img class="video-g4Pqxx video" data-id="872:11459" src="./img/video-2.png" anima-src="./img/video-2.png" alt="Video">
+              </div>
+              <div class="review" data-id="872:11483">
+                <div class="txt-5qdEm3 txt" data-id="872:11484">
+                  <div class="frame-hLRsGP" data-id="I872:11484;504:3417">
+                    <div class="txt-7dyWCJ txt" data-id="I872:11484;504:3418">
+                      <div class="user-3XTUz9 user robotoh3" data-id="I872:11484;504:3419">Emily T.</div>
+                      <div class="x9th-sep-2023 valign-text-middle robotocaption" data-id="I872:11484;504:3421">12th Jan 2024</div>
+                    </div>
+                    <img class="rating" data-id="I872:11484;506:818" src="./img/rating-2.svg" anima-src="./img/rating-2.svg" alt="Rating">
+                  </div>
+                  <p class="this-is-just-a-piece robototextprimary2" data-id="I872:11484;504:3436">I like this whitening serum. It's gentle and doesn’t irritate my sensitive teeth. I’ve seen a gradual improvement, which is encouraging</p>
+                </div>
+              </div>
+              <div class="review-RNkTpx review" data-id="872:11480">
+                <div class="txt-EcLdeE txt" data-id="872:11481">
+                  <div class="frame-yuHzbC" data-id="I872:11481;504:3417">
+                    <div class="txt-7oef1T txt" data-id="I872:11481;504:3418">
+                      <div class="user-ZBLlia user robotoh3" data-id="I872:11481;504:3419">E. W.</div>
+                      <div class="x9th-sep-2023 valign-text-middle robotocaption" data-id="I872:11481;504:3421">6th Jan 2024</div>
+                    </div>
+                    <img class="rating" data-id="I872:11481;506:818" src="./img/rating-3.svg" anima-src="./img/rating-3.svg" alt="Rating">
+                  </div>
+                  <p class="this-is-just-a-piece robototextprimary2" data-id="I872:11481;504:3436">The serum is pretty good and easy to use, I definitely see the results. But the shipping actually took 5 days, which is a bit longer than I expected</p>
+                </div>
+              </div>
+            </div>
+            <div class="button_1-F1aaYL button_1" data-id="872:11528">
+              <div class="sample-text-lVWs0d sample-text robotobutton1" data-id="I872:11528;870:8262">LOAD MORE</div>
+            </div>
+            <!-- LOADER LOADER LOADER LOADER -->
+            <div class="progress" id="progress">
+              <div class="img-1"></div>
+              <div class="img-2"></div>
+              <div class="img-3"></div>
+            </div>
+            <!-- LOADER LOADER LOADER LOADER  -->
+          </div>
+          <footer class="footer-GVGhEx" data-id="872:11563">
+            <div class="content-VjSjE9 content" data-id="I872:11563;872:11532">
+              <p class="subscribe-to-our-e-mail-newsletter-hkDi07 robotoh2" data-id="I872:11563;872:11533">Subscribe to our e-mail newsletter</p>
+              <div class="input-button-hkDi07" data-id="I872:11563;872:11534">
+                <div class="input-o6hf4L" data-id="I872:11563;872:11535">
+                  <div class="sample-text-A2XnEp sample-text robototextprimary2" data-id="I872:11563;872:11536">E-mail </div>
+                </div>
+                <div class="button_1-o6hf4L button_1" data-id="I872:11563;872:11559">
+                  <div class="sample-text-6xJUxA sample-text robotobutton1" data-id="I872:11563;872:11559;870:8264"> SUBSCRIBE</div>
+                </div>
+              </div>
+              <div class="info-hkDi07" data-id="I872:11563;872:11538">
+                <p class="information-is-not-a-nSS96f robotocaption" data-id="I872:11563;872:11539">*Information is not a public offer <br>This site is not part of the Facebook or Facebook Inc. website. Also, this site is not endorsed by Facebook in any way FACEBOOK is a trademark of FACEBOOK, Inc. Facebook provides a platform for serving advertising, but the opinions and/or views expressed on this website are not </p>
+                <div class="hidden-text">
+                  <div class="text-1419 footer__info_text"> representative of Facebook, Inc. Opinions and/or views expressed on our website's social media platforms, including but not limited to our blogs and Facebook pages, represent the thoughts of individual bloggers and online communities, and not necessarily those of our website or any of its business partners, affiliates or any of their respective officers, employees, staff or board members. The views and opinions expressed on these pages do not in any way reflect the opinions of the site on which they are published, other sites affiliated with the site, the personnel involved in the maintenance of the site or any member of the site. Any opinions or views expressed on this website's social media platforms are not representative of Facebook, Inc. Although our website makes reasonable efforts to monitor and/or moderate content posted on its social media platforms, we do not moderate all comments and cannot always respond to online inquiries in a timely manner. All new customers are entered into the raffle for the displayed campaign product. If you are the lucky winner, you will be contacted directly by email. This special offer includes a three-day trial to an affiliated service, after which the subscription fee will be thirty-three euros every fourteen days - automatically deducted from your credit card. If for any reason you are not satisfied with the service, you can cancel your account within three days. The service will renew every thirty days until cancelled. This campaign will expire on December 31 of this year. If you would like to participate without signing up for a three-day trial at Toolsandtoys, please email.</div>
+                </div>
+                <div class="button_2-nSS96f" data-id="I872:11563;872:11540">
+                  <div class="sample-text-ol4cFe sample-text robotobutton2" data-id="I872:11563;872:11540;546:2175">Read more</div>
+                  <img class="line-ol4cFe line" data-id="I872:11563;872:11540;546:2176" src="./img/line-(2).svg" anima-src="./img/line-.svg" alt="Line ">
+                </div>
+                <div class="x2024-hi-smile-all-rights-reserved-nSS96f robotocaption" data-id="I872:11563;872:11541">@2024 HiSmile <br>All rights reserved </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+        <a href="" class="button_1-RCogGP button_1 fixed" id="button2" data-id="870:8283">
+          <div class="sample-text-Q1Lnqd sample-text" data-id="I870:8283;870:8260">BUY NOW</div>
+        </a>
+      </div>
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+
+
+    <div id="contentPopup"></div>
+
+    <script>
+        const contentPopup = document.getElementById("contentPopup");
+
+        var productImage = "./img/slider-1.png";
+        var productName = 'Purple Whitening toothpaste';
+
+        const styles = `.mainPopup{position: fixed;z-index: 129;box-sizing: border-box;overflow: visible;transition: transform 1s;font-family: Helvetica, Arial, sans-serif;letter-spacing: normal;line-height: 1.5;width: 360px;cursor: pointer;top: 50px;left: 0px;transform: translate(calc(-100% - 20px))}.mainPopup.activePopup{transform: translate(30px)}@media(max-width: 480px){.mainPopup.activePopup{transform: translate(0px)}}@media(max-width: 330px){.mainPopup{width: 95%;}}`;
+        const styleSheet = new CSSStyleSheet();
+        styleSheet.replaceSync(styles);
+        contentPopup.classList.add("mainPopup");
+        // Добавление стилей в документ
+        if("adoptedStyleSheets" in document) {
+            document.adoptedStyleSheets = [styleSheet];
+        } else {
+            // Для браузеров без поддержки adoptedStyleSheets
+            document.styleSheet[0].insertRule(styleSheet.cssRules[0].cssText);
+            document.styleSheet[0].insertRule(styleSheet.cssRules[1].cssText);
+            document.styleSheet[0].insertRule(styleSheet.cssRules[2].cssText);
+        }
+
+
+        function showPopup() {
+            const htmlPop = `
+              <style>._popContainer_1ukv4_1{position: relative;box-sizing: border-box;width: 100%;min-height: 96px;padding: 12px;border-radius: 4px;box-shadow: 0 0 10px 1px rgba(0, 0, 0, .1);font-size: 12px}._popContainer_1ukv4_1 ._icon_1ukv4_11{position: absolute;top: 4px;right: 4px;cursor: pointer}._popContainer_1ukv4_1 ._popContent_1ukv4_17{font-size: 12px}._popContainer_1ukv4_1 ._imgBack_1ukv4_20{display: inline-flex;align-items: center;justify-content: center;width: 64px;height: 64px;border-radius: 4px;vertical-align: middle}._popContainer_1ukv4_1 ._imgBack_1ukv4_20 ._contentImg_1ukv4_29{width: 64px;height: 64px;border-radius: 4px;vertical-align: middle;object-fit: contain}._popContainer_1ukv4_1 ._imgBack_1ukv4_20 ._defaultImg_1ukv4_36{display: inline-block;width: 24px;height: 24px;overflow: hidden;border-radius: 4px;vertical-align: middle}._popContainer_1ukv4_1 ._msg_1ukv4_44{display: inline-block;width: 250px;margin-left: 12px;vertical-align: middle}._popContainer_1ukv4_1 ._msg_1ukv4_44 ._title_1ukv4_50{display: -webkit-box;overflow: hidden;line-height: 16px;text-overflow: ellipsis;-webkit-line-clamp: 2;-webkit-box-orient: vertical}._popContainer_1ukv4_1 ._msg_1ukv4_44 ._lightTitle_1ukv4_58{width: 100%;max-height: 32px}._popContainer_1ukv4_1 ._msg_1ukv4_44 ._darkTitle_1ukv4_62{height: 32px;margin: 4px 0}._popContainer_1ukv4_1._dark_1ukv4_62{background-color: #242833;color: rgba(255, 255, 255, .5)}._popContainer_1ukv4_1._dark_1ukv4_62 ._imgBack_1ukv4_20{background: rgba(255, 255, 255, .2)}._popContainer_1ukv4_1._dark_1ukv4_62 ._msg_1ukv4_44 ._lightTitle_1ukv4_58{color: rgba(255, 255, 255, .5)}._popContainer_1ukv4_1._dark_1ukv4_62 ._msg_1ukv4_44 ._darkTitle_1ukv4_62{color: #fff}._popContainer_1ukv4_1._light_1ukv4_58{background-color: #fff;color: rgba(36, 40, 51, .5)}._popContainer_1ukv4_1._light_1ukv4_58 ._imgBack_1ukv4_20{background: #f7f8fb}._popContainer_1ukv4_1._light_1ukv4_58 ._msg_1ukv4_44 ._lightTitle_1ukv4_58{color: rgba(36, 40, 51, .5)}._popContainer_1ukv4_1._light_1ukv4_58 ._msg_1ukv4_44 ._darkTitle_1ukv4_62{color: #242833}._popMobileContainer_jb124_1{display: inline-block;position: relative;box-sizing: border-box;max-width: 100%;height: 36px;padding: 3px 12px 3px 3px;border: 1px solid rgba(255, 255, 255, .1);border-radius: 4px;box-shadow: 0 0 10px 1px rgba(0, 0, 0, .1);font-size: 12px}._popMobileContainer_jb124_1 ._popContent_jb124_13{font-size: 12px;white-space: nowrap}._popMobileContainer_jb124_1 ._imgBack_jb124_17{display: inline-flex;align-items: center;justify-content: center;width: 28px;height: 28px;border-radius: 4px;vertical-align: middle}._popMobileContainer_jb124_1 ._imgBack_jb124_17 ._contentImg_jb124_26{width: 28px;height: 28px;border-radius: 4px;vertical-align: middle;object-fit: contain}._popMobileContainer_jb124_1 ._imgBack_jb124_17 ._defaultImg_jb124_33{display: inline-block;width: 12px;height: 12px;overflow: hidden;border-radius: 4px;vertical-align: middle}._popMobileContainer_jb124_1 ._msg_jb124_41{display: inline-block;max-width: calc(100% - 24px);margin-left: 12px;vertical-align: middle}._popMobileContainer_jb124_1 ._msg_jb124_41 ._darkTitle_jb124_47{height: 16px;margin: 0;overflow: hidden;text-overflow: ellipsis}._popMobileContainer_jb124_1._dark_jb124_47{background: #242833;color: rgba(255, 255, 255, .5)}._popMobileContainer_jb124_1._dark_jb124_47 ._imgBack_jb124_17{background: rgba(255, 255, 255, .2)}._popMobileContainer_jb124_1._dark_jb124_47 ._msg_jb124_41 ._darkTitle_jb124_47{color: #fff}._popMobileContainer_jb124_1._light_jb124_63{background: #fff;color: rgba(36, 40, 51, .5)}._popMobileContainer_jb124_1._light_jb124_63 ._imgBack_jb124_17{background: #f7f8fb}._popMobileContainer_jb124_1._light_jb124_63 ._msg_jb124_41 ._darkTitle_jb124_47{color: #242833}._layout_1b782_1{position: fixed;z-index: 129;box-sizing: border-box;overflow: visible;transition: transform 1s;font-family: Helvetica, Arial, sans-serif;letter-spacing: normal;line-height: 1.5}._layout_1b782_1._pc_1b782_11{width: 360px;cursor: pointer}._layout_1b782_1._pc_1b782_11._top_1b782_15{top: 130px}._layout_1b782_1._pc_1b782_11._bottom_1b782_18{bottom: 30px}._layout_1b782_1._pc_1b782_11._right_1b782_21{right: 0;transform: translate(calc(100% 20px))}._layout_1b782_1._pc_1b782_11._right_1b782_21._active_1b782_25{transform: translate(-30px)}._layout_1b782_1._pc_1b782_11._left_1b782_28{left: 400px;transform: translate(calc(-100% - 20px))}._layout_1b782_1._pc_1b782_11._left_1b782_28._active_1b782_25{transform: translate(30px)}._layout_1b782_1._mobile_1b782_35{top: 72px;max-width: 100%;padding: 0 12px}._layout_1b782_1._mobile_1b782_35._right_1b782_21{right: 0;transform: translate(100%)}._layout_1b782_1._mobile_1b782_35._right_1b782_21._active_1b782_25{transform: translate(0)}._layout_1b782_1._mobile_1b782_35._left_1b782_28{left: 0;transform: translate(-100%)}._layout_1b782_1._mobile_1b782_35._left_1b782_28._active_1b782_25{transform: translate(0)}._layout_1b782_1._preview_1b782_54{transition: none;pointer-events: none}</style>
+              
+              <div class="_popContainer_1ukv4_1 _dark_1ukv4_62"><span class="_icon_1ukv4_11" id="close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 5L15 15" stroke="white" stroke-width="1.5"></path><path d="M15 5L5 15" stroke="white" stroke-width="1.5"></path></svg></span><div class="_popContent_1ukv4_17"><div class="_imgBack_1ukv4_20"><img class="_contentImg_1ukv4_29" id="imgNew" width="0" src="${productImage}"></div><div class="_msg_1ukv4_44"><div class="_title_1ukv4_50 _lightTitle_1ukv4_58">Drake purchased in UK</div><p class="_title_1ukv4_50 _darkTitle_1ukv4_62">1 ${productName} </p><div class="_lightTitle_1ukv4_58" id="newTime">12 minutes ago</div></div></div></div>
+            `;
+            contentPopup.innerHTML = htmlPop;
+
+            let currentIndex = 0;
+            
+            function displayTime() {
+              var randomNumber = Math.floor(Math.random() * 100) + 1;
+              let timeElement = document.querySelector("#newTime");
+              timeElement.innerHTML = randomNumber + " minutes ago";
+            }
+            // displayTime();
+
+            function closePopup() {
+                let close = document.querySelector("#close");
+                close.addEventListener("click", function() {
+                    contentPopup.style.transform = "translate(calc(-100% - 20px))";
+                });
+            }
+            closePopup();
+
+            let active = false;
+            function activePopup() {
+                setTimeout(() => {
+                    active = true;
+                    if (active == true) {
+                      contentPopup.classList.add("activePopup");
+                      setTimeout(() => {
+                        active = false;
+                        if (active != true) {
+                          contentPopup.classList.remove("activePopup");
+                        }
+                      }, 3000);
+                    }
+                }, 5000);
+            }
+            // activePopup();
+
+            const interval = 10000; // Интервал в миллисекундах (в данном случае 5000 миллисекунд или 5 секунд)
+            const numberOfPopups = 5; // Количество попапов
+            for (var i = 0; i < numberOfPopups; i++) {
+              setTimeout(activePopup, i * interval);
+              setTimeout(displayTime, i * 9000);
+            }
+        }
+        showPopup();
+        
+    </script>
+
+  </body>
+</html>
