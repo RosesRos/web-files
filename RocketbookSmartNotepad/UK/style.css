@@ -219,6 +219,102 @@
 }
 
 
+.c-product-offer-about {
+    display: flex;
+    padding: 0px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+    width: 100%;
+}
+.c-product-offer-about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+}
+.c-product-offer-about-text-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+.c-product-offer-about-text-item-p {
+    color: var(--black-282828100, #282828);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115%; /* 27.6px */
+}
+.c-product-offer-about-text-item-raiting {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.c-product-offer-about-text-item-raiting-p {
+    color: var(--black-28282880, rgba(40, 40, 40, 0.80));
+    font-family: Poppins;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 13px */
+}
+
+.c-product-offer-about-text-item-2-li {
+    color: var(--black-28282880, rgba(40, 40, 40, 0.80));
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 18.2px */
+    align-self: stretch;
+    list-style: disc;
+}
+
+.c-product-offer-format {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    align-self: stretch;
+    width: 100%;
+}
+.c-product-offer-format-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+.c-product-offer-format-content-h3 {
+    color: var(--black-282828100, #282828);
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 15.4px */
+    text-transform: uppercase;
+}
+.c-product-offer-format-content-selector {
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+}
+.c-product-offer-format-content-selector-item {
+    display: flex;
+    padding: 5px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 60px;
+    height: 66px;
+}
+
+
 .rocketbook-smart-notepad .c-frame {
     margin-top: 4px;
 }
@@ -473,6 +569,9 @@
         width: 100%;
         height: 90%;
     }
+    .c-product-offer-about-text-item-p {
+        font-size: 22px;
+    }
 }
 @media (max-width: 330px) {
     .rocketbook-smart-notepad .the-future-is-here-r-aqEpsA {
@@ -511,4 +610,7 @@
         width: 65px;
         height: 65px 
     }    
+    .c-product-offer-about-text-item-p {
+        font-size: 20px;
+    }
 }
