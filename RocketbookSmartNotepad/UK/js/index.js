@@ -1,15 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
 
   function timer1() {
-    // const timerEls = document.querySelectorAll('.stringWithTime');
-    // const timerTextEls = [];
-    // timerEls.forEach(element => {
-    //   timerTextEls.push(element.querySelector('span[class="timer"]'));
-    // });
+    const timerEls = document.querySelectorAll('.stringWithTime');
+    const timerTextEls = [];
+    timerEls.forEach(element => {
+      timerTextEls.push(element.querySelector('span[class="timer"]'));
+    });
 
-    const hour = document.querySelector(".hour");
-    const minu = document.querySelector(".minu");
-    const seco = document.querySelector(".seco");
+    // const hour = document.querySelector(".hour");
+    // const minu = document.querySelector(".minu");
+    // const seco = document.querySelector(".seco");
 
     const hours = 0;
     const minutes = 46;
@@ -19,40 +19,40 @@ document.addEventListener('DOMContentLoaded', function () {
     countdownDate.setMinutes(countdownDate.getMinutes() + minutes);
     countdownDate.setSeconds(countdownDate.getSeconds() + seconds);
 
-    const tim = setInterval(function() {
-      const now = new Date().getTime();
-      const distance = countdownDate - now;
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    // const tim = setInterval(function() {
+    //   const now = new Date().getTime();
+    //   const distance = countdownDate - now;
+    //   const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    //   const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    //   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      hour.textContent = `${hours < 10 ? '0' + hours : hours}`;
-      seco.textContent = `${seconds < 10 ? '0' + seconds : seconds}`;
-      minu.textContent = `${minutes < 10 ? '0' + minutes : minutes}`;
-      if (distance < 0) {
-        clearInterval(tim);
-        hour.textContent = "02";
-        minu.textContent = "46";
-        seco.textContent = '50';
-      }
-    }, 1000);
+    //   hour.textContent = `${hours < 10 ? '0' + hours : hours}`;
+    //   seco.textContent = `${seconds < 10 ? '0' + seconds : seconds}`;
+    //   minu.textContent = `${minutes < 10 ? '0' + minutes : minutes}`;
+    //   if (distance < 0) {
+    //     clearInterval(tim);
+    //     hour.textContent = "02";
+    //     minu.textContent = "46";
+    //     seco.textContent = '50';
+    //   }
+    // }, 1000);
 
-    // timerTextEls.forEach(element => {
-    //   const x = setInterval(function() {
-    //     const now = new Date().getTime();
-    //     const distance = countdownDate - now;
-    //     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    //     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    //     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    //     element.textContent = `${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
-    //     if (distance < 0) {
-    //       clearInterval(x);
-    //       timerTextEl.textContent = '00:00:00';
-    //     }
-    //   }, 1000);
-    // });
+    timerTextEls.forEach(element => {
+      const x = setInterval(function() {
+        const now = new Date().getTime();
+        const distance = countdownDate - now;
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        element.textContent = `${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
+        if (distance < 0) {
+          clearInterval(x);
+          timerTextEl.textContent = '00:00:00';
+        }
+      }, 1000);
+    });
   };
-  // timer1();
+  timer1();
 
 
   function selectImage() {
@@ -237,14 +237,14 @@ document.addEventListener('DOMContentLoaded', function () {
       // Проверяем, достигли ли порога
         if (scrollPosition >= scrollThreshold) {
           // Показываем кнопку 2 и скрываем кнопку 1
-          button2.style.bottom = "10px"
+          button2.style.bottom = "0px"
         } else {
           // Скрываем кнопку 2 и показываем кнопку 1
-          button2.style.bottom = "-4rem"
+          button2.style.bottom = "-10rem"
         }
     });
   }
-  // scrollBox();
+  scrollBox();
 
   function SliderBox() {
     let swiper = new Swiper(".mySwiper", {
@@ -278,24 +278,57 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   SliderBox();
 
+  function SliderBox2() {
+    new Swiper(".mySwiper3", {
+      spaceBetween: 30,
+      loop: true,
+      slidesPerView: "auto",
+      effect: "fade",
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination-3",
+        clickable: true,
+      },
+    });
+  }
+  SliderBox2();
+
   
   function boxSizes() {
-    const Sizes = document.querySelectorAll(".c-about-box-size-items-item");
-    Sizes[0].classList.add('active');
-    Sizes.forEach((ele) => {
-      ele.addEventListener("click", function() {
-        Sizes.forEach((btn) => {
-          btn.classList.remove("active");
-        });
-        ele.classList.toggle("active");
-      });
+    const a4 = document.querySelector(".c-product-offer-format-content-selector-item-1");
+    const a5 = document.querySelector(".c-product-offer-format-content-selector-item");
+    a4.addEventListener("click", function() {
+      a4.classList.toggle("active");
+      const pageA4 = document.querySelector(".c-product-offer-format-content-selector-item-a4");
+      pageA4.classList.toggle("active-a5");
+    });
+    a5.addEventListener("click", function() {
+      a5.classList.toggle("active");
+      const pageA5  = document.querySelector(".c-product-offer-format-content-selector-item-a5");
+      pageA5.classList.toggle("active-a4");
     });
   };      
-  // boxSizes();
-  
+  boxSizes();
+
+  function boxPage() {
+    const items = document.querySelectorAll(".c-product-offer-page-content-selector-item1");
+    items[0].classList.add("active");
+    items.forEach((item) => {
+      item.addEventListener("click", function() {
+        items.forEach((ite) => {
+          ite.classList.remove("active");
+        });
+        item.classList.toggle("active");
+      });
+    }); 
+  }
+  boxPage();
 
   function boxColor() {
-    const Colors = document.querySelectorAll('.selector_-color');
+    const Colors = document.querySelectorAll('.c-product-offer-color-content-items-colors-selector');
     Colors[0].classList.add('active');
     Colors.forEach((colo) => {
       colo.addEventListener("click", function() {
@@ -306,6 +339,28 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }); 
   };
-  // boxColor();
+  boxColor();
+
+  function CountFixed() { 
+    const result = document.querySelector(".c-price-fixed-frame-amount-p");
+    const decrement = document.getElementById("decrement");
+    const increment = document.getElementById("increment");
+
+    let counterValue = 1;
+
+    increment.addEventListener("click", function() {
+      counterValue++;
+      result.innerHTML = counterValue;
+    });
+    decrement.addEventListener("click", function() {
+      if (counterValue > 1) {
+        counterValue--;
+      } else {
+        counterValue;
+      }
+      result.innerHTML = counterValue;
+    });
+  };
+  CountFixed();
 
 });
