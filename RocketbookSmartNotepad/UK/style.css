@@ -921,16 +921,14 @@
 /* ## ### ## SLIDER BOX 3 SLIDER BOX 3 SLIDER BOX 3 ## ## ### */
 /* ## ### ## SLIDER BOX 3 SLIDER BOX 3 SLIDER BOX 3 ## ## ### */
 /* ## ### ## SLIDER BOX 3 SLIDER BOX 3 SLIDER BOX 3 ## ## ### */
-
 .mySwiper3 {
     width: 100%;
     border-radius: 20px;
 }
 .c-mySwiper3 {
     width: 100%;
-    /* height: 370px; */
+    height: 370px;
     border-radius: 20px;
-    /* overflow: hidden; */
 }
 .c-mySwiper3-swiper-slide {
     display: flex;
@@ -943,15 +941,15 @@
 .swiper-horizontal>.c-swiper-pagination-3 {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
-    width: 12%;
     margin: 0 auto;
-    margin-top: 8px;
 }
 .c-swiper-pagination-3 .swiper-pagination-bullet {
     width: 8px;
     height: 8px;
     background: #96C140;
+    opacity: 1;
 }
 .c-swiper-pagination-3>.swiper-pagination-bullet.swiper-pagination-bullet-active {
     width: 10px;
@@ -961,9 +959,70 @@
     background: #aeabab33;
 }
 
+.c-mySwiper3-swiper-button-prev {
+    left: -1px;
+    top: 30%;
+}
+.c-mySwiper3-swiper-button-next {
+    right: -1px;
+    top: 30%;
+}
 /* ## ### ## SLIDER BOX 3 SLIDER BOX 3 SLIDER BOX 3 ## ## ### */
 /* ## ### ## SLIDER BOX 3 SLIDER BOX 3 SLIDER BOX 3 ## ## ### */
 /* ## ### ## SLIDER BOX 3 SLIDER BOX 3 SLIDER BOX 3 ## ## ### */
+
+
+/* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
+/* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
+/* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
+.rocketbook-smart-notepad .img_-slider-RPFAiZ {
+    width: 100%;
+}
+.mySwiper4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.c-mySwiper4 {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+.c-mySwiper4-swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding-top: 1px;
+    width: 60%;
+}
+
+.swiper-horizontal>.c-swiper-pagination-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 0 auto;
+}
+.c-swiper-pagination-4 .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: #96C140;
+    opacity: 1;
+}
+.c-swiper-pagination-4>.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 10px;
+    height: 10px;
+    stroke-width: 1px;
+    border: 1.5px solid #96C140;
+    background: #aeabab33;
+}
+/* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
+/* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
+/* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
 
 
 

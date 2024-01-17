@@ -278,7 +278,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   SliderBox();
 
-  function SliderBox2() {
+  function SliderBox3() {
     new Swiper(".mySwiper3", {
       spaceBetween: 30,
       loop: true,
@@ -294,7 +294,29 @@ document.addEventListener('DOMContentLoaded', function () {
       },
     });
   }
-  SliderBox2();
+  SliderBox3();
+
+
+  function SliderBox4() {
+    new Swiper(".mySwiper4", {
+      spaceBetween: 30,
+      loop: true,
+      slidesPerView: "auto",
+      // effect: "fade",
+      // navigation: {
+      //   nextEl: ".swiper-button-next",
+      //   prevEl: ".swiper-button-prev",
+      // },
+      pagination: {
+        el: ".swiper-pagination-4",
+        clickable: true,
+      },
+    });
+  }
+  SliderBox4();
+
+
+
 
   
   function boxSizes() {
