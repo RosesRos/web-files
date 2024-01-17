@@ -1069,9 +1069,6 @@
     .rocketbook-smart-notepad .img-5NYX0F {
         left: 190px;   
     }
-    .rocketbook-smart-notepad .c-frame {
-        margin-top: 0px;
-    } 
     .c-product-header-item-1-content-title-h1 {
         font-size: 12px;
     }
@@ -1088,6 +1085,9 @@
     }
     .c-product-offer-about-text-item-p {
         font-size: 22px;
+    }
+    .rocketbook-smart-notepad .c-frame-mini {
+        margin-top: 0px;
     }
     /* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
     /* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
@@ -1147,6 +1147,11 @@
         flex-direction: column;
         gap: 1px;
     }
+
+    .rocketbook-smart-notepad .c-frame {
+        margin-top: 0px;
+    } 
+
     /* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
     /* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
     .c-mySwiper4-swiper-slide {
