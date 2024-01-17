@@ -1160,3 +1160,167 @@
     /* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
     /* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
 }
+
+@media (max-width: 300px) {
+    .c-product-header-item-1-content-logos-links {
+        gap: 10px;
+    }
+    .c-product-trustpilot-item {
+        gap: 4px;
+    }
+    .c-swiper-mySwiper {
+        width: 55px;
+        height: 55px;
+    }
+    .rocketbook-smart-notepad .row {
+        flex-direction: column;
+    }
+    .rocketbook-smart-notepad .free-shipping-in-country {
+        font-size: 12px;
+    }
+    .rocketbook-smart-notepad .all-purchases-are-sh {
+        font-size: 12px;
+    }
+    .rocketbook-smart-notepad .what-can-you-do-with-it-aysr7S {
+        width: 100%;
+    }
+    .rocketbook-smart-notepad .use-rocketbook-for-a-1JCixg {
+        width: 100%;
+    }
+    .rocketbook-smart-notepad .awesome-for-study-work-or-daily-tasks-kR9AFA {
+        width: 100%;
+    }
+    .rocketbook-smart-notepad .access-your-notes-an-kR9AFA {
+        width: 100%;
+    }
+    .rocketbook-smart-notepad .img-5NYX0F {
+        display: none;
+    }
+    .rocketbook-smart-notepad .x212-KIxScx {
+        display: none;
+    }
+    .rocketbook-smart-notepad .x140-FVVIl6 {
+        display: none;
+    }
+    .rocketbook-smart-notepad .x33-8xJJPn {
+        display: none;
+    }
+    .rocketbook-smart-notepad .x10-ir1wx7 {
+        display: none;
+    }
+    .rocketbook-smart-notepad .x21-6RKjVH {
+        display: none;
+    }
+    .rocketbook-smart-notepad .environmental-consultant-U06zQV {
+        display: none;
+    }
+    .rocketbook-smart-notepad .subscribe-to-our-e-mail-newsletter-eiFZo8 {
+        width: 100%;
+    }
+    .rocketbook-smart-notepad .input-button-eiFZo8 {
+        flex-direction: column;
+    }
+    .rocketbook-smart-notepad .input-xXytf2 {
+        width: 100%;
+    }
+    .rocketbook-smart-notepad .button_1-xXytf2 {
+        width: 100%;
+    }
+    .c-price-fixed-frame {
+        flex-direction: column;
+    }
+}
+@media (max-width: 250px) {
+    .c-product-header-item-1-content-logos-links {
+        display: none;
+    }
+    .c-product-trustpilot-item {
+        flex-direction: column;
+    }
+    .c-mySwiper2 {
+        height: 300px;
+    }
+    .c-swiper-mySwiper {
+        width: 45px;
+        height: 45px;
+    }
+    .c-product-offer-about-text-item-2-li {
+        list-style: none;
+    }    
+    .rocketbook-smart-notepad .c-product-offer-button {
+        flex-direction: column;
+        gap: 1px;
+    }
+    .rocketbook-smart-notepad .free-shipping {
+        width: 80%;
+    }
+    .rocketbook-smart-notepad .free-shipping-in-country {
+        white-space: normal;
+    }
+    .rocketbook-smart-notepad .is-the-rocketbook-notepad-waterproof {
+        font-size: 13px;
+    }
+    .rocketbook-smart-notepad .c-frame {
+        margin-top: -10px;
+    }
+    .rocketbook-smart-notepad .customer-reviews-ZH7zfe {
+        white-space: normal;
+    }
+    .rocketbook-smart-notepad .frame-KIxScx {
+        display: block;
+    }
+    .rocketbook-smart-notepad .frame-FVVIl6 {
+        display: block;
+    }
+    .rocketbook-smart-notepad .frame-8xJJPn {
+        display: block;
+    }
+    .rocketbook-smart-notepad .frame-ir1wx7 {
+        display: block;
+    }
+    .rocketbook-smart-notepad .frame-6RKjVH {
+        display: block;
+    }
+    .rocketbook-smart-notepad .frame-9Fx4w4 {
+        flex-direction: column;
+    }
+    .rocketbook-smart-notepad .frame-fqPa5z {
+        flex-direction: column;
+    }
+    .rocketbook-smart-notepad .frame-CJxaIC {
+        flex-direction: column;
+    }
+    .rocketbook-smart-notepad .review_-img-or-video .c-video-1 {
+        width: max-content;
+    }
+    .rocketbook-smart-notepad .frame-6NA0L2 {
+        flex-direction: column;
+    }
+    .rocketbook-smart-notepad .frame-USi2Qc {
+        flex-direction: column;
+    }
+    .rocketbook-smart-notepad .frame-omT5mH {
+        flex-direction: column;
+    }
+    .rocketbook-smart-notepad .frame-E4dueR {
+        flex-direction: column;
+    }
+    .rocketbook-smart-notepad .review_-img-or-video .c-video-2 {
+        width: max-content;
+        position: absolute;
+        top: -150%;
+        left: -150%;
+    }
+    .rocketbook-smart-notepad .frame-9QUGWc {
+        flex-direction: column;
+    }
+    .rocketbook-smart-notepad .frame-SUcsO2 {
+        flex-direction: column;
+    }
+    .rocketbook-smart-notepad .frame-l4T2Gg {
+        flex-direction: column;
+    }
+    .rocketbook-smart-notepad .footer-kPAq1R {
+        padding-bottom: 15.5rem;
+    }
+}
