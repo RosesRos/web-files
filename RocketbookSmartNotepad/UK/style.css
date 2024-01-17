@@ -34,19 +34,18 @@
     align-items: center;
     gap: 10px;
     background: var(--black-282828100, #282828);
-    :is(h1) {
-        color: #96C140;
-        flex: 1 0 0;
-        text-align: center;
-
-        /* Roboto/Text_Primary_2_Accent */
-        font-family: Roboto;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 130%; /* 18.2px */
-        letter-spacing: 0.14px;
-    }
+}
+.c-product-header-item-1-content-title-h1 {
+    color: #96C140;
+    flex: 1 0 0;
+    text-align: center;
+    /* Roboto/Text_Primary_2_Accent */
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 18.2px */
+    letter-spacing: 0.14px;
 }
 .c-product-header-item-1-content-logos {
     display: flex;
@@ -1072,11 +1071,9 @@
     }
     .rocketbook-smart-notepad .c-frame {
         margin-top: 0px;
-    }
-    .c-product-header-item-1-content-title {
-        :is(h1)  {
-            font-size: 12px;
-        }
+    } 
+    .c-product-header-item-1-content-title-h1 {
+        font-size: 12px;
     }
     .c-product-header-item-2-title-h2 {
         font-size: 24px;
