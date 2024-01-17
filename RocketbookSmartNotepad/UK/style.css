@@ -956,7 +956,7 @@
     height: 10px;
     stroke-width: 1px;
     border: 1.5px solid #96C140;
-    background: #aeabab33;
+    background: transparent;
 }
 
 .c-mySwiper3-swiper-button-prev {
@@ -1018,7 +1018,7 @@
     height: 10px;
     stroke-width: 1px;
     border: 1.5px solid #96C140;
-    background: #aeabab33;
+    background: transparent;
 }
 /* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
 /* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
@@ -1036,6 +1036,14 @@
     .rocketbook-smart-notepad .fixed {
         width: 100%;
     }
+
+    /* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
+    /* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
+    .c-mySwiper4-swiper-slide {
+        width: 62%;
+    }
+    /* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
+    /* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
 }
 @media (max-width: 390px) {
     .rocketbook-smart-notepad .img-5NYX0F {
@@ -1049,6 +1057,14 @@
         width: 75px;
         height: 75px;
     }
+
+    /* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
+    /* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
+    .c-mySwiper4-swiper-slide {
+        width: 70%;
+    }
+    /* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
+    /* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
 }
 @media (max-width: 370px) {
     .rocketbook-smart-notepad .img-5NYX0F {
@@ -1076,6 +1092,13 @@
     .c-product-offer-about-text-item-p {
         font-size: 22px;
     }
+    /* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
+    /* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
+    .c-mySwiper4-swiper-slide {
+        width: 75%;
+    }
+    /* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
+    /* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
 }
 @media (max-width: 330px) {
     .rocketbook-smart-notepad .the-future-is-here-r-aqEpsA {
@@ -1127,4 +1150,11 @@
         flex-direction: column;
         gap: 1px;
     }
+    /* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
+    /* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
+    .c-mySwiper4-swiper-slide {
+        width: 79%;
+    }
+    /* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
+    /* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
 }

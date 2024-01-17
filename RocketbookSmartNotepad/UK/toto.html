@@ -27,30 +27,20 @@
 
     .swiper {
       width: 100%;
-      height: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
     }
 
     .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
     }
 
     .swiper-slide img {
       display: block;
       width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .c-mySwiper3-swiper-slide {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
-        align-self: stretch;
     }
   </style>
 </head>
@@ -59,26 +49,34 @@
   <!-- Swiper -->
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
-      <div data-hash="slide1" class="swiper-slide c-mySwiper3-swiper-slide">
-        <img class="img-yJEmui" data-id="I923:5789;923:5718" src="./img/img-5.gif" anima-src="./img/img-5.gif" alt="Img">
-
-        <div class="c-mySwiper3-swiper-slide-text">
-          <p class="c-mySwiper3-swiper-slide-text-title">Write</p>
-          <p class="c-mySwiper3-swiper-slide-text-p">Use Rocketbook for a traditional handwriting experience - which actually makes you smarter (Google It!). With our patented, futuristic technology we kept an authentic pen and paper feel</p>
-        </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
       </div>
-      <div data-hash="slide2" class="swiper-slide c-mySwiper3-swiper-slide">
-        <img class="img-yJEmui" data-id="I923:5789;923:5718" src="./img/slider-2.png" anima-src="./img/slider-2.png" alt="Img">
-        <div class="txt-yJEmui txt" data-id="I923:5789;923:5801">
-          <div class="write-1JCixg poppins-normal-shark-16px" data-id="I923:5789;923:5802">Reuse</div>
-          <p class="use-rocketbook-for-a-1JCixg poppins-normal-shark-14px" data-id="I923:5789;923:5803">No more notepaper guilt! Rocketbook can be reused, so you can stop using your other paper notebooks and save trees. When paired with Pilot FriXion ink, the pages of your Core can be wiped clean with water and a cloth!</p>
-        </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
       </div>
-      <div data-hash="slide3" class="swiper-slide">Slide 3</div>
-      <div data-hash="slide4" class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+      </div>
     </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
     <div class="swiper-pagination"></div>
   </div>
 
@@ -88,17 +86,19 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      hashNavigation: {
-        watchState: true,
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
       },
       pagination: {
         el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
       },
     });
   </script>

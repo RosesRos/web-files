@@ -283,7 +283,6 @@ document.addEventListener('DOMContentLoaded', function () {
       spaceBetween: 30,
       loop: true,
       slidesPerView: "auto",
-      // effect: "fade",
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -300,9 +299,9 @@ document.addEventListener('DOMContentLoaded', function () {
   function SliderBox4() {
     new Swiper(".mySwiper4", {
       spaceBetween: 30,
-      loop: true,
       slidesPerView: "auto",
-      // effect: "fade",
+      centeredSlides: true,
+      initialSlide: 1,
       // navigation: {
       //   nextEl: ".swiper-button-next",
       //   prevEl: ".swiper-button-prev",
