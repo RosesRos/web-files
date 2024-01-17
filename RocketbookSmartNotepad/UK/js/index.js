@@ -283,7 +283,7 @@ document.addEventListener('DOMContentLoaded', function () {
       spaceBetween: 30,
       loop: true,
       slidesPerView: "auto",
-      effect: "fade",
+      // effect: "fade",
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
