@@ -179,7 +179,6 @@
     align-items: center;
     gap: 40px;
     align-self: stretch;
-    border-bottom: 1px solid var(--Used-Light-Gray, #DCDCDC);
     width: 100%;
 }
 .c-product-trustpilot-item {
@@ -313,20 +312,17 @@
     height: 60px;
     cursor: pointer;
 }
-.c-product-offer-format-content-selector-item-1.active {
-    width: 60px;
-    height: 66px;
-}
+
 .c-product-offer-format-content-selector-item-a4 {
-    background-image: url("./img/green_4.svg");
+    background-image: url("./img/gray_4.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
 }
-.c-product-offer-format-content-selector-item-a4.active-a5 {
-    background-image: url("./img/green_5.svg");
+.c-product-offer-format-content-selector-item-a4.active-a4green {
+    background-image: url("./img/green_4.svg");
 }
 .c-product-offer-format-content-selector-item {
     display: flex;
@@ -338,10 +334,7 @@
     height: 66px;
     cursor: pointer;
 }
-.c-product-offer-format-content-selector-item.active {
-    width: 56px;
-    height: 60px;
-}
+
 .c-product-offer-format-content-selector-item-a5 {
     background-image: url("./img/gray_5.svg");
     background-size: cover;
@@ -350,8 +343,8 @@
     width: 100%;
     height: 100%;
 }
-.c-product-offer-format-content-selector-item-a5.active-a4 {
-    background-image: url("./img/gray_4.svg");
+.c-product-offer-format-content-selector-item-a5.active-a5green {
+    background-image: url("./img/green_5.svg");
 }
 
 
@@ -573,6 +566,8 @@
     margin-left: -8px;
 }
 
+
+/* ### ### FIXED BLOCK ## ### */
 /* ### ### FIXED BLOCK ## ### */
 /* ### ### FIXED BLOCK ## ### */
 .c-price-fixed {
@@ -702,6 +697,7 @@
     bottom: -10rem;
   }
 
+/* ### ### FIXED BLOCK ## ### */
 /* ### ### FIXED BLOCK ## ### */
 /* ### ### FIXED BLOCK ## ### */
 
@@ -849,6 +845,7 @@
   .mySwiper2 {
     width: 100%;
     border-radius: 6px;
+    border: 1px solid #96C140;
   }
   .c-mySwiper2 {
     width: 100%;
@@ -1045,9 +1042,7 @@
     /* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
 }
 @media (max-width: 390px) {
-    .rocketbook-smart-notepad .img-5NYX0F {
-        left: 200px;
-    }
+    
     .rocketbook-smart-notepad .c-frame-mobil {
         margin-top: 0px;
     }
@@ -1066,9 +1061,7 @@
     /* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
 }
 @media (max-width: 370px) {
-    .rocketbook-smart-notepad .img-5NYX0F {
-        left: 190px;   
-    }
+    
     .c-product-header-item-1-content-title-h1 {
         font-size: 12px;
     }

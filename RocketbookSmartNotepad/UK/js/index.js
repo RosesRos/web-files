@@ -199,10 +199,6 @@ document.addEventListener('DOMContentLoaded', function () {
       slidesPerView: "auto",
       centeredSlides: true,
       initialSlide: 1,
-      // navigation: {
-      //   nextEl: ".swiper-button-next",
-      //   prevEl: ".swiper-button-prev",
-      // },
       pagination: {
         el: ".swiper-pagination-4",
         clickable: true,
@@ -211,22 +207,22 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   SliderBox4();
 
-
-
-
   
   function boxSizes() {
     const a4 = document.querySelector(".c-product-offer-format-content-selector-item-1");
     const a5 = document.querySelector(".c-product-offer-format-content-selector-item");
+
+    const pageA4 = document.querySelector(".c-product-offer-format-content-selector-item-a4");
+    const pageA5  = document.querySelector(".c-product-offer-format-content-selector-item-a5");
+
+    pageA4.classList.add("active-a4green");
     a4.addEventListener("click", function() {
-      a4.classList.toggle("active");
-      const pageA4 = document.querySelector(".c-product-offer-format-content-selector-item-a4");
-      pageA4.classList.toggle("active-a5");
+      pageA5.classList.remove("active-a5green");
+      pageA4.classList.add("active-a4green");
     });
     a5.addEventListener("click", function() {
-      a5.classList.toggle("active");
-      const pageA5  = document.querySelector(".c-product-offer-format-content-selector-item-a5");
-      pageA5.classList.toggle("active-a4");
+      pageA4.classList.remove("active-a4green");
+      pageA5.classList.add("active-a5green");
     });
   };      
   boxSizes();
