@@ -393,6 +393,7 @@ table, th, td {
 @media (max-width: 390px) {
     .porta-flix .light-5ZzBcR {
         left: -10px;
+        top: 30px;
     }
     .c-table-width-medium {
         width: 100%;
