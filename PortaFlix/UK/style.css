@@ -344,9 +344,37 @@ table, th, td {
 /* ## ### ## SLIDER BOX 3 SLIDER BOX 3 SLIDER BOX 3 ## ## ### */
 
 
+
+/* ### ### FIXED BLOCK ## ### */
+/* ### ### FIXED BLOCK ## ### */
+/* ### ### FIXED BLOCK ## ### */
+.porta-flix .fixed {
+    position: fixed;
+    z-index: 10;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    width: 430px;
+    margin: 0 auto;
+    transition: all 0.2s linear 0s;
+}
+#button2 {
+  /* display: none; */
+  bottom: -10rem;
+}
+
+/* ### ### FIXED BLOCK ## ### */
+/* ### ### FIXED BLOCK ## ### */
+/* ### ### FIXED BLOCK ## ### */
+
+
 @media (max-width: 480px) {
     .porta-flix {
         width: 100%;
+    }
+    .porta-flix .fixed {
+        width: 95%;
+        margin: 0 auto;
     }
 }
 @media (max-width: 390px) {
