@@ -58,22 +58,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // path to  images //
     // path to  images //
-    const imagesBlack = [
+    const imagesGray = [
       "./img/slider-1.png",
       "./img/slider-1-2.png",
       "./img/slider-1-3.png",
     ];
-    const imagesGray = [
-      "./img/slider-3.png",
-      "./img/slider-3-2.png",
-      "./img/slider-3-3.png",
-    ];
-    const imagesPink = [
+    const imagesBlack = [
       "./img/slider-2.png",
       "./img/slider-2-2.png",
       "./img/slider-2-3.png",
     ];
-    const imagesRedBlack = [
+    const imagesPink = [
+      "./img/slider-3.png",
+      "./img/slider-3-2.png",
+      "./img/slider-3-3.png",
+    ];
+    const imagesWhite = [
       "./img/slider-4.png",
       "./img/slider-4-2.png",
       "./img/slider-4-3.png",
@@ -90,10 +90,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // clicklabel buttons //
     // clicklabel buttons //
-    const blackBtn = document.querySelector('div[data-id="781:6901"]');
-    const grayBtn = document.querySelector('div[data-id="781:6903"]');
-    const pinkBtn = document.querySelector('div[data-id="781:6905"]');
-    const redBlackBtn = document.querySelector('div[data-id="781:6907"]');
+    const grayBtn = document.querySelector('article[data-id="1102:16855"]');
+    const blackBtn = document.querySelector('article[data-id="1102:16851"]');
+    const pinkBtn = document.querySelector('article[data-id="1102:16853"]');
+    const whiteBtn = document.querySelector('article[data-id="1102:16857"]');
     // clicklabel buttons //
     // clicklabel buttons //
 
@@ -139,21 +139,21 @@ document.addEventListener('DOMContentLoaded', function () {
       // slider thumbsSlider //
     });
 
-    redBlackBtn.addEventListener("click", function() {
-      slider0.src = imagesRedBlack[0];
-      slider1.src = imagesRedBlack[1];
-      slider2.src = imagesRedBlack[2];
+    whiteBtn.addEventListener("click", function() {
+      slider0.src = imagesWhite[0];
+      slider1.src = imagesWhite[1];
+      slider2.src = imagesWhite[2];
 
       // slider thumbsSlider //
       // slider thumbsSlider //
-      mySwiperImg[0].src = imagesRedBlack[0];
-      mySwiperImg[1].src = imagesRedBlack[1];
-      mySwiperImg[2].src = imagesRedBlack[2];
+      mySwiperImg[0].src = imagesWhite[0];
+      mySwiperImg[1].src = imagesWhite[1];
+      mySwiperImg[2].src = imagesWhite[2];
       // slider thumbsSlider //
       // slider thumbsSlider //
     });
   }
-  // selectImage();
+  selectImage();
 
 
 
@@ -269,24 +269,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   SliderBox();
 
-  function SliderBox3() {
-    new Swiper(".mySwiper3", {
-      spaceBetween: 30,
-      loop: true,
-      slidesPerView: "auto",
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination-3",
-        clickable: true,
-      },
-    });
-  }
-  // SliderBox3();
-
-
   function SliderBox4() {
     new Swiper(".mySwiper4", {
       spaceBetween: 30,
@@ -301,40 +283,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   SliderBox4();
 
-  
-  function boxSizes() {
-    const a4 = document.querySelector(".c-product-offer-format-content-selector-item-1");
-    const a5 = document.querySelector(".c-product-offer-format-content-selector-item");
-
-    const pageA4 = document.querySelector(".c-product-offer-format-content-selector-item-a4");
-    const pageA5  = document.querySelector(".c-product-offer-format-content-selector-item-a5");
-
-    pageA4.classList.add("active-a4green");
-    a4.addEventListener("click", function() {
-      pageA5.classList.remove("active-a5green");
-      pageA4.classList.add("active-a4green");
-    });
-    a5.addEventListener("click", function() {
-      pageA4.classList.remove("active-a4green");
-      pageA5.classList.add("active-a5green");
-    });
-  };      
-  // boxSizes();
-
-  function boxPage() {
-    const items = document.querySelectorAll(".c-product-offer-page-content-selector-item1");
-    items[0].classList.add("active");
-    items.forEach((item) => {
-      item.addEventListener("click", function() {
-        items.forEach((ite) => {
-          ite.classList.remove("active");
-        });
-        item.classList.toggle("active");
-      });
-    }); 
-  }
-  // boxPage();
-
   function boxColor() {
     const Colors = document.querySelectorAll('.selector_-color');
     Colors[0].classList.add('active');
@@ -348,27 +296,5 @@ document.addEventListener('DOMContentLoaded', function () {
     }); 
   };
   boxColor();
-
-  function CountFixed() { 
-    const result = document.querySelector(".c-price-fixed-frame-amount-p");
-    const decrement = document.getElementById("decrement");
-    const increment = document.getElementById("increment");
-
-    let counterValue = 1;
-
-    increment.addEventListener("click", function() {
-      counterValue++;
-      result.innerHTML = counterValue;
-    });
-    decrement.addEventListener("click", function() {
-      if (counterValue > 1) {
-        counterValue--;
-      } else {
-        counterValue;
-      }
-      result.innerHTML = counterValue;
-    });
-  };
-  // CountFixed();
 
 });
