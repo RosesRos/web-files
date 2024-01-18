@@ -450,3 +450,135 @@ table, th, td {
         width: 100%;
     }
 }
+
+@media (max-width: 300px) {
+    .porta-flix .header-DeHxtN {
+        flex-direction: column;
+    }
+    .porta-flix .menu-eo11Go {
+        gap: 30px;
+    }
+    .porta-flix .txt-5ZzBcR {
+        width: 100%;
+    }
+    .porta-flix .img-8ClDdV {
+        height: 208px;
+        width: 210px;
+    }
+    .porta-flix .light-5ZzBcR {
+        top: 95px;
+    }
+    .porta-flix .hurry-up-sale-ends-in-4NyxPK {
+        flex-direction: column;
+    }
+    .porta-flix .accordion-arrow {
+        width: 25px;
+        height: 25px;
+    }
+    .porta-flix .portable-and-lightweight-zbQGLY {
+        width: 100%;
+    }
+    .porta-flix .access-netflix-amazo-ixePXd {
+        width: 100%;
+    }
+    .porta-flix .what-makes-portaflix-uOEsG3 {
+        width: 100%;
+    }
+    .porta-flix .find-out-why-you-sho-uOEsG3 {
+        width: 100%;
+    }
+    .c-table-body-td {
+        padding: 8px;
+    }
+    .porta-flix .frame-Qx0BP6 {
+        flex-direction: column;
+    }
+    .porta-flix .frame-I5Fu6I {
+        flex-direction: column-reverse;
+    }
+    .porta-flix .frame-yPytTB {
+        flex-direction: column;
+    }
+    .porta-flix .frame-I1L8xF {
+        flex-direction: column-reverse;
+    }
+    .porta-flix .subscribe-to-our-e-mail-newsletter-HliAQT {
+        width: 100%;
+    }
+    .porta-flix .input-button-HliAQT {
+        flex-direction: column;
+    }
+    .porta-flix .input-zb8Sfu {
+        width: 100%;
+    }
+    .porta-flix .button_1-zb8Sfu {
+        width: 100%;
+    }
+    .porta-flix .what-type-of-media-c {
+        font-size: 12px;
+    }
+    .porta-flix .the-projector-suppor {
+        font-size: 12px;
+    }
+}
+@media (max-width: 250px) {
+    .porta-flix .up-to-95-off-DeHxtN {
+        flex-direction: column;
+    }
+    .porta-flix .light-5ZzBcR {
+        top: 125px;
+    }
+    .porta-flix .trustpilot-KompNZ {
+        flex-direction: column;
+    }
+    .c-mySwiper3 {
+        height: 270px;
+    }
+    .porta-flix .x720p-hd-and-4-k-video-support-P70MLA {
+        gap: 30px;
+    }
+    .porta-flix .x180-rotatable-projection-P70MLA {
+        gap: 30px;
+    }
+    .porta-flix .portable-design-wide-P70MLA {
+        gap: 30px;
+    }
+    .porta-flix .selector-mQoxzD {
+        flex-wrap: wrap;
+        column-gap: 20px;
+    }
+    .porta-flix .free-shipping-in-country {
+        font-size: 12px;
+    }
+    .porta-flix .all-purchases-are-sh {
+        font-size: 12px;
+    }
+    .porta-flix .crystal-clear-picture-WlzFev {
+        width: 100%;
+    }
+    .porta-flix .frame-WUx7kc {
+        flex-direction: column;
+    }
+    .porta-flix .img-SmsGxX {
+        width: 100%;
+    }
+    .porta-flix .frame-hTdcPU {
+        flex-direction: column;
+        margin: 0;
+    }
+    .c-table-header-th {
+        padding: 1px;
+    }
+    .c-table-body-td {
+        padding: 1px;
+    }
+    .porta-flix .what-type-of-media-c {
+        font-size: 10px;
+    }
+    .porta-flix .the-projector-suppor {
+        font-size: 10px;
+    }
+    .porta-flix .filter-x2FJCc {
+        display: none;
+    }
+}
