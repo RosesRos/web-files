@@ -91,11 +91,24 @@ table, th, td {
 .c-table {
     width: 100%;
     border-radius: 20px;
+    border-collapse: separate;
 }
 .c-table-header-th {
     width: 102px;
     padding: 10px 15px;
     align-self: stretch;
+}
+.c-table-header-th:nth-child(1) {
+    border-radius: 20px 0px 0px 0px;
+}
+.c-table-header-th:nth-child(3) {
+    border-radius: 0px 20px 0px 0px;
+}
+.c-table-krug:nth-child(1) {
+    border-radius: 0px 0px 0px 20px;
+}
+.c-table-krug:nth-child(3) {
+    border-radius: 0px 0px 20px 0px;
 }
 .c-table-width-medium {
     width: 167px;
