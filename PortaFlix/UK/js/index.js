@@ -232,38 +232,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   // scrollBox();
 
-  function SliderBox() {
-    let swiper = new Swiper(".mySwiper", {
-      spaceBetween: 10,
-      slidesPerView: "auto",
-      freeMode: true,
-      watchSlidesProgress: true,
-    });
-    new Swiper(".mySwiper2", {
-      loop: true,
-      slidesPerView: "auto",
-      spaceBetween: 10,
-      centeredSlides: true,
-      // autoplay: {
-      //   delay: 2500,
-      //   disableOnInteraction: false,
-      // },
-      pagination: {
-        el: ".swiper-pagination",
-        dynamicBullets: true,
-        clicklabel: true
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-      },
-      thumbs: {
-        swiper: swiper,
-      },
-    });
-  }
-  // SliderBox();
-
   function SliderBox3() {
     new Swiper(".mySwiper3", {
       spaceBetween: 10,
@@ -279,23 +247,7 @@ document.addEventListener('DOMContentLoaded', function () {
       },
     });
   }
-  SliderBox3();
-
-  
-  function boxSizes() {
-    const Sizes = document.querySelectorAll(".c-about-box-size-items-item");
-    Sizes[0].classList.add('active');
-    Sizes.forEach((ele) => {
-      ele.addEventListener("click", function() {
-        Sizes.forEach((btn) => {
-          btn.classList.remove("active");
-        });
-        ele.classList.toggle("active");
-      });
-    });
-  };      
-  // boxSizes();
-  
+  SliderBox3();  
 
   function boxColor() {
     const Colors = document.querySelectorAll('.selector_-color');
