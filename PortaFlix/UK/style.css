@@ -34,7 +34,6 @@
     align-items: flex-end;
     gap: 10px;
     align-self: stretch;
-    border-radius: 20px;
     background: linear-gradient(180deg, rgba(219, 215, 238, 0.00) 25.32%, rgba(31, 28, 44, 0.81) 99.98%);
     height: 100%;
     width: 100%;
