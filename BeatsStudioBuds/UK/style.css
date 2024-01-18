@@ -78,6 +78,32 @@
 }
 
 
+
+/* ### ### FIXED BLOCK ## ### */
+/* ### ### FIXED BLOCK ## ### */
+/* ### ### FIXED BLOCK ## ### */
+.beats-studio-budsu43 .fixed {
+    position: fixed;
+    z-index: 10;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    width: 430px;
+    margin: 0 auto;
+    transition: all 0.2s linear 0s;
+}
+#button2 {
+  /* display: none; */
+  bottom: -10rem;
+}
+
+/* ### ### FIXED BLOCK ## ### */
+/* ### ### FIXED BLOCK ## ### */
+/* ### ### FIXED BLOCK ## ### */
+
+
+
+
 /* #### ##### #### Acordion ### #### ### */
 /* #### ##### #### Acordion ### #### ### */
 /* #### ##### #### Acordion ### #### ### */
@@ -369,6 +395,11 @@
 @media (max-width: 480px) {
     .beats-studio-budsu43 {
         width: 100%;
+    }
+
+    .beats-studio-budsu43 .fixed {
+        width: 95%;
+        margin: 0 auto;
     }
     
     /* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
