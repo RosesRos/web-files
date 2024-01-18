@@ -264,6 +264,23 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   // SliderBox();
 
+  function SliderBox3() {
+    new Swiper(".mySwiper3", {
+      spaceBetween: 10,
+      loop: true,
+      slidesPerView: "auto",
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination-3",
+        clickable: true,
+      },
+    });
+  }
+  SliderBox3();
+
   
   function boxSizes() {
     const Sizes = document.querySelectorAll(".c-about-box-size-items-item");
