@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+.popup-overlay {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  inset: 0;
+}
+
+:root {
+  /* fonts */
+  --font-roboto: Roboto;
+  --font-jost: Jost;
+  --font-rubik: Rubik;
+  --font-lego: LEGO;
+
+  /* font sizes */
+  --font-size-xs: 12px;
+  --font-size-17xl: 36px;
+  --font-size-5xl: 24px;
+  --font-size-sm: 14px;
+  --font-size-5xs: 8px;
+  --font-size-base: 16px;
+  --font-size-13xl: 32px;
+  --font-size-xl: 20px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-gray-100: #757575;
+  --color-gray-200: #1d1b1b;
+  --color-gray-300: #18152b;
+  --color-gray-400: #0b0b0b;
+  --color-gray-500: #050409;
+  --color-gray-600: #040307;
+  --color-black: #000;
+  --color-silver-100: #c8c8c8;
+  --color-silver-200: #c2c2c2;
+  --color-silver-300: #c1c1c1;
+  --color-silver-400: #bababa;
+  --color-whitesmoke-100: #f9f9f9;
+  --color-whitesmoke-200: #f8f8f8;
+  --color-whitesmoke-300: #efefef;
+  --color-whitesmoke-400: #eaeaea;
+  --color-gainsboro-100: #e3e3e3;
+  --color-gainsboro-200: #e0e0e0;
+  --color-darkslateblue: #201d45;
+  --color-steelblue-100: #2e6bb1;
+  --color-steelblue-200: #2d6ab1;
+  --color-yellowgreen: #80db55;
+  --color-seagreen: #3a8340;
+  --color-darkgray-100: #959595;
+  --color-goldenrod: #f7d146;
+  --color-linen: rgba(239, 232, 226, 0);
+  --color-firebrick: #bf2827;
+
+  /* Gaps */
+  --gap-8xs: 5px;
+  --gap-6xs: 7px;
+  --gap-xl: 20px;
+  --gap-13xl: 32px;
+  --gap-3xs: 10px;
+  --gap-5xs: 8px;
+  --gap-base: 16px;
+  --gap-2xs: 11px;
+  --gap-7xs: 6px;
+  --gap-9xs: 4px;
+  --gap-sm: 14px;
+
+  /* Paddings */
+  --padding-3xs: 10px;
+  --padding-xl: 20px;
+  --padding-8xs: 5px;
+  --padding-base: 16px;
+  --padding-5xs: 8px;
+  --padding-sm: 14px;
+  --padding-5xl: 24px;
+  --padding-7xs: 6px;
+  --padding-lg: 18px;
+  --padding-xs: 12px;
+  --padding-mini: 15px;
+  --padding-11xs: 2px;
+  --padding-12xs: 1px;
+  --padding-6xs: 7px;
+  --padding-10xs: 3px;
+
+  /* Border radiuses */
+  --br-81xl: 100px;
+  --br-5xs: 8px;
+  --br-3xs: 10px;
+  --br-11xl: 30px;
+  --br-8xs: 5px;
+  --br-21xl: 40px;
+  --br-10xs: 3px;
+  --br-xl: 20px;
+  --br-7xs: 6px;
+}
