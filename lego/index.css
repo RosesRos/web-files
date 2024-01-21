@@ -2174,6 +2174,12 @@
   margin: 0;
 }
 
+.c-position-absolute {
+  position: absolute;
+  z-index: 5;
+  top: 5%;
+}
+
 /* own styles own styles own styles own styles */
 /* own styles own styles own styles own styles */
 /* own styles own styles own styles own styles */
