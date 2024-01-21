@@ -1424,7 +1424,7 @@
   flex-direction: column;
   padding: var(--padding-5xl) var(--padding-sm);
   gap: var(--gap-3xs);
-  margin-bottom: 70px;
+  /* margin-bottom: 70px; */
   color: var(--color-white);
 }
 .text175 {
