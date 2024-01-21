@@ -2158,7 +2158,7 @@
   letter-spacing: -.01em;
   font-weight: 700;
   line-height: 1.4;
-  color: #fff;
+  color: inherit;
   font-size: clamp(1.25rem,.979592vw + 1.02041rem,2rem);
   justify-content: center;
   margin: 0 auto;
@@ -2178,6 +2178,9 @@
   position: absolute;
   z-index: 5;
   top: 5%;
+}
+.c-bg-transparent {
+  background-color: transparent;
 }
 
 /* own styles own styles own styles own styles */
