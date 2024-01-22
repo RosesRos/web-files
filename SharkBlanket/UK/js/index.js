@@ -58,25 +58,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // path to  images //
     // path to  images //
-    const imagesBlack = [
+    const imagesGray = [
       "./img/slider-1.png",
       "./img/slider-1-2.png",
       "./img/slider-1-3.png",
     ];
-    const imagesGray = [
+    const imagesPink = [
       "./img/slider-3.png",
       "./img/slider-3-2.png",
       "./img/slider-3-3.png",
     ];
-    const imagesPink = [
-      "./img/slider-2.png",
-      "./img/slider-2-2.png",
-      "./img/slider-2-3.png",
-    ];
-    const imagesRedBlack = [
+    const imagesGreen = [
       "./img/slider-4.png",
       "./img/slider-4-2.png",
-      "./img/slider-4-3.png",
+      "./img/slider-1-3.png",
     ];
     // path to  images //
     // path to  images //
@@ -90,26 +85,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // clicklabel buttons //
     // clicklabel buttons //
-    const blackBtn = document.querySelector('div[data-id="781:6901"]');
-    const grayBtn = document.querySelector('div[data-id="781:6903"]');
-    const pinkBtn = document.querySelector('div[data-id="781:6905"]');
-    const redBlackBtn = document.querySelector('div[data-id="781:6907"]');
+    const grayBtn = document.querySelector('[data-id="1168:3135"]');
+    const pinkBtn = document.querySelector('[data-id="1168:3137"]');
+    const greenBtn = document.querySelector('[data-id="1168:3139"]');
     // clicklabel buttons //
     // clicklabel buttons //
-
-    blackBtn.addEventListener("click", function() {
-      slider0.src = imagesBlack[0];
-      slider1.src = imagesBlack[1];
-      slider2.src = imagesBlack[2];
-
-      // slider thumbsSlider //
-      // slider thumbsSlider //
-      mySwiperImg[0].src = imagesBlack[0];
-      mySwiperImg[1].src = imagesBlack[1];
-      mySwiperImg[2].src = imagesBlack[2];
-      // slider thumbsSlider //
-      // slider thumbsSlider //
-    });
 
     grayBtn.addEventListener("click", function() {
       slider0.src = imagesGray[0];
@@ -139,21 +119,22 @@ document.addEventListener('DOMContentLoaded', function () {
       // slider thumbsSlider //
     });
 
-    redBlackBtn.addEventListener("click", function() {
-      slider0.src = imagesRedBlack[0];
-      slider1.src = imagesRedBlack[1];
-      slider2.src = imagesRedBlack[2];
+    greenBtn.addEventListener("click", function() {
+      slider0.src = imagesGreen[0];
+      slider1.src = imagesGreen[1];
+      slider2.src = imagesGreen[2];
 
       // slider thumbsSlider //
       // slider thumbsSlider //
-      mySwiperImg[0].src = imagesRedBlack[0];
-      mySwiperImg[1].src = imagesRedBlack[1];
-      mySwiperImg[2].src = imagesRedBlack[2];
+      mySwiperImg[0].src = imagesGreen[0];
+      mySwiperImg[1].src = imagesGreen[1];
+      mySwiperImg[2].src = imagesGreen[2];
       // slider thumbsSlider //
       // slider thumbsSlider //
     });
+
   }
-  // selectImage();
+  selectImage();
 
 
 
@@ -254,29 +235,16 @@ document.addEventListener('DOMContentLoaded', function () {
       watchSlidesProgress: true,
     });
     new Swiper(".mySwiper2", {
-      loop: true,
+      loop: false,
       slidesPerView: "auto",
       spaceBetween: 10,
-      centeredSlides: true,
-      // autoplay: {
-      //   delay: 2500,
-      //   disableOnInteraction: false,
-      // },
-      pagination: {
-        el: ".swiper-pagination",
-        dynamicBullets: true,
-        clicklabel: true
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-      },
+      // centeredSlides: true,
       thumbs: {
         swiper: swiper,
       },
     });
   }
-  // SliderBox();
+  SliderBox();
 
   function SliderBox3() {
     new Swiper(".mySwiper3", {
@@ -294,41 +262,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
   SliderBox3();
-
-
-  function SliderBox4() {
-    new Swiper(".mySwiper4", {
-      spaceBetween: 30,
-      slidesPerView: "auto",
-      centeredSlides: true,
-      initialSlide: 1,
-      pagination: {
-        el: ".swiper-pagination-4",
-        clickable: true,
-      },
-    });
-  }
-  // SliderBox4();
-
-  
-  function boxSizes() {
-    const a4 = document.querySelector(".c-product-offer-format-content-selector-item-1");
-    const a5 = document.querySelector(".c-product-offer-format-content-selector-item");
-
-    const pageA4 = document.querySelector(".c-product-offer-format-content-selector-item-a4");
-    const pageA5  = document.querySelector(".c-product-offer-format-content-selector-item-a5");
-
-    pageA4.classList.add("active-a4green");
-    a4.addEventListener("click", function() {
-      pageA5.classList.remove("active-a5green");
-      pageA4.classList.add("active-a4green");
-    });
-    a5.addEventListener("click", function() {
-      pageA4.classList.remove("active-a4green");
-      pageA5.classList.add("active-a5green");
-    });
-  };      
-  // boxSizes();
 
   function boxPage() {
     const items = document.querySelectorAll(".c-size-box");
@@ -357,28 +290,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }); 
   };
   boxColor();
-
-  function CountFixed() { 
-    const result = document.querySelector(".c-price-fixed-frame-amount-p");
-    const decrement = document.getElementById("decrement");
-    const increment = document.getElementById("increment");
-
-    let counterValue = 1;
-
-    increment.addEventListener("click", function() {
-      counterValue++;
-      result.innerHTML = counterValue;
-    });
-    decrement.addEventListener("click", function() {
-      if (counterValue > 1) {
-        counterValue--;
-      } else {
-        counterValue;
-      }
-      result.innerHTML = counterValue;
-    });
-  };
-  // CountFixed();
 
   function showSize() {
     const btnSize = document.querySelector('[data-id="I1168:3575;1172:3800"]');
