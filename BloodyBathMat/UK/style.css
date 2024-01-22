@@ -1,0 +1,516 @@
+.c-img-tLQj0o-img {
+    width: 100%;
+    height: 110%;
+    position: absolute;
+    top: -10%;
+    left: 0;
+}
+.c-img-tLQj0o-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+    z-index: 2;
+}
+.c-img-tLQj0o-text-h2 {
+    align-self: stretch;
+    font-family: "Bloody Scary";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90%; /* 36px */
+    background: linear-gradient(97deg, #E44B4B 11.31%, #B72E2E 97.1%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.c-img-tLQj0o-text-p {
+    align-self: stretch;
+    color: var(--black-0-b-0-b-0-b-100, #0B0B0B);
+
+    /* Roboto/Text_Primary_2 */
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 18.2px */
+}
+.c-img-tLQj0o-price {
+    display: flex;
+    padding: 4px 14px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 40px;
+    background: linear-gradient(97deg, #E44B4B 11.31%, #B72E2E 97.1%);
+    backdrop-filter: blur(7.5px);
+}
+.c-img-tLQj0o-price-old {
+    color: var(--white-ffffff-80, rgba(255, 255, 255, 0.80));
+    font-family: "Bloody Scary";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 18px */
+    text-decoration: line-through;
+    text-transform: capitalize;
+}
+.c-img-tLQj0o-price-new {
+    color: #FFF;
+    font-family: "Bloody Scary";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 35.2px */
+}
+
+
+.c-video-liiY6p-bg {
+    height: 473px;
+    width: 100%;
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.69) 27.1%, rgba(255, 255, 255, 0.00) 54.72%, rgba(255, 255, 255, 0.00) 54.72%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.c-blood-FsZlN4 {
+    background-image: url("./img/blood@2x.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.c-box-imgs.active>.c-blood-FsZlN4 {
+    background-image: url("./img/blood-1@2x.png");
+}
+
+
+
+/* #### ##### #### Acordion ### #### ### */
+/* #### ##### #### Acordion ### #### ### */
+/* #### ##### #### Acordion ### #### ### */
+.bloody-bath-mat  .accordion {
+    height: 60px;
+    overflow: hidden;
+    transition: all 0.2s linear 0s;
+}
+.accordion.active {
+    height: auto;
+}
+.bloody-bath-mat  .accordion-arrow {
+    transform: rotate(180deg);
+    transition: all 0.2s linear 0s;
+}
+.accordion-arrow.active {
+    transform: rotate(0deg);
+}
+
+.bloody-bath-mat  .accordion-faq {
+    height: 54px;
+    overflow: hidden;
+    transition: all 0.2s linear 0s;
+}
+.accordion-faq.active {
+    height: auto;
+}
+.bloody-bath-mat  .close-arrow {
+    transform: rotate(180deg);
+    transition: all 0.2s linear 0s;
+}
+.close-arrow.active {
+    transform: rotate(0deg);
+}
+/* #### ##### #### Acordion ### #### ### */
+/* #### ##### #### Acordion ### #### ### */
+/* #### ##### #### Acordion ### #### ### */
+
+
+
+
+/* ##### LOADER LOADER LOADER LOADER*/
+/* ##### LOADER LOADER LOADER LOADER*/
+/* ##### LOADER LOADER LOADER LOADER*/
+.progress {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    z-index: 1;
+    width: 100%;
+    
+  }
+  .img-1, .img-2, .img-3 {
+    position: relative;
+    border-radius: 50%;
+    background: linear-gradient(180deg, rgb(228.4374949336052, 75.1940131187439, 75.1940131187439) 0%, rgb(183.00000429153442, 46.000001057982445, 46.000001057982445) 100%);
+    width: 18px;
+    height: 18px;
+    animation: 2s ease-in-out infinite load;
+  }
+  
+  .img-2,
+  .img-3 {
+    animation: 2s ease-in-out 0.4s infinite load;
+  }
+  .img-3 {
+    animation: 2s ease-in-out 0.8s infinite load;
+  }
+  @keyframes load {
+      50% {
+        opacity: 0;
+        transform: scale(0.7);
+      }
+  }
+/* ##### LOADER LOADER LOADER LOADER*/
+/* ##### LOADER LOADER LOADER LOADER*/
+/* ##### LOADER LOADER LOADER LOADER*/
+
+
+
+/* ##### hiddenText hiddenText hiddenText hiddenText*/
+/* ##### hiddenText hiddenText hiddenText hiddenText*/
+/* ##### hiddenText hiddenText hiddenText hiddenText*/
+.hidden-text {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--color-gray-500);
+  }
+  .text-1419 {
+    flex: 1;
+    position: relative;
+
+    align-self: stretch;
+    background-color: transparent;
+    color: var(--black-282828100);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.00px;
+    line-height: 13.0px;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+  }
+  .hidden-text.show {
+    display: block;
+  }
+ /* ##### hiddenText hiddenText hiddenText hiddenText*/
+ /* ##### hiddenText hiddenText hiddenText hiddenText*/
+/* ##### hiddenText hiddenText hiddenText hiddenText*/
+
+
+
+/* ## ### ## SLIDER BOX ## ## ### */
+/* ## ### ## SLIDER BOX ## ## ### */
+/* ## ### ## SLIDER BOX ## ## ### */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next,.swiper-button-prev {
+    width: 35px;
+    height: 35px;
+}
+
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    content: "";
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.swiper-button-prev::after {
+  background-image: url("./img/arrow_Left.svg");
+}
+.swiper-button-next::after {
+  background-image: url("./img/arrow_Right.svg");
+}
+
+/* ## ### ## SLIDER BOX ## ## ### */
+/* ## ### ## SLIDER BOX ## ## ### */
+/* ## ### ## SLIDER BOX ## ## ### */
+
+
+
+/* ## ### ## SLIDER BOX 3 SLIDER BOX 3 SLIDER BOX 3 ## ## ### */
+/* ## ### ## SLIDER BOX 3 SLIDER BOX 3 SLIDER BOX 3 ## ## ### */
+/* ## ### ## SLIDER BOX 3 SLIDER BOX 3 SLIDER BOX 3 ## ## ### */
+.mySwiper3 {
+    width: 100%;
+}
+.c-mySwiper3 {
+    width: 100%;
+    height: 100%;
+    /* border-radius: 20px; */
+}
+.c-mySwiper3-swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    border-radius: 20px;
+    border: 1px solid var(--Used-Light-Gray, #DCDCDC);
+    overflow: hidden;
+    height: 370px;
+}
+
+.swiper-horizontal>.c-swiper-pagination-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 5;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    width: 90%;
+    justify-content: space-between;
+}
+.c-swiper-pagination-3 .swiper-pagination-bullet {
+    width: 50%;
+    height: 3px;
+    border-radius: 20px;
+    background: var(--white-ffffff-50, rgba(255, 255, 255, 0.50));
+    opacity: 1;
+}
+.c-swiper-pagination-3>.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: var(--white-ffffff-100, #FFF);
+}
+
+
+/* ## ### ## SLIDER BOX 3 SLIDER BOX 3 SLIDER BOX 3 ## ## ### */
+/* ## ### ## SLIDER BOX 3 SLIDER BOX 3 SLIDER BOX 3 ## ## ### */
+/* ## ### ## SLIDER BOX 3 SLIDER BOX 3 SLIDER BOX 3 ## ## ### */
+
+
+
+/* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
+/* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
+/* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
+.rocketbook-smart-notepad .img_-slider-RPFAiZ {
+    width: 100%;
+}
+.mySwiper4 {
+    width: 100%;
+}
+.c-mySwiper4 {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+.c-mySwiper4-swiper-slide {
+    
+    width: 290px;
+    height: 255px;
+    margin-right: 0 !important;
+}
+
+/* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
+/* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
+/* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
+
+
+/* ### ### FIXED BLOCK ## ### */
+/* ### ### FIXED BLOCK ## ### */
+/* ### ### FIXED BLOCK ## ### */
+.bloody-bath-mat .fixed {
+    position: fixed;
+    z-index: 10;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    /* width: 390px; */
+    width: 430px;
+    margin: 0 auto;
+    transition: all 0.2s linear 0s;
+  }
+  #button2 {
+    /* display: none; */
+    bottom: -10rem;
+  }
+
+/* ### ### FIXED BLOCK ## ### */
+/* ### ### FIXED BLOCK ## ### */
+/* ### ### FIXED BLOCK ## ### */
+
+
+@media (max-width: 480px) {
+    .bloody-bath-mat {
+        width: 100%;
+    }
+    .bloody-bath-mat .fixed {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 390px) {
+    .bloody-bath-mat .img-wNSk89 video {
+        top: 0;
+    }
+}
+@media (max-width: 370px) {
+    .bloody-bath-mat .regular-165-x-393-th-cZTK9n {
+        font-size: 12px;
+    }
+    .bloody-bath-mat .video-liiY6p video {
+        width: max-content;
+        height: 100%;
+    }
+    .bloody-bath-mat .img-Bj8rwW {
+        width: 150px;
+    }
+    .swiper-horizontal>.c-swiper-pagination-3 {
+        left: 15px;
+        right: 15px;
+    }
+}
+@media (max-width: 330px) {
+    .bloody-bath-mat .title-360Bfp {
+        font-size: 35px;
+    }
+    .bloody-bath-mat .our-bloody-bath-mat-LGbXJG {
+        width: 100%;
+    }
+    .bloody-bath-mat .activated-by-water-LGbXJG {
+        font-size: 35px;
+    }
+    .bloody-bath-mat .free-shipping-in-country {
+        font-size: 14px;
+    }
+    .bloody-bath-mat .all-purchases-are-sh {
+        font-size: 12px;
+    }
+}
+@media (max-width: 300px) {
+    .bloody-bath-mat .header-nSLSCB {
+        gap: 15px;
+    }
+    .bloody-bath-mat .free-shipping {
+        width: 70%;
+    }
+    .bloody-bath-mat .free-shipping-in-country {
+        white-space: normal;
+    }
+    .bloody-bath-mat .img-wNSk89 video {
+        height: 100%;
+        width: max-content;
+    }
+    .bloody-bath-mat .soft-and-absorbent-material-tn9NAz {
+        width: 100%;
+    }
+    .bloody-bath-mat .anti-slip-backing {
+        flex-direction: column;
+    }
+    .bloody-bath-mat .img-Bj8rwW {
+        width: 100%;
+    }
+    .bloody-bath-mat .anti-slip-backing-uQIyGd {
+        width: 100%;
+    }
+    .bloody-bath-mat .safety-meets-scare-w-uQIyGd {
+        width: 100%;
+    }
+    .bloody-bath-mat .easy-to-clean-and-maintain {
+        flex-direction: column-reverse;
+    }
+    .bloody-bath-mat .img-L2fJsh {
+        width: 100%;
+    }
+    .bloody-bath-mat .easy-to-clean-and-maintain-dxIY1w {
+        width: 100%;
+    }
+    .bloody-bath-mat .its-machine-washable-dxIY1w {
+        width: 100%;
+    }
+    .bloody-bath-mat .accordion-faq {
+        height: 60px;
+    }
+    .accordion-faq.active {
+        height: auto;
+    }
+    .bloody-bath-mat .customer-reviews-j7tLsO {
+        white-space: normal;
+    }
+    .bloody-bath-mat .input-button-6wxg93 {
+        flex-direction: column;
+    }
+    .bloody-bath-mat .input-aOekNz {
+        width: 100%;
+    }
+    .bloody-bath-mat .button_1-aOekNz {
+        width: 100%;
+    }
+}
+
+@media (max-width: 250px) {
+    .bloody-bath-mat .menu-srKsck {
+        flex-direction: column;
+    }
+    .c-img-tLQj0o-text-h2 {
+        font-size: 30px;
+    }
+    .bloody-bath-mat .trustpilot-tLQj0o {
+        flex-direction: column;
+    }
+    .bloody-bath-mat .free-shipping-in-country {
+        font-size: 12px;
+    }
+    .bloody-bath-mat .frame-s7EubO {
+        margin-top: -10px;
+    }
+    .bloody-bath-mat .frame-xIhiSA {
+        margin-top: -10px;
+    }
+    .bloody-bath-mat .is-the-color-change-permanent {
+        font-size: 12px;
+    }
+    .bloody-bath-mat .no-the-color-change {
+        font-size: 12px;
+    }
+    .bloody-bath-mat .frame-QSxaVp {
+        flex-direction: column;
+    }
+    .bloody-bath-mat .frame-K4toO9 {
+        flex-direction: column;   
+    }
+    .bloody-bath-mat .frame-iML03S {
+        flex-direction: column;
+    }
+    .bloody-bath-mat .frame-Lj6Zbq {
+        flex-direction: column;
+    }
+    .bloody-bath-mat .frame-LJCuwI {
+        flex-direction: column;
+    }
+    .bloody-bath-mat .frame-xddzsx {
+        flex-direction: column;
+    }
+    .bloody-bath-mat .frame-CsoGUb {
+        flex-direction: column;
+    }
+    .bloody-bath-mat .frame-iBChib {
+        flex-direction: column;
+    }
+}
