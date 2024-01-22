@@ -1,0 +1,357 @@
+.c-video-qD77Op-bg1 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 15px 16px;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #E3F0F1 5.03%, rgba(255, 255, 255, 0.00) 53.24%, rgba(255, 255, 255, 0.00) 53.24%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+
+.sharkie-blanket .c-mini-view {
+    width: 340px;
+}
+.sharkie-blanket .c-mini-view-img {
+    width: 80px;
+}
+
+.img-yJEmui-video {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* #### ##### #### Acordion ### #### ### */
+/* #### ##### #### Acordion ### #### ### */
+/* #### ##### #### Acordion ### #### ### */
+.sharkie-blanket  .accordion {
+    height: 60px;
+    overflow: hidden;
+    transition: all 0.2s linear 0s;
+}
+.accordion.active {
+    height: auto;
+}
+.sharkie-blanket  .accordion-arrow {
+    transform: rotate(180deg);
+    transition: all 0.2s linear 0s;
+}
+.accordion-arrow.active {
+    transform: rotate(0deg);
+}
+
+.sharkie-blanket  .accordion-faq {
+    height: 60px;
+    overflow: hidden;
+    transition: all 0.2s linear 0s;
+}
+.accordion-faq.active {
+    height: auto;
+}
+.sharkie-blanket  .close-arrow {
+    transform: rotate(180deg);
+    transition: all 0.2s linear 0s;
+}
+.close-arrow.active {
+    transform: rotate(0deg);
+}
+/* #### ##### #### Acordion ### #### ### */
+/* #### ##### #### Acordion ### #### ### */
+/* #### ##### #### Acordion ### #### ### */
+
+
+
+/* ##### LOADER LOADER LOADER LOADER*/
+/* ##### LOADER LOADER LOADER LOADER*/
+/* ##### LOADER LOADER LOADER LOADER*/
+.progress {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    z-index: 1;
+    width: 100%;
+    
+  }
+  .img-1, .img-2, .img-3 {
+    position: relative;
+    border-radius: 50%;
+    background:  #5B708E;
+    width: 18px;
+    height: 18px;
+    animation: 2s ease-in-out infinite load;
+  }
+  
+  .img-2,
+  .img-3 {
+    animation: 2s ease-in-out 0.4s infinite load;
+  }
+  .img-3 {
+    animation: 2s ease-in-out 0.8s infinite load;
+  }
+  @keyframes load {
+      50% {
+        opacity: 0;
+        transform: scale(0.7);
+      }
+  }
+/* ##### LOADER LOADER LOADER LOADER*/
+/* ##### LOADER LOADER LOADER LOADER*/
+/* ##### LOADER LOADER LOADER LOADER*/
+
+
+
+
+/* ##### hiddenText hiddenText hiddenText hiddenText*/
+/* ##### hiddenText hiddenText hiddenText hiddenText*/
+/* ##### hiddenText hiddenText hiddenText hiddenText*/
+.hidden-text {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--color-gray-500);
+  }
+  .text-1419 {
+    flex: 1;
+    position: relative;
+
+    align-self: stretch;
+    background-color: transparent;
+    color: #ffffff33;
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.00px;
+    line-height: 13.0px;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+  }
+  .hidden-text.show {
+    display: block;
+  }
+ /* ##### hiddenText hiddenText hiddenText hiddenText*/
+ /* ##### hiddenText hiddenText hiddenText hiddenText*/
+/* ##### hiddenText hiddenText hiddenText hiddenText*/
+
+/* ##### acordion Size acordion Size acordion Size acordion Size*/
+/* ##### acordion Size acordion Size acordion Size acordion Size*/
+/* ##### acordion Size acordion Size acordion Size acordion Size*/
+
+.sharkie-blanket .showSize {
+    height: 0;
+    overflow: hidden;
+}
+.showSize.active {
+    height: auto;
+}
+
+/* ##### acordion Size acordion Size acordion Size acordion Size*/
+/* ##### acordion Size acordion Size acordion Size acordion Size*/
+/* ##### acordion Size acordion Size acordion Size acordion Size*/
+
+
+
+/* ### ### FIXED BLOCK ## ### */
+/* ### ### FIXED BLOCK ## ### */
+/* ### ### FIXED BLOCK ## ### */
+.sharkie-blanket .fixed {
+    position: fixed;
+    z-index: 10;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    /* width: 390px; */
+    width: 430px;
+    margin: 0 auto;
+    transition: all 0.2s linear 0s;
+  }
+  #button2 {
+    /* display: none; */
+    bottom: -10rem;
+  }
+
+/* ### ### FIXED BLOCK ## ### */
+/* ### ### FIXED BLOCK ## ### */
+/* ### ### FIXED BLOCK ## ### */
+
+
+
+/* ## ### ## SLIDER BOX ## ## ### */
+/* ## ### ## SLIDER BOX ## ## ### */
+/* ## ### ## SLIDER BOX ## ## ### */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.swiper-button-prev, .swiper-button-next {
+    width: 35px;
+    height: 35px;
+}
+.swiper-button-next::after, .swiper-button-prev::after {
+  content: "";
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.swiper-button-prev::after {
+  background-image: url("./img/arrow_Left.svg");
+}
+.swiper-button-next::after {
+  background-image: url("./img/arrow_Right.svg");
+}
+
+/* ## ### ## SLIDER BOX ## ## ### */
+/* ## ### ## SLIDER BOX ## ## ### */
+/* ## ### ## SLIDER BOX ## ## ### */
+
+
+
+/* ## ### ## SLIDER BOX 3 SLIDER BOX 3 SLIDER BOX 3 ## ## ### */
+/* ## ### ## SLIDER BOX 3 SLIDER BOX 3 SLIDER BOX 3 ## ## ### */
+/* ## ### ## SLIDER BOX 3 SLIDER BOX 3 SLIDER BOX 3 ## ## ### */
+.mySwiper3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+.c-mySwiper3 {
+    width: 100%;
+    height: 420px;
+    border-radius: 20px;
+}
+.c-mySwiper3-swiper-slide {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0px 4px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.swiper-horizontal>.c-swiper-pagination-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 0 auto;
+}
+.c-swiper-pagination-3 .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: #5B708E;
+    opacity: 1;
+}
+.c-swiper-pagination-3>.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 10px;
+    height: 10px;
+    stroke-width: 1px;
+    border: 1.5px solid #5B708E;
+    background: transparent;
+}
+
+/* ## ### ## SLIDER BOX 3 SLIDER BOX 3 SLIDER BOX 3 ## ## ### */
+/* ## ### ## SLIDER BOX 3 SLIDER BOX 3 SLIDER BOX 3 ## ## ### */
+/* ## ### ## SLIDER BOX 3 SLIDER BOX 3 SLIDER BOX 3 ## ## ### */
+
+
+
+.selector_-color.active {
+    border: 1px solid;
+    border-color: var(--useddark-gray);
+}
+.c-size-box.active {
+    background-color: var(--waikawa-gray);
+}
+
+
+@media (max-width: 480px) {
+    .sharkie-blanket {
+        width: 100%;
+    }
+    .sharkie-blanket .fixed {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 385px) {
+    .sharkie-blanket .ozy-shark-wearable-shark-blanket-EE7jhg {
+        width: auto;
+        margin: 0;
+    }
+    .sharkie-blanket .quality-fleece-material-lR7J1M {
+        font-size: 12px;
+    }
+    .sharkie-blanket .fits-for-kids-and-adults-prvUAg {
+        font-size: 12px;
+    }
+    .sharkie-blanket .easy-to-care-AosqHD {
+        font-size: 12px;
+    }
+}
+@media (max-width: 370px) {
+    .sharkie-blanket .img-9ijxkM {
+        height: 190px;
+        width: 100%;
+    }
+}
+@media (max-width: 330px) {
+    .sharkie-blanket .menu-kMKzOx {
+        gap: 20px;
+    }
+    .sharkie-blanket .x3-in-1-combination-o-EE7jhg {
+        width: auto;
+        margin: 0;
+    }
+    .sharkie-blanket .img-zxHHvP {
+        right: 40px;
+    }
+    .sharkie-blanket .quality-fleece-material-lR7J1M {
+        font-size: 10px;
+    }
+    .sharkie-blanket .fits-for-kids-and-adults-prvUAg {
+        font-size: 10px;
+    }
+    .sharkie-blanket .easy-to-care-AosqHD {
+        font-size: 10px;
+    }
+    .sharkie-blanket .video-qD77Op video {
+        width: max-content;
+        height: 100%;
+    }
+    .sharkie-blanket .txt-rfeRdI {
+        width: 40%;
+    }
+}
