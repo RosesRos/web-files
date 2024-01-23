@@ -2354,7 +2354,7 @@
                   q1.style.display = "none";
                   q2.classList.add("opacy_1");
                   q2.style.display = "block"
-                }, 2000)
+                }, 1000)
               })
             });
             for (let i = 0; i < bq2.length; i += 1) {
@@ -2365,7 +2365,7 @@
                   q2.style.display = "none";
                   q3.classList.add("opacy_1");
                   q3.style.display = "block"
-                }, 2000)
+                }, 1000)
               })
             };
             bq3.forEach((ele) => {
@@ -2376,7 +2376,7 @@
                   q3.style.display = "none";
                   q4.classList.add("opacy_1");
                   q4.style.display = "block"
-                }, 2000)
+                }, 1000)
               })
             });
             bq4.forEach((ele) => {
@@ -2394,7 +2394,7 @@
                     document.getElementById("p_modal1").classList.add("show");
                   }, 200);
                   boxRoot._init()
-                }, 2000)
+                }, 1000)
               })
             })
           }
@@ -2410,6 +2410,14 @@
         width: 95%;
         margin: 0 auto;
       }
+
+      .opacy_0 {
+        animation: opacy 2s ease;
+      }
+      .opacy_1 {
+        animation: showOpacy 2s ease;
+      }
+
       .main-content {
         background-color: transparent;
         padding: 0;
