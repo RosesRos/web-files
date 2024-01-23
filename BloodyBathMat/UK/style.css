@@ -101,6 +101,10 @@
     background-image: url("./img/blood-1@2x.png");
 }
 
+.c-margin-top {
+    margin-top: 6px;
+}
+
 
 
 /* #### ##### #### Acordion ### #### ### */
@@ -123,7 +127,7 @@
 }
 
 .bloody-bath-mat  .accordion-faq {
-    height: 54px;
+    height: 60px;
     overflow: hidden;
     transition: all 0.2s linear 0s;
 }
@@ -384,6 +388,9 @@
     .bloody-bath-mat .img-wNSk89 video {
         top: 0;
     }
+    .c-margin-top-mini {
+        margin-top: 0;
+    }
 }
 @media (max-width: 370px) {
     .bloody-bath-mat .regular-165-x-393-th-cZTK9n {
@@ -400,6 +407,9 @@
         left: 15px;
         right: 15px;
     }
+    .c-margin-top-mini-2 {
+        margin-top: 0;
+    }
 }
 @media (max-width: 330px) {
     .bloody-bath-mat .title-360Bfp {
@@ -415,6 +425,12 @@
         font-size: 14px;
     }
     .bloody-bath-mat .all-purchases-are-sh {
+        font-size: 12px;
+    }
+    .bloody-bath-mat .is-the-color-change-permanent {
+        font-size: 14px;
+    }
+    .bloody-bath-mat .no-the-color-change {
         font-size: 12px;
     }
 }
