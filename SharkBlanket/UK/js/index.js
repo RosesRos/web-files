@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const seco = document.querySelector(".seco");
 
     const hours = 0;
-    const minutes = 46;
+    const minutes = 10;
     const seconds = 50;
     let countdownDate = new Date();
     countdownDate.setHours(countdownDate.getHours() + hours);

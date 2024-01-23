@@ -361,6 +361,11 @@
         margin: 0 auto;
     }
 }
+@media (max-width: 390px) {
+    .sharkie-blanket .view-size-guide-D2tGkH {
+        width: 100%;
+    }
+}
 @media (max-width: 385px) {
     .sharkie-blanket .ozy-shark-wearable-shark-blanket-EE7jhg {
         width: auto;
