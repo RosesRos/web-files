@@ -1,3 +1,7 @@
+.c-width-modal {
+  width: 300px;
+}
+
 /* ##### LOADER LOADER LOADER LOADER*/
 /* ##### LOADER LOADER LOADER LOADER*/
 /* ##### LOADER LOADER LOADER LOADER*/
@@ -54,4 +58,18 @@
     .question-1-of-4 .amazon-is-thrilled-t-XSMCiM {
         width: 100%;
     }
+}
+
+@media (max-width: 300px) {
+  .c-width-modal {
+    width: 100%;
+  }
+  .question-1-of-4 .dont-miss-out-just-c-TFO8wr {
+    width: 100%;
+  }
+}
+@media (max-width: 250px) {
+  .question-1-of-4 .sign-up-aXqiqO {
+    display: none;
+  }
 }
