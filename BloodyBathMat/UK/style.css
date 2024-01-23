@@ -59,6 +59,7 @@
     border-radius: 40px;
     background: linear-gradient(97deg, #E44B4B 11.31%, #B72E2E 97.1%);
     backdrop-filter: blur(7.5px);
+    z-index: 5;
 }
 .c-img-tLQj0o-price-old {
     color: var(--white-ffffff-80, rgba(255, 255, 255, 0.80));
@@ -105,6 +106,17 @@
     margin-top: 6px;
 }
 
+
+
+.c-x30-U4K1Au-line {
+    width: 10%;
+    height: 20px;
+    transform: rotate(90deg);
+    position: absolute;
+    left: 50%;
+    top: -20%;
+    background: linear-gradient(97deg, rgba(228, 75, 75, 0.80) 11.31%, rgba(183, 46, 46, 0.80) 97.1%);
+}
 
 
 /* #### ##### #### Acordion ### #### ### */
