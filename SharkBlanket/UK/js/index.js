@@ -122,13 +122,15 @@ document.addEventListener('DOMContentLoaded', function () {
     greenBtn.addEventListener("click", function() {
       slider0.src = imagesGreen[0];
       slider1.src = imagesGreen[1];
-      slider2.src = imagesGreen[2];
+      // slider2.src = imagesGreen[2];
+      document.getElementById("slider-2-2").style.display = "none";
 
       // slider thumbsSlider //
       // slider thumbsSlider //
       mySwiperImg[0].src = imagesGreen[0];
       mySwiperImg[1].src = imagesGreen[1];
-      mySwiperImg[2].src = imagesGreen[2];
+      // mySwiperImg[2].src = imagesGreen[2];
+      document.getElementById("thums-2-2").style.display = "none";
       // slider thumbsSlider //
       // slider thumbsSlider //
     });
