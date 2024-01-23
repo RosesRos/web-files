@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const seco = document.querySelector(".seco");
 
     const hours = 0;
-    const minutes = 46;
+    const minutes = 10;
     const seconds = 50;
     let countdownDate = new Date();
     countdownDate.setHours(countdownDate.getHours() + hours);
@@ -183,8 +183,25 @@ document.addEventListener('DOMContentLoaded', function () {
           ite.classList.remove("active");
         });
         item.classList.toggle("active");
+
+        let textP =  document.querySelector('[data-id="I1206:3598;1206:3628"]');
+        switch (index) {
+          case 0:
+            textP.innerHTML = `Small (16.5 x 27.5"). <br> Perfect for small standing showers or for tiny bathrooms`;
+            break;
+          case 1:
+            textP.innerHTML = `Regular (16.5 x 39.3"). <br> The most popular size use outside of bathtubs or showers`;
+            break;
+          case 2:
+            textP.innerHTML = `Large (25.5 x 39.3"). <br> An incredible size`;
+            break;
+          default:
+            textP.innerHTML = `Regular (16.5 x 39.3"). <br> The most popular size use outside of bathtubs or showers`;
+            break;
+        }
       });
-    }); 
+    });
+     
   }
   boxPage();
 
