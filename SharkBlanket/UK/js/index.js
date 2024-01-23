@@ -95,12 +95,14 @@ document.addEventListener('DOMContentLoaded', function () {
       slider0.src = imagesGray[0];
       slider1.src = imagesGray[1];
       slider2.src = imagesGray[2];
+      document.getElementById("slider-2-2").style.display = "block";
 
       // slider thumbsSlider //
       // slider thumbsSlider //
       mySwiperImg[0].src = imagesGray[0];
       mySwiperImg[1].src = imagesGray[1];
       mySwiperImg[2].src = imagesGray[2];
+      document.getElementById("thums-2-2").style.display = "block";
       // slider thumbsSlider //
       // slider thumbsSlider //
     });
@@ -109,12 +111,14 @@ document.addEventListener('DOMContentLoaded', function () {
       slider0.src = imagesPink[0];
       slider1.src = imagesPink[1];
       slider2.src = imagesPink[2];
+      document.getElementById("slider-2-2").style.display = "block";
 
       // slider thumbsSlider //
       // slider thumbsSlider //
       mySwiperImg[0].src = imagesPink[0];
       mySwiperImg[1].src = imagesPink[1];
       mySwiperImg[2].src = imagesPink[2];
+      document.getElementById("thums-2-2").style.display = "block";
       // slider thumbsSlider //
       // slider thumbsSlider //
     });
@@ -122,14 +126,12 @@ document.addEventListener('DOMContentLoaded', function () {
     greenBtn.addEventListener("click", function() {
       slider0.src = imagesGreen[0];
       slider1.src = imagesGreen[1];
-      // slider2.src = imagesGreen[2];
       document.getElementById("slider-2-2").style.display = "none";
 
       // slider thumbsSlider //
       // slider thumbsSlider //
       mySwiperImg[0].src = imagesGreen[0];
       mySwiperImg[1].src = imagesGreen[1];
-      // mySwiperImg[2].src = imagesGreen[2];
       document.getElementById("thums-2-2").style.display = "none";
       // slider thumbsSlider //
       // slider thumbsSlider //
