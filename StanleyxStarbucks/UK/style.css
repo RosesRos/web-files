@@ -51,3 +51,16 @@
         margin: 0 auto;
     }
 }
+@media (max-width: 300px) {
+  .question-1-of-4 .stanley-x-starbucks-aONOmI {
+    width: 100%;
+  }
+}
+@media (max-width: 250px) {
+  .question-1-of-4 .logo-aONOmI {
+    flex-direction: column;
+  }
+  .question-1-of-4 .logo-kXvmSq {
+    flex-direction: column;
+  }
+}
