@@ -67,4 +67,18 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
   LoaderBox();
+
+  function SliderBox3() {
+    new Swiper(".mySwiper3", {
+      spaceBetween: 30,
+      loop: true,
+      slidesPerView: "auto",
+      pagination: {
+        el: ".swiper-pagination-3",
+        clickable: true,
+      },
+    });
+  }
+  SliderBox3();
+
 });

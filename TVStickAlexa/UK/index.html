@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="./js/swiper-bundle.min.css">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Amazon Fire TV Stick 4k max</title>
     <link rel="shortcut icon" href="./img/icon-1.svg" type="image/svg">
@@ -623,9 +624,9 @@
         flex-direction: column;
         justify-content: flex-end;
         margin-bottom: -1.00px;
-        margin-left: -1.00px;
-        margin-right: -1.00px;
-        padding: 32px 10px 24px;
+        /* margin-left: -1.00px; */
+        /* margin-right: -1.00px; */
+        padding: 32px 0px 24px;
         /* width: 392px; */
 
         width: 100%;
@@ -653,10 +654,11 @@
         flex: 0 0 auto;
         flex-direction: column;
         gap: 8px;
-        margin-left: -10.00px;
-        margin-right: -8.00px;
+        /* margin-left: -10.00px;
+        margin-right: -8.00px; */
         position: relative;
-        width: 390px;
+        /* width: 390px; */
+        width: 100%;
       }
 
       .question-1-of-4 .img-gCgSZf {
@@ -2140,11 +2142,21 @@
                 <div class="img-9xHVDI img" data-id="1332:10381">
                   <h1 class="title-Ag3gKt" data-id="1332:10382">Amazon Fire TV Stick 4k max</h1>
                   <div class="img-or-video-Ag3gKt" data-id="1332:13651">
-                    <div class="img-gCgSZf img" data-id="I1332:13651;1332:13639-edc703a5-643f-49cf-92ed-2844b836afac"></div>
-                    <div class="slider-gCgSZf" data-id="I1332:13651;1332:13645">
-                      <div class="ellipse-OzkESv ellipse" data-id="I1332:13651;1332:13647"></div>
-                      <div class="ellipse-NHp1x5 ellipse" data-id="I1332:13651;1332:13646"></div>
+                    
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper3" style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff">
+                      <div class="swiper-wrapper c-mySwiper3">
+                        <div class="swiper-slide c-mySwiper3-swiper-slide">
+                          <img class="img-yJEmui" data-id="I923:5789;923:5718" src="./img/slider-1.png" alt="Img">
+                        </div>
+                        <div class="swiper-slide c-mySwiper3-swiper-slide">
+                          <img class="img-yJEmui" data-id="I923:5789;923:5718" src="./img/slider-1-2.png" alt="Img">
+                        </div>
+                      </div>
+                      <div class="swiper-pagination-3 c-swiper-pagination-3"></div>
                     </div>
+                    <!-- Swiper JS -->
+
                   </div>
                 </div>
               </div>
@@ -2696,6 +2708,8 @@
       </div>
     </div>
 
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
 
 
