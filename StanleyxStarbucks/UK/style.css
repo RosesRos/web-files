@@ -1,0 +1,53 @@
+/* ##### LOADER LOADER LOADER LOADER*/
+/* ##### LOADER LOADER LOADER LOADER*/
+/* ##### LOADER LOADER LOADER LOADER*/
+.progress {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    z-index: 1;
+    width: 100%;
+    
+  }
+  .img-1, .img-2, .img-3 {
+    position: relative;
+    border-radius: 50%;
+    background:  var(--black-282828100);
+    width: 18px;
+    height: 18px;
+    animation: 2s ease-in-out infinite load;
+  }
+  
+  .img-2,
+  .img-3 {
+    animation: 2s ease-in-out 0.4s infinite load;
+  }
+  .img-3 {
+    animation: 2s ease-in-out 0.8s infinite load;
+  }
+  @keyframes load {
+      50% {
+        opacity: 0;
+        transform: scale(0.7);
+      }
+  }
+/* ##### LOADER LOADER LOADER LOADER*/
+/* ##### LOADER LOADER LOADER LOADER*/
+/* ##### LOADER LOADER LOADER LOADER*/
+
+
+
+
+@media (max-width: 480px) {
+    .question-1-of-4 {
+        width: 100%;
+    }
+}
+@media (max-width: 370px) {
+    .question-1-of-4 .stanley-is-thrilled-TFO8wr {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
