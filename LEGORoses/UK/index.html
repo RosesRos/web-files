@@ -2931,9 +2931,35 @@
                   boxRoot._init()
                 }, 1000)
               })
-            })
+            });
+
+            function updateRealTime() {
+              let currentDate = new Date();
+
+              const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+              let dayOfWeek = daysOfWeek[currentDate.getDay()];
+
+              const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+              let month = months[currentDate.getMonth()];
+
+              const dayOfMonth = currentDate.getDate();
+              const year = currentDate.getFullYear();
+
+              let hours = currentDate.getHours();
+              let minutes = currentDate.getMinutes();
+
+              document.querySelector(".p_var-dia_nombre").textContent = dayOfWeek;
+              document.querySelector(".p_var-dia").textContent = dayOfMonth;
+              document.querySelector(".p_var-mes_nombre").textContent = month;
+              document.querySelector(".p_var-anyo").textContent = year;
+              document.querySelector(".p_var-hora_fija").textContent = hours + ":" + (minutes < 10 ? "0" : "") + minutes;
+              // const formattedTime = dayOfWeek + ", " + dayOfMonth + " " + month + " " + year + " " + hours + ":" + (minutes < 10 ? "0" : "") + minutes;
+
+            };
+            updateRealTime();
+
           }
-        })
+        });
       })();
       rootFaq.initial("faq");
     </script>
