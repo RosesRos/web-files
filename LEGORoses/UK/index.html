@@ -124,10 +124,17 @@
       }
 
       @font-face {
-        font-family: "Cera Pro-Bold";
+        font-family: "Cera Regular";
         font-style: normal;
-        font-weight: 700;
-        src: url('fonts/CeraProBold.otf') format("opentype");
+        /* font-weight: 700; */
+        src: url('./fonts/CeraPro-Regular.ttf') format("truetype");
+      }
+
+      @font-face {
+        font-family: "Cera Medium";
+        font-style: normal;
+        /* font-weight: 700; */
+        src: url('./fonts/CeraPro-Medium.ttf') format("truetype");
       }
 
       /* The following line is used to measure usage of this code. You can remove it if you want. */
@@ -345,8 +352,8 @@
         --font-family-amazon_ember-medium: "Amazon Ember-Medium", Helvetica;
         --font-family-cera_pro-bold: "Cera Pro-Bold", Helvetica;
         --font-family-cera_pro-light: "Cera Pro-Light", Helvetica;
-        --font-family-cera_pro-medium: "Cera Pro-Medium", Helvetica;
-        --font-family-cera_pro-regular: "Cera Pro-Regular", Helvetica;
+        --font-family-cera_pro-medium: "Cera Medium", Helvetica;
+        --font-family-cera_pro-regular: "Cera Regular", Helvetica;
       }
 
       .cerapro-regular-normal-storm-dust-14px {
@@ -2450,7 +2457,7 @@
                           <div class="modal-body">
                             <img class="box-gift" src="./img/img.png">
                             <div class="c-text-flex">
-                              <h2>congratulations! you did it! </h2>
+                              <h2>Congratulations! you did it! </h2>
                               <p>You won the limited edition LEGO Roses!</p>
                             </div>
                             <div class="c-width-modal">
@@ -3036,7 +3043,7 @@
 
         color: var(--black-282828100, #282828);
         text-align: center;
-        font-family: var(--font-family-cera_pro-medium);
+        font-family: var(--font-family-cera_pro-regular);
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
