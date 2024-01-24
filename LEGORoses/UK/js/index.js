@@ -65,6 +65,6 @@ document.addEventListener('DOMContentLoaded', function () {
       },
     });
   }
-  // SliderBox3();
+  SliderBox3();
 
 });

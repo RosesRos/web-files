@@ -6,9 +6,94 @@
     width: 300px;
 }
 
+
+
+/* ## ### ## SLIDER BOX ## ## ### */
+/* ## ### ## SLIDER BOX ## ## ### */
+/* ## ### ## SLIDER BOX ## ## ### */
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* ## ### ## SLIDER BOX ## ## ### */
+  /* ## ### ## SLIDER BOX ## ## ### */
+  /* ## ### ## SLIDER BOX ## ## ### */
+  
+  
+  
+  /* ## ### ## SLIDER BOX 3 SLIDER BOX 3 SLIDER BOX 3 ## ## ### */
+  /* ## ### ## SLIDER BOX 3 SLIDER BOX 3 SLIDER BOX 3 ## ## ### */
+  /* ## ### ## SLIDER BOX 3 SLIDER BOX 3 SLIDER BOX 3 ## ## ### */
+  .mySwiper3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  .c-mySwiper3 {
+    width: 100%;
+    height: 100%;
+  }
+  .c-mySwiper3-swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+  
+    overflow: hidden;
+    height: auto;
+  
+  }
+  
+  .swiper-horizontal>.c-swiper-pagination-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 0 auto;
+  }
+  .c-swiper-pagination-3 .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+    stroke-width: 1px;
+    border: 1.5px solid #626262;
+    background: transparent;
+  }
+  .c-swiper-pagination-3>.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 10px;
+    height: 10px;
+    stroke-width: 1px;
+    border: 1.5px solid #FFCF00;;
+    background: #FFCF00;
+  }
+  
+  /* ## ### ## SLIDER BOX 3 SLIDER BOX 3 SLIDER BOX 3 ## ## ### */
+  /* ## ### ## SLIDER BOX 3 SLIDER BOX 3 SLIDER BOX 3 ## ## ### */
+  /* ## ### ## SLIDER BOX 3 SLIDER BOX 3 SLIDER BOX 3 ## ## ### */
+
+
 @media (max-width: 480px) {
     .question-1-of-4 {
         width: 100%;
+    }
+}
+@media (max-width: 390px) {
+    .c-mySwiper3-swiper-slide {
+        height: 320px;
     }
 }
 @media (max-width: 330px) {
@@ -17,6 +102,9 @@
     }
     .c-width-modal {
         width: 100%;
+    }
+    .c-mySwiper3-swiper-slide {
+        height: 250px;
     }
 }
 @media (max-width: 250px) {
@@ -28,5 +116,8 @@
     }
     .question-1-of-4 .get-it-for-just-3-only-today-XSMCiM {
         width: 100%;
+    }
+    .c-mySwiper3-swiper-slide {
+        height: 160px;
     }
 }
