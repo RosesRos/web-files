@@ -1,0 +1,3140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./js/swiper-bundle.min.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Amazon Fire TV Stick 4k max</title>
+    <link rel="shortcut icon" href="./img/rating-9.svg" type="image/svg">
+    <style type="text/css">
+      .turbo-progress-bar {
+        position: fixed;
+        display: block;
+        top: 0;
+        left: 0;
+        height: 3px;
+        background: #0076ff;
+        z-index: 9999;
+        transition:
+          width 300ms ease-out,
+          opacity 150ms 150ms ease-in;
+        transform: translate3d(0, 0, 0);
+      }
+    </style>
+    <style id="st_globalStyles">
+      /* SCROLLBAR */
+      [dark-scroll]::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+      }
+
+      [dark-scroll]::-webkit-scrollbar-track-piece {
+        background-color: #2b2b2b;
+        border: 1px solid #1d1d1d;
+      }
+
+      [dark-scroll]::-webkit-scrollbar-thumb {
+        height: 10px;
+        background-color: #4d4d4d;
+      }
+
+      [dark-scroll]::-webkit-scrollbar-thumb:hover {
+        background-color: #5a5a5a;
+      }
+
+      /* LOAD PROGRESS */
+      .turbolinks-progress-bar {
+        height: 3px;
+        background-color: #ff6250;
+      }
+
+      /* GROUPING */
+      [data-id].ui-selecting {
+        box-shadow: inset 0 0 0 1px #4285f4 !important;
+      }
+
+      [data-id].ui-selected {
+        box-shadow: inset 0 0 0 1px #4285f4 !important;
+      }
+
+      /* CURSOR */
+      body[mode='comments'] * {
+        cursor: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik00LjkxNjQ4IDIzLjQxMDlDNS40OTE1MyAyMi45ODg3IDUuOTMxNzkgMjIuMzkzNSA2LjIzMjggMjEuNjQwN0M0Ljc5MDY5IDE5LjczODMgNCAxNy4zOTMzIDQgMTQuOTk3NUM0IDguOTM0MSA4LjkzMjgyIDQgMTUuMDAyMiA0QzIxLjA3MTcgNCAyNiA4LjkzOTE5IDI2IDE1LjAwMjVDMjYgMjEuMDY1OSAyMS4wNjcyIDI2IDE0Ljk5NzggMjZDMTIuOTg5NiAyNiAxMS4wMzUzIDI1LjQ1NTcgOS4zMjM2NyAyNC40MjMxQzguNDI5NjUgMjQuOTU3MiA3LjQxNDM0IDI1LjIyNjggNi4zMDAxOCAyNS4yMjY4QzUuOTU0MjYgMjUuMjI2OCA1LjU5OTM1IDI1LjIwMTQgNS4yNTM0MiAyNS4xNDU0QzQuOTAzIDI1LjA4OTUgNC42Mjg5NiAyNC44MDQ2IDQuNTUyNTggMjQuNDE4QzQuNDc2MjEgMjQuMDI2NCA0LjYxOTk3IDIzLjYyOTYgNC45MTY0OCAyMy40MTA5WiIgZmlsbD0iI0ZGNjI1MCIvPgo8L3N2Zz4K') 0 24,
+          auto !important;
+      }
+
+      body[mode='code'] [data-id]:not(.hidden) {
+        cursor: default;
+      }
+
+      /* default node state */
+      body[mode='code'] [data-id]:not(.hidden),
+      body[mode='comments'] [data-id]:not(.hidden) {
+        pointer-events: all;
+      }
+
+      /* is_image */
+      body[mode='code'] [data-id].is_image [data-id],
+      body[mode='comments'] [data-id].is_image [data-id] {
+        pointer-events: none !important;
+      }
+
+      /* without a data-id or ignored */
+      [data-id].ignore,
+      body[mode='code'] *:not([data-id]) {
+        pointer-events: none !important;
+      }
+
+      /* disable transforms for ignored elements */
+      body[mode='code'] [data-id]:hover {
+        transform: none !important;
+      }
+
+      div[class^='i-o-sparts'] {
+        pointer-events: none !important;
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="og:type" content="website">
+    <meta name="twitter:card" content="photo">
+    <style id="hotspots-styles">
+      .hotspot {
+        position: absolute;
+        border: 1px solid #2a9fd8;
+        background: rgba(0, 173, 255, 0.54);
+        opacity: 0;
+        z-index: -1;
+        pointer-events: none;
+      }
+    </style>
+    <style>
+      @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+      @font-face {
+        font-family: "Amazon Ember-Medium";
+        font-style: normal;
+        font-weight: 500;
+        src: url('./fonts/amazonember-md.ttf') format("truetype");
+      }
+
+      @font-face {
+        font-family: "Cera Pro-Light";
+        font-style: normal;
+        font-weight: 300;
+        src: url('fonts/CeraProLight.otf') format("opentype");
+      }
+
+      @font-face {
+        font-family: "Cera Pro-Bold";
+        font-style: normal;
+        font-weight: 700;
+        src: url('fonts/CeraProBold.otf') format("opentype");
+      }
+
+      /* The following line is used to measure usage of this code. You can remove it if you want. */
+      @import url("https://px.animaapp.com/65800c930585649490cfb442.65800c940585649490cfb445.iRv3U0d.hch.png");
+
+      .screen textarea:focus,
+      .screen input:focus {
+        outline: none;
+      }
+
+      .screen * {
+        -webkit-font-smoothing: antialiased;
+        box-sizing: border-box;
+      }
+
+      .screen div {
+        -webkit-text-size-adjust: none;
+      }
+
+      .component-wrapper a {
+        display: contents;
+        pointer-events: auto;
+        text-decoration: none;
+      }
+
+      .component-wrapper * {
+        -webkit-font-smoothing: antialiased;
+        box-sizing: border-box;
+        pointer-events: none;
+      }
+
+      .component-wrapper a *,
+      .component-wrapper input,
+      .component-wrapper video,
+      .component-wrapper iframe {
+        pointer-events: auto;
+      }
+
+      .component-wrapper.not-ready,
+      .component-wrapper.not-ready * {
+        visibility: hidden !important;
+      }
+
+      .screen a {
+        display: inline-flex;
+        text-decoration: none;
+      }
+
+      .full-width-a {
+        width: 100%;
+      }
+
+      .full-height-a {
+        height: 100%;
+      }
+
+      .container-center-vertical {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        pointer-events: none;
+      }
+
+      .container-center-vertical>* {
+        flex-shrink: 0;
+        pointer-events: auto;
+      }
+
+      .container-center-horizontal {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        pointer-events: none;
+        width: 100%;
+      }
+
+      .container-center-horizontal>* {
+        flex-shrink: 0;
+        pointer-events: auto;
+      }
+
+      .auto-animated div {
+        --z-index: -1;
+        opacity: 0;
+        position: absolute;
+      }
+
+      .auto-animated input {
+        --z-index: -1;
+        opacity: 0;
+        position: absolute;
+      }
+
+      .auto-animated .container-center-vertical,
+      .auto-animated .container-center-horizontal {
+        opacity: 1;
+      }
+
+      .overlay-base {
+        display: none;
+        height: 100%;
+        opacity: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      .overlay-base.animate-appear {
+        align-items: center;
+        animation: reveal 0.3s ease-in-out 1 normal forwards;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        opacity: 0;
+      }
+
+      .overlay-base.animate-disappear {
+        animation: reveal 0.3s ease-in-out 1 reverse forwards;
+        display: block;
+        opacity: 1;
+        pointer-events: none;
+      }
+
+      .overlay-base.animate-disappear * {
+        pointer-events: none;
+      }
+
+      @keyframes reveal {
+        from {
+          opacity: 0
+        }
+
+        to {
+          opacity: 1
+        }
+      }
+
+      .animate-nodelay {
+        animation-delay: 0s;
+      }
+
+      .align-self-flex-start {
+        align-self: flex-start;
+      }
+
+      .align-self-flex-end {
+        align-self: flex-end;
+      }
+
+      .align-self-flex-center {
+        align-self: flex-center;
+      }
+
+      .valign-text-middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .valign-text-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+
+      input:focus {
+        outline: none;
+      }
+
+      .listeners-active,
+      .listeners-active * {
+        pointer-events: auto;
+      }
+
+      .hidden,
+      .hidden * {
+        pointer-events: none;
+        visibility: hidden;
+      }
+
+      .smart-layers-pointers,
+      .smart-layers-pointers * {
+        pointer-events: auto;
+        visibility: visible;
+      }
+
+      .listeners-active-click,
+      .listeners-active-click * {
+        cursor: pointer;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      :root {
+        --black-282828100: #282828;
+        --forest-green: #298737;
+        --red-standard: #d03434;
+        --supernova: #ffcf00;
+        --usedblack-00000: #000000;
+        --usedblack-2: #282828;
+        --useddark-gray: #616161;
+        --usedlight-gray: #dbdbdb;
+        --white-ffffff100: #ffffff;
+        --white-ffffffall-graye6: #e6e6e6;
+        --font-size-l: 16px;
+        --font-size-m: 14px;
+        --font-size-s: 12px;
+        --font-size-xl: 17px;
+        --font-size-xxl: 18px;
+        --font-size-xxxl: 24px;
+        --font-size-xxxxl: 30px;
+        --font-family-amazon_ember-medium: "Amazon Ember-Medium", Helvetica;
+        --font-family-cera_pro-bold: "Cera Pro-Bold", Helvetica;
+        --font-family-cera_pro-light: "Cera Pro-Light", Helvetica;
+        --font-family-cera_pro-medium: "Cera Pro-Medium", Helvetica;
+        --font-family-cera_pro-regular: "Cera Pro-Regular", Helvetica;
+      }
+
+      .cerapro-regular-normal-storm-dust-14px {
+        color: var(--useddark-gray);
+        font-family: var(--font-family-cera_pro-regular);
+        font-size: var(--font-size-m);
+        font-style: normal;
+        font-weight: 400;
+      }
+
+      .cerapro-regular-normal-shark-12px {
+        color: var(--black-282828100);
+        font-family: var(--font-family-cera_pro-regular);
+        font-size: var(--font-size-s);
+        font-style: normal;
+        font-weight: 400;
+      }
+
+      .cerapro-regular-normal-shark-14px {
+        color: var(--black-282828100);
+        font-family: var(--font-family-cera_pro-regular);
+        font-size: var(--font-size-m);
+        font-style: normal;
+        font-weight: 400;
+      }
+
+      .cerapro-medium-shark-14px {
+        color: var(--black-282828100);
+        font-family: var(--font-family-cera_pro-medium);
+        font-size: var(--font-size-m);
+        font-style: normal;
+        font-weight: 500;
+      }
+
+      .cerapro-medium-shark-16px {
+        color: var(--black-282828100);
+        font-family: var(--font-family-cera_pro-medium);
+        font-size: var(--font-size-l);
+        font-style: normal;
+        font-weight: 500;
+      }
+
+      .cerapro-bold-forest-green-14px {
+        color: var(--forest-green);
+        font-family: var(--font-family-cera_pro-bold);
+        font-size: var(--font-size-m);
+        font-style: normal;
+        font-weight: 700;
+      }
+
+      /* screen - question-1-of-4 */
+      .question-1-of-4 {
+        background-color: var(--white-ffffff100);
+        overflow: hidden;
+        overflow-x: hidden;
+        position: relative;
+        width: 430px;
+      }
+
+      .question-1-of-4 .content-J1oKSg {
+        gap: 40px;
+        left: 0px;
+        top: 0px;
+      }
+
+      .question-1-of-4 .product-vp4M0x {
+        align-items: center;
+        background-color: transparent;
+        display: inline-flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 32px;
+        position: relative;
+
+        width: 100%;
+      }
+
+      .question-1-of-4 .about-product-wVOIrM {
+        align-items: center;
+        background-color: transparent;
+        display: inline-flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 16px;
+        position: relative;
+
+        width: 100%;
+      }
+
+      .question-1-of-4 .frame-slO7RT {
+        align-items: center;
+        display: inline-flex;
+        flex-direction: column;
+
+        width: 100%;
+      }
+
+      .question-1-of-4 .offer-9xHVDI {
+        align-items: center;
+        background-color: var(--supernova);
+        display: flex;
+        flex: 0 0 auto;
+        gap: 10px;
+        justify-content: center;
+        padding: 10px;
+        position: relative;
+        width: 390px;
+
+        width: 100%;
+      }
+
+      .question-1-of-4 .exclusive-sale-from-lego-bDggmk {
+        background-color: transparent;
+        color: var(--black-282828100);
+        font-family: var(--font-family-amazon_ember-medium);
+        font-size: var(--font-size-l);
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: 0.00px;
+        line-height: 17.6px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+        white-space: nowrap;
+        width: fit-content;
+      }
+
+      .question-1-of-4 .header-9xHVDI {
+        align-items: center;
+        align-self: stretch;
+        background-color: transparent;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-color: var(--supernova);
+        border-left-style: none;
+        border-right-style: none;
+        border-top-style: none;
+        display: flex;
+        flex: 0 0 auto;
+        justify-content: space-between;
+        padding: 10px;
+        position: relative;
+        width: 100%;
+      }
+
+      .question-1-of-4 .menu-logo-CTfX37 {
+        align-items: center;
+        background-color: transparent;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 14px;
+        position: relative;
+      }
+
+      .question-1-of-4 .frame-134-AwRseW {
+        align-items: flex-start;
+        background-color: transparent;
+        display: inline-flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 6px;
+        justify-content: center;
+        position: relative;
+      }
+
+      .question-1-of-4 .menu-1gfong {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 4px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .line-qE33QL {
+        margin-bottom: -2.00px;
+      }
+
+      .question-1-of-4 .menu-XEdMAn {
+        color: var(--black-282828100);
+        font-family: var(--font-family-cera_pro-light);
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 300;
+        letter-spacing: 0.00px;
+        line-height: 13.0px;
+        text-align: left;
+        white-space: nowrap;
+        width: fit-content;
+      }
+
+      .question-1-of-4 .brand-lego-1-AwRseW {
+        height: 40px;
+        width: 40px;
+      }
+
+      .question-1-of-4 .frame-CTfX37 {
+        align-items: center;
+        display: inline-flex;
+        gap: 12px;
+      }
+
+      .question-1-of-4 .icons-icon-aXqiqO {
+        height: 18px;
+        width: 18px;
+      }
+
+      .question-1-of-4 .icons-icon-lP91iR {
+        height: 22px;
+        width: 20px;
+      }
+
+      .question-1-of-4 .icons-icon-NLEkdp {
+        height: 18px;
+        width: 20px;
+      }
+
+      .question-1-of-4 .icons-icon-ipQNyJ {
+        height: 20px;
+        width: 16px;
+      }
+
+      .question-1-of-4 .img-9xHVDI {
+        align-items: center;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-color: var(--usedlight-gray);
+        border-left-style: none;
+        border-right-style: none;
+        border-top-style: none;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: flex-end;
+        margin-bottom: -1.00px;
+        margin-left: -1.00px;
+        margin-right: -1.00px;
+        padding: 32px 10px 24px;
+        width: 392px;
+      }
+
+      .question-1-of-4 .img-or-video-Ag3gKt {
+        align-items: center;
+        background-color: transparent;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 8px;
+        position: relative;
+        width: 370px;
+      }
+
+      .question-1-of-4 .img-gCgSZf {
+        align-self: stretch;
+        background-image: url(./img/img.svg);
+        background-position: 50% 50%;
+        background-size: cover;
+        height: 320px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .slider-gCgSZf {
+        align-items: center;
+        background-color: transparent;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 8px;
+        position: relative;
+      }
+
+      .question-1-of-4 .ellipse-OzkESv {
+        background-color: var(--supernova);
+      }
+
+      .question-1-of-4 .ellipse-NHp1x5 {
+        background-color: transparent;
+        border: 1px solid;
+        border-color: var(--useddark-gray);
+      }
+
+      .question-1-of-4 .ellipse-ePN18y {
+        background-color: transparent;
+        border: 1px solid;
+        border-color: var(--useddark-gray);
+      }
+
+      .question-1-of-4 .frame-OPabu8 {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        gap: 20px;
+        padding: 0px 10px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .title-fEx7wv {
+        background-color: transparent;
+        color: var(--black-282828100);
+        flex: 1;
+        font-family: var(--font-family-cera_pro-medium);
+        font-size: var(--font-size-xxxxl);
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: 0.00px;
+        line-height: 33.0px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+      }
+
+      .question-1-of-4 .rating-fEx7wv {
+        align-items: flex-end;
+        display: inline-flex;
+        flex-direction: column;
+        gap: 6px;
+        justify-content: center;
+      }
+
+      .question-1-of-4 .txt-x3A2zC {
+        align-items: center;
+        align-self: stretch;
+        display: flex;
+        gap: 8px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .x49-Wieqg7 {
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+        white-space: nowrap;
+        width: fit-content;
+      }
+
+      .question-1-of-4 .x34-reviews-Wieqg7 {
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+        white-space: nowrap;
+        width: fit-content;
+      }
+
+      .question-1-of-4 .txt-slO7RT {
+        align-items: center;
+        display: inline-flex;
+        flex-direction: column;
+        gap: 12px;
+
+        width: 100%;
+        padding: 0 10px;
+      }
+
+      .question-1-of-4 .frame-TFO8wr {
+        align-items: flex-start;
+        display: inline-flex;
+        flex-direction: column;
+        gap: 8px;
+
+        width: 100%;
+      }
+
+      .question-1-of-4 .get-it-for-just-3-only-today-XSMCiM {
+        background-color: transparent;
+        color: var(--black-282828100);
+        font-family: var(--font-family-cera_pro-medium);
+        font-size: var(--font-size-xxl);
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: 0.00px;
+        line-height: 19.8px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+        width: 370px;
+      }
+
+      .question-1-of-4 .lego-is-thrilled-to-XSMCiM {
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        position: relative;
+        text-align: left;
+        width: 353px;
+      }
+
+      .question-1-of-4 .offer-expires-in-XSMCiM {
+        align-items: flex-start;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 16px;
+        justify-content: center;
+      }
+
+      .question-1-of-4 .time-2bTao7 {
+        align-items: flex-start;
+        background-color: transparent;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 16px;
+        position: relative;
+      }
+
+      .question-1-of-4 .offer-expires-in-f3Ty7q {
+        color: var(--red-standard);
+        font-family: var(--font-family-cera_pro-medium);
+        font-size: var(--font-size-m);
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        margin-top: -1.00px;
+        text-align: left;
+        white-space: nowrap;
+        width: fit-content;
+      }
+
+      .question-1-of-4 .x034641-2bTao7 {
+        background-color: transparent;
+        color: var(--red-standard);
+        font-family: var(--font-family-cera_pro-medium);
+        font-size: var(--font-size-m);
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+        white-space: nowrap;
+        width: fit-content;
+      }
+
+      .question-1-of-4 .question-wVOIrM {
+        align-items: flex-start;
+        background-color: transparent;
+        display: inline-flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+        width: 100%;
+        /* padding: 0 10px; */
+      }
+
+      .question-1-of-4 .txt-RFp2BK {
+        align-items: flex-start;
+        display: inline-flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .question-1-of-4 .question-1-of-4-2x0pLH {
+        background-color: transparent;
+        color: var(--black-282828100);
+        font-family: var(--font-family-cera_pro-medium);
+        font-size: var(--font-size-xxl);
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: 0.00px;
+        line-height: 19.8px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+        width: 370px;
+      }
+
+      .question-1-of-4 .are-you-a-man-or-a-woman-2x0pLH {
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        position: relative;
+        text-align: left;
+        width: 370px;
+      }
+
+      .question-1-of-4 .variants-RFp2BK {
+        align-items: flex-start;
+        align-self: stretch;
+        background-color: transparent;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 4px;
+        position: relative;
+        width: 100%;
+      }
+
+      .question-1-of-4 .customer-reviews-vp4M0x {
+        align-items: flex-start;
+        border-radius: 20px;
+        /* box-shadow: 0px 0px 6px #0000000f; */
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0px 10px;
+        /* width: 390px; */
+        width: 100%;
+      }
+
+      .question-1-of-4 .customer-reviews-JhWCXl {
+        color: var(--black-282828100);
+        font-family: var(--font-family-cera_pro-medium);
+        font-size: var(--font-size-xxxl);
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: 0.00px;
+        line-height: 27.6px;
+        margin-top: -0.50px;
+        text-align: left;
+        width: fit-content;
+      }
+
+      .question-1-of-4 .content-JhWCXl {
+        flex: 0 0 auto;
+      }
+
+      .question-1-of-4 .review-GiiBKj {
+        margin-top: -1.00px;
+      }
+
+      .question-1-of-4 .txt-isacDX {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .frame-oHRkxW {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .rating-yyHxmR {
+        align-items: center;
+        display: inline-flex;
+        gap: 16px;
+      }
+
+      .question-1-of-4 .thanks-lego-yyHxmR {
+        align-self: stretch;
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 17.6px;
+        position: relative;
+        text-align: left;
+      }
+
+      .question-1-of-4 .samantha-w-oHRkxW {
+        align-self: stretch;
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        position: relative;
+        text-align: left;
+      }
+
+      .question-1-of-4 .txt-oHRkxW {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .winning-the-lego-ros-dnKZKG {
+        align-self: stretch;
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+      }
+
+      .question-1-of-4 .review_-img-or-video-J4EPNC {
+        background-image: url(./img/review-img-or-video@2x.png);
+      }
+
+      .question-1-of-4 .review_-img-or-video-e19AKN {
+        background-image: url(./img/review-img-or-video-1@2x.png);
+      }
+
+      .question-1-of-4 .was-this-helpful-isacDX {
+        align-items: flex-start;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 4px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .was-this-helpful-9Kf212 {
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        margin-top: -1.00px;
+        text-align: left;
+      }
+
+      .question-1-of-4 .like-nwzEk6 {
+        align-items: center;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 4px;
+      }
+
+      .question-1-of-4 .like-wa9mJQ {
+        height: 16px;
+        width: 16px;
+      }
+
+      .question-1-of-4 .dislike-nwzEk6 {
+        align-items: center;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 4px;
+      }
+
+      .question-1-of-4 .dislike-LsMhqs {
+        height: 16.000001398764653px;
+        width: 16.000001398764425px;
+      }
+
+      .question-1-of-4 .txt-G34iql {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .january-14th-2024-aqEgpV {
+        align-self: stretch;
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+      }
+
+      .question-1-of-4 .frame-aqEgpV {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .rating-Cb8Skw {
+        align-items: center;
+        display: inline-flex;
+        gap: 16px;
+      }
+
+      .question-1-of-4 .absolutely-thrilled-Cb8Skw {
+        align-self: stretch;
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 17.6px;
+        position: relative;
+        text-align: left;
+      }
+
+      .question-1-of-4 .m-t-aqEgpV {
+        align-self: stretch;
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        position: relative;
+        text-align: left;
+      }
+
+      .question-1-of-4 .txt-aqEgpV {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .the-lego-roses-are-f-JXCDSh {
+        align-self: stretch;
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+      }
+
+      .question-1-of-4 .review_-img-or-video-uyvsbi {
+        background-image: url(./img/review-img-or-video-2@2x.png);
+      }
+
+      .question-1-of-4 .was-this-helpful-G34iql {
+        align-items: flex-start;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 4px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .was-this-helpful-rXRg6z {
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        margin-top: -1.00px;
+        text-align: left;
+      }
+
+      .question-1-of-4 .like-UhvtD4 {
+        align-items: center;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 4px;
+      }
+
+      .question-1-of-4 .like-PsAdrl {
+        height: 16px;
+        width: 16px;
+      }
+
+      .question-1-of-4 .dislike-UhvtD4 {
+        align-items: center;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 4px;
+      }
+
+      .question-1-of-4 .dislike-QnvQo3 {
+        height: 16.000001398764653px;
+        width: 16.000001398764425px;
+      }
+
+      .question-1-of-4 .txt-GVU2qd {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .frame-xEQeMy {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .rating-EZhu8h {
+        align-items: center;
+        display: inline-flex;
+        gap: 16px;
+      }
+
+      .question-1-of-4 .my-girlfriend-loves-them-EZhu8h {
+        align-self: stretch;
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 17.6px;
+        position: relative;
+        text-align: left;
+      }
+
+      .question-1-of-4 .tom-s-xEQeMy {
+        align-self: stretch;
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        position: relative;
+        text-align: left;
+      }
+
+      .question-1-of-4 .txt-xEQeMy {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .was-this-helpful-GVU2qd {
+        align-items: flex-start;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 4px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .was-this-helpful-xJ7EGz {
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        margin-top: -1.00px;
+        text-align: left;
+      }
+
+      .question-1-of-4 .like-v4qG98 {
+        align-items: center;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 4px;
+      }
+
+      .question-1-of-4 .like-uGcj9F {
+        height: 16px;
+        width: 16px;
+      }
+
+      .question-1-of-4 .dislike-v4qG98 {
+        align-items: center;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 4px;
+      }
+
+      .question-1-of-4 .dislike-XWdCIr {
+        height: 16.000001398764653px;
+        width: 16.000001398764425px;
+      }
+
+      .question-1-of-4 .txt-4niicq {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .january-19th-2024-NPjaZJ {
+        align-self: stretch;
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+      }
+
+      .question-1-of-4 .frame-NPjaZJ {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .rating-Bemsh3 {
+        align-items: center;
+        display: inline-flex;
+        gap: 16px;
+      }
+
+      .question-1-of-4 .easy-to-assemble-Bemsh3 {
+        align-self: stretch;
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 17.6px;
+        position: relative;
+        text-align: left;
+      }
+
+      .question-1-of-4 .dave-m-NPjaZJ {
+        align-self: stretch;
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        position: relative;
+        text-align: left;
+      }
+
+      .question-1-of-4 .txt-NPjaZJ {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .review_-img-or-video-LDOEkp {
+        background-image: url(./img/review-img-or-video-3@2x.png);
+      }
+
+      .question-1-of-4 .review_-img-or-video-EFeDyn {
+        background-image: url(./img/review-img-or-video-4@2x.png);
+      }
+
+      .question-1-of-4 .was-this-helpful-4niicq {
+        align-items: flex-start;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 4px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .was-this-helpful-ThWHDb {
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        margin-top: -1.00px;
+        text-align: left;
+      }
+
+      .question-1-of-4 .like-Cov6xx {
+        align-items: center;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 4px;
+      }
+
+      .question-1-of-4 .like-nutbrR {
+        height: 16px;
+        width: 16px;
+      }
+
+      .question-1-of-4 .dislike-Cov6xx {
+        align-items: center;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 4px;
+      }
+
+      .question-1-of-4 .dislike-zWxDbC {
+        height: 16.000001398764653px;
+        width: 16.000001398764425px;
+      }
+
+      .question-1-of-4 .txt-771pL9 {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .january-18th-2024-RMy4Bs {
+        align-self: stretch;
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+      }
+
+      .question-1-of-4 .frame-RMy4Bs {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .rating-PdvdBI {
+        align-items: center;
+        display: inline-flex;
+        gap: 16px;
+      }
+
+      .question-1-of-4 .fast-delivery-PdvdBI {
+        align-self: stretch;
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 17.6px;
+        position: relative;
+        text-align: left;
+      }
+
+      .question-1-of-4 .stephanie-k-RMy4Bs {
+        align-self: stretch;
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        position: relative;
+        text-align: left;
+      }
+
+      .question-1-of-4 .txt-RMy4Bs {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .winning-this-was-lik-Ag4I0r {
+        align-self: stretch;
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+      }
+
+      .question-1-of-4 .was-this-helpful-771pL9 {
+        align-items: flex-start;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 4px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .was-this-helpful-xx1DVS {
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        margin-top: -1.00px;
+        text-align: left;
+      }
+
+      .question-1-of-4 .like-9sOTrC {
+        align-items: center;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 4px;
+      }
+
+      .question-1-of-4 .like-xJAGxG {
+        height: 16px;
+        width: 16px;
+      }
+
+      .question-1-of-4 .dislike-9sOTrC {
+        align-items: center;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 4px;
+      }
+
+      .question-1-of-4 .dislike-VnNiqV {
+        height: 16.000001398764653px;
+        width: 16.000001398764425px;
+      }
+
+      .question-1-of-4 .txt-xWHlpZ {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .frame-SodNXQ {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .rating-HRzbxq {
+        align-items: center;
+        display: inline-flex;
+        gap: 16px;
+      }
+
+      .question-1-of-4 .delightful-surprise-from-lego-HRzbxq {
+        align-self: stretch;
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 17.6px;
+        position: relative;
+        text-align: left;
+      }
+
+      .question-1-of-4 .dd-SodNXQ {
+        align-self: stretch;
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        position: relative;
+        text-align: left;
+      }
+
+      .question-1-of-4 .txt-SodNXQ {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .i-didnt-expect-to-lo-ezjvsh {
+        align-self: stretch;
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+      }
+
+      .question-1-of-4 .review_-img-or-video-2dBBih {
+        background-image: url(./img/review-img-or-video-5@2x.png);
+      }
+
+      .question-1-of-4 .was-this-helpful-xWHlpZ {
+        align-items: flex-start;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 4px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .was-this-helpful-EekP1Q {
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        margin-top: -1.00px;
+        text-align: left;
+      }
+
+      .question-1-of-4 .like-j1cJEL {
+        align-items: center;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 4px;
+      }
+
+      .question-1-of-4 .like-JxSNuZ {
+        height: 16px;
+        width: 16px;
+      }
+
+      .question-1-of-4 .dislike-j1cJEL {
+        align-items: center;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 4px;
+      }
+
+      .question-1-of-4 .dislike-AfV75l {
+        height: 16.000001398764653px;
+        width: 16.000001398764425px;
+      }
+
+      .question-1-of-4 .txt-KAp4sp {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .january-11th-2024-fCqbRW {
+        align-self: stretch;
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+      }
+
+      .question-1-of-4 .frame-fCqbRW {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .rating-DTeGez {
+        align-items: center;
+        display: inline-flex;
+        gap: 16px;
+      }
+
+      .question-1-of-4 .great-roses-DTeGez {
+        align-self: stretch;
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 17.6px;
+        position: relative;
+        text-align: left;
+      }
+
+      .question-1-of-4 .olivia-h-fCqbRW {
+        align-self: stretch;
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        position: relative;
+        text-align: left;
+      }
+
+      .question-1-of-4 .txt-fCqbRW {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .im-thrilled-with-the-TbYiXS {
+        align-self: stretch;
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+      }
+
+      .question-1-of-4 .review_-img-or-video-opVn3z {
+        background-image: url(./img/review-img-or-video-6@2x.png);
+      }
+
+      .question-1-of-4 .was-this-helpful-KAp4sp {
+        align-items: flex-start;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 4px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .was-this-helpful-FKd1wJ {
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        margin-top: -1.00px;
+        text-align: left;
+      }
+
+      .question-1-of-4 .like-hMkXkb {
+        align-items: center;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 4px;
+      }
+
+      .question-1-of-4 .like-MstRdU {
+        height: 16px;
+        width: 16px;
+      }
+
+      .question-1-of-4 .dislike-hMkXkb {
+        align-items: center;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 4px;
+      }
+
+      .question-1-of-4 .dislike-fOuxwj {
+        height: 16.000001398764653px;
+        width: 16.000001398764425px;
+      }
+
+      .question-1-of-4 .txt-vcwafn {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .frame-7BNfsK {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .rating-4uKGoV {
+        align-items: center;
+        display: inline-flex;
+        gap: 16px;
+      }
+
+      .question-1-of-4 .just-happy-4uKGoV {
+        align-self: stretch;
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 17.6px;
+        position: relative;
+        text-align: left;
+      }
+
+      .question-1-of-4 .zoe-k-7BNfsK {
+        align-self: stretch;
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        position: relative;
+        text-align: left;
+      }
+
+      .question-1-of-4 .txt-7BNfsK {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .receiving-these-lego-OAxXZG {
+        align-self: stretch;
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+      }
+
+      .question-1-of-4 .review_-img-or-video-eS81xm {
+        background-image: url(./img/review-img-or-video-7@2x.png);
+      }
+
+      .question-1-of-4 .was-this-helpful-vcwafn {
+        align-items: flex-start;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 4px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .was-this-helpful-EJO30I {
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        margin-top: -1.00px;
+        text-align: left;
+      }
+
+      .question-1-of-4 .like-NSX3Qm {
+        align-items: center;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 4px;
+      }
+
+      .question-1-of-4 .like-193tET {
+        height: 16px;
+        width: 16px;
+      }
+
+      .question-1-of-4 .dislike-NSX3Qm {
+        align-items: center;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 4px;
+      }
+
+      .question-1-of-4 .dislike-b4Xutc {
+        height: 16.000001398764425px;
+        width: 16.000001398764425px;
+      }
+
+      .question-1-of-4 .review-lQmDTL {
+        margin-bottom: -1.00px;
+      }
+
+      .question-1-of-4 .txt-2JsGQk {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .january-15th-2024-FkQman {
+        align-self: stretch;
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+      }
+
+      .question-1-of-4 .frame-FkQman {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .rating-cXP8Fp {
+        align-items: center;
+        display: inline-flex;
+        gap: 16px;
+      }
+
+      .question-1-of-4 .omg-ive-won-cXP8Fp {
+        align-self: stretch;
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 17.6px;
+        position: relative;
+        text-align: left;
+      }
+
+      .question-1-of-4 .jessica-l-FkQman {
+        align-self: stretch;
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        position: relative;
+        text-align: left;
+      }
+
+      .question-1-of-4 .txt-FkQman {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .cant-believe-i-won-r-BUfcFh {
+        align-self: stretch;
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+      }
+
+      .question-1-of-4 .review_-img-or-video-YBfDxH {
+        background-image: url(./img/review-img-or-video-8@2x.png);
+      }
+
+      .question-1-of-4 .was-this-helpful-2JsGQk {
+        align-items: flex-start;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 4px;
+        width: 100%;
+      }
+
+      .question-1-of-4 .was-this-helpful-tJLxHb {
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        margin-top: -1.00px;
+        text-align: left;
+      }
+
+      .question-1-of-4 .like-MjavQp {
+        align-items: center;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 4px;
+      }
+
+      .question-1-of-4 .like-A1MmQg {
+        height: 16px;
+        width: 16px;
+      }
+
+      .question-1-of-4 .dislike-MjavQp {
+        align-items: center;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 4px;
+      }
+
+      .question-1-of-4 .dislike-CY5abk {
+        height: 16.000001398764425px;
+        width: 16.000001398764425px;
+      }
+
+      .question-1-of-4 .footer-vp4M0x {
+        align-items: center;
+        background-color: #201d48;
+        display: flex;
+        flex: 0 0 auto;
+        justify-content: space-between;
+        padding: 30px 10px 20px;
+        position: relative;
+        /* width: 390px; */
+        width: 100%;
+      }
+
+      .question-1-of-4 .brand-lego-1-kXvmSq {
+        height: 64px;
+        width: 64px;
+      }
+
+      .question-1-of-4 .x2024-lego-all-rights-reserved-kXvmSq {
+        background-color: transparent;
+        color: var(--white-ffffff100);
+        font-family: var(--font-family-cera_pro-regular);
+        font-size: var(--font-size-m);
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        position: relative;
+        text-align: right;
+        width: fit-content;
+      }
+
+      .question-1-of-4 .brand-lego-1 {
+        background-color: transparent;
+        position: relative;
+      }
+
+      .question-1-of-4 .button_1 {
+        align-items: center;
+        align-self: stretch;
+        background-color: #fd8024;
+        border-radius: 6px;
+        display: flex;
+        gap: 10px;
+        height: 55px;
+        justify-content: center;
+        padding: 20px 25px;
+        position: relative;
+        width: 100%;
+
+        cursor: pointer;
+      }
+
+      .question-1-of-4 .content {
+        align-items: flex-start;
+        background-color: transparent;
+        display: inline-flex;
+        flex-direction: column;
+        position: relative;
+
+        width: 100%;
+      }
+
+      .question-1-of-4 .customer-reviews {
+        background-color: transparent;
+        position: relative;
+      }
+
+      .question-1-of-4 .dislike {
+        background-color: transparent;
+        position: relative;
+      }
+
+      .question-1-of-4 .ellipse {
+        border-radius: 5px;
+        height: 10px;
+        position: relative;
+        width: 10px;
+      }
+
+      .question-1-of-4 .frame {
+        background-color: transparent;
+        flex: 0 0 auto;
+        position: relative;
+      }
+
+      .question-1-of-4 .i-won-the-lego-roses {
+        align-self: stretch;
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+      }
+
+      .question-1-of-4 .i-would-recommend-this-to-a-friend {
+        align-self: stretch;
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        position: relative;
+        text-align: left;
+      }
+
+      .question-1-of-4 .icons-icon {
+        background-color: transparent;
+        position: relative;
+      }
+
+      .question-1-of-4 .img {
+        background-color: transparent;
+        position: relative;
+      }
+
+      .question-1-of-4 .january-13th-2024 {
+        align-self: stretch;
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+      }
+
+      .question-1-of-4 .january-17th-2024 {
+        align-self: stretch;
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+      }
+
+      .question-1-of-4 .like {
+        background-color: transparent;
+        position: relative;
+      }
+
+      .question-1-of-4 .like-dislike {
+        align-items: center;
+        background-color: transparent;
+        border-radius: 20px;
+        /* box-shadow: 4px 4px 6px #0000000f; */
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 12px;
+        justify-content: center;
+        padding: 9px 0px;
+        position: relative;
+      }
+
+      .question-1-of-4 .line {
+        align-self: stretch;
+        background-color: transparent;
+        height: 2px;
+        position: relative;
+        width: 100%;
+      }
+
+      .question-1-of-4 .menu {
+        background-color: transparent;
+        position: relative;
+      }
+
+      .question-1-of-4 .offer-expires-in {
+        background-color: transparent;
+        position: relative;
+      }
+
+      .question-1-of-4 .photo {
+        align-items: flex-start;
+        background-color: transparent;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 16px;
+        position: relative;
+
+        width: 100%;
+      }
+
+      .question-1-of-4 .rating {
+        background-color: transparent;
+        flex: 0 0 auto;
+        position: relative;
+      }
+
+      .question-1-of-4 .review {
+        align-items: flex-start;
+        background-color: transparent;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-color: var(--white-ffffffall-graye6);
+        border-left-style: none;
+        border-right-style: none;
+        border-top-style: solid;
+        border-top-width: 1px;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 16px;
+        /* margin-left: -1.00px; */
+        /* margin-right: -1.00px; */
+        overflow: hidden;
+        padding: 15px 0px;
+        position: relative;
+        /* width: 372px; */
+        width: 100%;
+      }
+
+      .question-1-of-4 .review_-img-or-video {
+        background-color: transparent;
+        background-position: 50% 50%;
+        background-size: cover;
+        height: 170px;
+        position: relative;
+        width: 171px;
+      }
+
+      .question-1-of-4 .sample-text {
+        background-color: transparent;
+        color: var(--black-282828100);
+        font-family: var(--font-family-cera_pro-medium);
+        font-size: var(--font-size-xl);
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: 0.00px;
+        line-height: 22.1px;
+        margin-bottom: -2.50px;
+        margin-top: -4.50px;
+        position: relative;
+        text-align: left;
+        white-space: nowrap;
+        width: fit-content;
+      }
+
+      .question-1-of-4 .txt {
+        background-color: transparent;
+        flex: 0 0 auto;
+        position: relative;
+      }
+
+      .question-1-of-4 .was-this-helpful {
+        align-self: stretch;
+        background-color: transparent;
+        position: relative;
+      }
+
+      .question-1-of-4 .x50 {
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 18.2px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+        white-space: nowrap;
+        width: fit-content;
+      }
+
+      .question-1-of-4 .x88 {
+        background-color: transparent;
+        letter-spacing: 0.00px;
+        line-height: 15.6px;
+        margin-top: -1.00px;
+        position: relative;
+        text-align: left;
+        white-space: nowrap;
+        width: fit-content;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body style="margin: 0;background: #ffffff;">
+    <div class="container-center-horizontal">
+      <div class="question-1-of-4 screen " data-id="1397:5280">
+        <div class="content-J1oKSg content" data-id="1397:5290">
+          <div class="product-vp4M0x" data-id="1397:5291">
+            <div class="about-product-wVOIrM" data-id="1397:5292">
+              <div class="frame-slO7RT frame" data-id="1397:5293">
+                <div class="offer-9xHVDI" data-id="1397:5294">
+                  <div class="exclusive-sale-from-lego-bDggmk" data-id="1397:5295">Exclusive Sale from LEGO</div>
+                </div>
+                <header class="header-9xHVDI" data-id="1399:7046">
+                  <div class="menu-logo-CTfX37" data-id="I1399:7046;1397:5297">
+                    <div class="frame-134-AwRseW" data-id="I1399:7046;1399:5966">
+                      <div class="menu-1gfong menu" data-id="I1399:7046;1397:5298">
+                        <img class="line" data-id="I1399:7046;1397:5299" src="./img/line-.svg" anima-src="./img/line-.svg" alt="Line ">
+                        <img class="line-qE33QL line" data-id="I1399:7046;1397:5300" src="./img/line-.svg" anima-src="./img/line-.svg" alt="Line ">
+                      </div>
+                      <div class="menu-XEdMAn menu" data-id="I1399:7046;1399:5965">MENU</div>
+                    </div>
+                    <img class="brand-lego-1-AwRseW brand-lego-1" data-id="I1399:7046;1397:5765" src="./img/brand-lego-1.svg" anima-src="./img/brand-lego-1.svg" alt="brand-lego 1">
+                  </div>
+                  <div class="frame-CTfX37 frame" data-id="I1399:7046;1397:5311">
+                    <img src="./img/icons-icon.svg" alt="svg">
+                    <img src="./img/icons-icon-1.svg" alt="svg">
+                    <img src="./img/icons-icon-2.svg" alt="svg">
+                    <img src="./img/icons-icon-3.svg" alt="svg">
+                  </div>
+                </header>
+                <div class="img-9xHVDI img" data-id="1397:5328">
+                  <div class="img-or-video-Ag3gKt" data-id="1397:5726">
+                    <div class="img-gCgSZf img" data-id="I1397:5726;1397:5689-0c786988-9120-4787-90a7-f0ff864d336f"></div>
+                    <div class="slider-gCgSZf" data-id="I1397:5726;1397:5690">
+                      <div class="ellipse-OzkESv ellipse" data-id="I1397:5726;1397:5691"></div>
+                      <div class="ellipse-NHp1x5 ellipse" data-id="I1397:5726;1397:5692"></div>
+                      <div class="ellipse-ePN18y ellipse" data-id="I1397:5726;1397:5710"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="frame-OPabu8 frame" data-id="1399:6076">
+                <h1 class="title-fEx7wv" data-id="1399:6077">LEGO Roses</h1>
+                <div class="rating-fEx7wv rating" data-id="1399:6078">
+                  <img class="rating" data-id="1399:6079" src="./img/rating.svg" anima-src="./img/rating.svg" alt="Rating">
+                  <div class="txt-x3A2zC txt" data-id="1399:6080">
+                    <div class="x49-Wieqg7 cerapro-medium-shark-14px" data-id="1399:6081">4.9</div>
+                    <div class="x34-reviews-Wieqg7 cerapro-regular-normal-shark-14px" data-id="1399:6082">(34 Reviews) </div>
+                  </div>
+                </div>
+              </div>
+              <div class="txt-slO7RT txt" data-id="1397:5331">
+                <div class="frame-TFO8wr frame" data-id="1397:5332">
+                  <p class="get-it-for-just-3-only-today-XSMCiM" data-id="1397:5333">Get it for just £3 only today!</p>
+                  <p class="lego-is-thrilled-to-XSMCiM cerapro-regular-normal-shark-14px" data-id="1397:5334">LEGO is thrilled to announce an exclusive, time-limited sale of LEGO Roses! All you need to do is complete a small survey to see if you can participate</p>
+                  <div class="offer-expires-in-XSMCiM offer-expires-in" data-id="1397:5335">
+                    <div class="time-2bTao7" data-id="1397:5336">
+                      <div class="offer-expires-in-f3Ty7q offer-expires-in" data-id="1397:5337">Offer expires in:</div>
+                    </div>
+                    <div class="x034641-2bTao7" data-id="1397:5338"><span class="hour">03</span>:<span class="minu">46</span>:<span class="seco">41</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div id="faq">
+              <div class="question-wVOIrM" id="q1" data-id="1399:6138">
+                <div class="txt-RFp2BK txt" data-id="I1399:6138;1399:6095">
+                  <div class="question-1-of-4-2x0pLH" data-id="I1399:6138;1399:6096">Question 1 of 4:</div>
+                  <p class="are-you-a-man-or-a-woman-2x0pLH cerapro-regular-normal-shark-14px" data-id="I1399:6138;1399:6097">Are you a man or a woman?</p>
+                </div>
+                <div class="variants-RFp2BK" data-id="I1399:6138;1399:6098">
+                  <article class="button_1 bq1" data-id="I1399:6138;1399:6222">
+                    <div class="sample-text" data-id="I1399:6138;1399:6222;1399:6149">Man</div>
+                  </article>
+                  <article class="button_1 bq1" data-id="I1399:6138;1399:6230">
+                    <div class="sample-text" data-id="I1399:6138;1399:6230;1399:6149">Woman</div>
+                  </article>
+                </div>
+              </div>
+
+              <div class="question-wVOIrM" id="q2" data-id="1399:6138:1">
+                <div class="txt-RFp2BK txt" data-id="I1399:6138;1399:6095">
+                  <div class="question-1-of-4-2x0pLH" data-id="I1399:6138;1399:6096">Question 2 of 4:</div>
+                  <p class="are-you-a-man-or-a-woman-2x0pLH cerapro-regular-normal-shark-14px" data-id="I1399:6138;1399:6097">How old are you?</p>
+                </div>
+                <div class="variants-RFp2BK" data-id="I1399:6138;1399:6098">
+                  <article class="button_1 bq2" data-id="I1399:6138;1399:6222">
+                    <div class="sample-text" data-id="I1399:6138;1399:6222;1399:6149">18-29</div>
+                  </article>
+                  <article class="button_1 bq2" data-id="I1399:6138;1399:6230">
+                    <div class="sample-text" data-id="I1399:6138;1399:6230;1399:6149">30-39</div>
+                  </article>
+                  <article class="button_1 bq2" data-id="I1399:6138;1399:6230">
+                    <div class="sample-text" data-id="I1399:6138;1399:6230;1399:6149">40-49</div>
+                  </article>
+                  <article class="button_1 bq2" data-id="I1399:6138;1399:6230">
+                    <div class="sample-text" data-id="I1399:6138;1399:6230;1399:6149">50+</div>
+                  </article>
+                </div>
+              </div>
+
+              <div class="question-wVOIrM" id="q3" data-id="1399:6138:2">
+                <div class="txt-RFp2BK txt" data-id="I1399:6138;1399:6095">
+                  <div class="question-1-of-4-2x0pLH" data-id="I1399:6138;1399:6096">Question 3 of 4:</div>
+                  <p class="are-you-a-man-or-a-woman-2x0pLH cerapro-regular-normal-shark-14px" data-id="I1399:6138;1399:6097">Have you ever bought LEGO products before?</p>
+                </div>
+                <div class="variants-RFp2BK" data-id="I1399:6138;1399:6098">
+                  <article class="button_1 bq3" data-id="I1399:6138;1399:6222">
+                    <div class="sample-text" data-id="I1399:6138;1399:6222;1399:6149">Yes</div>
+                  </article>
+                  <article class="button_1 bq3" data-id="I1399:6138;1399:6230">
+                    <div class="sample-text" data-id="I1399:6138;1399:6230;1399:6149">No</div>
+                  </article>
+                </div>
+              </div>
+
+              <div class="question-wVOIrM" id="q4" data-id="1399:6138:2">
+                <div class="txt-RFp2BK txt" data-id="I1399:6138;1399:6095">
+                  <div class="question-1-of-4-2x0pLH" data-id="I1399:6138;1399:6096">Question 4 of 4:</div>
+                  <p class="are-you-a-man-or-a-woman-2x0pLH cerapro-regular-normal-shark-14px" data-id="I1399:6138;1399:6097">How many people are there in your family?</p>
+                </div>
+                <div class="variants-RFp2BK" data-id="I1399:6138;1399:6098">
+                  <article class="button_1 bq4" data-id="I1399:6138;1399:6222">
+                    <div class="sample-text" data-id="I1399:6138;1399:6222;1399:6149">1-2</div>
+                  </article>
+                  <article class="button_1 bq4" data-id="I1399:6138;1399:6230">
+                    <div class="sample-text" data-id="I1399:6138;1399:6230;1399:6149">2-3</div>
+                  </article>
+                  <article class="button_1 bq4" data-id="I1399:6138;1399:6230">
+                    <div class="sample-text" data-id="I1399:6138;1399:6230;1399:6149">3-4</div>
+                  </article>
+                  <article class="button_1 bq4" data-id="I1399:6138;1399:6230">
+                    <div class="sample-text" data-id="I1399:6138;1399:6230;1399:6149">5+</div>
+                  </article>
+                </div>
+              </div>
+
+              <div id="p_body_content">
+                <div class="content" style="padding:0">
+                  <div class="main-content" id="content3">
+                    <div class="boxes" id="boxes">
+                      <div class="div_img_gift">
+                        <img class="box-gift img_gift" src="./img/img.png">
+                      </div>
+                      <div class="temblor try" id="0">
+                        <div class="caja_tapa">
+                          <img class="box-01" src="img/32.webp">
+                        </div>
+                        <div class="caja_trasera">
+                          <img class="box-03" src="img/33.webp">
+                        </div>
+                        <div class="caja_gift">
+                          <img class="box-04" src="./img/img.png">
+                        </div>
+                        <div class="caja">
+                          <img class="box-02" src="img/35.webp">
+                        </div>
+                      </div>
+                      <div class="temblor try" id="1">
+                        <div class="caja_tapa">
+                          <img class="box-01" src="img/32.webp">
+                        </div>
+                        <div class="caja_trasera">
+                          <img class="box-03" src="img/33.webp">
+                        </div>
+                        <div class="caja_gift">
+                          <img class="box-04" src="./img/img.png">
+                        </div>
+                        <div class="caja">
+                          <img class="box-02" src="img/35.webp">
+                        </div>
+                      </div>
+                      <div class="temblor try" id="2">
+                        <div class="caja_tapa">
+                          <img class="box-01" src="img/32.webp">
+                        </div>
+                        <div class="caja_trasera">
+                          <img class="box-03" src="img/33.webp">
+                        </div>
+                        <div class="caja_gift">
+                          <img class="box-04" src="./img/img.png">
+                        </div>
+                        <div class="caja">
+                          <img class="box-02" src="img/35.webp">
+                        </div>
+                      </div>
+                      <div class="temblor try" id="3">
+                        <div class="caja_tapa">
+                          <img class="box-01" src="img/32.webp">
+                        </div>
+                        <div class="caja_trasera">
+                          <img class="box-03" src="img/33.webp">
+                        </div>
+                        <div class="caja_gift">
+                          <img class="box-04" src="./img/img.png">
+                        </div>
+                        <div class="caja">
+                          <img class="box-02" src="img/35.webp">
+                        </div>
+                      </div>
+                      <div class="temblor try" id="4">
+                        <div class="caja_tapa">
+                          <img class="box-01" src="img/32.webp">
+                        </div>
+                        <div class="caja_trasera">
+                          <img class="box-03" src="img/33.webp">
+                        </div>
+                        <div class="caja_gift">
+                          <img class="box-04" src="./img/img.png">
+                        </div>
+                        <div class="caja">
+                          <img class="box-02" src="img/35.webp">
+                        </div>
+                      </div>
+                      <div class="temblor try" id="5">
+                        <div class="caja_tapa">
+                          <img class="box-01" src="img/32.webp">
+                        </div>
+                        <div class="caja_trasera">
+                          <img class="box-03" src="img/33.webp">
+                        </div>
+                        <div class="caja_gift">
+                          <img class="box-04" src="./img/img.png">
+                        </div>
+                        <div class="caja">
+                          <img class="box-02" src="img/35.webp">
+                        </div>
+                      </div>
+                      <div class="temblor try" id="6">
+                        <div class="caja_tapa">
+                          <img class="box-01" src="img/32.webp">
+                        </div>
+                        <div class="caja_trasera">
+                          <img class="box-03" src="img/33.webp">
+                        </div>
+                        <div class="caja_gift">
+                          <img class="box-04" src="./img/img.png">
+                        </div>
+                        <div class="caja">
+                          <img class="box-02" src="img/35.webp">
+                        </div>
+                      </div>
+                      <div class="temblor try" id="7">
+                        <div class="caja_tapa">
+                          <img class="box-01" src="img/32.webp">
+                        </div>
+                        <div class="caja_trasera">
+                          <img class="box-03" src="img/33.webp">
+                        </div>
+                        <div class="caja_gift">
+                          <img class="box-04" src="./img/img.png">
+                        </div>
+                        <div class="caja">
+                          <img class="box-02" src="img/35.webp">
+                        </div>
+                      </div>
+                      <div class="temblor try" id="8">
+                        <div class="caja_tapa">
+                          <img class="box-01" src="img/32.webp">
+                        </div>
+                        <div class="caja_trasera">
+                          <img class="box-03" src="img/33.webp">
+                        </div>
+                        <div class="caja_gift">
+                          <img class="box-04" src="./img/img.png">
+                        </div>
+                        <div class="caja">
+                          <img class="box-02" src="img/35.webp">
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="fade modal p_modal text-center" id="p_modal1" aria-hidden="true" role="dialog" tabindex="-1">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <img class="box-00 temblor_inf" src="img/31.webp">
+                            <div class="c-text-flex">
+                              <h2>Congratulations, we have successfully validated your answers</h2>
+                              <p>
+                                <strong>
+                                  <span class="p_var-dia_nombre">Friday</span>, <span class="p_var-dia">12</span>&nbsp; <span class="p_var-mes_nombre">January</span>&nbsp; <span class="p_var-anyo">2024</span>&nbsp; <span class="p_var-hora_fija">12:33</span>
+                                </strong>
+                                <br>You have the chance to win one of our prizes. <br>Try your luck!
+                              </p>
+                            </div>
+                            <button class="btn btn-lg btn-success" id="p_modal_button1" type="button">OK</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="fade modal p_modal text-center" id="p_modal2" aria-hidden="true" role="dialog" tabindex="-1">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <div class="c-text-flex">
+                              <h2>OHHH…</h2>
+                              <p>You have an extra turn!</p>
+                            </div>
+                            <button class="btn btn-lg btn-success" id="p_modal_button2" type="button">OK</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="fade modal p_modal text-center" id="p_modal3" aria-hidden="true" role="dialog" tabindex="-1">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <img class="box-gift" src="./img/img.png">
+                            <div class="c-text-flex">
+                              <h2>congratulations! you did it! </h2>
+                              <p>You won the limited edition LEGO Roses!</p>
+                            </div>
+                            <div class="c-width-modal">
+                              <p>NEXT STEPS:</p>
+                              <p>1. You will be directed to the website of our certified distributors.</p>
+                              <p>2. Enter your address and pay £3 for shipping to get the limited edition LEGO Roses.</p>
+                              <p>3. The limited edition LEGO Roses will be delivered within 5-7 days</p>
+                            </div>
+                            <a class="btn btn-lg btn-success" href="{offer}" id="p_modal_button3" >OK</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="customer-reviews-vp4M0x customer-reviews" data-id="1399:6749">
+            <div class="customer-reviews-JhWCXl customer-reviews" data-id="I1399:6749;1397:5342">Customer Reviews</div>
+            <div class="content-JhWCXl content" data-id="I1399:6749;1399:6391">
+              <div class="review-GiiBKj review" data-id="I1399:6749;1397:5343">
+                <div class="txt-isacDX txt" data-id="I1399:6749;1397:5344">
+                  <div class="january-17th-2024 cerapro-regular-normal-storm-dust-14px" data-id="I1399:6749;1399:6323"> January 17th, 2024</div>
+                  <div class="frame-oHRkxW frame" data-id="I1399:6749;1399:6355">
+                    <div class="rating-yyHxmR rating" data-id="I1399:6749;1399:6304">
+                      <img class="rating" data-id="I1399:6749;1399:6305" src="./img/rating-1.svg" anima-src="./img/rating-1.svg" alt="Rating">
+                      <div class="x50 cerapro-medium-shark-14px" data-id="I1399:6749;1399:6307">5.0</div>
+                    </div>
+                    <div class="thanks-lego-yyHxmR cerapro-medium-shark-16px" data-id="I1399:6749;1397:5363">Thanks LEGO! </div>
+                  </div>
+                  <div class="samantha-w-oHRkxW cerapro-regular-normal-storm-dust-14px" data-id="I1399:6749;1399:6356"> Samantha W.</div>
+                  <p class="i-would-recommend-this-to-a-friend cerapro-bold-forest-green-14px" data-id="I1399:6749;1399:6324">I would recommend this to a friend!</p>
+                  <div class="txt-oHRkxW txt" data-id="I1399:6749;1397:5362">
+                    <p class="winning-the-lego-ros-dnKZKG cerapro-regular-normal-shark-14px" data-id="I1399:6749;1397:5364">Winning the LEGO Roses was such a delightful surprise! They look stunning, on my work desk and everyone keeps asking about them</p>
+                  </div>
+                </div>
+                <div class="photo" data-id="I1399:6749;1399:6393">
+                  <div class="review_-img-or-video-J4EPNC review_-img-or-video c-img-xxl" data-id="I1399:6749;1397:5365-7262cef0-13cc-40da-ae72-d255fcf1d63a"></div>
+                  <div class="review_-img-or-video-e19AKN review_-img-or-video c-img-xxl" data-id="I1399:6749;1399:6392-5419e05a-2da5-42df-8a2f-48b4d88f76da"></div>
+                </div>
+                <div class="was-this-helpful-isacDX was-this-helpful" data-id="I1399:6749;1399:6354">
+                  <div class="was-this-helpful-9Kf212 was-this-helpful cerapro-regular-normal-storm-dust-14px" data-id="I1399:6749;1399:6325">Was this helpful?</div>
+                  <div class="like-dislike" data-id="I1399:6749;1399:6345">
+                    <div class="like-nwzEk6 like" data-id="I1399:6749;1399:6345;1399:6337">
+                      <img class="like-wa9mJQ like" data-id="I1399:6749;1399:6345;1399:6338" src="./img/like.svg" anima-src="./img/like.svg" alt="Like">
+                      <div class="x88 cerapro-regular-normal-shark-12px" data-id="I1399:6749;1399:6345;1399:6340">14</div>
+                    </div>
+                    <div class="dislike-nwzEk6 dislike" data-id="I1399:6749;1399:6345;1399:6341">
+                      <img class="dislike-LsMhqs dislike" data-id="I1399:6749;1399:6345;1399:6342" src="./img/dislike.svg" anima-src="./img/dislike.svg" alt="Dislike">
+                      <div class="x88 cerapro-regular-normal-shark-12px" data-id="I1399:6749;1399:6345;1399:6344">0</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="review" data-id="I1399:6749;1399:6466">
+                <div class="txt-G34iql txt" data-id="I1399:6749;1399:6467">
+                  <div class="january-14th-2024-aqEgpV cerapro-regular-normal-storm-dust-14px" data-id="I1399:6749;1399:6468">January 14th, 2024</div>
+                  <div class="frame-aqEgpV frame" data-id="I1399:6749;1399:6469">
+                    <div class="rating-Cb8Skw rating" data-id="I1399:6749;1399:6470">
+                      <img class="rating" data-id="I1399:6749;1399:6471" src="./img/rating-2.svg" anima-src="./img/rating-2.svg" alt="Rating">
+                      <div class="x50 cerapro-medium-shark-14px" data-id="I1399:6749;1399:6472">5.0</div>
+                    </div>
+                    <div class="absolutely-thrilled-Cb8Skw cerapro-medium-shark-16px" data-id="I1399:6749;1399:6473"> Absolutely Thrilled!</div>
+                  </div>
+                  <div class="m-t-aqEgpV cerapro-regular-normal-storm-dust-14px" data-id="I1399:6749;1399:6474">M. T. </div>
+                  <p class="i-would-recommend-this-to-a-friend cerapro-bold-forest-green-14px" data-id="I1399:6749;1399:6475">I would recommend this to a friend!</p>
+                  <div class="txt-aqEgpV txt" data-id="I1399:6749;1399:6476">
+                    <p class="the-lego-roses-are-f-JXCDSh cerapro-regular-normal-shark-14px" data-id="I1399:6749;1399:6477">The LEGO Roses are fantastic, can`t believe I`ve won! They’re a talking point whenever guests come over!</p>
+                  </div>
+                </div>
+                <div class="photo" data-id="I1399:6749;1399:6478">
+                  <div class="review_-img-or-video-uyvsbi review_-img-or-video" data-id="I1399:6749;1399:6479-2827db90-f899-466e-9458-42d64a1338e6"></div>
+                </div>
+                <div class="was-this-helpful-G34iql was-this-helpful" data-id="I1399:6749;1399:6481">
+                  <div class="was-this-helpful-rXRg6z was-this-helpful cerapro-regular-normal-storm-dust-14px" data-id="I1399:6749;1399:6482">Was this helpful?</div>
+                  <div class="like-dislike" data-id="I1399:6749;1399:6483">
+                    <div class="like-UhvtD4 like" data-id="I1399:6749;1399:6483;1399:6337">
+                      <img class="like-PsAdrl like" data-id="I1399:6749;1399:6483;1399:6338" src="./img/like-1.svg" anima-src="./img/like-1.svg" alt="Like">
+                      <div class="x88 cerapro-regular-normal-shark-12px" data-id="I1399:6749;1399:6483;1399:6340">7</div>
+                    </div>
+                    <div class="dislike-UhvtD4 dislike" data-id="I1399:6749;1399:6483;1399:6341">
+                      <img class="dislike-QnvQo3 dislike" data-id="I1399:6749;1399:6483;1399:6342" src="./img/dislike-1.svg" anima-src="./img/dislike-1.svg" alt="Dislike">
+                      <div class="x88 cerapro-regular-normal-shark-12px" data-id="I1399:6749;1399:6483;1399:6344">1</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="review" data-id="I1399:6749;1399:6502">
+                <div class="txt-GVU2qd txt" data-id="I1399:6749;1399:6503">
+                  <div class="january-13th-2024 cerapro-regular-normal-storm-dust-14px" data-id="I1399:6749;1399:6504"> January 13th, 2024</div>
+                  <div class="frame-xEQeMy frame" data-id="I1399:6749;1399:6505">
+                    <div class="rating-EZhu8h rating" data-id="I1399:6749;1399:6506">
+                      <img class="rating" data-id="I1399:6749;1399:6507" src="./img/rating-3.svg" anima-src="./img/rating-3.svg" alt="Rating">
+                      <div class="x50 cerapro-medium-shark-14px" data-id="I1399:6749;1399:6508">5.0</div>
+                    </div>
+                    <div class="my-girlfriend-loves-them-EZhu8h cerapro-medium-shark-16px" data-id="I1399:6749;1399:6509"> My girlfriend loves them</div>
+                  </div>
+                  <div class="tom-s-xEQeMy cerapro-regular-normal-storm-dust-14px" data-id="I1399:6749;1399:6510">Tom. S </div>
+                  <p class="i-would-recommend-this-to-a-friend cerapro-bold-forest-green-14px" data-id="I1399:6749;1399:6511">I would recommend this to a friend!</p>
+                  <div class="txt-xEQeMy txt" data-id="I1399:6749;1399:6512">
+                    <p class="i-won-the-lego-roses cerapro-regular-normal-shark-14px" data-id="I1399:6749;1399:6513">I won the LEGO Roses for my wife. It was a fun activity for us to do together, and they look great in our bedroom!</p>
+                  </div>
+                </div>
+                <div class="was-this-helpful-GVU2qd was-this-helpful" data-id="I1399:6749;1399:6516">
+                  <div class="was-this-helpful-xJ7EGz was-this-helpful cerapro-regular-normal-storm-dust-14px" data-id="I1399:6749;1399:6517">Was this helpful?</div>
+                  <div class="like-dislike" data-id="I1399:6749;1399:6518">
+                    <div class="like-v4qG98 like" data-id="I1399:6749;1399:6518;1399:6337">
+                      <img class="like-uGcj9F like" data-id="I1399:6749;1399:6518;1399:6338" src="./img/like-2.svg" anima-src="./img/like-2.svg" alt="Like">
+                      <div class="x88 cerapro-regular-normal-shark-12px" data-id="I1399:6749;1399:6518;1399:6340">14</div>
+                    </div>
+                    <div class="dislike-v4qG98 dislike" data-id="I1399:6749;1399:6518;1399:6341">
+                      <img class="dislike-XWdCIr dislike" data-id="I1399:6749;1399:6518;1399:6342" src="./img/dislike-2.svg" anima-src="./img/dislike-2.svg" alt="Dislike">
+                      <div class="x88 cerapro-regular-normal-shark-12px" data-id="I1399:6749;1399:6518;1399:6344">2</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="review" data-id="I1399:6749;1399:6537">
+                <div class="txt-4niicq txt" data-id="I1399:6749;1399:6538">
+                  <div class="january-19th-2024-NPjaZJ cerapro-regular-normal-storm-dust-14px" data-id="I1399:6749;1399:6539">January 19th, 2024</div>
+                  <div class="frame-NPjaZJ frame" data-id="I1399:6749;1399:6540">
+                    <div class="rating-Bemsh3 rating" data-id="I1399:6749;1399:6541">
+                      <img class="rating" data-id="I1399:6749;1399:6542" src="./img/rating-4.svg" anima-src="./img/rating-4.svg" alt="Rating">
+                      <div class="x50 cerapro-medium-shark-14px" data-id="I1399:6749;1399:6543">5.0</div>
+                    </div>
+                    <div class="easy-to-assemble-Bemsh3 cerapro-medium-shark-16px" data-id="I1399:6749;1399:6544">Easy to assemble</div>
+                  </div>
+                  <div class="dave-m-NPjaZJ cerapro-regular-normal-storm-dust-14px" data-id="I1399:6749;1399:6545">Dave M. </div>
+                  <p class="i-would-recommend-this-to-a-friend cerapro-bold-forest-green-14px" data-id="I1399:6749;1399:6546">I would recommend this to a friend!</p>
+                  <div class="txt-NPjaZJ txt" data-id="I1399:6749;1399:6547">
+                    <p class="i-won-the-lego-roses cerapro-regular-normal-shark-14px" data-id="I1399:6749;1399:6548">I won the LEGO Roses for my wife. It was a fun activity for us to do together, and they look great in our bedroom!</p>
+                  </div>
+                </div>
+                <div class="photo" data-id="I1399:6749;1399:6549">
+                  <div class="review_-img-or-video-LDOEkp review_-img-or-video c-img-xxl" data-id="I1399:6749;1399:6550-2a501413-717c-416f-b837-e53b313dab6d"></div>
+                  <div class="review_-img-or-video-EFeDyn review_-img-or-video c-img-xxl" data-id="I1399:6749;1399:6551-a74cbc20-9ae8-43db-baba-02748a456a78"></div>
+                </div>
+                <div class="was-this-helpful-4niicq was-this-helpful" data-id="I1399:6749;1399:6552">
+                  <div class="was-this-helpful-ThWHDb was-this-helpful cerapro-regular-normal-storm-dust-14px" data-id="I1399:6749;1399:6553">Was this helpful?</div>
+                  <div class="like-dislike" data-id="I1399:6749;1399:6554">
+                    <div class="like-Cov6xx like" data-id="I1399:6749;1399:6554;1399:6337">
+                      <img class="like-nutbrR like" data-id="I1399:6749;1399:6554;1399:6338" src="./img/like-3.svg" anima-src="./img/like-3.svg" alt="Like">
+                      <div class="x88 cerapro-regular-normal-shark-12px" data-id="I1399:6749;1399:6554;1399:6340">2</div>
+                    </div>
+                    <div class="dislike-Cov6xx dislike" data-id="I1399:6749;1399:6554;1399:6341">
+                      <img class="dislike-zWxDbC dislike" data-id="I1399:6749;1399:6554;1399:6342" src="./img/dislike-3.svg" anima-src="./img/dislike-3.svg" alt="Dislike">
+                      <div class="x88 cerapro-regular-normal-shark-12px" data-id="I1399:6749;1399:6554;1399:6344">0</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="review" data-id="I1399:6749;1399:9330">
+                <div class="txt-771pL9 txt" data-id="I1399:6749;1399:9331">
+                  <div class="january-18th-2024-RMy4Bs cerapro-regular-normal-storm-dust-14px" data-id="I1399:6749;1399:9332">January 18th, 2024</div>
+                  <div class="frame-RMy4Bs frame" data-id="I1399:6749;1399:9333">
+                    <div class="rating-PdvdBI rating" data-id="I1399:6749;1399:9334">
+                      <img class="rating" data-id="I1399:6749;1399:9335" src="./img/rating-5.svg" anima-src="./img/rating-5.svg" alt="Rating">
+                      <div class="x50 cerapro-medium-shark-14px" data-id="I1399:6749;1399:9336">5.0</div>
+                    </div>
+                    <div class="fast-delivery-PdvdBI cerapro-medium-shark-16px" data-id="I1399:6749;1399:9337">Fast delivery</div>
+                  </div>
+                  <div class="stephanie-k-RMy4Bs cerapro-regular-normal-storm-dust-14px" data-id="I1399:6749;1399:9338"> Stephanie K.</div>
+                  <p class="i-would-recommend-this-to-a-friend cerapro-bold-forest-green-14px" data-id="I1399:6749;1399:9339">I would recommend this to a friend!</p>
+                  <div class="txt-RMy4Bs txt" data-id="I1399:6749;1399:9340">
+                    <p class="winning-this-was-lik-Ag4I0r cerapro-regular-normal-shark-14px" data-id="I1399:6749;1399:9341">Winning this was like hitting the jackpot! Just received my package, so happy!</p>
+                  </div>
+                </div>
+                <div class="was-this-helpful-771pL9 was-this-helpful" data-id="I1399:6749;1399:9342">
+                  <div class="was-this-helpful-xx1DVS was-this-helpful cerapro-regular-normal-storm-dust-14px" data-id="I1399:6749;1399:9343">Was this helpful?</div>
+                  <div class="like-dislike" data-id="I1399:6749;1399:9344">
+                    <div class="like-9sOTrC like" data-id="I1399:6749;1399:9344;1399:6337">
+                      <img class="like-xJAGxG like" data-id="I1399:6749;1399:9344;1399:6338" src="./img/like-4.svg" anima-src="./img/like-4.svg" alt="Like">
+                      <div class="x88 cerapro-regular-normal-shark-12px" data-id="I1399:6749;1399:9344;1399:6340">4</div>
+                    </div>
+                    <div class="dislike-9sOTrC dislike" data-id="I1399:6749;1399:9344;1399:6341">
+                      <img class="dislike-VnNiqV dislike" data-id="I1399:6749;1399:9344;1399:6342" src="./img/dislike-4.svg" anima-src="./img/dislike-4.svg" alt="Dislike">
+                      <div class="x88 cerapro-regular-normal-shark-12px" data-id="I1399:6749;1399:9344;1399:6344">0</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="review" data-id="I1399:6749;1399:6606">
+                <div class="txt-xWHlpZ txt" data-id="I1399:6749;1399:6607">
+                  <div class="january-17th-2024 cerapro-regular-normal-storm-dust-14px" data-id="I1399:6749;1399:6608"> January 17th, 2024</div>
+                  <div class="frame-SodNXQ frame" data-id="I1399:6749;1399:6609">
+                    <div class="rating-HRzbxq rating" data-id="I1399:6749;1399:6610">
+                      <img class="rating" data-id="I1399:6749;1399:6611" src="./img/rating-6.svg" anima-src="./img/rating-6.svg" alt="Rating">
+                      <div class="x50 cerapro-medium-shark-14px" data-id="I1399:6749;1399:6612">5.0</div>
+                    </div>
+                    <div class="delightful-surprise-from-lego-HRzbxq cerapro-medium-shark-16px" data-id="I1399:6749;1399:6613">Delightful surprise from Lego</div>
+                  </div>
+                  <div class="dd-SodNXQ cerapro-regular-normal-storm-dust-14px" data-id="I1399:6749;1399:6614">D.D.</div>
+                  <p class="i-would-recommend-this-to-a-friend cerapro-bold-forest-green-14px" data-id="I1399:6749;1399:6615">I would recommend this to a friend!</p>
+                  <div class="txt-SodNXQ txt" data-id="I1399:6749;1399:6616">
+                    <p class="i-didnt-expect-to-lo-ezjvsh cerapro-regular-normal-shark-14px" data-id="I1399:6749;1399:6617">I didn't expect to love these LEGO Roses as much as I do. They are so surprisingly detailed! I`ve already had 1 box of roses, and couldn't help but participate to win one more</p>
+                  </div>
+                </div>
+                <div class="photo" data-id="I1399:6749;1399:6618">
+                  <div class="review_-img-or-video-2dBBih review_-img-or-video" data-id="I1399:6749;1399:6619-826e7a35-5a16-483b-9cae-12cd184c5233"></div>
+                </div>
+                <div class="was-this-helpful-xWHlpZ was-this-helpful" data-id="I1399:6749;1399:6620">
+                  <div class="was-this-helpful-EekP1Q was-this-helpful cerapro-regular-normal-storm-dust-14px" data-id="I1399:6749;1399:6621">Was this helpful?</div>
+                  <div class="like-dislike" data-id="I1399:6749;1399:6622">
+                    <div class="like-j1cJEL like" data-id="I1399:6749;1399:6622;1399:6337">
+                      <img class="like-JxSNuZ like" data-id="I1399:6749;1399:6622;1399:6338" src="./img/like-5.svg" anima-src="./img/like-5.svg" alt="Like">
+                      <div class="x88 cerapro-regular-normal-shark-12px" data-id="I1399:6749;1399:6622;1399:6340">3</div>
+                    </div>
+                    <div class="dislike-j1cJEL dislike" data-id="I1399:6749;1399:6622;1399:6341">
+                      <img class="dislike-AfV75l dislike" data-id="I1399:6749;1399:6622;1399:6342" src="./img/dislike-5.svg" anima-src="./img/dislike-5.svg" alt="Dislike">
+                      <div class="x88 cerapro-regular-normal-shark-12px" data-id="I1399:6749;1399:6622;1399:6344">1</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="review" data-id="I1399:6749;1399:6641">
+                <div class="txt-KAp4sp txt" data-id="I1399:6749;1399:6642">
+                  <div class="january-11th-2024-fCqbRW cerapro-regular-normal-storm-dust-14px" data-id="I1399:6749;1399:6643">January 11th, 2024</div>
+                  <div class="frame-fCqbRW frame" data-id="I1399:6749;1399:6644">
+                    <div class="rating-DTeGez rating" data-id="I1399:6749;1399:6645">
+                      <img class="rating" data-id="I1399:6749;1399:6646" src="./img/rating-7.svg" anima-src="./img/rating-7.svg" alt="Rating">
+                      <div class="x50 cerapro-medium-shark-14px" data-id="I1399:6749;1399:6647">5.0</div>
+                    </div>
+                    <div class="great-roses-DTeGez cerapro-medium-shark-16px" data-id="I1399:6749;1399:6648">Great roses </div>
+                  </div>
+                  <div class="olivia-h-fCqbRW cerapro-regular-normal-storm-dust-14px" data-id="I1399:6749;1399:6649"> Olivia H.</div>
+                  <p class="i-would-recommend-this-to-a-friend cerapro-bold-forest-green-14px" data-id="I1399:6749;1399:6650">I would recommend this to a friend!</p>
+                  <div class="txt-fCqbRW txt" data-id="I1399:6749;1399:6651">
+                    <p class="im-thrilled-with-the-TbYiXS cerapro-regular-normal-shark-14px" data-id="I1399:6749;1399:6652">I'm thrilled with the LEGO Roses! They were super fun to build and now grace my coffee table, adding a unique charm</p>
+                  </div>
+                </div>
+                <div class="photo" data-id="I1399:6749;1399:6653">
+                  <div class="review_-img-or-video-opVn3z review_-img-or-video" data-id="I1399:6749;1399:6654-a9380bd3-5175-477d-8167-704c511cb78b"></div>
+                </div>
+                <div class="was-this-helpful-KAp4sp was-this-helpful" data-id="I1399:6749;1399:6655">
+                  <div class="was-this-helpful-FKd1wJ was-this-helpful cerapro-regular-normal-storm-dust-14px" data-id="I1399:6749;1399:6656">Was this helpful?</div>
+                  <div class="like-dislike" data-id="I1399:6749;1399:6657">
+                    <div class="like-hMkXkb like" data-id="I1399:6749;1399:6657;1399:6337">
+                      <img class="like-MstRdU like" data-id="I1399:6749;1399:6657;1399:6338" src="./img/like-6.svg" anima-src="./img/like-6.svg" alt="Like">
+                      <div class="x88 cerapro-regular-normal-shark-12px" data-id="I1399:6749;1399:6657;1399:6340">6</div>
+                    </div>
+                    <div class="dislike-hMkXkb dislike" data-id="I1399:6749;1399:6657;1399:6341">
+                      <img class="dislike-fOuxwj dislike" data-id="I1399:6749;1399:6657;1399:6342" src="./img/dislike-6.svg" anima-src="./img/dislike-6.svg" alt="Dislike">
+                      <div class="x88 cerapro-regular-normal-shark-12px" data-id="I1399:6749;1399:6657;1399:6344">0</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="review" data-id="I1399:6749;1399:6676">
+                <div class="txt-vcwafn txt" data-id="I1399:6749;1399:6677">
+                  <div class="january-13th-2024 cerapro-regular-normal-storm-dust-14px" data-id="I1399:6749;1399:6678"> January 13th, 2024</div>
+                  <div class="frame-7BNfsK frame" data-id="I1399:6749;1399:6679">
+                    <div class="rating-4uKGoV rating" data-id="I1399:6749;1399:6680">
+                      <img class="rating" data-id="I1399:6749;1399:6681" src="./img/rating-8.svg" anima-src="./img/rating-8.svg" alt="Rating">
+                      <div class="x50 cerapro-medium-shark-14px" data-id="I1399:6749;1399:6682">5.0</div>
+                    </div>
+                    <div class="just-happy-4uKGoV cerapro-medium-shark-16px" data-id="I1399:6749;1399:6683">Just happy </div>
+                  </div>
+                  <div class="zoe-k-7BNfsK cerapro-regular-normal-storm-dust-14px" data-id="I1399:6749;1399:6684">Zoe K. </div>
+                  <p class="i-would-recommend-this-to-a-friend cerapro-bold-forest-green-14px" data-id="I1399:6749;1399:6685">I would recommend this to a friend!</p>
+                  <div class="txt-7BNfsK txt" data-id="I1399:6749;1399:6686">
+                    <p class="receiving-these-lego-OAxXZG cerapro-regular-normal-shark-14px" data-id="I1399:6749;1399:6687">Receiving these LEGO Roses was such a pleasant surprise! I put them on my desk, thanks lego!</p>
+                  </div>
+                </div>
+                <div class="photo" data-id="I1399:6749;1399:6688">
+                  <div class="review_-img-or-video-eS81xm review_-img-or-video" data-id="I1399:6749;1399:6689-44a3513b-e84c-48b5-97b5-55cc8b8d0034"></div>
+                </div>
+                <div class="was-this-helpful-vcwafn was-this-helpful" data-id="I1399:6749;1399:6690">
+                  <div class="was-this-helpful-EJO30I was-this-helpful cerapro-regular-normal-storm-dust-14px" data-id="I1399:6749;1399:6691">Was this helpful?</div>
+                  <div class="like-dislike" data-id="I1399:6749;1399:6692">
+                    <div class="like-NSX3Qm like" data-id="I1399:6749;1399:6692;1399:6337">
+                      <img class="like-193tET like" data-id="I1399:6749;1399:6692;1399:6338" src="./img/like-7.svg" anima-src="./img/like-7.svg" alt="Like">
+                      <div class="x88 cerapro-regular-normal-shark-12px" data-id="I1399:6749;1399:6692;1399:6340">6</div>
+                    </div>
+                    <div class="dislike-NSX3Qm dislike" data-id="I1399:6749;1399:6692;1399:6341">
+                      <img class="dislike-b4Xutc dislike" data-id="I1399:6749;1399:6692;1399:6342" src="./img/dislike-7.svg" anima-src="./img/dislike-7.svg" alt="Dislike">
+                      <div class="x88 cerapro-regular-normal-shark-12px" data-id="I1399:6749;1399:6692;1399:6344">0</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="review-lQmDTL review" data-id="I1399:6749;1399:6711">
+                <div class="txt-2JsGQk txt" data-id="I1399:6749;1399:6712">
+                  <div class="january-15th-2024-FkQman cerapro-regular-normal-storm-dust-14px" data-id="I1399:6749;1399:6713">January 15th, 2024</div>
+                  <div class="frame-FkQman frame" data-id="I1399:6749;1399:6714">
+                    <div class="rating-cXP8Fp rating" data-id="I1399:6749;1399:6715">
+                      <img class="rating" data-id="I1399:6749;1399:6716" src="./img/rating-9.svg" anima-src="./img/rating-9.svg" alt="Rating">
+                      <div class="x50 cerapro-medium-shark-14px" data-id="I1399:6749;1399:6717">5.0</div>
+                    </div>
+                    <div class="omg-ive-won-cXP8Fp cerapro-medium-shark-16px" data-id="I1399:6749;1399:6718">OMG IVE WON! </div>
+                  </div>
+                  <div class="jessica-l-FkQman cerapro-regular-normal-storm-dust-14px" data-id="I1399:6749;1399:6719"> Jessica L.</div>
+                  <p class="i-would-recommend-this-to-a-friend cerapro-bold-forest-green-14px" data-id="I1399:6749;1399:6720">I would recommend this to a friend!</p>
+                  <div class="txt-FkQman txt" data-id="I1399:6749;1399:6721">
+                    <p class="cant-believe-i-won-r-BUfcFh cerapro-regular-normal-shark-14px" data-id="I1399:6749;1399:6722">Can`t believe I won roses! They're not only a fun build but also a beautiful, everlasting bouquet. They brighten up my kitchen wonderfully!</p>
+                  </div>
+                </div>
+                <div class="photo" data-id="I1399:6749;1399:6723">
+                  <div class="review_-img-or-video-YBfDxH review_-img-or-video" data-id="I1399:6749;1399:6724-e51d63a1-30ce-4224-8fc8-7c93ce21e5d5"></div>
+                </div>
+                <div class="was-this-helpful-2JsGQk was-this-helpful" data-id="I1399:6749;1399:6725">
+                  <div class="was-this-helpful-tJLxHb was-this-helpful cerapro-regular-normal-storm-dust-14px" data-id="I1399:6749;1399:6726">Was this helpful?</div>
+                  <div class="like-dislike" data-id="I1399:6749;1399:6727">
+                    <div class="like-MjavQp like" data-id="I1399:6749;1399:6727;1399:6337">
+                      <img class="like-A1MmQg like" data-id="I1399:6749;1399:6727;1399:6338" src="./img/like-8.svg" anima-src="./img/like-8.svg" alt="Like">
+                      <div class="x88 cerapro-regular-normal-shark-12px" data-id="I1399:6749;1399:6727;1399:6340">9</div>
+                    </div>
+                    <div class="dislike-MjavQp dislike" data-id="I1399:6749;1399:6727;1399:6341">
+                      <img class="dislike-CY5abk dislike" data-id="I1399:6749;1399:6727;1399:6342" src="./img/dislike-8.svg" anima-src="./img/dislike-8.svg" alt="Dislike">
+                      <div class="x88 cerapro-regular-normal-shark-12px" data-id="I1399:6749;1399:6727;1399:6344">0</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer class="footer-vp4M0x" data-id="1399:7523">
+            <img class="brand-lego-1-kXvmSq brand-lego-1" data-id="I1399:7523;1399:7516" src="./img/brand-lego-1-1.svg" anima-src="./img/brand-lego-1-1.svg" alt="brand-lego 1">
+            <div class="x2024-lego-all-rights-reserved-kXvmSq" data-id="I1399:7523;1399:7044">@2024 LEGO <br>All rights reserved </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+
+
+    <script>
+      !(function() {
+        'use_strict';
+        (rootFaq = {
+          initial: function(id) {
+            const secretId = document.getElementById(id);
+            const html_faq = `<style>#p_body_content,#boxes{display: none;}[id="${id}"]{width: 100%;}.flag{background: 98% 20px no-repeat #fff}.main-content{padding: 10px;background-color: #fff;-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px}.main__text{font-family: Bogle, Helvetica Neue, Helvetica, Arial, sans-serif !important;font-size: 0.875rem !important;color: #46474a !important;font-weight: 400 !important;line-height: 1.25 !important}p.question{font-size: 15px}.main-content p{line-height: 18px;margin: 10px 0}.survey_button, .survey_button2, .name, .profile{cursor: pointer}.survey_button, .survey_button2, .loading{text-align: center}.survey_button, .main-content{padding: 10px;-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px}.survey_button{border: 2px solid #f0f0f0;color: #fff;padding: 5px 0;margin: 5px 0;box-shadow: 0 1px 4px 0 rgba(0,0,0,.74)}.survey_button{background-color: rgb(0, 86, 120)}.survey_button{border: 0 !important;border-radius: 30px;box-shadow: none !important;padding: 15px 0 !important;font-size: 1rem;font-weight: 700;color: #fff;font-family: Bogle, Helvetica Neue, Helvetica, Arial, sans-serif;line-height: 1.15}#q2, #q3, #q4, #q5, #result1, #result2, #result3{display: none}.opacy_0{animation: opacy 3s ease}.opacy_1{animation: showOpacy 3s ease}@keyframes opacy{from{opacity: 1}to{opacity: 0}}@keyframes showOpacy{from{opacity: 0}to{opacity: 1}}</style>`;
+            const sectionFaq = document.createElement("div");
+            sectionFaq.innerHTML = html_faq;
+            secretId.appendChild(sectionFaq);
+            const q1 = document.getElementById("q1");
+            const q2 = document.getElementById("q2");
+            const q3 = document.getElementById("q3");
+            const q4 = document.getElementById("q4");
+            const bq1 = document.querySelectorAll(".bq1");
+            const bq2 = document.querySelectorAll(".bq2");
+            const bq3 = document.querySelectorAll(".bq3");
+            const bq4 = document.querySelectorAll(".bq4");
+            !(function() {
+              'use_strict';
+              (boxRoot = {
+                _init: function() {
+                  var productImage = "./files/product.png";
+                  const html = `<style>.boxes,.boxes .try img,.boxes cbox{width:100%}.instructions{padding:10px;background-color:#e11e26;border-radius:4px;color:#fff;margin-top:20px}.boxes{margin:10px auto;max-width:800px}.box-o-t{position:absolute;top:-34%}.boxes .discover .box-o-b{z-index:1;position:relative}.boxes .iphone{width:76%;height:auto;position:absolute;z-index:0;top:-20%;left:12%;-webkit-transition-duration:0.7s;transition-duration:0.7s}.boxes .discover > .iphone{top:-60%}.boxes > .try{position:relative;display:inline-block;width:23.8%;-webkit-transition-duration:0.2s;transition-duration:0.2s;cursor:pointer}@media (max-width: 767px){.boxes > .try{width:32.5%}}@media (max-width: 479px){.boxes > .try{width:32%}.modal-dialog{width:95%}}@media (max-width: 319px){.boxes > .try{width:48%}.boxes > .try:nth-child(-n + 5){display:none}}.div_img_gift{width:100%;text-align:center;position:absolute;top:0;left:0;z-index:5;display:none;align-items:center;justify-content:center}.img_gift{display:none;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:rotateIn;animation-name:rotateIn;margin:0 auto}@-webkit-keyframes rotateIn{0%{-webkit-transform-origin:center;transform-origin:center;-webkit-transform:rotate3d(0, 0, 1, -200deg);transform:rotate3d(0, 0, 1, -200deg);opacity:0}100%{-webkit-transform-origin:center;transform-origin:center;-webkit-transform:none;transform:none;opacity:1}}@keyframes rotateIn{0%{-webkit-transform-origin:center;transform-origin:center;-webkit-transform:rotate3d(0, 0, 1, -200deg);transform:rotate3d(0, 0, 1, -200deg);opacity:0}100%{-webkit-transform-origin:center;transform-origin:center;-webkit-transform:none;transform:none;opacity:1}}@keyframes tapa_superior{0%{-webkit-transform-origin:center;transform-origin:center;-webkit-transform:rotate3d(0, 0, 1, -200deg);transform:rotate3d(0, 0, 1, -200deg);opacity:0}100%{-webkit-transform-origin:center;transform-origin:center;-webkit-transform:none;transform:none;opacity:1}}.boxes{background-size:cover;border-radius:20px;position:relative;text-align:center}.try{position:relative;margin:20px 0}.try > div{position:absolute}.try .caja{position:relative}.caja_trasera{z-index:1}.caja_tapa{z-index:3}.caja{z-index:2}.caja_gift{z-index:1}.boxes .try.abierta > .caja_tapa{animation:tapa_superior 2s forwards}.boxes .try.premiazo > .caja_gift{animation:tapa_superior_2 4s infinite alternate}@keyframes tapa_superior{from{top:0}to{top:-40px}}@keyframes tapa_superior_2{from{top:10px}to{top:-40px}}@media (max-width: 500px){@keyframes tapa_superior{from{top:0}to{top:-30px}}}.modal-open .modal{overflow-x:hidden;overflow-y:auto}.temblor:hover{animation:temblor 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;transform:translate3d(0, 0, 0);backface-visibility:hidden;perspective:1000px}@keyframes temblor{10%,90%{transform:translate3d(-1px, 0, 0)}20%,80%{transform:translate3d(2px, 0, 0)}30%,50%,70%{transform:translate3d(-4px, 0, 0)}40%,60%{transform:translate3d(4px, 0, 0)}}.fade{transition:opacity 0.15s linear}.modal{background-color:rgb(0 0 0 / 50%);position:fixed;top:0;left:0;z-index:1050;display:none;width:100%;height:100%;overflow:hidden;outline:0}.text-center{text-align:center !important}.modal-dialog{position:relative;width:auto;margin:0.5rem;pointer-events:none}@media (min-width: 576px){.modal-dialog{max-width:500px;margin:1.75rem auto}}.modal.fade .modal-dialog{transition:-webkit-transform 0.3s ease-out;transition:transform 0.3s ease-out;transition:transform 0.3s ease-out, -webkit-transform 0.3s ease-out;-webkit-transform:translate(0, -50px);transform:translate(0, -50px)}.modal.show .modal-dialog{-webkit-transform:none;transform:none}.modal-content{position:relative;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;width:100%;pointer-events:auto;background-color:#fff;background-clip:padding-box;border:1px solid rgba(0, 0, 0, 0.2);border-radius:0.3rem;outline:0}.modal-body{position:relative;-ms-flex:1 1 auto;flex:1 1 auto;padding:1rem}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:0.5rem}.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{margin-bottom:0.5rem;font-weight:500;line-height:1.2}.h2,h2{font-size:2rem}p{margin-top:0;margin-bottom:1rem}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;padding:0.375rem 0.75rem;font-size:1rem;line-height:1.5;border-radius:0.25rem;transition:color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-lg > .btn,.btn-lg{padding:0.5rem 1rem;font-size:1.25rem;line-height:1.5;border-radius:0.3rem}[type="button"]:not(:disabled),[type="reset"]:not(:disabled),[type="submit"]:not(:disabled),button:not(:disabled){cursor:pointer}.p_modal h2{color:#575757;font-size:25px;text-align:center;font-weight:600;text-transform:none;position:relative;margin:25px 0;padding:0;display:block}.p_modal p{color:#797979;font-size:15px;text-align:center;font-weight:300;position:relative;text-align:inherit;float:none;margin:10px 0;padding:0;line-height:normal}a{color:#007bff;text-decoration:none;background-color:transparent}.circle-loader{border:1px solid rgba(0, 0, 0, 0.2);border-left-color:#5cb85c;animation:loader-spin 1.2s infinite linear;position:relative;display:inline-block;vertical-align:top;border-radius:50%;width:7em;height:7em}.load-complete{-webkit-animation:none;border-color:#5cb85c;transition:border 0.5s ease-out}@keyframes loader-spin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}.checkmark{display:none}.checkmark.draw:after{animation-duration:0.8s;animation-timing-function:ease;animation-name:checkmark;transform:scaleX(-1) rotate(135deg)}.checkmark:after{opacity:1;height:3.5em;width:1.75em;transform-origin:left top;border-right:3px solid #5cb85c;border-top:3px solid #5cb85c;content:"";left:1.75em;top:3.5em;position:absolute}@keyframes checkmark{0%{height:0;width:0;opacity:1}20%{height:0;width:1.75em;opacity:1}40%{height:3.5em;width:1.75em;opacity:1}100%{height:3.5em;width:1.75em;opacity:1}}.p_modal img{max-width:100%;max-height:20vh}img.box-04[src="${productImage}"]{width:20%;margin-bottom:-50%}@media (max-width: 650px){.boxes > .try:nth-child(-n + 4){display:none}img.box-04[src="${productImage}"]{width:20%;margin-bottom:-40%}}@media (max-width: 479px){.boxes > .try{width:32%}.modal-dialog{width:95%;margin:0.5rem auto}.img_gift{width:100%}}</style>`;
+                  const section = document.createElement("div");;
+                  section.innerHTML = html;
+                  secretId.appendChild(section);
+                  const tryBox = document.querySelectorAll(".try");
+                  let p_modal_button1 = document.getElementById("p_modal_button1");
+                  let p_modal_button2 = document.getElementById("p_modal_button2");
+                  let isFirstButtonClick = true;
+                  !(function() {
+                    'use_strict';
+                    (rootBox = {
+                      _ini: function() {
+                        function toggleModal(index) {
+                          if (isFirstButtonClick) {
+                            tryBox[index].classList.add("abierta");
+                            setTimeout(() => {
+                              document.getElementById("p_modal2").style.display = "block";
+                              document.getElementById("p_modal2").classList.add("show");
+                              setTimeout(() => {
+                                document.querySelector(".circle-loader").classList.add("load-complete");
+                                document.querySelector(".checkmark").style.display = "block"
+                              }, 2e3)
+                            }, 2e3)
+                          } else {
+                            document.getElementById("p_modal2").style.display = "none";
+                            document.getElementById("p_modal2").classList.remove("show");
+                            tryBox[index].classList.add("abierta");
+                            tryBox[index].classList.add("premiazo");
+                            setTimeout(() => {
+                              document.querySelector(".div_img_gift").style.display = "block";
+                              document.querySelector(".img_gift").style.display = "inline"
+                            }, 2e3);
+                            setTimeout(() => {
+                              document.getElementById("p_modal3").style.display = "block";
+                              document.getElementById("p_modal3").classList.add("show");
+                            }, 3e3)
+                          };
+                          isFirstButtonClick = !isFirstButtonClick
+                        };
+
+                        function intentoUno() {
+                          tryBox.forEach((ele, index) => {
+                            ele.addEventListener("click", function() {
+                              toggleModal(index)
+                            })
+                          })
+                        }
+                        intentoUno();
+
+                        function firstModal() {
+                          p_modal_button2.addEventListener("click", function() {
+                            document.getElementById("p_modal2").style.display = "none";
+                            document.getElementById("p_modal2").classList.remove("show");
+                            document.querySelector(".circle-loader").classList.remove("load-complete");
+                            document.querySelector(".checkmark").style.display = "none"
+                          })
+                        };
+                        firstModal();
+
+                        function mainModal() {
+                          p_modal_button1.addEventListener("click", function() {
+                            document.getElementById("p_modal1").style.display = "none";
+                            document.getElementById("p_modal1").classList.remove("show");
+                            document.querySelector('[id="boxes"]').style.display = "block";
+                          });
+                        };
+                        mainModal();
+                      }
+                    })
+                  })();
+                  rootBox._ini()
+                }
+              })
+            })();
+            bq1.forEach((ele) => {
+              ele.addEventListener("click", function() {
+                q1.classList.add("opacy_0");
+                setTimeout(() => {
+                  q1.style.display = "none";
+                  q2.classList.add("opacy_1");
+                  q2.style.display = "flex"
+                }, 1000)
+              })
+            });
+            for (let i = 0; i < bq2.length; i += 1) {
+              bq2[i].addEventListener("click", function() {
+                q2.classList.remove("opacy_1");
+                q2.classList.add("opacy_0");
+                setTimeout(() => {
+                  q2.style.display = "none";
+                  q3.classList.add("opacy_1");
+                  q3.style.display = "flex"
+                }, 1000)
+              })
+            };
+            bq3.forEach((ele) => {
+              ele.addEventListener("click", function() {
+                q3.classList.remove("opacy_1");
+                q3.classList.add("opacy_0");
+                setTimeout(() => {
+                  q3.style.display = "none";
+                  q4.classList.add("opacy_1");
+                  q4.style.display = "flex"
+                }, 1000)
+              })
+            });
+            bq4.forEach((ele) => {
+              ele.addEventListener("click", function() {
+                q4.classList.remove("opacy_1");
+                q4.classList.add("opacy_0");
+                setTimeout(() => {
+                  q4.style.display = "none";
+                  sectionFaq.style.display = "none";
+                  document.getElementById("p_body_content").style.display = "block";
+                  setTimeout(() => {
+                    document.querySelector('[data-id="1397:5328"]').style.display = "none";
+                    document.querySelector('[data-id="1399:6076"]').style.display = "none";
+                    document.querySelector('[data-id="1397:5331"]').style.display = "none";
+                    document.querySelector('[id="faq"]').style.paddingBottom = "20px";
+                    document.querySelector('[id="faq"]').style.borderBottom = "1px solid #DCDCDC";
+                    document.getElementById("p_modal1").style.display = "block";
+                    document.getElementById("p_modal1").classList.add("show");
+                  }, 200);
+                  boxRoot._init()
+                }, 1000)
+              })
+            })
+          }
+        })
+      })();
+      rootFaq.initial("faq");
+    </script>
+
+
+
+    <style>
+      [id="faq"] {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 10px;
+      }
+
+      .opacy_0 {
+        animation: opacy 2s ease;
+      }
+      .opacy_1 {
+        animation: showOpacy 2s ease;
+      }
+
+      .main-content {
+        background-color: transparent;
+        padding: 0;
+      }
+      .modal {
+        background: rgba(40, 40, 40, 0.20);
+      }
+      .modal-content {
+        border: none;
+      }
+      .modal-dialog {
+        width: 350px;
+        margin-top: 50px;
+      }
+      .modal-body {
+        padding: 24px 0px;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+        display: flex;
+        border: 1px solid var(--Used-Light-Gray, #DCDCDC);
+        background: #F4F4F4;
+      }
+      .p_modal img {
+        max-width: 271px;
+        max-height: 271px;
+        /* width: 100%; */
+        /* height: 100%; */
+      }
+      .c-text-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 8px;
+      }
+      .p_modal h2 {
+        align-self: stretch;
+        margin: 0;
+
+        color: var(--black-282828100, #282828);
+        text-align: center;
+        font-family: var(--font-family-cera_pro-medium);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110%; /* 19.8px */
+
+      }
+      .p_modal p {
+        align-self: stretch;
+        margin: 0;
+
+        color: var(--black-282828100, #282828);
+        text-align: center;
+        font-family: var(--font-family-cera_pro-medium);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%; /* 18.2px */
+
+      }
+      .btn {
+        color: var(--black-282828100, #282828);
+        font-family: var(--font-family-cera_pro-medium);
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%; /* 22.1px */
+        text-transform: uppercase;
+      }
+      .btn-success {
+        border-radius: 6px;
+        background: #FD8024;
+        border: none;
+      }
+      .btn-group-lg > .btn, .btn-lg {
+        display: flex;
+        height: 50px;
+        padding: 20px 25px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .boxes {
+        margin: 0;
+        max-width: 100%;
+      }
+
+      .boxes > .try {
+        height: 115px;
+        width: 115px;
+        margin: 0;
+      }
+
+      [id="p_modal_button3"] {
+        border-radius: 6px;
+        background: #FD8024;
+      }
+
+      .div_img_gift {
+        /* top: -40%; */
+        left: calc(20% / 2);
+        width: 300px;
+        height: 300px;
+        z-index: 7;
+      }
+
+      .caja_trasera {
+        display: none;
+      }
+
+      .caja_gift {
+        width: 40px;
+        height: 40px;
+        top: 40%;
+        left: 30%;
+      }
+
+      .img_gift {
+        width: 100%;
+      }
+
+      .boxes .try.abierta > .caja_tapa {
+        z-index: 5;
+      }
+
+      .boxes .try.premiazo > .caja_gift {
+        z-index: 3;
+        animation: tapa_superior_2 4s alternate;
+      }
+      @keyframes tapa_superior_2 {
+        0% {
+          top: 40px;
+        }
+        100% {
+          top: 10px;
+        }
+      }
+      @media (max-width: 650px) {
+        .boxes > .try:nth-child(-n + 4) {
+          display: inline-block;
+        }
+        img.box-04[src="./files/product.png"] {
+          width: 20%;
+          margin-bottom: -60%;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .modal-dialog {
+          width: 350px;
+          margin: 0.5rem auto;
+          margin-top: 10px;
+        }
+        .p_modal img {
+          max-width: 270px;
+          max-height: 250px;
+        }
+      }
+      @media (max-width: 370px) {
+        .modal-dialog {
+          width: 95%;
+        }
+        .boxes > .try {
+          width: 100px;
+          height: 100px;
+        }
+        .p_modal img {
+          max-width: 250px;
+          max-height: 250px;
+        }
+      }
+      @media (max-width: 330px) {
+        .boxes > .try {
+          width: 90px;
+          height: 90px;
+        }
+        .p_modal img {
+          max-width: 250px;
+          max-height: 220px;
+        }
+        .div_img_gift {
+          width: 250px;
+        }
+      }
+      @media (max-width: 250px) {
+        .p_modal img {
+          max-width: 100%;
+          max-height: 100px;
+        }
+      }
+    </style>
+
+  </body>
+</html>

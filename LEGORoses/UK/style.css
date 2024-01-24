@@ -1,0 +1,32 @@
+.question-1-of-4 .c-img-xxl {
+    width: 100%;
+}
+
+.c-width-modal {
+    width: 300px;
+}
+
+@media (max-width: 480px) {
+    .question-1-of-4 {
+        width: 100%;
+    }
+}
+@media (max-width: 330px) {
+    .question-1-of-4 .lego-is-thrilled-to-XSMCiM {
+        width: 100%;
+    }
+    .c-width-modal {
+        width: 100%;
+    }
+}
+@media (max-width: 250px) {
+    .question-1-of-4 .frame-CTfX37 {
+        gap: 5px;
+    }
+    .question-1-of-4 .frame-OPabu8 {
+        flex-direction: column;
+    }
+    .question-1-of-4 .get-it-for-just-3-only-today-XSMCiM {
+        width: 100%;
+    }
+}
