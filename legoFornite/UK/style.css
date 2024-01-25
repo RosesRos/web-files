@@ -15,7 +15,7 @@
 }
 @media (max-width: 330px) {
     .c-width-modal {
-        width: 100%;
+        width: 90%;
     }
 }
 @media (max-width: 250px) {
