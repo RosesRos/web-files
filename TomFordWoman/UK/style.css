@@ -1,0 +1,127 @@
+.c-text-flex-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+}
+.question-1-of-4 .exclusive-giveaway-f-r1bHS2 {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: runText 10s linear infinite;
+}
+
+@keyframes runText {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+/* ## ### ## SLIDER BOX ## ## ### */
+/* ## ### ## SLIDER BOX ## ## ### */
+/* ## ### ## SLIDER BOX ## ## ### */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ## ### ## SLIDER BOX ## ## ### */
+/* ## ### ## SLIDER BOX ## ## ### */
+/* ## ### ## SLIDER BOX ## ## ### */
+
+
+
+/* ## ### ## SLIDER BOX 3 SLIDER BOX 3 SLIDER BOX 3 ## ## ### */
+/* ## ### ## SLIDER BOX 3 SLIDER BOX 3 SLIDER BOX 3 ## ## ### */
+/* ## ### ## SLIDER BOX 3 SLIDER BOX 3 SLIDER BOX 3 ## ## ### */
+.mySwiper3 {
+    width: 100%;
+}
+.c-mySwiper3 {
+    width: 100%;
+    height: 100%;
+    /* border-radius: 20px; */
+}
+.c-mySwiper3-swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+    height: 370px;
+}
+
+.swiper-horizontal>.c-swiper-pagination-3 {
+    margin: 0 auto;
+    position: absolute;
+    z-index: 5;
+    bottom: 10px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.c-swiper-pagination-3 .swiper-pagination-bullet {
+    width: 50px;
+    height: 2px;
+    border-radius: 20px;
+    background: #DCDCDC;
+    opacity: 1;
+    margin: 0 !important;
+}
+.c-swiper-pagination-3>.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #0B0B0B;
+}
+
+
+/* ## ### ## SLIDER BOX 3 SLIDER BOX 3 SLIDER BOX 3 ## ## ### */
+/* ## ### ## SLIDER BOX 3 SLIDER BOX 3 SLIDER BOX 3 ## ## ### */
+/* ## ### ## SLIDER BOX 3 SLIDER BOX 3 SLIDER BOX 3 ## ## ### */
+
+
+
+
+
+@media (max-width: 480px) {
+    .question-1-of-4 {
+        width: 100%;
+    }
+}
+@media (max-width: 370px) {
+    .question-1-of-4 .are-you-a-man-or-a-woman-2x0pLH {
+        width: 100%;
+    }
+}
+@media (max-width: 300px) {
+    .question-1-of-4 .exclusive-time-limited-giveaway-XSMCiM {
+        width: 100%;
+    }
+    .question-1-of-4 .offer-expires-in-XSMCiM {
+        flex-direction: column;
+    }
+    .question-1-of-4 .hurry-up-offer-expires-in-f3Ty7q {
+        white-space: normal;
+    }
+    .c-mySwiper3-swiper-slide {
+        height: auto;
+    }
+}
