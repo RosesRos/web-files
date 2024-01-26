@@ -302,7 +302,7 @@
 /* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
 /* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
 /* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
-.rocketbook-smart-notepad .img_-slider-RPFAiZ {
+.phomemo-portable-printer .img_-slider-RPFAiZ {
     width: 100%;
 }
 .mySwiper4 {
@@ -356,9 +356,40 @@
 /* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
 
 
+
+/* ### ### FIXED BLOCK ## ### */
+/* ### ### FIXED BLOCK ## ### */
+/* ### ### FIXED BLOCK ## ### */
+
+.phomemo-portable-printer .fixed {
+  position: fixed;
+  z-index: 10;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  /* width: 390px; */
+  width: 430px;
+  margin: 0 auto;
+  transition: all 0.2s linear 0s;
+}
+#button2 {
+  /* display: none; */
+  bottom: -10rem;
+}
+
+/* ### ### FIXED BLOCK ## ### */
+/* ### ### FIXED BLOCK ## ### */
+/* ### ### FIXED BLOCK ## ### */
+
+
+
 @media (max-width: 480px) {
     .phomemo-portable-printer {
       width: 100%;
+    }
+    .phomemo-portable-printer .fixed {
+      width: 95%;
+      margin: 0 auto;
     }
 }
 @media (max-width: 389px) {
