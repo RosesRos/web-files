@@ -64,16 +64,16 @@ document.addEventListener('DOMContentLoaded', function () {
       "./img/slider-1-3.png",
     ];
     const imagesGray = [
-      "./img/slider-3.png",
-      "./img/slider-3-2.png",
-      "./img/slider-3-3.png",
-    ];
-    const imagesPink = [
       "./img/slider-2.png",
       "./img/slider-2-2.png",
       "./img/slider-2-3.png",
     ];
-    const imagesRedBlack = [
+    const imagesGreen = [
+      "./img/slider-3.png",
+      "./img/slider-3-2.png",
+      "./img/slider-3-3.png",
+    ];
+    const imagesWhite = [
       "./img/slider-4.png",
       "./img/slider-4-2.png",
       "./img/slider-4-3.png",
@@ -86,14 +86,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const slider1 = document.getElementById("slider-1");
     const slider2 = document.getElementById("slider-2");
 
-    const mySwiperImg = document.querySelectorAll(".c-swiper-mySwiper-img");
-
     // clicklabel buttons //
     // clicklabel buttons //
-    const blackBtn = document.querySelector('div[data-id="781:6901"]');
-    const grayBtn = document.querySelector('div[data-id="781:6903"]');
-    const pinkBtn = document.querySelector('div[data-id="781:6905"]');
-    const redBlackBtn = document.querySelector('div[data-id="781:6907"]');
+    const blackBtn = document.querySelector('[data-id="1434:9076-d066d904-52e7-4a32-bae8-85bfc1ef2fb5"]');
+    const grayBtn = document.querySelector('[data-id="1434:9077-97a9795b-23fd-41a9-9681-5661be18cdaa"]');
+    const greenBtn = document.querySelector('[data-id="1434:9079-a9ae3d5c-327a-46e4-9356-f87f06a1124e"]');
+    const whiteBtn = document.querySelector('[data-id="1434:9080-4c18e280-d36f-46b9-a304-11417e1d8133"]');
     // clicklabel buttons //
     // clicklabel buttons //
 
@@ -101,59 +99,27 @@ document.addEventListener('DOMContentLoaded', function () {
       slider0.src = imagesBlack[0];
       slider1.src = imagesBlack[1];
       slider2.src = imagesBlack[2];
-
-      // slider thumbsSlider //
-      // slider thumbsSlider //
-      mySwiperImg[0].src = imagesBlack[0];
-      mySwiperImg[1].src = imagesBlack[1];
-      mySwiperImg[2].src = imagesBlack[2];
-      // slider thumbsSlider //
-      // slider thumbsSlider //
     });
 
     grayBtn.addEventListener("click", function() {
       slider0.src = imagesGray[0];
       slider1.src = imagesGray[1];
       slider2.src = imagesGray[2];
-
-      // slider thumbsSlider //
-      // slider thumbsSlider //
-      mySwiperImg[0].src = imagesGray[0];
-      mySwiperImg[1].src = imagesGray[1];
-      mySwiperImg[2].src = imagesGray[2];
-      // slider thumbsSlider //
-      // slider thumbsSlider //
     });
 
-    pinkBtn.addEventListener("click", function() {
-      slider0.src = imagesPink[0];
-      slider1.src = imagesPink[1];
-      slider2.src = imagesPink[2];
-
-      // slider thumbsSlider //
-      // slider thumbsSlider //
-      mySwiperImg[0].src = imagesPink[0];
-      mySwiperImg[1].src = imagesPink[1];
-      mySwiperImg[2].src = imagesPink[2];
-      // slider thumbsSlider //
-      // slider thumbsSlider //
+    greenBtn.addEventListener("click", function() {
+      slider0.src = imagesGreen[0];
+      slider1.src = imagesGreen[1];
+      slider2.src = imagesGreen[2];
     });
 
-    redBlackBtn.addEventListener("click", function() {
-      slider0.src = imagesRedBlack[0];
-      slider1.src = imagesRedBlack[1];
-      slider2.src = imagesRedBlack[2];
-
-      // slider thumbsSlider //
-      // slider thumbsSlider //
-      mySwiperImg[0].src = imagesRedBlack[0];
-      mySwiperImg[1].src = imagesRedBlack[1];
-      mySwiperImg[2].src = imagesRedBlack[2];
-      // slider thumbsSlider //
-      // slider thumbsSlider //
+    whiteBtn.addEventListener("click", function() {
+      slider0.src = imagesWhite[0];
+      slider1.src = imagesWhite[1];
+      slider2.src = imagesWhite[2];
     });
   }
-  // selectImage();
+  selectImage();
 
 
 
@@ -253,9 +219,9 @@ document.addEventListener('DOMContentLoaded', function () {
       spaceBetween: 10,
       centeredSlides: false,
       pagination: {
-        el: ".swiper-pagination",
-        dynamicBullets: true,
-        clicklabel: true
+        el: ".c-swiper-pagination",
+        dynamicBullets: false,
+        clickable: true,
       },
       navigation: {
         nextEl: ".swiper-button-next",
@@ -264,24 +230,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
   SliderBox();
-
-  function SliderBox3() {
-    new Swiper(".mySwiper3", {
-      spaceBetween: 30,
-      loop: true,
-      slidesPerView: "auto",
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination-3",
-        clickable: true,
-      },
-    });
-  }
-  // SliderBox3();
-
 
   function SliderBox4() {
     new Swiper(".mySwiper4", {
@@ -298,40 +246,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   SliderBox4();
 
-  
-  function boxSizes() {
-    const a4 = document.querySelector(".c-product-offer-format-content-selector-item-1");
-    const a5 = document.querySelector(".c-product-offer-format-content-selector-item");
-
-    const pageA4 = document.querySelector(".c-product-offer-format-content-selector-item-a4");
-    const pageA5  = document.querySelector(".c-product-offer-format-content-selector-item-a5");
-
-    pageA4.classList.add("active-a4green");
-    a4.addEventListener("click", function() {
-      pageA5.classList.remove("active-a5green");
-      pageA4.classList.add("active-a4green");
-    });
-    a5.addEventListener("click", function() {
-      pageA4.classList.remove("active-a4green");
-      pageA5.classList.add("active-a5green");
-    });
-  };      
-  // boxSizes();
-
-  function boxPage() {
-    const items = document.querySelectorAll(".c-product-offer-page-content-selector-item1");
-    items[0].classList.add("active");
-    items.forEach((item) => {
-      item.addEventListener("click", function() {
-        items.forEach((ite) => {
-          ite.classList.remove("active");
-        });
-        item.classList.toggle("active");
-      });
-    }); 
-  }
-  // boxPage();
-
   function boxColor() {
     const Colors = document.querySelectorAll('.selector_-color');
     Colors[0].classList.add('active');
@@ -345,27 +259,5 @@ document.addEventListener('DOMContentLoaded', function () {
     }); 
   };
   boxColor();
-
-  function CountFixed() { 
-    const result = document.querySelector(".c-price-fixed-frame-amount-p");
-    const decrement = document.getElementById("decrement");
-    const increment = document.getElementById("increment");
-
-    let counterValue = 1;
-
-    increment.addEventListener("click", function() {
-      counterValue++;
-      result.innerHTML = counterValue;
-    });
-    decrement.addEventListener("click", function() {
-      if (counterValue > 1) {
-        counterValue--;
-      } else {
-        counterValue;
-      }
-      result.innerHTML = counterValue;
-    });
-  };
-  // CountFixed();
 
 });
