@@ -1,0 +1,439 @@
+.c-img-xSSaLx {
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.c-img-xSSaLx-bg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.57) 21.97%, rgba(0, 0, 0, 0.00) 67.6%);
+    z-index: 2;
+}
+.img-xSSaLx-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    z-index: 5;
+}
+.img-xSSaLx-content-h2 {
+    align-self: stretch;
+    color: var(--white-ffffff-100, #FFF);
+    font-family: "Roboto";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 30.8px */
+}
+.img-xSSaLx-content-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+.img-xSSaLx-content-block-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+.img-xSSaLx-content-block-item-text {
+    display: flex;
+    padding: 4px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 40px;
+    border: 1px solid var(--white-ffffff-50, rgba(255, 255, 255, 0.50));
+}
+.img-xSSaLx-content-block-item-text-p {
+    color: var(--white-ffffff-100, #FFF);
+
+    /* Roboto/Text_Primary_2 */
+    font-family: "Roboto";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 18.2px */
+}
+
+
+.phomemo-portable-printer [data-id="1434:9076-d066d904-52e7-4a32-bae8-85bfc1ef2fb5"] {
+    background-image: url(./img/type-color--status-active@2x.png);
+}
+.phomemo-portable-printer [data-id="1434:9077-97a9795b-23fd-41a9-9681-5661be18cdaa"] {
+    background-image: url(./img/type-color--status-active@2_2x.png);
+}
+.phomemo-portable-printer [data-id="1434:9079-a9ae3d5c-327a-46e4-9356-f87f06a1124e"] {
+    background-image: url(./img/type-color--status-active@2_3x.png);
+}
+.phomemo-portable-printer [data-id="1434:9080-4c18e280-d36f-46b9-a304-11417e1d8133"] {
+    background-image: url(./img/type-color--status-active@2_4x.png);
+}
+
+
+.selector_-color.active {
+    border: 1px solid var(--Used-Light-Gray, #DCDCDC);
+}
+
+
+/* #### ##### #### Acordion ### #### ### */
+/* #### ##### #### Acordion ### #### ### */
+/* #### ##### #### Acordion ### #### ### */
+.phomemo-portable-printer  .accordion {
+    height: 60px;
+    overflow: hidden;
+    transition: all 0.2s linear 0s;
+}
+.accordion.active {
+    height: auto;
+}
+.phomemo-portable-printer  .accordion-arrow {
+    transform: rotate(180deg);
+    transition: all 0.2s linear 0s;
+}
+.accordion-arrow.active {
+    transform: rotate(0deg);
+}
+
+.phomemo-portable-printer  .accordion-faq {
+    height: 60px;
+    overflow: hidden;
+    transition: all 0.2s linear 0s;
+}
+.accordion-faq.active {
+    height: auto;
+}
+.phomemo-portable-printer  .close-arrow {
+    transform: rotate(180deg);
+    transition: all 0.2s linear 0s;
+    background-image: url("./img/open.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 28px;
+}
+.close-arrow.active {
+    transform: rotate(180deg);
+    background-image: url("./img/close_1.svg");
+}
+/* #### ##### #### Acordion ### #### ### */
+/* #### ##### #### Acordion ### #### ### */
+/* #### ##### #### Acordion ### #### ### */
+
+
+
+/* ##### LOADER LOADER LOADER LOADER*/
+/* ##### LOADER LOADER LOADER LOADER*/
+/* ##### LOADER LOADER LOADER LOADER*/
+.progress {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    z-index: 1;
+    width: 100%;
+    
+  }
+  .img-1, .img-2, .img-3 {
+    position: relative;
+    border-radius: 50%;
+    background:  var(--cinnabar);
+    width: 18px;
+    height: 18px;
+    animation: 2s ease-in-out infinite load;
+  }
+  
+  .img-2,
+  .img-3 {
+    animation: 2s ease-in-out 0.4s infinite load;
+  }
+  .img-3 {
+    animation: 2s ease-in-out 0.8s infinite load;
+  }
+  @keyframes load {
+      50% {
+        opacity: 0;
+        transform: scale(0.7);
+      }
+  }
+/* ##### LOADER LOADER LOADER LOADER*/
+/* ##### LOADER LOADER LOADER LOADER*/
+/* ##### LOADER LOADER LOADER LOADER*/
+
+
+
+/* ##### hiddenText hiddenText hiddenText hiddenText*/
+/* ##### hiddenText hiddenText hiddenText hiddenText*/
+/* ##### hiddenText hiddenText hiddenText hiddenText*/
+.hidden-text {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--color-gray-500);
+  }
+  .text-1419 {
+    flex: 1;
+    position: relative;
+
+    align-self: stretch;
+    background-color: transparent;
+    color: var(--useddark-gray);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13.0px;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-xs);
+  }
+  .hidden-text.show {
+    display: block;
+  }
+ /* ##### hiddenText hiddenText hiddenText hiddenText*/
+ /* ##### hiddenText hiddenText hiddenText hiddenText*/
+/* ##### hiddenText hiddenText hiddenText hiddenText*/
+
+
+
+/* ## ### ## SLIDER BOX ## ## ### */
+/* ## ### ## SLIDER BOX ## ## ### */
+/* ## ### ## SLIDER BOX ## ## ### */
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+
+
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+  .mySwiper2 {
+    height: 370px;
+    width: 100%;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .c-swiper-mySwiper2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-right: 0px !important; */
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-button-next::after, .swiper-button-prev::after {
+    content: "";
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+  .swiper-button-prev::after {
+    background-image: url("./img/arrow_Left.svg");
+  }
+  .swiper-button-next::after {
+    background-image: url("./img/arrow_Right.svg");
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    gap: 7px;
+    justify-content: center;
+    align-self: stretch;
+    margin: 0 auto;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+  }
+  .c-swiper-pagination>.swiper-pagination-bullet {
+    height: 3px;
+    flex: 1 0 0;
+    border-radius: 20px;
+    background: #9483A3;
+  }
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    border-radius: 20px;
+    background: #290646;
+  }
+
+  .mySwiper {
+    width: 100%;
+    border-radius: 20px;
+  }
+  .c-mySwiper {
+    width: 100%;
+    height: 370px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .swiper-horizontal>.c-swiper-pagination-2 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 12%;
+    margin-top: 8px;
+  }
+  .c-swiper-pagination-2 .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: #9483A3;
+  }
+  .c-swiper-pagination-2>.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 12px;
+    height: 12px;
+    background: #290646;
+  }
+  .c-slider-2-video {
+    width: 100%;
+  }
+
+
+/* ## ### ## SLIDER BOX ## ## ### */
+/* ## ### ## SLIDER BOX ## ## ### */
+/* ## ### ## SLIDER BOX ## ## ### */
+
+
+
+/* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
+/* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
+/* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
+.rocketbook-smart-notepad .img_-slider-RPFAiZ {
+    width: 100%;
+}
+.mySwiper4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.c-mySwiper4 {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+.c-mySwiper4-swiper-slide {
+
+    display: flex;
+    width: 300px;
+    height: 222px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 20px;
+    border: 1px solid #E6E6E6;
+    overflow: hidden;
+    margin: 0 !important;
+}
+
+.swiper-horizontal>.c-swiper-pagination-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 0 auto;
+}
+.c-swiper-pagination-4 .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: #E53F3F;
+    opacity: 1;
+}
+.c-swiper-pagination-4>.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 10px;
+    height: 10px;
+    stroke-width: 1px;
+    border: 1.5px solid #E53F3F;
+    background: transparent;
+}
+/* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
+/* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
+/* ## ### ## SLIDER BOX 4 SLIDER BOX 4 SLIDER BOX 4 ## ## ### */
+
+
+@media (max-width: 480px) {
+    .phomemo-portable-printer {
+        width: 100%;
+    }
+}
+@media (max-width: 389px) {
+    .img-xSSaLx-content-h2 {
+        font-size: 25px;
+    }
+}
+@media (max-width: 330px) {
+    .c-img-xSSaLx {
+        height: 100%;
+        width: max-content;
+    }
+    .phomemo-portable-printer .img-xSSaLx {
+        height: 400px;
+    }
+    .phomemo-portable-printer .get-phomemo-app-from-xbOjbv {
+        width: 100%;
+    }
+    .phomemo-portable-printer .connect-the-printer-0ZGduY {
+        height: 430px;
+    }
+    .phomemo-portable-printer .img-sF4GYY {
+        height: auto;
+        width: 90%;
+    }
+    .phomemo-portable-printer .install-the-driver-f-h81Yl7 {
+        width: 100%;
+    }
+    .phomemo-portable-printer .compact-design-yPcZQw {
+        width: 100%;
+    }
+    .phomemo-portable-printer .img-IdThem {
+        height: auto;
+    }
+    .phomemo-portable-printer .high-quality-printing-gXZg5K {
+        width: 100%;
+    }
+    .phomemo-portable-printer .this-is-a-portable-t-ScXnE9 {
+        width: 100%;
+    }
+}
