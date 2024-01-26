@@ -191,7 +191,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   function scrollBox() {
-    const button1 = document.getElementById('button1');
     const button2 = document.getElementById('button2');
     const scroElement = document.getElementById('scro');
     const scrollThreshold = scroElement.offsetTop; // Порог прокрутки до элемента scro
