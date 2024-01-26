@@ -414,3 +414,145 @@
       width: 80px;
     }
 }
+
+@media (max-width: 300px) {
+  .phomemo-portable-printer .menu-jInbZr {
+    gap: 10px;
+  }
+  .phomemo-portable-printer .img-xSSaLx {
+    height: 300px;
+  }
+  .c-img-xSSaLx {
+    height: auto;
+    width: 100%;
+  }
+  .phomemo-portable-printer .trustpilot-PvYFxh {
+    flex-direction: column;
+  }
+  .phomemo-portable-printer .selector_-color {
+    height: 60px;
+  }
+  .phomemo-portable-printer .frame-MtjiP3 {
+    gap: 10px 2px;
+  }
+  .phomemo-portable-printer .free-shipping-in-country {
+    font-size: 12px;
+  }
+  .phomemo-portable-printer .all-purchases-are-sh {
+    font-size: 12px;
+  }
+  .phomemo-portable-printer .connect-the-printer-xbOjbv {
+    width: 100%;
+    padding: 0px 5px;
+  }
+  .phomemo-portable-printer .connect-the-printer-to-your-laptop-h81Yl7 {
+    width: 100%;
+  }
+  .phomemo-portable-printer .frame-n6N3HB {
+    display: flex;
+    flex-direction: column;
+  }
+  .phomemo-portable-printer .img-IdThem {
+    height: 200px;
+  }
+  .phomemo-portable-printer .img-pDw8Pm {
+    flex: none;
+  }
+  .phomemo-portable-printer .who-might-this-be-useful-for-Zrecnt {
+    white-space: normal;
+  }
+  .c-mySwiper4-swiper-slide {
+    width: 100%;
+  }
+  .phomemo-portable-printer .how-long-does-phomem {
+    font-size: 12px;
+  }
+  .phomemo-portable-printer .it-depends-on-amount {
+    font-size: 12px;
+  }
+  .phomemo-portable-printer .review_-img-or-video-mHwPUt .video_1 {
+    top: -50%;
+  }
+  .phomemo-portable-printer .review_-img-or-video-PKEYWC .video_2 {
+    top: -10%;
+  }
+  .phomemo-portable-printer .review_-img-or-video-UhzDJa .video_3 {
+    top: -50%;
+  }
+  .phomemo-portable-printer .input-button-tw28fP {
+    flex-direction: column;
+  }
+  .phomemo-portable-printer .input-ElK2qe {
+    width: 100%;
+  }
+  .phomemo-portable-printer .button_1-ElK2qe {
+    width: 100%;
+  }
+  .phomemo-portable-printer .subscribe-to-our-e-mail-newsletter-tw28fP {
+    width: 100%;
+  }
+}
+@media (max-width: 250px) {
+  .phomemo-portable-printer .up-to-95-off-dzcDI5 {
+    flex-direction: column;
+  }
+  .phomemo-portable-printer .menu-jInbZr {
+    flex-direction: column;
+  }
+  .img-xSSaLx-content-block-item {
+    flex-direction: column;
+  }
+  .phomemo-portable-printer .trustpilot {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .phomemo-portable-printer .price-740dC4 {
+    flex-direction: column;
+  }
+  .phomemo-portable-printer .selector_-color {
+    height: 40px;
+  }
+  .phomemo-portable-printer .frame-MtjiP3 {
+    gap: 10px 2px;
+    display: flex;
+    flex-direction: column;
+  }
+  .phomemo-portable-printer .customer-reviews-pueIDh {
+    white-space: normal;
+  }
+  .phomemo-portable-printer .frame-3bqgVu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .phomemo-portable-printer .frame-Z9zjNv {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .phomemo-portable-printer .frame-9GwY0U {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .phomemo-portable-printer .frame-AE7Azt {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .phomemo-portable-printer .frame-pT42Un {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .phomemo-portable-printer .frame-8VY9VN {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .phomemo-portable-printer .frame-xKGzMP {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .phomemo-portable-printer .frame-tCVBIg {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .phomemo-portable-printer .subscribe-to-our-e-mail-newsletter-tw28fP {
+    width: 100%;
+  }
+}
