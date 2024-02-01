@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['pixelId']) && isset($_
     file_put_contents('pixel_2.txt', $newEntry, FILE_APPEND | LOCK_EX);
     echo <<<HTML
         <div class="container">
-        <p style='color:green'>New Pixel ID and Access Token added successfully!</p>
+            <p style='color:green'>New Pixel ID and Access Token added successfully!</p>
         </div>
         <script>
             setTimeout(() => {
