@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Add Pixel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* height: 200vh; */
+            background-color: #f7f7f7;
+            margin-top: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media (max-width: 480px) {
+            .container {
+                max-width: 100%;
+            }
+        }
+
+        input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        input[type="submit"],
+        button {
+            width: calc(100% - 20px);
+            padding: 10px 20px;
+            border: none;
+            background-color: #007BFF;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"]:hover,
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        pre {
+            background-color: #eee;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+
+        select {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Add a new Pixel ID and Access Token</h1>
+        <form action="process_form.php" method="post">
+            <label for="pixelId">Pixel ID:</label><br>
+            <input type="text" id="pixelId" name="pixelId"><br>
+            <label for="accessToken">Access Token:</label><br>
+            <input type="text" id="accessToken" name="accessToken"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div class="container" id="pixelsContainer">
+        <button onclick="toggleView('pixels')">View Pixels</button>
+        <pre id="pixels"></pre>
+    </div>
+
+    <div class="container">
+        <h1>Remove Pixel ID and Access Token</h1>
+        <form id="removePixel" action="~/replacing" method="post">
+            <label for="pixelId">Access Token:</label><br>
+            <input type="text" id="pixelIdRemove" name="pixelIdRemove"><br>
+            <button type="submit" id="removePixel">Remove</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <h1>Get iOS link</h1>
+        <label for="pixelIdLink">Pixel ID:</label><br>
+        <input type="text" id="pixelIdLink" name="pixelIdLink"><br>
+        <label for="companyKey">Key from binom:</label><br>
+        <input type="text" id="companyKey" name="companyKey"><br>
+         <label for="domain">Choose Domain:</label><br>
+        <select id="domain" name="domain">
+            <option value="ourappsdomain.com">ourappsdomain.com old </option>
+            <option value="meadow-land.info">meadow-land.info [new] 10.01</option>
+        </select><br>
+        <label for="application">Choose Application:</label><br>
+        <select id="application" name="application">
+            <option value="greedy-wolf">IOS | Greedy Wolf</option>
+            <option value="sky-priority">IOS | sky-priority</option>
+            <option value="flinko">IOS | flinko</option>
+            <option value="Epic-Spin-Kingdom">IOS | Epic-Spin-Kingdom</option>
+        </select><br>
+        <label for="sub2">Sub2:</label><br>
+        <input type="text" id="sub2" name="sub2"><br>
+        <label for="sub3">Sub3:</label><br>
+        <input type="text" id="sub3" name="sub3"><br>
+        <button onclick="generateLink()">Get Link</button>
+        <p id="generatedLink"></p>
+    </div>
+
+    <script>
+        let pixelsVisible = false;
+        let logsVisible = false;
+
+        function toggleView(target) {
+            if (target === 'pixels') {
+                pixelsVisible = !pixelsVisible;
+                if (pixelsVisible) {
+                    document.getElementById('pixels').textContent = 'Loading pixels...';
+                    loadPixels();
+                } else {
+                    document.getElementById('pixels').textContent = '';
+                }
+            } else if (target === 'logs') {
+                logsVisible = !logsVisible;
+                if (logsVisible) {
+                    document.getElementById('logs').textContent = 'Enter a Pixel ID and click "View Logs".';
+                } else {
+                    document.getElementById('logs').textContent = '';
+                }
+            }
+        }
+
+        function loadPixels() {
+            fetch('pixel_2.txt')
+                .then(response => response.text())
+                .then(data => {
+                    const lines = data.split('\n');
+                    const formattedData = lines.filter(line => line.trim() !== '').join('\n');
+                    document.getElementById('pixels').textContent = formattedData;
+                });
+        }
+
+
+        function findPixel() {
+            let pixelId = document.getElementById("pixelId");
+            const pixels = document.getElementById("pixels");
+
+            pixelId.addEventListener("input", function() {
+                if (pixelId.value <= 3) {
+                    pixels.innerHTML = ""
+                } else {
+                    filterPixelWithPattern(pixelId.value);
+                }
+            });
+
+            function filterPixelWithPattern(pattern) {
+                fetch('pixel_2.txt')
+                    .then(response => response.text())
+                    .then(data => {
+                        const lines = data.split('\n');
+                        const filteredLines = lines.find(function(line) {
+                            if (line.includes(pattern)) {
+                                return line;
+                            } 
+                        });
+                        if (filteredLines) {
+                            pixels.innerHTML = filteredLines;
+                        } else {
+                            pixels.innerHTML = "";
+                        }
+                    })
+                    .catch(error => console.error('Ошибка при выполнении запроса:', error));
+            }
+        }
+        findPixel();
+
+
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("removePixel").addEventListener("submit", function(event) {
+                event.preventDefault();
+                var $that = event.target;
+                var $input = $that.querySelector("#pixelIdRemove");
+                var $btn = $that.querySelectorAll('#removePixel');
+
+                params = {
+                    path: '/',
+                    pixelIdRemove: $input.value
+                }
+
+                pairs = [];
+	            for (var key in params) {
+                    if (params.hasOwnProperty(key)) {
+                        pairs.push(key+"="+encodeURIComponent(params[key]));
+                    }
+	            };
+	    
+	            var qs = pairs.join('&');
+                let url = `http://${location.hostname}:9093` + params.path + 'process_form.php?params=' + JSON.stringify(params) + '&' + qs;
+
+                fetch(url, {
+                    method: 'POST',
+                    body: 'Удалить строку с 1577894522981368 в файле pixel.txt',
+                    mode: 'no-cors',
+                    cache: 'no-cache'
+                })
+                .then(response => response.text())
+                .then(result => {
+                    document.open();
+                    document.write(result);
+                    document.close();
+                    return;
+                })
+                .catch(error => console.error('Ошибка:', error));
+
+            });
+        });
+
+
+
+        function viewLogs() {
+            const viewPixelId = document.getElementById('viewPixelId').value;
+
+            if (viewPixelId) {
+                fetch('log.txt')
+                    .then(response => response.text())
+                    .then(data => {
+                        const logs = data.split('\n');
+                        const filteredLogs = logs.filter(log => log.includes(`graph.facebook.com/v12.0/${viewPixelId}`));
+                        document.getElementById('logs').textContent = filteredLogs.join('\n');
+                    });
+            } else {
+                document.getElementById('logs').textContent = 'Enter a Pixel ID to view logs.';
+            }
+        }
+
+           function generateLink() {
+            const pixelIdLink = document.getElementById('pixelIdLink').value;
+            const companyKey = document.getElementById('companyKey').value;
+            const selectedApplication = document.getElementById('application').value;
+            const selectedDomain = document.getElementById('domain').value; // Добавлено для выбора домена
+            const sub2 = document.getElementById('sub2').value;
+            const sub3 = document.getElementById('sub3').value;
+
+            if (pixelIdLink && companyKey) {
+                let applicationURL = '';
+
+                // Обновленная логика для формирования URL
+                if (selectedDomain === 'ourappsdomain.com') {
+                    switch (selectedApplication) {
+                        case 'greedy-wolf':
+                            applicationURL = 'https://ourappsdomain.com/B9QtGT2M?';
+                            break;
+                        case 'sky-priority':
+                            applicationURL = 'https://ourappsdomain.com/NMXpshZz?';
+                            break;
+                        case 'flinko':
+                            applicationURL = 'https://ourappsdomain.com/t8N7jmvd?';
+                            break;
+                            case 'Epic-Spin-Kingdom':
+                            applicationURL = 'https://ourappsdomain.com/nZ77hhZ1?';
+                            break;
+                    }
+                } else if (selectedDomain === 'meadow-land.info') {
+                    switch (selectedApplication) {
+                        case 'greedy-wolf':
+                            applicationURL = 'https://meadow-land.info/ZKSNfG9n?';
+                            break;
+                        case 'sky-priority':
+                            applicationURL = 'https://meadow-land.info/NMXpshZz?';
+                            break;
+                        case 'flinko':
+                            applicationURL = 'https://meadow-land.info/meflinko?';
+                            break;
+                            case 'Epic-Spin-Kingdom':
+                            applicationURL = 'https://meadow-land.info/y7vNSGGs?';
+                            break;
+                    }
+                }
+
+                let pidValue = `${companyKey}`;
+                if (sub2) pidValue += `_sub2_${sub2}`;
+                if (sub3) pidValue += `_sub3_${sub3}`;
+
+                const generatedLink = `${applicationURL}af_xp=custom&pid=${pidValue}&is_retargeting=true&c=${pixelIdLink}`;
+                document.getElementById('generatedLink').textContent = generatedLink;
+            }
+        }
+         let currentContainerIndex = 0;
+        const containers = document.querySelectorAll('.container');
+
+        document.body.addEventListener('wheel', function(event) {
+            if (event.deltaY > 0 && currentContainerIndex < containers.length - 1) {
+                currentContainerIndex++;
+            } else if (event.deltaY < 0 && currentContainerIndex > 0) {
+                currentContainerIndex--;
+            }
+            containers[currentContainerIndex].scrollIntoView({ behavior: 'smooth' });
+        });
+        
+    </script>
+</body>
+
+</html>
