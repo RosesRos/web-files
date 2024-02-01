@@ -21,15 +21,16 @@ HTML;
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['pixelId']) && isset($_POST['accessToken'])) {
     $pixelId = $_POST['pixelId'];
     $accessToken = $_POST['accessToken'];
-    $lines = file($filename, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+    $lines = file('pixel_2.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
     $lastIndex = count($lines) - 1;
     $newIndex = $lastIndex + 1;
     // $newEntry = $pixelId . ':' . $accessToken . PHP_EOL;
-    $newEntry = $newIndex . ":" . $pixelId . ':' . $accessToken;;
-    file_put_contents('coco.txt', implode(PHP_EOL, $newEntry), FILE_APPEND | LOCK_EX);
+    $newLine = $newIndex . ":" . $pixelId . ':' . $accessToken . "\n";
+    $newEntry[] = $newLine;
+    file_put_contents('pixel_2.txt', implode("\n", $newEntry), FILE_APPEND | LOCK_EX);
     echo <<<HTML
         <div class="container">
-            <p style='color:green'>New Pixel ID and Access Token added successfully!</p>
+            <h1 style='color:green'>New Pixel ID and Access Token added successfully!</h1>
         </div>
         <script>
             setTimeout(() => {
