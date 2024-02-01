@@ -161,7 +161,7 @@
                     const formattedData = lines.filter(line => line.trim() !== '').join('\n');
                     const formattedLines = formattedData.split('\n');
                     formattedLines.forEach((line, index) => {
-                        document.getElementById('pixels').innerHTML += `${index}:${line}<br>`;
+                        document.getElementById('pixels').innerHTML += `(${index}):${line}<br>`;
                     });
 
                     // document.getElementById('pixels').textContent = formattedData;
