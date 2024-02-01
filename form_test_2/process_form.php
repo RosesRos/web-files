@@ -35,7 +35,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($request->pixelId) && isset($r
         </div>
         <script>
             setTimeout(() => {
-                // location.href = "./";
                 location.reload();
             }, 2000);
         </script>
