@@ -238,7 +238,7 @@
 
                     fetch(url, {
                         method: 'POST',
-                        body: 'Удалить строку с 1577894522981368 в файле pixel.txt',
+                        body: 'Remove item with pixel in file pixel.txt',
                         mode: 'no-cors',
                         cache: 'no-cache'
                     })
@@ -251,8 +251,10 @@
                     })
                     .catch(error => console.error('Ошибка:', error));
                 } else {
-                    console.log('Введите данные для удаления');
-                    return null;
+                    document.getElementById("pixels").innerHTML = "You Need To Select a Pixel ID or Access Token";
+                    setTimeout(() => {
+                        document.getElementById("pixels").innerHTML = "";
+                    }, 5000);
                 }
 
             });

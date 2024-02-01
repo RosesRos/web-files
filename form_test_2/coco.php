@@ -1,31 +1,28 @@
 <?php
 
-$file_path = 'coco.txt';
+// $pixelId = $_POST['pixelId'];
+$pixelId = "404040040404";
+// $accessToken = $_POST['accessToken'];
+$accessToken = "EAASkHGZC0BO2uH5XssP4bTNB0qO5PnooD5DZBP7BAX7KYQefZBdQTmHM7Q8oKcNRp3E8cRmssg2DO0kdg1dJhZCZCt70HxfdvCl4gfOTXYTMJNaztWZCi5Oe5K0xrunvJKZC1ypcoijCPn9Ng83yyzgb5COFBCDDTgB6CdRGjUHI7pokZA8tNhmQ2gmVdz";
 
-// Получаем значение строки для удаления из POST-запроса
-$searchString = isset($_POST['searchString']) ? $_POST['searchString'] : '';
+$filename = 'coco.txt';
 
-if ($searchString) {
-    // Читаем содержимое файла
-    $file_content = file_get_contents($file_path);
+// Читаем содержимое файла в массив
+$lines = file($filename, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 
-    // Разбиваем текст по строкам
-    $lines = explode("\n", $file_content);
-    
-    // Фильтруем строки, исключая ту, которая содержит указанный паттерн
-    $filtered_lines = array_filter($lines, function ($line) use ($searchString) {
-        return strpos($line, $searchString) === false;
-    });
+// Находим индекс последней строки
+$lastIndex = count($lines) - 1;
 
-    // Собираем строки обратно в текст
-    $result_text = implode("\n", $filtered_lines);
+// Генерируем новый индекс
+$newIndex = $lastIndex + 1;
 
-    // Перезаписываем файл
-    file_put_contents($file_path, $result_text);
+// Строка для добавления
+$newLine = $newIndex . ":".$pixelId . ':' . $accessToken;
 
-    echo 'Строка удалена успешно.';
-} else {
-    echo 'Введите данные для удаления.';
-}
+// Добавляем строку в массив
+$lines[] = $newLine;
 
-?>
+// Записываем обновленный массив обратно в файл
+file_put_contents($filename, implode(PHP_EOL, $lines));
+
+echo "Строка добавлена в файл. Новый индекс: $newIndex";
