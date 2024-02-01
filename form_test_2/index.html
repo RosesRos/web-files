@@ -169,7 +169,7 @@
             const pixels = document.getElementById("pixels");
 
             pixelId.addEventListener("input", function() {
-                if (pixelId.value <= 3) {
+                if (pixelId.value.length <= 3) {
                     pixels.innerHTML = ""
                 } else {
                     filterPixelWithPattern(pixelId.value);
@@ -184,7 +184,7 @@
             const pixels = document.getElementById("pixels");
 
             accessToken.addEventListener("input", function() {
-                if (accessToken.value <= 3) {
+                if (accessToken.value.length <= 3) {
                     pixels.innerHTML = ""
                 } else {
                     filterPixelWithPattern(accessToken.value);
@@ -220,35 +220,40 @@
                 var $input = $that.querySelector("#pixelIdRemove");
                 var $btn = $that.querySelectorAll('#removePixel');
 
-                params = {
-                    path: '/',
-                    pixelIdRemove: $input.value
-                }
-
-                pairs = [];
-	            for (var key in params) {
-                    if (params.hasOwnProperty(key)) {
-                        pairs.push(key+"="+encodeURIComponent(params[key]));
+                if ($input.value.length >= 8) {
+                    params = {
+                        path: '/',
+                        pixelIdRemove: $input.value
                     }
-	            };
-	    
-	            var qs = pairs.join('&');
-                let url = `http://${location.hostname}:9093` + params.path + 'process_form.php?params=' + JSON.stringify(params) + '&' + qs;
 
-                fetch(url, {
-                    method: 'POST',
-                    body: 'Удалить строку с 1577894522981368 в файле pixel.txt',
-                    mode: 'no-cors',
-                    cache: 'no-cache'
-                })
-                .then(response => response.text())
-                .then(result => {
-                    document.open();
-                    document.write(result);
-                    document.close();
-                    return;
-                })
-                .catch(error => console.error('Ошибка:', error));
+                    pairs = [];
+	                for (var key in params) {
+                        if (params.hasOwnProperty(key)) {
+                            pairs.push(key+"="+encodeURIComponent(params[key]));
+                        }
+	                };
+	    
+	                var qs = pairs.join('&');
+                    let url = `http://${location.hostname}:9093` + params.path + 'process_form.php?params=' + JSON.stringify(params) + '&' + qs;
+
+                    fetch(url, {
+                        method: 'POST',
+                        body: 'Удалить строку с 1577894522981368 в файле pixel.txt',
+                        mode: 'no-cors',
+                        cache: 'no-cache'
+                    })
+                    .then(response => response.text())
+                    .then(result => {
+                        document.open();
+                        document.write(result);
+                        document.close();
+                        return;
+                    })
+                    .catch(error => console.error('Ошибка:', error));
+                } else {
+                    console.log('Введите данные для удаления');
+                    return null;
+                }
 
             });
         });
