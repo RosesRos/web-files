@@ -84,4 +84,23 @@ function removePixel() {
 }
 removePixel();
 
+
+function deleteLine() {
+    // global $_GET;
+    $index = $_GET['index'];
+    $filePath = 'pixel_2.txt';
+
+    if (!empty($index)) {
+        $fileContent = file_get_contents($filePath);
+        $lines = explode("\n", $fileContent);
+        if (isset($lines[$index])) {
+            unset($lines[$index]);
+        }
+        $newContent = implode("\n", $lines);
+        file_put_contents($filePath, $newContent);
+        echo json_encode(['success' => true]);
+    }
+}
+deleteLine();
+
 ?>

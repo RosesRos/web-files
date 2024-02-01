@@ -163,6 +163,24 @@
                     const formattedLines = formattedData.split('\n');
                     formattedLines.forEach((line, index) => {
                         document.getElementById('pixels').innerHTML += `<span class="linePixels"><span class="rmLinePixels">(x)</span>(${index}):${line}</span><br>`;
+                        function rmLinePixels() {
+                            const linePixels = document.querySelectorAll(".linePixels");
+                            const rmLinePixels = document.querySelectorAll(".rmLinePixels");
+                            rmLinePixels.forEach((item, index) => {
+                                item.addEventListener("click", () => {
+                                    linePixels[index].innerHTML = "Item Was removed";
+                                    const indexToDelete = index;
+
+                                    fetch(`process_form.php?index=${indexToDelete}`)
+                                    .then(response => response.json())
+                                    .then(data => {
+                                      console.log('Строка успешно удалена:', data);
+                                    })
+                                    .catch(error => console.error('Ошибка при выполнении запроса:', error));
+                                });
+                            });
+                        }
+                        rmLinePixels();
                     });
 
                     // document.getElementById('pixels').textContent = formattedData;
@@ -303,17 +321,6 @@
 
             });
 
-            function rmLinePixels() {
-                const linePixels = document.querySelectorAll(".linePixels");
-                const rmLinePixels = document.querySelectorAll(".rmLinePixels");
-                rmLinePixels.forEach((item, index) => {
-                    item.addEventListener("click", () => {
-                        console.log(index);
-                        linePixels[index].style.display = "none";
-                    });
-                });
-            }
-            rmLinePixels();
         });
 
 
