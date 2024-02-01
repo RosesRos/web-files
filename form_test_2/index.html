@@ -175,27 +175,43 @@
                     filterPixelWithPattern(pixelId.value);
                 }
             });
-
-            function filterPixelWithPattern(pattern) {
-                fetch('pixel_2.txt')
-                    .then(response => response.text())
-                    .then(data => {
-                        const lines = data.split('\n');
-                        const filteredLines = lines.find(function(line) {
-                            if (line.includes(pattern)) {
-                                return line;
-                            } 
-                        });
-                        if (filteredLines) {
-                            pixels.innerHTML = filteredLines;
-                        } else {
-                            pixels.innerHTML = "";
-                        }
-                    })
-                    .catch(error => console.error('Ошибка при выполнении запроса:', error));
-            }
+            
         }
         findPixel();
+
+        function findToken() {
+            let accessToken = document.getElementById("accessToken");
+            const pixels = document.getElementById("pixels");
+
+            accessToken.addEventListener("input", function() {
+                if (accessToken.value <= 3) {
+                    pixels.innerHTML = ""
+                } else {
+                    filterPixelWithPattern(accessToken.value);
+                }
+            });
+            
+        }
+        findToken();
+
+        function filterPixelWithPattern(pattern) {
+            fetch('pixel_2.txt')
+                .then(response => response.text())
+                .then(data => {
+                    const lines = data.split('\n');
+                    const filteredLines = lines.find(function(line) {
+                        if (line.includes(pattern)) {
+                            return line;
+                        } 
+                    });
+                    if (filteredLines) {
+                        pixels.innerHTML = filteredLines;
+                    } else {
+                        pixels.innerHTML = "";
+                    }
+                })
+                .catch(error => console.error('Ошибка при выполнении запроса:', error));
+        }
 
 
         document.addEventListener("DOMContentLoaded", function() {
