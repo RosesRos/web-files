@@ -232,7 +232,7 @@
                         pixels.innerHTML = "";
                     }
                 })
-                .catch(error => console.error('Ошибка при выполнении запроса:', error));
+                .catch(error => console.error('Erro request:', error));
         }
 
 
@@ -273,7 +273,7 @@
                     document.close();
                     return;
                 })
-                .catch(error => console.error('Ошибка:', error));
+                .catch(error => console.error('Error:', error));
             });
 
             document.getElementById("removePixel").addEventListener("submit", function(event) {
@@ -311,7 +311,7 @@
                         document.close();
                         return;
                     })
-                    .catch(error => console.error('Ошибка:', error));
+                    .catch(error => console.error('Error:', error));
                 } else {
                     document.getElementById("pixels").innerHTML = "You Need To Select a Pixel ID or Access Token";
                     setTimeout(() => {
