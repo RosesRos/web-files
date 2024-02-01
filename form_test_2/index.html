@@ -138,7 +138,7 @@
             if (target === 'pixels') {
                 pixelsVisible = !pixelsVisible;
                 if (pixelsVisible) {
-                    document.getElementById('pixels').textContent = 'Loading pixels...';
+                    // document.getElementById('pixels').textContent = 'Loading pixels...';
                     loadPixels();
                 } else {
                     document.getElementById('pixels').textContent = '';
@@ -159,7 +159,12 @@
                 .then(data => {
                     const lines = data.split('\n');
                     const formattedData = lines.filter(line => line.trim() !== '').join('\n');
-                    document.getElementById('pixels').textContent = formattedData;
+                    const formattedLines = formattedData.split('\n');
+                    formattedLines.forEach((line, index) => {
+                        document.getElementById('pixels').innerHTML += `${index}:${line}<br>`;
+                    });
+
+                    // document.getElementById('pixels').textContent = formattedData;
                 });
         }
 
