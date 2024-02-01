@@ -174,9 +174,9 @@
                                     fetch(`process_form.php?index=${indexToDelete}`)
                                     .then(response => response.json())
                                     .then(data => {
-                                      console.log('Строка успешно удалена:', data);
+                                      console.log('Line removed succesfully:', data);
                                     })
-                                    .catch(error => console.error('Ошибка при выполнении запроса:', error));
+                                    .catch(error => console.error('Error deleting line:', error));
                                 });
                             });
                         }
