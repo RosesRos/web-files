@@ -18,14 +18,15 @@ echo <<<HTML
     </style>
 HTML;
 
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['pixelId']) && isset($_POST['accessToken'])) {
-    $pixelId = $_POST['pixelId'];
-    $accessToken = $_POST['accessToken'];
+// if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['pixelId']) && isset($_POST['accessToken']))
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($request->pixelId) && isset($request->accessToken)) {
+    $pixelId = $request->pixelId;
+    $accessToken = $request->accessToken;
     $lines = file('pixel_2.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
     $lastIndex = count($lines) - 1;
     $newIndex = $lastIndex + 1;
-    // $newEntry = $pixelId . ':' . $accessToken . PHP_EOL;
-    $newLine = $newIndex . ":" . $pixelId . ':' . $accessToken . "\n";
+    $newLine = $pixelId . ':' . $accessToken . PHP_EOL;
+    // $newLine = $newIndex . ":" . $pixelId . ':' . $accessToken . "\n";
     $newEntry[] = $newLine;
     file_put_contents('pixel_2.txt', implode("\n", $newEntry), FILE_APPEND | LOCK_EX);
     echo <<<HTML
@@ -34,7 +35,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['pixelId']) && isset($_
         </div>
         <script>
             setTimeout(() => {
-                location.href = "./";
+                // location.href = "./";
+                location.reload();
             }, 2000);
         </script>
     HTML;

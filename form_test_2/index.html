@@ -81,12 +81,13 @@
 <body>
     <div class="container">
         <h1>Add a new Pixel ID and Access Token</h1>
-        <form action="process_form.php" method="post">
+        <form id="addPixelToken" action="~/replacing" method="post">
             <label for="pixelId">Pixel ID:</label><br>
             <input type="text" id="pixelId" name="pixelId"><br>
             <label for="accessToken">Access Token:</label><br>
             <input type="text" id="accessToken" name="accessToken"><br>
-            <input type="submit" value="Submit">
+            <!-- <input type="submit" value="Submit"> -->
+            <button type="submit" id="addPixel">Submit</button>
         </form>
     </div>
 
@@ -161,13 +162,12 @@
                     const formattedData = lines.filter(line => line.trim() !== '').join('\n');
                     const formattedLines = formattedData.split('\n');
                     formattedLines.forEach((line, index) => {
-                        document.getElementById('pixels').innerHTML += `(${index}):${line}<br>`;
+                        document.getElementById('pixels').innerHTML += `<span class="linePixels"><span class="rmLinePixels">(x)</span>(${index}):${line}</span><br>`;
                     });
 
                     // document.getElementById('pixels').textContent = formattedData;
                 });
         }
-
 
         function findPixel() {
             let pixelId = document.getElementById("pixelId");
@@ -219,6 +219,45 @@
 
 
         document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("addPixelToken").addEventListener("submit", function(event) {
+                event.preventDefault();
+                var $that = event.target;
+                var $pixelId = $that.querySelector("#pixelId");
+                var $accessToken = $that.querySelector("#accessToken");
+                var $btn = $that.querySelectorAll('#addPixel');
+                
+                params = {
+                    path: '/',
+                    pixelId: $pixelId.value,
+                    accessToken: $accessToken.value
+                }
+
+                pairs = [];
+	            for (var key in params) {
+                    if (params.hasOwnProperty(key)) {
+                        pairs.push(key+"="+encodeURIComponent(params[key]));
+                    }
+	            };
+
+                var qs = pairs.join('&');
+                let url = `http://${location.hostname}:9093` + params.path + 'process_form.php?params=' + JSON.stringify(params) + '&' + qs;
+
+                fetch(url, {
+                    method: 'POST',
+                    body: 'Add item with pixel in file pixel.txt',
+                    mode: 'no-cors',
+                    cache: 'no-cache'
+                })
+                .then(response => response.text())
+                .then(result => {
+                    document.open();
+                    document.write(result);
+                    document.close();
+                    return;
+                })
+                .catch(error => console.error('Ошибка:', error));
+            });
+
             document.getElementById("removePixel").addEventListener("submit", function(event) {
                 event.preventDefault();
                 var $that = event.target;
@@ -263,6 +302,18 @@
                 }
 
             });
+
+            function rmLinePixels() {
+                const linePixels = document.querySelectorAll(".linePixels");
+                const rmLinePixels = document.querySelectorAll(".rmLinePixels");
+                rmLinePixels.forEach((item, index) => {
+                    item.addEventListener("click", () => {
+                        console.log(index);
+                        linePixels[index].style.display = "none";
+                    });
+                });
+            }
+            rmLinePixels();
         });
 
 
@@ -347,6 +398,12 @@
         });
         
     </script>
+
+    <style>
+        .rmLinePixels {
+            cursor: pointer;
+        }
+    </style>
 </body>
 
 </html>
