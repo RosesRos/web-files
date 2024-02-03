@@ -1,0 +1,59 @@
+<!DOCTYPE html><html lang="bg"><head>
+    <title>Преводач</title>
+</head>
+<body>
+    <h1 class="h1">Вашият текст на български:</h1>
+    <p id="bulgarianText">тест за превод на този текст на български език</p>
+
+    <h1 class="h1">Брой знаци, изпратени чрез API:</h1>
+    <p id="characterCount">0</p>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        // Ваш API-ключ Google Translate API
+        const apiKey = 'AIzaSyBYmEA2wGZp-MelTFVHQFmWgL9nZotIx7M';
+
+        function translateText(element) {
+            const textToTranslate = $(element).contents().filter(function() {
+                return this.nodeType === 3 && this.nodeValue.trim() !== '';
+            }).text().trim();
+
+            if (textToTranslate) {
+                const targetLanguage = navigator.language;
+                
+                // const characterCount = $(element).text().length;
+                // $('#characterCount').text(characterCount.length);
+
+                if (targetLanguage === document.querySelector("html").lang) {
+                    return;
+                }
+
+                $.ajax({
+                    url: `https://translation.googleapis.com/language/translate/v2?key=${apiKey}`,
+                    method: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({
+                        q: textToTranslate,
+                        target: targetLanguage
+                    }),
+                    success: function (response) {
+                        const translatedText = response.data.translations[0].translatedText;
+                        $(element).contents().filter(function() {
+                            return this.nodeType === 3 && this.nodeValue.trim() !== '';
+                        }).replaceWith(translatedText);
+                    }
+                    
+                });
+            }
+
+            $(element).children().each(function() {
+                translateText(this);
+            });
+        }
+        translateText($('body')[0]);
+    </script>
+    
+    
+
+
+</body></html>
