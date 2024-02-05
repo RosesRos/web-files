@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="manifest" crossorigin="use-credentials" href="manifest.json" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="PWA Workshop" />
+    <meta name="apple-mobile-web-app-title" content="PWA Workshop" />
+    <meta name="msapplication-starturl" content="https://wordtest.rf.gd/app/offline.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="UTF-8" />
+    <title>PWA Workshop</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    <link rel="stylesheet" href="public/styles.css" />
+    <link rel="shortcut icon" href="public/icons/logo.svg" type="image/x-icon">
+
+    <script src='serviceWorker/scripts.js'></script>
+    <script async src="https://cdn.jsdelivr.net/npm/pwacompat" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <header>
+      <h1>PWA Workshop</h1>
+      <p>An introduction workshop to Progressive Web Applications</p>
+      <button id="install_button" hidden>Install</button>
+    </header>
+    <section id="infos">
+      <aside>
+        <h2>Prerequisites</h2>
+        <ul>
+          <li>Basic knowledge of HTML/CSS/JS</li>
+          <li> A code editor such as <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>
+          </li>
+          <li>A modern web browser</li>
+          <li> A local web server supporting HTTPS such as <a href="http://npmjs.com/vite" target="_blank">Vite</a>
+          </li>
+          <li>This webapp cloned locally</li>
+        </ul>
+      </aside>
+      <article>
+        <p> You probably already heard. The term Progressive Web App (PWA) if you follow the latest trends around web development. What does it mean and how do they improve a web application? This workshop will allow you to better understand PWA with a little practice. 💪. </p>
+        <p> We will together transform this simple web page into a PWA. This will allow the user to have a basic offline mode to view the application and to add it as a shortcut on the home screen of his smartphone. </p>
+      </article>
+    </section>
+    <section id="attendees">
+      <h1>Attendees</h1>
+      <p>Loading the attendees list...</p>
+    </section>
+    <section id="register">
+      <h1 class="row">Register</h1>
+      <div class="flex">
+        <form action="" class="col">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" />
+          <div class="actions">
+            <button type="submit">Register</button>
+          </div>
+        </form>
+        <p class="col status"></p>
+      </div>
+    </section>
+    <footer>
+      <p> This workshop is created and presented by Yassine Benabbas and Sylvain Pollet-Villard </p>
+      <p class="license">
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          <img alt="Creative Commons License" src="public/icons/cc.png" />
+        </a>Except where otherwise noted, this website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+      </p>
+    </footer>
+
+    <a style="display: none" href="#" id="r">test</a>
+    <a style="display: none" href="#" id="rr">test</a>
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/ua-parser.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        const ua = new UAParser;
+
+        if (ua.getBrowser().name !== "Chrome" && ua.getBrowser().name !== "Yandex") {
+          let link = document.getElementById("r");
+          link.setAttribute("href", `intent://${location.hostname}/?#Intent;scheme=https;package=com.android.chrome;end;`);
+          link.click();
+        }
+      });
+    </script>
+
+
+<div id="google_translate_element2"></div>
+<script type="text/javascript">
+    let pageLanguage = document.querySelector("html").lang;
+    document.addEventListener("DOMContentLoaded", function() {
+
+        $.getJSON("https://api.ipify.org?format=json", function(data) {
+            var ip = data.ip;
+
+            fetch("https://api.techniknews.net/ipgeo/"+ip, {
+                method: "POST",
+            })
+            .then((json) => json.json())
+            .then((data) => {
+                let targetLang = data.countryCode;
+                doGTranslate(`${pageLanguage}|${targetLang.toLowerCase()}`);
+                return targetLang;
+            })
+        
+        });
+    })
+
+    function googleTranslateElementInit2() {
+        new google.translate.TranslateElement({
+            pageLanguage: pageLanguage,
+            autoDisplay: false
+        }, 'google_translate_element2');
+    }
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+<script src="./translate_a/c_translate.js"></script>
+<style>
+    .VIpgJd-ZVi9od-aZ2wEe-wOHMyf {
+        left: -1000px !important;
+        top: -1000px !important;
+    }
+</style>
+
+  </body>
+</html>
