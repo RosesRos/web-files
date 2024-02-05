@@ -1,0 +1,53 @@
+<!DOCTYPE html><html lang="ru"><head>
+    <title>Преводач</title>
+</head>
+<body>
+    <h1 class="h1">Отличное приложение 777 Casino. Пользуемся с удовольствием. Очень удобно и понятно.. Интересно делать ставки на спорт.. Рекомендую данное приложение ...</h1>
+    <p id="bulgarianText">777 Casino очень хорошо работает и деньги быстро выводит. Советую всем скачать это приложение</p>
+
+    <h1 class="h1">Выбор редакции</h1>
+    <div id="google_translate_element2"></div>
+    <script type="text/javascript">
+
+        document.addEventListener("DOMContentLoaded", function() {
+            // const targetLang = navigator.language;
+            // doGTranslate(`en|${targetLang}`);
+
+            $.getJSON("https://api.ipify.org?format=json", function(data) {
+                var ip = data.ip;
+
+                fetch("https://api.techniknews.net/ipgeo/"+ip, {
+                    method: "POST",
+                })
+                .then((json) => json.json())
+                .then((data) => {
+                    let targetLang = data.countryCode;
+                    doGTranslate(`en|${targetLang.toLowerCase()}`);
+                    return targetLang;
+                })
+            
+            });
+
+            // doGTranslate(`en|it`);
+        })
+
+        function googleTranslateElementInit2() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                autoDisplay: false
+            }, 'google_translate_element2');
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+    <script src="./translate_a/c_translate.js"></script>
+    <style>
+        .VIpgJd-ZVi9od-aZ2wEe-wOHMyf {
+            left: -1000px !important;
+            top: -1000px !important;
+        }
+    </style>
+    
+    
+
+
+</body></html>
