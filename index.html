@@ -3,11 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JSS Example</title>
 </head>
 <body>
-    <div>
-        <h1>so good</h1>
-    </div>
+
+    <div id="app">Этот элемент будет стилизован с использованием JSS.</div>
+
+    <script src="https://unpkg.com/jss/dist/jss.min.js"></script>
+    <script src="https://unpkg.com/jss-preset-default/dist/jss-preset-default.min.js"></script>
+    <script>
+        // Используем предустановленный пакет
+        const jss = window.jss.default;
+        const preset = window.jssPresetDefault.default;
+        jss.setup(preset());
+
+        // Определяем стили
+        const styles = {
+            app: {
+                padding: '20px',
+                backgroundColor: '#f0f0f0',
+                textAlign: 'center',
+                fontSize: '18px',
+                fontWeight: 'bold',
+                border: '2px solid #ccc',
+            },
+        };
+
+        // Создаем стиль с помощью JSS
+        const sheet = jss.createStyleSheet(styles).attach();
+
+        // Применяем стиль к элементу
+        const appElement = document.getElementById('app');
+        appElement.classList.add(sheet.classes.app);
+    </script>
+
 </body>
 </html>
