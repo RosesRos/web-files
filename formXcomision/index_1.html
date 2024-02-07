@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>WinVegasPlus</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="brand" content="vegasplus">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/intlTelInput.min.css" as="style" type="text/css">
+    <link rel="stylesheet" href="css/custom.css" as="style" type="text/css">
+    <link rel="stylesheet" href="css/dropdowns.css">
+    <script src="js/intlTelInput.js"></script>
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
+    <script>
+      const IS_SHORT_FORM = 1;
+      const ALERT_MESSAGE = 'Something went wrong. Try again.';
+      const ALERT_COOKIES = 'Please enable cookies in your browser settings.';
+      const ERROR_TEXT_REQUIRED = 'Required field.';
+      const ERROR_TEXT_EMAIL_DIFFERENT = 'The email and the password must be different.';
+      const ERROR_TEXT_PASSWORD = 'New passwords do not match.';
+      const ERROR_TEXT_MIN_SYMBOL = 'Must contain min. 6 characters';
+      const COUNTRY_CODE = `nl`;
+      const SEARCH_NOT_MATCHED = `Not matches for `
+    </script>
+    <script>
+      (function(h, o, t, j, a, r) {
+        h.hj = h.hj || function() {
+          (h.hj.q = h.hj.q || []).push(arguments)
+        };
+        h._hjSettings = {
+          hjid: 3418983,
+          hjsv: 6
+        };
+        a = o.getElementsByTagName('head')[0];
+        r = o.createElement('script');
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <script async="" src="js/hotjar-3418983.js"></script>
+  </head>
+  <body class="locale_en">
+    <div id="overlay" class="over-raf"></div>
+    <section class="use-cookie" data-js="use-cookie">
+      <div class="wrapper use-cookie__container">
+        <p class="use-cookie__text">🍪 <strong>We use our own cookies</strong> and also those of third parties to personalize content and analyze web traffic. <a class="use-cookie__link" href="/en/cookies">Learn more about cookies.</a>
+        </p>
+        <button class="first_button use-cookie__btn" data-js="use-cookie-btn" rel="">OK</button>
+      </div>
+    </section>
+    <section id="popup-game" name="popup-game" class="popup-game popup-game-pc hide">
+      <div class="iframe-game-mobile-wrap mobile-inner-block hide">
+        <span id="ifr" class="iframe-game-mobile"></span>
+      </div>
+      <div class="popup-game_inner-wrp mobile-inner-block hide">
+        <button class="close-button close-button--popup-game-mobile" id="popup-game-mobile_close">
+          <span class="close-button_icon"></span>
+        </button>
+        <h3 class="popup-game-mobile_title" id="popup-game-mobile_title">Gold Tiger Ascent</h3>
+        <div class="popup-game-mobile_info-wrp">
+          <section class="popup-game-mobile_first-section">
+            <img class="popup-game-mobile_img" id="popup-game-mobile_img" data-link="landings-vp/lpvp" src="" alt="">
+            <button class="second_button popup-game-mobile--btn popup-game-mobile_start-game-demo" id="popup-game-mobile_start-game-demo" rel="">lpvp.play</button>
+          </section>
+          <section class="popup-game-mobile_second-section">
+            <div class="popup-game-mobile_second-section">
+              <div class="popup-game-mobile_ratio-wrp">
+                <p class="popup-game-mobile_ratio popup-game-mobile--volatility" id="popup-game-mobile_volatility-wrp" rel=""> Volatility <span class="nec">:</span>
+                  <span id="popup-game-mobile_volatility" class="volatility-mobile"> Medium</span>
+                </p>
+                <p class="popup-game-mobile_ratio popup-game-mobile--rtp" id="popup-game-mobile_rtp-wrp" rel=""> RTP <span class="nec">:</span>
+                  <span id="popup-game-mobile_rtp" class="rtp-mobile hide"> 95.37%</span>
+                </p>
+              </div>
+              <section class="registration-banner-game mob"> OPEN AN ACCOUNT AND ENJOY <a href="#" class="first_button first_button--reg-banner" data-action="popup-game-show-reg" data-place="5" rel="">lpvp.gamebuttonregistration</a>
+              </section>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="panel-info pc-inner-block hide">
+        <section class="panel-info__container">
+          <section class="wrapper_close-and-zoom">
+            <button class="close"></button>
+          </section>
+          <section class="game-wrapper-main-info">
+            <div class="game-name">Bounty Gold</div>
+            <div class="game-description">Famous archaeologist Dr. Dakota Bones is back, and your help is needed as another epic quest across Ancient Egypt begins! Join in and win up to x2,520 your stake! Here it’s all about the Mystery Chests which will reward you with great treats, such as cash wins, scatters, and wilds.</div>
+            <div id="game-data" class="wrapper-game-info">
+              <div class="game-info">
+                <div class="wrapper-volatility">
+                  <div class="game-volatility" rel="">Volatility <span class="nec">:</span>�&nbsp;�&nbsp; <label class="volatility">Medium</label>
+                  </div>
+                </div>
+                <div class="wrapper-RTP">
+                  <div class="game-rtp" rel="" style="display: inline-flex;">RTP <span class="nec">:</span>�&nbsp;�&nbsp; <label>
+                      <nobr class="rtp">96.5 %</nobr>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section class="game-wrapper-bottom-item">
+          <div class="registration-banner-game"> OPEN AN ACCOUNT AND ENJOY <button class="first_button registration-banner-game__btn" data-action="popup-game-show-reg" data-place="5" rel="">lpvp.gamebuttonregistration</button>
+          </div>
+        </section>
+      </div>
+      <div class="panel-game pc-inner-block hide">
+        <div class="game-container">
+          <div id="popup-overlay" class="popup-template" style="display: none;">
+            <div class="overlay reg-popup-game__overlay"></div>
+            <div class="popup-template__content popup-template__content--center">
+              <div class="reg-popup-game__info">
+                <h3 class="reg-popup-game__title" rel=""></h3> OPEN AN ACCOUNT AND ENJOY <button class="first_button reg-popup-game__btn" data-action="popup-game-show-reg" data-place="8" rel="">lpvp.gamebuttonregistration</button>
+              </div>
+            </div>
+          </div>
+          <div id="popup-loader" class="popup-overlay" style="display: none;">
+            <img class="img-wait">
+          </div>
+          <span id="ifr">
+            <iframe id="iframe" src="" scrolling="no" border="0" frameborder="0" wmode="opaque" allowfullscreen="true" style="display: inline;"></iframe>
+          </span>
+        </div>
+      </div>
+    </section>
+    <header class="header">
+      <div class="header-background" data-lang="en"></div>
+      <nav class="wrapper header-nav-box">
+        <ul class="header-nav__list">
+          <li class="language__container">
+            <div id="language" class="real-lang en">
+              <div id="all-languages">
+                <div class="container-lang-links" data-lang="">
+                  <a href="/en" lng="en" class="language__link en">
+                    <i class="language en"></i> English </a>
+                  <a href="/fr" lng="fr" class="language__link fr">
+                    <i class="language fr"></i> Français </a>
+                  <a href="/es" lng="es" class="language__link es">
+                    <i class="language es"></i> Español </a>
+                </div>
+              </div>
+              <nobr>
+                <div id="current-language" class="language en"></div>
+                <div id="arrow-languages"></div>
+                <div class="clear"></div>
+              </nobr>
+            </div>
+          </li>
+          <li class="header-nav__item header-nav__item-logo">
+            <a class="header__logo-link" title="WinVegasPlus" href="/">
+              <img class="header__logo" src="images/logo.svg" alt="WinVegasPlus logo" width="165" height="80">
+            </a>
+          </li>
+          <li class="header-nav__item header-nav__buttons--box">
+            <div class="header-nav__item header-nav__button--login">
+              <a href="#" title="WinVegasPlus" class="header-nav-item__link">LOGIN</a>
+            </div>
+            <div class="header-nav__item header-nav__button--join-now">
+              <a href="#" title="WinVegasPlus" class="header-nav-item__link">JOIN NOW</a>
+            </div>
+          </li>
+          <li class="header-nav__item header-nav__item--user-greetings hidden">Hello,�&nbsp; <span></span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div id="popup-login" class="popup-login">
+      <button class="popup-login__close" data-action="hide-login"></button>
+      <div class="title">Log in</div>
+      <form class="popup-login__form" name="frmLogin" method="post" action="" autocomplete="disabled">
+        <div class="field popup-login__field" data-element="field-wrp">
+          <label class="field__label">Email address: <sup>*</sup>
+          </label>
+          <div class="field__wrp-input" data-element="field-input-wrp">
+            <input id="login__email" class="field__input login__email popup-login__field-input input" type="text" name="" autocomplete="disabled" inputmode="email" data-js-check-required="1" maxlength="50">
+            <div class="tooltip-red not-empty hide">Required field</div>
+          </div>
+        </div>
+        <div class="field popup-login__field field--without-icon" data-element="field-wrp">
+          <label class="field__label">Password: <sup>*</sup>
+          </label>
+          <a href="#" data-action="show-forgot-psw" rel="" style="display:none;">Forgot your password?</a>
+          <div class="field__wrp-input" data-element="field-input-wrp">
+            <input id="login__password" class="field__input login__password popup-login__field-input field__input--psw input" type="password" name="" maxlength="100" autocomplete="disabled" data-js-check-required="1">
+            <button type="button" class="see-psw hidden" data-element="see-psw" tabindex="-1"></button>
+            <div class="tooltip-red not-empty hide">Required field</div>
+          </div>
+        </div>
+        <button type="submit" class="first_button  popup-login__button-sbm"> Log in <span></span>
+        </button>
+        <input type="hidden" name="_token" value="d70f3f9c1a9e38ab3f.ka5lKgFUSvOQawrKdtcIJA25b-_YAqqfgO8bxppFjgo.5toBWzYxK8vBDD-LGoFmEkTQBbmLbJnz9bUsifIu62LH4xxJUyc4ptY7Qw">
+      </form>
+      <div class="popup-login__footer">
+        <div class="frm-login-join">
+          <p class="frm-login_hav-acc" rel="">Don’t have an account?</p>
+          <a href="#" class="item noselect login-reg-link" rel="">Register</a>
+        </div>
+      </div>
+    </div>
+    <div class="loader hidden" data-test-selector="loader">
+      <div class="registration-loader-box__inner"></div>
+    </div>
+    <div id="popup-registration" class="popup-registration not-centered">
+      <div class="registration__container">
+        <button class="popup-registration__close" data-action="hide-registration"></button>
+        <div class="registration-banner">
+          <div class="line-1">
+            <b>
+              <span id="total-bonus-amount-regbanner" data-replace="total-bonus-amount">€2,500</span>
+            </b> WELCOME PACKAGE
+          </div>
+          <div class="line-2">PLUS <b>
+              <span id="ftd-max-bonus-percent-regbanner" data-replace="ftd-max-bonus-percent">150</span>% </b> BONUS </div>
+          <div class="line-3">AND <b>
+              <span id="ftd-free-spins" data-replace="ftd-free-spins">100</span>
+            </b> FREE SPINS </div>
+        </div>
+        <form name="frmRegistration" method="post" action="" data-js-type-reg="full-reg" id="form">
+          <div class="title" rel="SIGN_UP_FORM_SIGN_UP_LINK">Register</div>
+          <input type="hidden" name="short_form" value="true">
+          <div class="registration__fields-wrp">
+            <div class="field field--light-status field--reg" data-element="field-wrp">
+              <label class="field__label" for="registration__first-name" rel="">First name: <sup>*</sup>
+              </label>
+              <div class="field__wrp-input" data-element="field-input-wrp">
+                <input id="registration__first-name" class="field__input registration__first-name input" type="text" data-field="" name="" value="" data-lpignore="true" data-js="field" data-js-check-name="firstName" data-js-check-required="1" autocomplete="disabled" maxlength="15">
+                <div class="field_status field__status--edit" data-js="field_status-edit"></div>
+                <div class="tooltip-red hide"></div>
+              </div>
+            </div>
+            <div class="field field--light-status field--reg" data-element="field-wrp">
+              <label for="registration__last-name" class="field__label" rel="">Last name: <sup>*</sup>
+              </label>
+              <div class="field__wrp-input" data-element="field-input-wrp">
+                <input id="registration__last-name" class="field__input registration__last-name input" type="text" value="" data-field="" name="" data-lpignore="true" data-js="field" data-js-check-name="lastName" data-js-check-required="1" autocomplete="disabled" maxlength="15">
+                <div class="field_status field__status--edit" data-js="field_status-edit"></div>
+                <div class="tooltip-red hide"></div>
+              </div>
+            </div>
+            <div class="field field--light-status field--reg field--country not-check" data-element="field-wrp">
+              <label for="registration__country" class="field__label" rel="">Country: <sup>*</sup>
+              </label>
+              <div class="field__wrp-input" data-element="field-input-wrp">
+                <div class="select-container">
+                  <select id="registration__country" class="field__input registration__country SlectBox input" data-country="" autocomplete="disabled">
+                    <option value="20" data-iso-code="AD" name="+376">Andorra</option>
+                    <option value="660" data-iso-code="AI" name="+1264">Anguilla</option>
+                    <option value="28" data-iso-code="AG" name="+1268">Antigua and Barbuda</option>
+                    <option value="32" data-iso-code="AR" name="+54">Argentina</option>
+                    <option value="51" data-iso-code="AM" name="+374">Armenia</option>
+                    <option value="533" data-iso-code="AW" name="+297">Aruba</option>
+                    <option value="40" data-iso-code="AT" name="+43">Austria</option>
+                    <option value="44" data-iso-code="BS" name="+1242">Bahamas</option>
+                    <option value="52" data-iso-code="BB" name="+1246">Barbados</option>
+                    <option value="84" data-iso-code="BZ" name="+501">Belize</option>
+                    <option value="204" data-iso-code="BJ" name="+229">Benin</option>
+                    <option value="60" data-iso-code="BM" name="+1441">Bermuda</option>
+                    <option value="68" data-iso-code="BO" name="+591">Bolivia</option>
+                    <option value="70" data-iso-code="BA" name="+387">Bosnia and Herzegovina</option>
+                    <option value="76" data-iso-code="BR" name="+55">Brazil</option>
+                    <option value="92" data-iso-code="VG" name="+1284">British Virgin Islands</option>
+                    <option value="96" data-iso-code="BN" name="+673">Brunei Darussalam</option>
+                    <option value="854" data-iso-code="BF" name="+226">Burkina Faso</option>
+                    <option value="108" data-iso-code="BI" name="+257">Burundi</option>
+                    <option value="116" data-iso-code="KH" name="+855">Cambodia</option>
+                    <option value="124" data-iso-code="CA" name="+1">Canada</option>
+                    <option value="132" data-iso-code="CV" name="+238">Cape Verde</option>
+                    <option value="136" data-iso-code="KY" name="+1345">Cayman Islands</option>
+                    <option value="152" data-iso-code="CL" name="+56">Chile</option>
+                    <option value="170" data-iso-code="CO" name="+57">Colombia</option>
+                    <option value="174" data-iso-code="KM" name="+269">Comoros</option>
+                    <option value="178" data-iso-code="CG" name="+242">Congo</option>
+                    <option value="180" data-iso-code="CD" name="+243">Congo, Democratic Republic of the </option>
+                    <option value="184" data-iso-code="CK" name="+682">Cook Islands</option>
+                    <option value="899" data-iso-code="CR" name="+506">Costa Rica</option>
+                    <option value="191" data-iso-code="HR" name="+385">Croatia</option>
+                    <option value="203" data-iso-code="CZ" name="+420">Czech Republic</option>
+                    <option value="262" data-iso-code="DJ" name="+253">Djibouti</option>
+                    <option value="212" data-iso-code="DM" name="+1767">Dominica</option>
+                    <option value="214" data-iso-code="DO" name="+1">Dominican Republic</option>
+                    <option value="218" data-iso-code="EC" name="+593">Ecuador</option>
+                    <option value="222" data-iso-code="SV" name="+503">El Salvador</option>
+                    <option value="232" data-iso-code="ER" name="+291">Eritrea</option>
+                    <option value="233" data-iso-code="EE" name="+372">Estonia</option>
+                    <option value="238" data-iso-code="FK" name="+500">Falkland Islands (Malvinas) </option>
+                    <option value="234" data-iso-code="FO" name="+298">Faroe Islands</option>
+                    <option value="583" data-iso-code="FM" name="+691">Federated States of Micronesia </option>
+                    <option value="242" data-iso-code="FJ" name="+679">Fiji</option>
+                    <option value="246" data-iso-code="FI" name="+358">Finland</option>
+                    <option value="250" selected="" data-iso-code="FR" name="+33">France</option>
+                    <option value="254" data-iso-code="GF" name="+594">French Guiana</option>
+                    <option value="258" data-iso-code="PF" name="+689">French Polynesia</option>
+                    <option value="266" data-iso-code="GA" name="+241">Gabon</option>
+                    <option value="270" data-iso-code="GM" name="+220">Gambia</option>
+                    <option value="292" data-iso-code="GI" name="+350">Gibraltar</option>
+                    <option value="300" data-iso-code="GR" name="+30">Greece</option>
+                    <option value="304" data-iso-code="GL" name="+299">Greenland</option>
+                    <option value="308" data-iso-code="GD" name="+1473">Grenada</option>
+                    <option value="312" data-iso-code="GP" name="+590">Guadeloupe</option>
+                    <option value="320" data-iso-code="GT" name="+502">Guatemala</option>
+                    <option value="624" data-iso-code="GW" name="+245">Guinea Bissau</option>
+                    <option value="328" data-iso-code="GY" name="+592">Guyana</option>
+                    <option value="340" data-iso-code="HN" name="+504">Honduras</option>
+                    <option value="344" data-iso-code="HK" name="+852">Hong Kong</option>
+                    <option value="352" data-iso-code="IS" name="+354">Iceland</option>
+                    <option value="356" data-iso-code="IN" name="+91">India</option>
+                    <option value="372" data-iso-code="IE" name="+353">Ireland</option>
+                    <option value="380" data-iso-code="IT" name="+39">Italy</option>
+                    <option value="388" data-iso-code="JM" name="+1">Jamaica</option>
+                    <option value="392" data-iso-code="JP" name="+81">Japan</option>
+                    <option value="404" data-iso-code="KE" name="+254">Kenya</option>
+                    <option value="296" data-iso-code="KI" name="+686">Kiribati</option>
+                    <option value="417" data-iso-code="KG" name="+996">Kyrgyzstan</option>
+                    <option value="418" data-iso-code="LA" name="+856">Laos</option>
+                    <option value="428" data-iso-code="LV" name="+371">Latvia</option>
+                    <option value="426" data-iso-code="LS" name="+266">Lesotho</option>
+                    <option value="438" data-iso-code="LI" name="+423">Liechtenstein</option>
+                    <option value="442" data-iso-code="LU" name="+352">Luxembourg</option>
+                    <option value="913" data-iso-code="MO" name="+853">Macao, SAR China</option>
+                    <option value="905" data-iso-code="MK" name="+389">Macedonia</option>
+                    <option value="450" data-iso-code="MG" name="+261">Madagascar</option>
+                    <option value="454" data-iso-code="MW" name="+265">Malawi</option>
+                    <option value="462" data-iso-code="MV" name="+960">Maldives</option>
+                    <option value="466" data-iso-code="ML" name="+223">Mali</option>
+                    <option value="584" data-iso-code="MH" name="+692">Marshall Islands</option>
+                    <option value="474" data-iso-code="MQ" name="+596">Martinique</option>
+                    <option value="478" data-iso-code="MR" name="+222">Mauritania</option>
+                    <option value="480" data-iso-code="MU" name="+230">Mauritius</option>
+                    <option value="175" data-iso-code="YT" name="+262">Mayotte</option>
+                    <option value="484" data-iso-code="MX" name="+52">Mexico</option>
+                    <option value="908" data-iso-code="MC" name="+377">Monaco</option>
+                    <option value="496" data-iso-code="MN" name="+976">Mongolia</option>
+                    <option value="914" data-iso-code="ME" name="+382">Montenegro</option>
+                    <option value="500" data-iso-code="MS" name="+1664">Montserrat</option>
+                    <option value="508" data-iso-code="MZ" name="+258">Mozambique</option>
+                    <option value="516" data-iso-code="NA" name="+264">Namibia</option>
+                    <option value="520" data-iso-code="NR" name="+674">Nauru</option>
+                    <option value="524" data-iso-code="NP" name="+977">Nepal</option>
+                    <option value="540" data-iso-code="NC" name="+687">New Caledonia</option>
+                    <option value="554" data-iso-code="NZ" name="+64">New Zealand</option>
+                    <option value="558" data-iso-code="NI" name="+505">Nicaragua</option>
+                    <option value="570" data-iso-code="NU" name="+683">Niue</option>
+                    <option value="574" data-iso-code="NF" name="+672">Norfolk Island</option>
+                    <option value="578" data-iso-code="NO" name="+47">Norway</option>
+                    <option value="512" data-iso-code="OM" name="+968">Oman</option>
+                    <option value="585" data-iso-code="PW" name="+680">Palau</option>
+                    <option value="591" data-iso-code="PA" name="+507">Panama</option>
+                    <option value="598" data-iso-code="PG" name="+675">Papua New Guinea</option>
+                    <option value="906" data-iso-code="PY" name="+595">Paraguay</option>
+                    <option value="604" data-iso-code="PE" name="+51">Peru</option>
+                    <option value="616" data-iso-code="PL" name="+48">Poland</option>
+                    <option value="620" data-iso-code="PT" name="+351">Portugal</option>
+                    <option value="638" data-iso-code="RE" name="+262">Reunion</option>
+                    <option value="642" data-iso-code="RO" name="+40">Romania</option>
+                    <option value="646" data-iso-code="RW" name="+250">Rwanda</option>
+                    <option value="895" data-iso-code="BL" name="+590">Saint Barthelemy</option>
+                    <option value="897" data-iso-code="MF" name="+590">Saint Martin</option>
+                    <option value="670" data-iso-code="VC" name="+1784">Saint Vincent and the Grenadines </option>
+                    <option value="674" data-iso-code="SM" name="+378">San Marino</option>
+                    <option value="678" data-iso-code="ST" name="+239">Sao Tome and Principe</option>
+                    <option value="682" data-iso-code="SA" name="+966">Saudi Arabia</option>
+                    <option value="686" data-iso-code="SN" name="+221">Senegal</option>
+                    <option value="907" data-iso-code="RS" name="+381">Serbia</option>
+                    <option value="694" data-iso-code="SL" name="+232">Sierra Leone</option>
+                    <option value="702" data-iso-code="SG" name="+65">Singapore</option>
+                    <option value="90" data-iso-code="SB" name="+677">Solomon Islands</option>
+                    <option value="710" data-iso-code="ZA" name="+27">South Africa</option>
+                    <option value="724" data-iso-code="ES" name="+34">Spain</option>
+                    <option value="144" data-iso-code="LK" name="+94">Sri Lanka</option>
+                    <option value="654" data-iso-code="SH" name="+290">St. Helena</option>
+                    <option value="659" data-iso-code="KN" name="+1869">St. Kitts and Nevis</option>
+                    <option value="662" data-iso-code="LC" name="+1758">St. Lucia</option>
+                    <option value="666" data-iso-code="PM" name="+508">St. Pierre and Miquelon</option>
+                    <option value="744" data-iso-code="SJ" name="+47">Svalbard and Jan Mayen Islands </option>
+                    <option value="748" data-iso-code="SZ" name="+268">Swaziland</option>
+                    <option value="756" data-iso-code="CH" name="+41">Switzerland</option>
+                    <option value="158" data-iso-code="TW" name="+886">Taiwan</option>
+                    <option value="764" data-iso-code="TH" name="+66">Thailand</option>
+                    <option value="768" data-iso-code="TG" name="+228">Togo</option>
+                    <option value="776" data-iso-code="TO" name="+676">Tonga</option>
+                    <option value="780" data-iso-code="TT" name="+1">Trinidad and Tobago</option>
+                    <option value="788" data-iso-code="TN" name="+216">Tunisia</option>
+                    <option value="796" data-iso-code="TC" name="+1">Turks and Caicos Islands</option>
+                    <option value="798" data-iso-code="TV" name="+688">Tuvalu</option>
+                    <option value="858" data-iso-code="UY" name="+598">Uruguay</option>
+                    <option value="826" data-iso-code="GB" name="+44">United Kingdom</option>
+                    <option value="548" data-iso-code="VU" name="+678">Vanuatu</option>
+                    <option value="336" data-iso-code="VA" name=" +379">Vatican City State</option>
+                    <option value="862" data-iso-code="VE" name="+58">Venezuela</option>
+                    <option value="876" data-iso-code="WF" name="+681">Wallis And Futuna Islands </option>
+                    <option value="528" selected="" data-iso-code="NL" name="+31">Netherlands</option>
+                    <option value="56" selected="" data-iso-code="BE" name="+32">Belgium</option>
+                  </select>
+                  <div id="dropdownBox" class="dropdown-box">
+                    <input id="searchInput" class="select-input" type="text" placeholder="Search ..." maxlength="30">
+                    <div id="dropdown" class="select-dropdown"></div>
+                  </div>
+                  <div class="tooltip-red hide"></div>
+                </div>
+              </div>
+            </div>
+            <div class="field field--light-status field--reg field--currency not-check" data-element="field-wrp">
+              <label for="registration__currency" class="field__label" rel="CURRENCY">Currency: <sup>*</sup>
+              </label>
+              <div class="field__wrp-input" data-element="field-input-wrp">
+                <select id="registration__currency" class="field__input registration__currency  input">
+                  <option value="EUR" selected="" name="EUR">EUR</option>
+                  <option value="USD" name="USD">USD</option>
+                  <option value="GBP" name="GBP">GBP</option>
+                </select>
+                <div class="tooltip-red hide"></div>
+              </div>
+            </div>
+            <div class="field field--light-status field--reg" data-element="field-wrp">
+              <label for="registration__tel" class="field__label" rel="">Phone number: <sup>*</sup>
+              </label>
+              <div class="field__wrp-input" data-element="field-input-wrp">
+                <div class="field__input field__input--mobile field__input--code-country">
+                  <input id="registration__phone-number" class="field__input--transparent field__input registration__phone-number input" type="tel" data-field="" value="" name="" data-js-check-name="mobilePhone" inputmode="numeric" data-js-check-required="1" autocomplete="disabled" maxlength="17" data-js-check-min-length="7">
+                  <div id="phone-country-dropdown-container" style="position: absolute; bottom: 0;"></div>
+                  <div class="field_status field__status--edit" data-js="field_status-edit"></div>
+                  <div class="tooltip-red hide"></div>
+                </div>
+              </div>
+            </div>
+            <div class="field field--light-status field--reg" data-element="field-wrp">
+              <label for="registration__email" class="field__label" rel="">Email address: <sup>*</sup>
+              </label>
+              <div class="field__wrp-input" data-element="field-input-wrp">
+                <input id="registration__email" class="field__input registration__email input" type="text" data-field="" value="" name="" autocomplete="disabled" data-lpignore="true" inputmode="email" data-js-check-required="1" maxlength="50">
+                <div class="field_status field__status--edit" data-js="field_status-edit"></div>
+                <div class="tooltip-red hide"></div>
+              </div>
+            </div>
+            <div class="field field--light-status field--reg" data-element="field-wrp">
+              <label for="registration__password" class="field__label" rel="">Password: <sup>*</sup>
+              </label>
+              <div class="field__wrp-input psw-input" data-element="field-input-wrp">
+                <input id="registration__password" class="field__input field__input--psw registration__password input" type="password" data-field="" value="" name="" autocomplete="disabled" data-lpignore="true" data-element="field-psw" data-js="field" data-js-check-required="1" maxlength="20" title="Must contain at least one number and one uppercase and lowercase letter, as well as 8 characters and a maximum of 20 characters">
+                <div class="field_status field__status--edit" data-js="field_status-edit"></div>
+                <div class="tooltip-red hide tooltip-red--password"></div>
+                <button type="button" class="see-psw registration__show-password hidden" tabindex="-1" data-element="see-psw">
+                  <span class="registration__btn-show-password"></span>
+                  <span class="registration__btn-hide-password"></span>
+                </button>
+                <div class="password-indicator">
+                  <div class="password-indicator__progress" data-password-strength="very-weak"></div>
+                </div>
+              </div>
+            </div>
+            <div class="field field--light-status field--reg" data-element="field-wrp">
+              <label class="field__label" rel="SIGN_UP_FORM_CONFIRM_PASSWORD">Confirm password: <sup>*</sup>
+              </label>
+              <div class="field__wrp-input" data-element="field-input-wrp">
+                <input id="registration__confirm-password" class="field__input field__input--psw registration__confirm-password input" type="password" data-field="" value="" name="" autocomplete="disabled" data-lpignore="true" data-element="field-psw" data-js="field" data-js-check-required="1" maxlength="20">
+                <div class="field_status field__status--edit" data-js="field_status-edit"></div>
+                <div class="field_status field__status--error" data-js="field_status-error"></div>
+                <div class="tooltip-red hide"></div>
+                <button type="button" class="see-psw registration__show-password hidden" tabindex="-1" data-element="see-psw">
+                  <span class="registration__btn-show-password"></span>
+                  <span class="registration__btn-hide-password"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="registration__checkbox-wrp" id="registration__checkbox-wrp">
+            <div class="checkbox" data-element="field-wrp">
+              <input type="checkbox" class="checkbox__button checkbox__button--age" name="chk_accepted" id="chk_accepted" value="1">
+              <label tabindex="0" for="chk_accepted" class="checkbox__label checkbox__label--age checkbox__label--light-icon registration__checkbox-label" id="chk_accepted-label" rel="REGISTRATION_READ_AND_ACCEPTED">I’m over 18 and I have read and accepted the T&amp;C and Privacy Policy. <a href="/en/terms" target="_blank" data-action="show-terms" class="registration__terms registration__terms_not-winvegas" rel="TERMS_AND_CONDITIONS">Terms and Conditions</a>
+              </label>
+            </div>
+          </div>
+          <div class="registration__btn-box">
+            <button class="first_button registration__button-sbm">JOIN NOW</button>
+          </div>
+          <input type="hidden" name="btnRegistration" value="Join now">
+          <input type="hidden" name="key" value="registration">
+          <input type="hidden" name="where_reg" value="2">
+          <input type="hidden" name="recaptcha_checked" value="0">
+          <input type="hidden" name="registration_lead_id" value="">
+          <input type="hidden" name="_token" value="6bf8bef6c88de00dd3dc718e1a080e.3Uj7gWUX1_jPE7mM6FYL6rI9y5XUARZR2CDbWd_Z8A8.7yOuyxxjgsmqKu_o3TtjrdBT_Pq9dVlooErsE7Wdr32aJLfRUlzvouJ6iQ">
+          <div class="registration-loader-box hidden" data-test-selector="loader">
+            <div class="registration-loader-box__inner"></div>
+          </div>
+        </form>
+        <div class="popup-registration__footer">
+          <div class="frm-login-have-acc">
+            <p class="frm-login_hav-acc" rel="HAVE_AN_ACCOUNT">Have an account?</p>
+            <a href="#" class="item noselect reg__link-login" rel="SIGN_UP_FORM_SIGN_IN_BTN">Log in</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="main">
+      <script>
+        let bonusInfo = JSON.parse('{"lang_id":3,"lang":"en","country_id":528,"country":"Netherlands","affid":0,"total_bonus_amount":2250,"total_bonus_amount_cur":"\u20ac2,250","ftd_max_bonus_percent":125,"ftd_max_bonus_amount":750,"ftd_max_bonus_amount_cur":"\u20ac750","ftd_free_spins":0,"ftd_free_chips":0,"free_spins":0,"free_chips":0,"deposit_bonuses":[{"ab_id":1,"type_id":1,"group_id":0,"bonus_type":"Welcome Bonus","which_deposit":1,"min_deposit":0,"max_deposit":1000,"percent":125,"max_amount":750,"wager":60},{"ab_id":229033,"type_id":1,"group_id":0,"bonus_type":"Welcome Bonus","which_deposit":2,"min_deposit":0,"max_deposit":1000,"percent":200,"max_amount":500,"wager":60},{"ab_id":8593951,"type_id":1,"group_id":0,"bonus_type":"Welcome Bonus","which_deposit":3,"min_deposit":0,"max_deposit":1000,"percent":100,"max_amount":1000,"wager":60}],"aff_deposit_bonus":[]}');
+        window.addEventListener("DOMContentLoaded", () => {
+          ({
+            free_chips,
+            free_spins,
+            ftd_free_chips,
+            ftd_free_spins,
+            ftd_max_bonus_amount,
+            ftd_max_bonus_amount_cur,
+            ftd_max_bonus_percent,
+            total_bonus_amount,
+            total_bonus_amount_cur,
+            deposit_bonuses,
+            aff_deposit_bonus,
+            ftd_max_bonus_amount
+          } = bonusInfo);
+          const markerToChange = () => {
+            return !!window.total_bonus_amount || !!window.ftd_free_spins || !!window.ftd_free_chips || !!window.free_spins || !!window.free_chips || !!window.ftd_max_bonus_amount;
+          }
+          if (markerToChange()) new SliderContentUpdate().updateSlider();
+        });
+      </script>
+      <h1 class="visually-hidden">WinVegasPlus page</h1>
+      <section class="main__slide">
+        <div class="wrapper main-slide__box">
+          <div class="main-slide__tagline">
+            <div class="main-slide-tagline__text-1" style="display:none">WELCOME</div>
+            <div class="main-slide-tagline__text-tagline">
+              <div class="slide__text-box">
+                <p class="slide__big-phrase">
+                  <span class="gold">
+                    <span id="total-bonus-amount" data-replace="total-bonus-amount">€2,500</span>
+                  </span> Welcome Package
+                </p>
+                <p class="slide__small-phrase">Get your</p>
+                <p class="slide__big-phrase">
+                  <span class="gold">
+                    <span id="ftd-max-bonus-percent" data-replace="ftd-max-bonus-percent">150</span>% </span> Bonus
+                </p>
+                <p class="slide__small-phrase">Plus</p>
+                <p class="slide__big-phrase">
+                  <span class="gold">
+                    <span id="ftd-free-spins" data-replace="ftd-free-spins">100</span>
+                  </span> Free Spins
+                </p>
+              </div>
+            </div>
+            <a class="main-slide-tagline__link" title="WinVegasPlus" href="#">JOIN NOW</a>
+          </div>
+          <a class="main-slide__image-box" title="WinVegasPlus" href="#"></a>
+        </div>
+      </section>
+      <section class="main__best-games">
+        <div class="wrapper main-best-games__box">
+          <div class="main-best-games__images">
+            <div class="main-best-games__images-row-1" id="game-1">
+              <div class="main-best-games-image__box">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="images/game-img_1-dsk%401x.webp 1x, images/game-img_1-dsk%402x.webp 2x">
+                  <source type="image/png" media="(min-width: 1110px)" srcset="images/game-img_1-dsk%401x.png 1x, images/game-img_1-dsk%402x.png 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/game-img_1-tab%401x.webp 1x, images/game-img_1-tab%402x.webp 2x">
+                  <source type="image/png" media="(min-width: 768px)" srcset="images/game-img_1-tab%401x.png 1x, images/game-img_1-tab%402x.png 2x">
+                  <source type="image/webp" srcset="images/game-img_1-mob%401x.webp 1x, images/game-img_1-mob%402x.webp 2x">
+                  <img class="game-1" src="images/game-img_1-mob%401x.png" srcset="images/game-img_1-mob%402x.png 2x" width="145" height="119" "="" alt=" Game #1">
+                </picture>
+                <div class="main-best-games__image-btn-container main-best-games__image-btn-container-game-1">
+                  <div class="main-best-games__image-btn">PLAY</div>
+                </div>
+              </div>
+            </div>
+            <div class="main-best-games__images-row-1" id="game-2">
+              <div class="main-best-games-image__box">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="images/game-img_2-dsk%401x.webp 1x, images/game-img_2-dsk%402x.webp 2x">
+                  <source type="image/png" media="(min-width: 1110px)" srcset="images/game-img_2-dsk%401x.png 1x, images/game-img_2-dsk%402x.png 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/game-img_2-tab%401x.webp 1x, images/game-img_2-tab%402x.webp 2x">
+                  <source type="image/png" media="(min-width: 768px)" srcset="images/game-img_2-tab%401x.png 1x, images/game-img_2-tab%402x.png 2x">
+                  <source type="image/webp" srcset="images/game-img_2-mob%401x.webp 1x, images/game-img_2-mob%402x.webp 2x">
+                  <img class="game-2" src="images/game-img_2-mob%401x.png" srcset="images/game-img_2-mob%402x.png 2x" width="145" height="119" alt="Game #2">
+                </picture>
+                <div class="main-best-games__image-btn-container main-best-games__image-btn-container-game-2">
+                  <div class="main-best-games__image-btn">PLAY</div>
+                </div>
+              </div>
+            </div>
+            <div class="main-best-games__images-row-1" id="game-3">
+              <div class="main-best-games-image__box">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="images/game-img_3-dsk%401x.webp 1x, images/game-img_3-dsk%402x.webp 2x">
+                  <source type="image/png" media="(min-width: 1110px)" srcset="images/game-img_3-dsk%401x.png 1x, images/game-img_3-dsk%402x.png 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/game-img_3-tab%401x.webp 1x, images/game-img_3-tab%402x.webp 2x">
+                  <source type="image/png" media="(min-width: 768px)" srcset="images/game-img_3-tab%401x.png 1x, images/game-img_3-tab%402x.png 2x">
+                  <source type="image/webp" srcset="images/game-img_3-mob%401x.webp 1x, images/game-img_3-mob%402x.webp 2x">
+                  <img class="game-3" src="images/game-img_3-mob%401x.png" srcset="images/game-img_3-mob%402x.png 2x" width="145" height="119" alt="Game #3">
+                </picture>
+                <div class="main-best-games__image-btn-container main-best-games__image-btn-container-game-3">
+                  <div class="main-best-games__image-btn">PLAY</div>
+                </div>
+              </div>
+            </div>
+            <div class="main-best-games__images-row-1" id="game-4">
+              <div class="main-best-games-image__box">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="images/game-img_4-dsk%401x.webp 1x, images/game-img_4-dsk%402x.webp 2x">
+                  <source type="image/png" media="(min-width: 1110px)" srcset="images/game-img_4-dsk%401x.png 1x, images/game-img_4-dsk%402x.png 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/game-img_4-tab%401x.webp 1x, images/game-img_4-tab%402x.webp 2x">
+                  <source type="image/png" media="(min-width: 768px)" srcset="images/game-img_4-tab%401x.png 1x, images/game-img_4-tab%402x.png 2x">
+                  <source type="image/webp" srcset="images/game-img_4-mob%401x.webp 1x, images/game-img_4-mob%401x.webp 2x">
+                  <img class="game-4" src="images/game-img_4-mob%401x.png" srcset="images/game-img_4-mob%402x.png 2x" width="145" height="119" alt="Game #4">
+                </picture>
+                <div class="main-best-games__image-btn-container main-best-games__image-btn-container-game-4">
+                  <div class="main-best-games__image-btn">PLAY</div>
+                </div>
+              </div>
+            </div>
+            <div class="main-best-games__images-row-2" id="game-5">
+              <div class="main-best-games-image__box">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="images/game-img_5-dsk%401x.webp 1x, images/game-img_5-dsk%402x.webp 2x">
+                  <source type="image/png" media="(min-width: 1110px)" srcset="images/game-img_5-dsk%401x.png 1x, images/game-img_5-dsk%402x.png 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/game-img_5-tab%401x.webp 1x, images/game-img_5-tab%402x.webp 2x">
+                  <source type="image/png" media="(min-width: 768px)" srcset="images/game-img_5-tab%401x.png 1x, images/game-img_5-tab%402x.png 2x">
+                  <source type="image/webp" srcset="images/game-img_5-mob%401x.webp 1x, images/game-img_5-mob%402x.webp 2x">
+                  <img class="game-5" src="images/game-img_5-mob%401x.png" srcset="images/game-img_5-mob%402x.png 2x" width="145" height="119" alt="Game #5">
+                </picture>
+                <div class="main-best-games__image-btn-container main-best-games__image-btn-container-game-5">
+                  <div class="main-best-games__image-btn">PLAY</div>
+                </div>
+              </div>
+            </div>
+            <div class="main-best-games__images-row-2" id="game-6">
+              <div class="main-best-games-image__box">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="images/game-img_6-dsk%401x.webp 1x, images/game-img_6-dsk%402x.webp 2x">
+                  <source type="image/png" media="(min-width: 1110px)" srcset="images/game-img_6-dsk%401x.png 1x, images/game-img_6-dsk%402x.png 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/game-img_6-tab%401x.webp 1x, images/game-img_6-tab%402x.webp 2x">
+                  <source type="image/png" media="(min-width: 768px)" srcset="images/game-img_6-tab%401x.png 1x, images/game-img_6-tab%402x.png 2x">
+                  <source type="image/webp" srcset="images/game-img_6-mob%401x.webp 1x, images/game-img_6-mob%402x.webp 2x">
+                  <img class="game-6" src="images/game-img_6-mob%401x.png" srcset="images/game-img_6-mob%402x.png 2x" width="145" height="119" alt="Game #6">
+                </picture>
+                <div class="main-best-games__image-btn-container main-best-games__image-btn-container-game-6">
+                  <div class="main-best-games__image-btn">PLAY</div>
+                </div>
+              </div>
+            </div>
+            <div class="main-best-games__images-row-2" id="game-7">
+              <div class="main-best-games-image__box">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="images/game-img_7-dsk%401x.webp 1x, images/game-img_7-dsk%402x.webp 2x">
+                  <source type="image/png" media="(min-width: 1110px)" srcset="images/game-img_7-dsk%401x.png 1x, images/game-img_7-dsk%402x.png 2x">
+                  <source type="image/webp" srcset="images/game-img_7-tab%401x.webp 1x, images/game-img_7-tab%402x.webp 2x">
+                  <img class="game-7" src="images/game-img_7-tab%401x.png" srcset="images/game-img_7-tab%402x.png 2x" width="160" height="115" alt="Game #7">
+                </picture>
+                <div class="main-best-games__image-btn-container main-best-games__image-btn-container-game-7">
+                  <div class="main-best-games__image-btn">PLAY</div>
+                </div>
+              </div>
+            </div>
+            <div class="main-best-games__images-row-2" id="game-8">
+              <div class="main-best-games-image__box">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="images/game-img_8-dsk%401x.webp 1x, images/game-img_8-dsk%402x.webp 2x">
+                  <source type="image/png" media="(min-width: 1110px)" srcset="images/game-img_8-dsk%401x.png 1x, images/game-img_8-dsk%402x.png 2x">
+                  <source type="image/webp" srcset="images/game-img_8-tab%401x.webp 1x, images/game-img_8-tab%402x.webp 2x">
+                  <img class="game-8" src="images/game-img_8-tab%401x.png" srcset="images/game-img_8-tab%402x.png 2x" width="160" height="115" alt="Game #8">
+                </picture>
+                <div class="main-best-games__image-btn-container main-best-games__image-btn-container-game-8">
+                  <div class="main-best-games__image-btn">PLAY</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="main-best-games__link" title="WinVegasPlus" href="#">Show all</a>
+        </div>
+      </section>
+      <section class="main__inform-box">
+        <div class="main-inform-box__social">
+          <div class="wrapper">
+            <div class="social__logo"></div>
+            <div class="social__title">WINVEGASPLUS CASINO</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="wrapper footer__box">
+        <a href="/en/privacy">Privacy Policy</a>
+        <span></span>
+        <a href="/en/terms">Terms &amp; Conditions</a>
+        <span></span>
+        <a href="/en/cookies">Cookies Policy</a>
+      </div>
+    </footer>
+    <script>
+      window.dispatcher = 'https://vgsland.com';
+    </script>
+    <script src="js/register_service.js" defer=""></script>
+    <script src="js/login_service.js" defer=""></script>
+    <script src="js/phone_input.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script type="text/javascript">
+      const saveClick = async () => {
+        try {
+          const clickInfo = null;
+          const urlObj = new URL(window.location.href);
+          urlObj.search = '';
+          window.history.replaceState({}, '', urlObj.toString());
+          if (!clickInfo) {
+            return;
+          }
+          const lang = document.querySelector('html').getAttribute('lang');
+          const fetchVariable = await fetch(`https://vegaspluslp.com/${lang}/api/click`, {
+            method: 'POST',
+            headers: {
+              "Content-type": "application/json; charset=UTF-8"
+            },
+            body: JSON.stringify({
+              uin: '1eebea40-2fc1-6232-ba4d-352239f41dc9',
+              clickInfo: clickInfo,
+              _token: '386a5223d4f493.rdosO86hdTurdY37jhIXPcOeK5smfuh1q4fnyXlBQ6I.xJNUXamYBHT4Gfu1zHp4dfrtYMFCMbsHnvOgrREzLvGYkUZ2r-Y_cNIhzA',
+              brand: 'vegasplus',
+            })
+          });
+          const response = await fetchVariable.json();
+          if (!response.succcess && response.message) {
+            throw response.message;
+          }
+        } catch (error) {
+          console.error('Error', error);
+        }
+      };
+      document.addEventListener("DOMContentLoaded", saveClick);
+    </script>
+  </body>
+</html>

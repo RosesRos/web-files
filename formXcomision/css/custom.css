@@ -1,0 +1,75 @@
+/*
+ * Copyright X(c) 2023. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ */
+
+#phone-country-dropdown-container {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+#phone-country-dropdown-container input {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 41px;
+  padding: 0 10px;
+  font-family: Roboto, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: left;
+  border: 1px solid #7d7d7b;
+  border-radius: 5px;
+  outline: none;
+}
+
+.iti {
+  z-index: 1;
+}
+.iti--container {
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 3005;
+  padding: 5px;
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 20%);
+  display: block;
+}
+.iti--allow-dropdown {
+  position: initial;
+  display: flex;
+}
+.iti__country-list {
+  position: relative;
+  margin-top: 10px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+.iti__country-list::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  margin: 10px 3px;
+}
+.iti__country-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.iti__country-list::-webkit-scrollbar-thumb {
+  background: #888888;
+}
+.iti__country-list::-webkit-scrollbar-thumb:hover {
+  background: #555555;
+}
+.iti--separate-dial-code .iti__selected-flag {
+  border-radius: 5px;
+}
+
+/** External changes **/
+.fake-input-change-phone {
+  background-color: transparent;
+}
