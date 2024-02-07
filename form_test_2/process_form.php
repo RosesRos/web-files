@@ -85,7 +85,7 @@ removePixel();
 
 
 function deleteLine() {
-    // global $_GET;
+    global $_GET;
     $index = $_GET['index'];
     $filePath = 'pixel_2.txt';
 
