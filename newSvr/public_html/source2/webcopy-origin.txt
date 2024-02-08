@@ -1,0 +1,216 @@
+Uri: https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js
+File Name: C:\Downloaded Web Sites\safe-rest.fun\npm\js-cookie@3.0.1\dist\js.cookie.min.js
+Content Type: application/javascript
+
+Uri: https://cdn.onesignal.com/sdks/OneSignalSDK.js
+File Name: C:\Downloaded Web Sites\safe-rest.fun\sdks\OneSignalSDK.js
+Content Type: application/javascript
+
+Uri: https://code.jquery.com/jquery-3.6.0.min.js
+File Name: C:\Downloaded Web Sites\safe-rest.fun\jquery-3.6.0.min.js
+Content Type: application/javascript
+
+Uri: https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap
+File Name: C:\Downloaded Web Sites\safe-rest.fun\css2
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/materialicons/v99/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+File Name: C:\Downloaded Web Sites\safe-rest.fun\s\materialicons\v99\flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOiCnqEu92Fr1Mu51QrIzc.ttf
+File Name: C:\Downloaded Web Sites\safe-rest.fun\s\roboto\v30\KFOiCnqEu92Fr1Mu51QrIzc.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51S7ABc9.ttf
+File Name: C:\Downloaded Web Sites\safe-rest.fun\s\roboto\v30\KFOjCnqEu92Fr1Mu51S7ABc9.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TjARc9.ttf
+File Name: C:\Downloaded Web Sites\safe-rest.fun\s\roboto\v30\KFOjCnqEu92Fr1Mu51TjARc9.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TLBBc9.ttf
+File Name: C:\Downloaded Web Sites\safe-rest.fun\s\roboto\v30\KFOjCnqEu92Fr1Mu51TLBBc9.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TzBhc9.ttf
+File Name: C:\Downloaded Web Sites\safe-rest.fun\s\roboto\v30\KFOjCnqEu92Fr1Mu51TzBhc9.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1MmgWxP.ttf
+File Name: C:\Downloaded Web Sites\safe-rest.fun\s\roboto\v30\KFOkCnqEu92Fr1MmgWxP.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1Mu52xP.ttf
+File Name: C:\Downloaded Web Sites\safe-rest.fun\s\roboto\v30\KFOkCnqEu92Fr1Mu52xP.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9vAw.ttf
+File Name: C:\Downloaded Web Sites\safe-rest.fun\s\roboto\v30\KFOlCnqEu92Fr1MmEU9vAw.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5vAw.ttf
+File Name: C:\Downloaded Web Sites\safe-rest.fun\s\roboto\v30\KFOlCnqEu92Fr1MmSU5vAw.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlvAw.ttf
+File Name: C:\Downloaded Web Sites\safe-rest.fun\s\roboto\v30\KFOlCnqEu92Fr1MmWUlvAw.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmYUtvAw.ttf
+File Name: C:\Downloaded Web Sites\safe-rest.fun\s\roboto\v30\KFOlCnqEu92Fr1MmYUtvAw.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Me5Q.ttf
+File Name: C:\Downloaded Web Sites\safe-rest.fun\s\roboto\v30\KFOmCnqEu92Fr1Me5Q.ttf
+Content Type: font/ttf
+
+Uri: https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css
+File Name: C:\Downloaded Web Sites\safe-rest.fun\font-awesome\4.1.0\css\font-awesome.min.css
+Content Type: text/css
+
+Uri: https://netdna.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.eot?
+File Name: C:\Downloaded Web Sites\safe-rest.fun\font-awesome\4.1.0\fonts\fontawesome-webfont-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://netdna.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.eot?v=4.1.0
+File Name: C:\Downloaded Web Sites\safe-rest.fun\font-awesome\4.1.0\fonts\fontawesome-webfont.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://netdna.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.svg?v=4.1.0
+File Name: C:\Downloaded Web Sites\safe-rest.fun\font-awesome\4.1.0\fonts\fontawesome-webfont.svg
+Content Type: image/svg+xml
+
+Uri: https://netdna.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.ttf?v=4.1.0
+File Name: C:\Downloaded Web Sites\safe-rest.fun\font-awesome\4.1.0\fonts\fontawesome-webfont.ttf
+Content Type: font/ttf
+
+Uri: https://netdna.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.woff?v=4.1.0
+File Name: C:\Downloaded Web Sites\safe-rest.fun\font-awesome\4.1.0\fonts\fontawesome-webfont.woff
+Content Type: font/woff
+
+Uri: https://pwamarket.fra1.digitaloceanspaces.com/2024-01-09/659d53823a98d.jpeg
+File Name: C:\Downloaded Web Sites\safe-rest.fun\2024-01-09\659d53823a98d.jpeg
+Content Type: application/octet-stream
+
+Uri: https://pwamarket.fra1.digitaloceanspaces.com/2024-01-09/659d538248ed7.jpeg
+File Name: C:\Downloaded Web Sites\safe-rest.fun\2024-01-09\659d538248ed7.jpeg
+Content Type: application/octet-stream
+
+Uri: https://pwamarket.fra1.digitaloceanspaces.com/2024-01-09/659d5382509e9.jpeg
+File Name: C:\Downloaded Web Sites\safe-rest.fun\2024-01-09\659d5382509e9.jpeg
+Content Type: application/octet-stream
+
+Uri: https://pwamarket.fra1.digitaloceanspaces.com/2024-01-09/659d53825d2a6.jpeg
+File Name: C:\Downloaded Web Sites\safe-rest.fun\2024-01-09\659d53825d2a6.jpeg
+Content Type: application/octet-stream
+
+Uri: https://safe-rest.fun/
+File Name: C:\Downloaded Web Sites\safe-rest.fun\index.htm
+Content Type: text/html
+
+Uri: https://safe-rest.fun/img/avas/2.jpg?v=3
+File Name: C:\Downloaded Web Sites\safe-rest.fun\img\avas\2.jpg
+Content Type: image/jpeg
+
+Uri: https://safe-rest.fun/img/avas/3.jpg?v=3
+File Name: C:\Downloaded Web Sites\safe-rest.fun\img\avas\3.jpg
+Content Type: image/jpeg
+
+Uri: https://safe-rest.fun/img/avas/4.jpg?v=3
+File Name: C:\Downloaded Web Sites\safe-rest.fun\img\avas\4.jpg
+Content Type: image/jpeg
+
+Uri: https://safe-rest.fun/img/avas/5.jpg?v=3
+File Name: C:\Downloaded Web Sites\safe-rest.fun\img\avas\5.jpg
+Content Type: image/jpeg
+
+Uri: https://safe-rest.fun/img/avas/6.jpg?v=3
+File Name: C:\Downloaded Web Sites\safe-rest.fun\img\avas\6.jpg
+Content Type: image/jpeg
+
+Uri: https://safe-rest.fun/index_files/choise.png?v=1
+File Name: C:\Downloaded Web Sites\safe-rest.fun\index_files\choise.png
+Content Type: image/png
+
+Uri: https://safe-rest.fun/index_files/css.css?v=1
+File Name: C:\Downloaded Web Sites\safe-rest.fun\index_files\css.css
+Content Type: text/css
+
+Uri: https://safe-rest.fun/index_files/main.js?v=5
+File Name: C:\Downloaded Web Sites\safe-rest.fun\index_files\main.js
+Content Type: application/javascript
+
+Uri: https://safe-rest.fun/index_files/pwa.css?v=1
+File Name: C:\Downloaded Web Sites\safe-rest.fun\index_files\pwa.css
+Content Type: text/css
+
+Uri: https://safe-rest.fun/index_files/right-arrow.svg
+File Name: C:\Downloaded Web Sites\safe-rest.fun\index_files\right-arrow.svg
+Content Type: image/svg+xml
+
+Uri: https://safe-rest.fun/index_files/star-full-big-green.png?v2
+File Name: C:\Downloaded Web Sites\safe-rest.fun\index_files\star-full-big-green-1.png
+Content Type: image/png
+
+Uri: https://safe-rest.fun/index_files/star-full-big-green.png?v=21
+File Name: C:\Downloaded Web Sites\safe-rest.fun\index_files\star-full-big-green.png
+Content Type: image/png
+
+Uri: https://safe-rest.fun/index_files/star-full-big.png?v2
+File Name: C:\Downloaded Web Sites\safe-rest.fun\index_files\star-full-big-1.png
+Content Type: image/png
+
+Uri: https://safe-rest.fun/index_files/star-full-big.png?v=21
+File Name: C:\Downloaded Web Sites\safe-rest.fun\index_files\star-full-big.png
+Content Type: image/png
+
+Uri: https://safe-rest.fun/index_files/star-full.png?v=2
+File Name: C:\Downloaded Web Sites\safe-rest.fun\index_files\star-full.png
+Content Type: image/png
+
+Uri: https://safe-rest.fun/index_files/style.css?v=6
+File Name: C:\Downloaded Web Sites\safe-rest.fun\index_files\style.css
+Content Type: text/css
+
+Uri: https://safe-rest.fun/index_files/user.png?v=1
+File Name: C:\Downloaded Web Sites\safe-rest.fun\index_files\user-1.png
+Content Type: image/png
+
+Uri: https://safe-rest.fun/index_files/user.png?v=2
+File Name: C:\Downloaded Web Sites\safe-rest.fun\index_files\user.png
+Content Type: image/png
+
+Uri: https://safe-rest.fun/js/grt-youtube-popup.css
+File Name: C:\Downloaded Web Sites\safe-rest.fun\js\grt-youtube-popup.css
+Content Type: text/css
+
+Uri: https://safe-rest.fun/js/grt-youtube-popup.js
+File Name: C:\Downloaded Web Sites\safe-rest.fun\js\grt-youtube-popup.js
+Content Type: application/javascript
+
+Uri: https://safe-rest.fun/js/icon-close-black.png
+File Name: C:\Downloaded Web Sites\safe-rest.fun\js\icon-close-black.png
+Content Type: image/png
+
+Uri: https://safe-rest.fun/js/icon-close-white.png
+File Name: C:\Downloaded Web Sites\safe-rest.fun\js\icon-close-white.png
+Content Type: image/png
+
+Uri: https://safe-rest.fun/load.svg?v=1
+File Name: C:\Downloaded Web Sites\safe-rest.fun\load.svg
+Content Type: image/svg+xml
+
+Uri: https://safe-rest.fun/manifest.php?v=1706674534
+File Name: C:\Downloaded Web Sites\safe-rest.fun\manifest.php
+Content Type: application/json
+
+Uri: https://safe-rest.fun/ua-parser.min.js?v=1
+File Name: C:\Downloaded Web Sites\safe-rest.fun\ua-parser.min.js
+Content Type: application/javascript
+
+Uri: https://translate.google.com/translate_a/element.js?cb=TranslateInit
+File Name: C:\Downloaded Web Sites\safe-rest.fun\translate_a\element.js
+Content Type: text/javascript
+
