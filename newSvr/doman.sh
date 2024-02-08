@@ -14,10 +14,10 @@ newDirectory () {
         next_id=$((last_id + 1))
     fi
     new_dir="${base_path}source${next_id}"
-    cp -R ${dir}/crazyheets.com/public_html/source2 $new_dir
+    cp -R ${dir}/crazyheets.com/public_html/source $new_dir
     rm -rf $new_dir/img
     chown -R admin:admin ${dir}/crazyheets.com/public_html/img
-    cp -R ${dir}/crazyheets.com/public_html/source2/img/avas ${dir}/crazyheets.com/public_html/img
+    cp -R ${dir}/crazyheets.com/public_html/source/img/avas ${dir}/crazyheets.com/public_html/img
     mv ${dir}/crazyheets.com/public_html/img $new_dir
     echo "new dir: https://$param1/source${next_id}"
 }
