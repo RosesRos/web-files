@@ -102,5 +102,17 @@ echo $result; -->
         appElement.classList.add(sheet.classes.app);
     </script>
 
+        <script>
+        document.addEventListener('readystatechange', event => {
+
+            if (event.target.readyState === "interactive") {      //same as:  document.addEventListener("DOMContentLoaded"...   // same as  jQuery.ready
+                document.querySelector("#install_button").innerHTML = "Загрузка";
+            }
+
+            if (event.target.readyState === "complete") {
+                document.querySelector("#install_button").innerHTML = "Установить";
+            }
+        });
+    </script>
 </body>
 </html>
