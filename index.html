@@ -114,5 +114,23 @@ echo $result; -->
             }
         });
     </script>
+
+<!--     boder radius gradient -->
+
+<style>
+    .element {
+  border: 12px solid transparent;
+  border-radius: 24px;
+  background: 
+/* padding-box, чтобы он не рисовался под рамкой */
+  linear-gradient(black, black) padding-box,
+/* border-box, чтобы он начинался под рамкой */
+  linear-gradient(
+    45deg,
+    #FF52E5,
+    #F6D242
+  ) border-box;
+}
+</style>
 </body>
 </html>
